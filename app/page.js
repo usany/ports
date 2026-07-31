@@ -37,40 +37,25 @@ export default function Home() {
 
       const seoul = MARKERS.find((m) => m.name === "Seoul")
       let line = null
-      let flight = null
+      let textMarker = null
 
-      const placeFlight = (points) => {
-        const mid = Math.floor(points.length / 2)
-        const at = points[mid]
-        const prev = points[Math.max(0, mid - 3)]
-        const next = points[Math.min(points.length - 1, mid + 3)]
-        const dLat = next[0] - prev[0]
-        const dLng = next[1] - prev[1]
-        const angle = (Math.atan2(dLng, dLat) * 180) / Math.PI + 45
+      const placeText = (name, points) => {
+        const mid = points[Math.floor(points.length / 2)]
+        const icon = L.divIcon({
+          className: "",
+          html: `<span class="pop-text" style="font-size:18px;font-weight:bold;color:#ef4444;background:#fff;padding:4px 10px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.3);white-space:nowrap">${name}</span>`,
+          iconSize: [0, 0],
+        })
 
-        if (!flight) {
-          flight = L.marker(at, {
-            icon: L.divIcon({
-              className: "",
-              html: `<span style="display:inline-block;transform:rotate(${angle}deg)">✈️</span>`,
-              iconSize: [24, 24],
-              iconAnchor: [12, 12],
-            }),
-          }).addTo(map)
+        if (!textMarker) {
+          textMarker = L.marker(mid, { icon, interactive: false }).addTo(map)
         } else {
-          flight.setLatLng(at)
-          flight.setIcon(
-            L.divIcon({
-              className: "",
-              html: `<span style="display:inline-block;transform:rotate(${angle}deg)">✈️</span>`,
-              iconSize: [24, 24],
-              iconAnchor: [12, 12],
-            })
-          )
+          textMarker.setLatLng(mid)
+          textMarker.setIcon(icon)
         }
       }
 
-      const drawLine = (from, to) => {
+      const drawLine = (from, to, name) => {
         const points = curvePoints(from, to)
         if (line) {
           line.setLatLngs(points)
@@ -82,14 +67,24 @@ export default function Home() {
             dashArray: "6 6",
           }).addTo(map)
         }
-        placeFlight(points)
+        placeText(name, points)
       }
 
       MARKERS.forEach(({ position, name }) => {
-        const marker = L.marker(position, { icon }).addTo(map).bindPopup(`<b>${name}</b>`)
+        const marker = L.marker(position, { icon }).addTo(map)
 
         if (name !== "Seoul") {
-          marker.on("click", () => drawLine(seoul.position, position))
+          marker
+            .bindPopup(
+              `<b>${name}</b><br/><button class="popup-btn">Draw line to Seoul</button>`
+            )
+            .on("popupopen", () => {
+              const el = marker.getPopup().getElement()
+              const btn = el.querySelector(".popup-btn")
+              btn.addEventListener("click", () => drawLine(seoul.position, position, name))
+            })
+        } else {
+          marker.bindPopup(`<b>${name}</b>`)
         }
       })
 
