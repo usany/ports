@@ -38,6 +38,7 @@ export default function Home() {
       const seoul = MARKERS.find((m) => m.name === "Seoul")
       let line = null
       let textMarker = null
+      let lineTo = null
 
       const placeText = (name, points) => {
         const mid = points[Math.floor(points.length / 2)]
@@ -52,6 +53,17 @@ export default function Home() {
         } else {
           textMarker.setLatLng(mid)
           textMarker.setIcon(icon)
+        }
+      }
+
+      const removeLine = () => {
+        if (line) {
+          line.remove()
+          line = null
+        }
+        if (textMarker) {
+          textMarker.remove()
+          textMarker = null
         }
       }
 
@@ -74,15 +86,25 @@ export default function Home() {
         const marker = L.marker(position, { icon }).addTo(map)
 
         if (name !== "Seoul") {
-          marker
-            .bindPopup(
-              `<b>${name}</b><br/><button class="popup-btn">Draw line to Seoul</button>`
-            )
-            .on("popupopen", () => {
-              const el = marker.getPopup().getElement()
-              const btn = el.querySelector(".popup-btn")
-              btn.addEventListener("click", () => drawLine(seoul.position, position, name))
+          marker.bindPopup(
+            `<b>${name}</b><br/><label class="switch"><input type="checkbox" class="line-toggle"/><span class="slider"></span></label><span class="line-check">&#10003;</span>`
+          )
+
+          marker.on("popupopen", () => {
+            const el = marker.getPopup().getElement()
+            const toggle = el.querySelector(".line-toggle")
+            toggle.checked = lineTo === name
+
+            toggle.addEventListener("change", () => {
+              if (toggle.checked) {
+                drawLine(seoul.position, position, name)
+                lineTo = name
+              } else {
+                removeLine()
+                lineTo = null
+              }
             })
+          })
         } else {
           marker.bindPopup(`<b>${name}</b>`)
         }
