@@ -38,6 +38,26 @@ export default function Home() {
         L.marker(position, { icon }).addTo(map).bindPopup(`<b>${name}</b>`)
       })
 
+      const curvePoints = (a, b) => {
+        const mid = [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2]
+        const dist = Math.sqrt((a[1] - b[1]) ** 2 + (a[0] - b[0]) ** 2)
+        const bulge = Math.min(dist * 0.3, 60)
+        const control = [mid[0] + bulge, mid[1]]
+        const points = []
+        for (let t = 0; t <= 1; t += 0.02) {
+          const x = (1 - t) ** 2 * a[0] + 2 * (1 - t) * t * control[0] + t ** 2 * b[0]
+          const y = (1 - t) ** 2 * a[1] + 2 * (1 - t) * t * control[1] + t ** 2 * b[1]
+          points.push([x, y])
+        }
+        return points
+      }
+
+      const line = L.polyline(curvePoints(MARKERS[0].position, MARKERS[1].position), {
+        color: "#ef4444",
+        weight: 3,
+        dashArray: "6 6",
+      }).addTo(map)
+
       mapInstanceRef.current = map
     })
 
