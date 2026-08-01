@@ -2,6 +2,11 @@ body {
   margin: 0;
 }
 
+.leaflet-popup-content {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
 .popup-btn {
   margin-top: 6px;
   padding: 6px 12px;
