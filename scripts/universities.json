@@ -145,7 +145,10 @@
               "text": "[Fact sheet] 2022-2023 Cafoscari University.pdf"
             }
           ],
-          "url": "https://www.notion.so/32f40e43065f48e09b00dd2c363d86df"
+          "url": "https://www.notion.so/32f40e43065f48e09b00dd2c363d86df",
+          "lat": 45.4345657,
+          "lon": 12.3265552,
+          "geocode": "Ca' Foscari, Calle Giustinian, Dorsoduro, Venezia-Murano-Burano, Lido, Venice, Venezia, Veneto, 30123, Italy"
         },
         {
           "id": "12a24cc6-2246-46f4-a345-14c3e732bdaf",
@@ -268,7 +271,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/12a24cc6224646f4a34514c3e732bdaf"
+          "url": "https://www.notion.so/12a24cc6224646f4a34514c3e732bdaf",
+          "lat": 56.4562565,
+          "lon": 84.9484179,
+          "geocode": "Tomsk Polytechnic University, Timakov Street, Verkhnyaya Yelan, Кировский район, Tomsk, городской округ Томск, Tomsk Oblast, Siberian Federal District, 634028, Russia"
         },
         {
           "id": "299195d3-4d6d-8158-bc49-ca959ab7ee92",
@@ -396,7 +402,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8158bc49ca959ab7ee92"
+          "url": "https://www.notion.so/299195d34d6d8158bc49ca959ab7ee92",
+          "lat": -33.9175994,
+          "lon": 151.2312369,
+          "geocode": "University of New South Wales, Willis Street, Kensington, Eastern Suburbs, Sydney, New South Wales, 2032, Australia"
         },
         {
           "id": "299195d3-4d6d-8188-9b9d-ca02e5ec9bf4",
@@ -604,7 +613,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81889b9dca02e5ec9bf4"
+          "url": "https://www.notion.so/299195d34d6d81889b9dca02e5ec9bf4",
+          "lat": -33.774197,
+          "lon": 151.1127138,
+          "geocode": "Macquarie University, Herring Road, Macquarie Park, Sydney, New South Wales, 2113, Australia"
         },
         {
           "id": "6feb1db2-a700-4326-9cea-0befdecc2074",
@@ -722,7 +734,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/6feb1db2a70043269cea0befdecc2074"
+          "url": "https://www.notion.so/6feb1db2a70043269cea0befdecc2074",
+          "lat": -35.0248752,
+          "lon": 138.5734181,
+          "geocode": "Flinders University, Flinders Drive, Bedford Park, Adelaide, South Australia, 5042, Australia"
         },
         {
           "id": "299195d3-4d6d-81d2-9a7e-f2dea1fc927f",
@@ -845,7 +860,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81d29a7ef2dea1fc927f"
+          "url": "https://www.notion.so/299195d34d6d81d29a7ef2dea1fc927f",
+          "lat": -35.0248752,
+          "lon": 138.5734181,
+          "geocode": "Flinders University, Flinders Drive, Bedford Park, Adelaide, South Australia, 5042, Australia"
         },
         {
           "id": "299195d3-4d6d-81a9-bf51-d9e18316299f",
@@ -973,7 +991,10 @@
               "text": "@uvigo.es"
             }
           ],
-          "url": "https://www.notion.so/299195d34d6d81a9bf51d9e18316299f"
+          "url": "https://www.notion.so/299195d34d6d81a9bf51d9e18316299f",
+          "lat": -34.4050554,
+          "lon": 150.8783465,
+          "geocode": "University of Wollongong, University Ring Road, Keiraville, Wollongong, New South Wales, 2500, Australia"
         },
         {
           "id": "299195d3-4d6d-8196-a7f8-c6058f7557dd",
@@ -1096,7 +1117,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8196a7f8c6058f7557dd"
+          "url": "https://www.notion.so/299195d34d6d8196a7f8c6058f7557dd",
+          "lat": 28.4822509,
+          "lon": 77.4894718,
+          "geocode": "Western Sydney university, Knowledge Park III, Greater Noida, Gautam Buddha Nagar, Uttar Pradesh, India"
         },
         {
           "id": "299195d3-4d6d-8199-8015-ff3f438978c6",
@@ -1214,7 +1238,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81998015ff3f438978c6"
+          "url": "https://www.notion.so/299195d34d6d81998015ff3f438978c6",
+          "lat": -37.7171184,
+          "lon": 145.0441175,
+          "geocode": "La Trobe University (Bay 2), The Agora, Bundoora, Melbourne, Victoria, 3083, Australia"
         },
         {
           "id": "2b7195d3-4d6d-802d-b048-d003031dd67d",
@@ -1312,7 +1339,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2b7195d34d6d802db048d003031dd67d"
+          "url": "https://www.notion.so/2b7195d34d6d802db048d003031dd67d",
+          "lat": -37.8100215,
+          "lon": 144.9689075,
+          "geocode": "Southern Cross University, 108, Lonsdale Street, Greek Precinct, Melbourne, Victoria, 3000, Australia"
         },
         {
           "id": "2bd195d3-4d6d-808a-ac49-cb532cfd246d",
@@ -1410,7 +1440,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2bd195d34d6d808aac49cb532cfd246d"
+          "url": "https://www.notion.so/2bd195d34d6d808aac49cb532cfd246d",
+          "lat": -27.6067483,
+          "lon": 151.9293708,
+          "geocode": "University of Southern Queensland, West Street, Darling Heights, Kearneys Spring, Toowoomba, Queensland, 4350, Australia"
         },
         {
           "id": "299195d3-4d6d-8171-b460-d2d4b1f3996f",
@@ -1533,7 +1566,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8171b460d2d4b1f3996f"
+          "url": "https://www.notion.so/299195d34d6d8171b460d2d4b1f3996f",
+          "lat": 47.5839578,
+          "lon": 12.1733215,
+          "geocode": "University of Applied Sciences Kufstein, 7, Andreas Hofer-Straße, Kienbichl, Sparchen, Kufstein, Bezirk Kufstein, Tyrol, 6330, Austria"
         },
         {
           "id": "299195d3-4d6d-810c-9b94-f49d722e6023",
@@ -1656,7 +1692,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d810c9b94f49d722e6023"
+          "url": "https://www.notion.so/299195d34d6d810c9b94f49d722e6023",
+          "lat": 47.2692703,
+          "lon": 11.3984544,
+          "geocode": "Management Center Innsbruck, Meinhardstraße, Innenstadt, Innsbruck, Tyrol, 6020, Austria"
         },
         {
           "id": "299195d3-4d6d-81e5-b051-e41d2c7062d1",
@@ -1864,7 +1903,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81e5b051e41d2c7062d1"
+          "url": "https://www.notion.so/299195d34d6d81e5b051e41d2c7062d1",
+          "lat": 47.4062921,
+          "lon": 9.7437572,
+          "geocode": "FH Vorarlberg, 1, Achstraße, Hatlerdorf, Dornbirn, Bezirk Dornbirn, Vorarlberg, 6850, Austria"
         },
         {
           "id": "299195d3-4d6d-8158-942c-e06fecb4a226",
@@ -1987,7 +2029,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8158942ce06fecb4a226"
+          "url": "https://www.notion.so/299195d34d6d8158942ce06fecb4a226",
+          "lat": 46.797071,
+          "lon": 13.5012317,
+          "geocode": "Carinthia University of Applied Sciences, 1, Villacher Straße, Sankt Sigmund, Edling, Spittal an der Drau, Bezirk Spittal an der Drau, Carinthia, 9800, Austria"
         },
         {
           "id": "486ddcc9-de5a-4451-a5d6-30d687f339ab",
@@ -2100,7 +2145,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/486ddcc9de5a4451a5d630d687f339ab"
+          "url": "https://www.notion.so/486ddcc9de5a4451a5d630d687f339ab",
+          "lat": 48.4303157,
+          "lon": -123.4796493,
+          "geocode": "Royal Roads University, 2005, Sooke Road, Colwood, Capital Regional District, British Columbia, V9B 5Y2, Canada"
         },
         {
           "id": "91595b7a-690d-43b0-8229-fa4f3ced3d2b",
@@ -2203,7 +2251,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/91595b7a690d43b08229fa4f3ced3d2b"
+          "url": "https://www.notion.so/91595b7a690d43b08229fa4f3ced3d2b",
+          "lat": 63.1064129,
+          "lon": 21.5916924,
+          "geocode": "Vaasa University of Applied Sciences, 30, Wolffintie, Onkilahden ranta, Viikinga, Yliopisto, Vaasa, Vaasa sub-region, Ostrobothnia, Mainland Finland, 65200, Finland"
         },
         {
           "id": "9155fe2f-199b-45e7-89de-27abe32682ba",
@@ -2316,7 +2367,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/9155fe2f199b45e789de27abe32682ba"
+          "url": "https://www.notion.so/9155fe2f199b45e789de27abe32682ba",
+          "lat": 48.1274799,
+          "lon": -1.6903697,
+          "geocode": "Rennes School of Business, 2, Rue Robert d'Arbrissel, Beauregard, Villejean - Beauregard, Quartiers Nord-Ouest, Rennes, Ille-et-Vilaine, Brittany, Metropolitan France, 35000, France"
         },
         {
           "id": "299195d3-4d6d-81c1-9ca6-ee3960299972",
@@ -2429,7 +2483,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81c19ca6ee3960299972"
+          "url": "https://www.notion.so/299195d34d6d81c19ca6ee3960299972",
+          "lat": 47.0692049,
+          "lon": 15.4074642,
+          "geocode": "FH Joanneum, 13, Eggenberger Allee, Katastralgemeinde Algersdorf, Eggenberg, Graz, Styria, 8020, Austria"
         },
         {
           "id": "299195d3-4d6d-8122-b9bb-c1807d724a69",
@@ -2527,7 +2584,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8122b9bbc1807d724a69"
+          "url": "https://www.notion.so/299195d34d6d8122b9bbc1807d724a69",
+          "lat": 47.0582807,
+          "lon": 15.4602462,
+          "geocode": "Graz University of Technology, Monsbergergasse, Münzgraben, Katastralgemeinde Jakomini, Jakomini, Graz, Styria, 8010, Austria"
         },
         {
           "id": "2bd195d3-4d6d-80f1-a736-eec1fe32dba6",
@@ -2660,7 +2720,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2bd195d34d6d80f1a736eec1fe32dba6"
+          "url": "https://www.notion.so/2bd195d34d6d80f1a736eec1fe32dba6",
+          "lat": 48.1755458,
+          "lon": 16.3570742,
+          "geocode": "bfi, 92-94, Davidgasse, Triesterviertel, Katastralgemeinde Inzersdorf Stadt, Favoriten, Vienna, 1100, Austria"
         },
         {
           "id": "299195d3-4d6d-8158-bc06-cc82b5accf83",
@@ -2783,7 +2846,10 @@
               "text": "*Course regislation deadlines\n> Fall semester : 23 September (TBC)\n> Spring semester : 17 February (TBC)"
             }
           ],
-          "url": "https://www.notion.so/299195d34d6d8158bc06cc82b5accf83"
+          "url": "https://www.notion.so/299195d34d6d8158bc06cc82b5accf83",
+          "lat": 50.8137605,
+          "lon": 4.3789118,
+          "geocode": "Solvay Brussels School of Economics & Management, Chemin Henri Storck, Petite Suisse - Klein-Zwitserland, south extension of Brussels, Brussels, Brussels-Capital, 1050, Belgium"
         },
         {
           "id": "299195d3-4d6d-81c4-a628-ff7323b3695b",
@@ -2911,7 +2977,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81c4a628ff7323b3695b"
+          "url": "https://www.notion.so/299195d34d6d81c4a628ff7323b3695b",
+          "lat": 50.6368602,
+          "lon": 5.5624252,
+          "geocode": "HEC Liège Management School - University of Liège, 14, Rue Louvrex, Jonfosse, Centre, Liège, Wallonia, 4000, Belgium"
         },
         {
           "id": "299195d3-4d6d-8196-aad7-c9ab9d8f3fb2",
@@ -3034,7 +3103,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8196aad7c9ab9d8f3fb2"
+          "url": "https://www.notion.so/299195d34d6d8196aad7c9ab9d8f3fb2",
+          "lat": 50.6685842,
+          "lon": 4.6132341,
+          "geocode": "Doyens, 1, Place Rabelais, Bruyères, Louvain-la-Neuve, Ottignies-Louvain-la-Neuve, Nivelles, Walloon Brabant, Wallonia, 1348, Belgium"
         },
         {
           "id": "299195d3-4d6d-8184-bb41-d27f74170102",
@@ -3157,7 +3229,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8184bb41d27f74170102"
+          "url": "https://www.notion.so/299195d34d6d8184bb41d27f74170102",
+          "lat": 48.4203116,
+          "lon": -89.2623395,
+          "geocode": "Lakehead University, 955, Oliver Road, Red River, Thunder Bay, Thunder Bay District, Northwestern Ontario, Ontario, P7B 5E1, Canada"
         },
         {
           "id": "299195d3-4d6d-8198-bcbc-c6f254e5a75c",
@@ -3280,7 +3355,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8198bcbcc6f254e5a75c"
+          "url": "https://www.notion.so/299195d34d6d8198bcbcc6f254e5a75c",
+          "lat": 51.0116203,
+          "lon": -114.1307018,
+          "geocode": "Mount Royal University, Mount Royal Circle SW, Lincoln Park, Calgary, Alberta, T3E 6K6, Canada"
         },
         {
           "id": "131195d3-4d6d-8174-ab4a-e6d2fdaafefc",
@@ -3393,7 +3471,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/131195d34d6d8174ab4ae6d2fdaafefc"
+          "url": "https://www.notion.so/131195d34d6d8174ab4ae6d2fdaafefc",
+          "lat": 48.4620599,
+          "lon": -123.3114198,
+          "geocode": "University of Victoria, Cadboro Bay Road, Oak Bay, Capital Regional District, British Columbia, V8N 1B8, Canada"
         },
         {
           "id": "299195d3-4d6d-8175-a20e-ef514e29b0ad",
@@ -3496,7 +3577,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8175a20eef514e29b0ad"
+          "url": "https://www.notion.so/299195d34d6d8175a20eef514e29b0ad",
+          "lat": 50.6724455,
+          "lon": -120.3640266,
+          "geocode": "Thompson Rivers University, McGill Road, Upper Sahali, Kamloops, Thompson-Nicola Regional District, British Columbia, V2C 6G2, Canada"
         },
         {
           "id": "299195d3-4d6d-8167-9566-cad36efda09c",
@@ -3689,7 +3773,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81679566cad36efda09c"
+          "url": "https://www.notion.so/299195d34d6d81679566cad36efda09c",
+          "lat": 45.6210003,
+          "lon": -72.9661685,
+          "geocode": "Université de Montréal, 3200, Rue Sicotte, Downtown Sector, La Providence, Saint-Hyacinthe, Les Maskoutains, Montérégie, Quebec, J2S 2M2, Canada"
         },
         {
           "id": "2bf195d3-4d6d-800c-b4fb-d4eb6c773897",
@@ -3787,7 +3874,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2bf195d34d6d800cb4fbd4eb6c773897"
+          "url": "https://www.notion.so/2bf195d34d6d800cb4fbd4eb6c773897",
+          "lat": 48.4620599,
+          "lon": -123.3114198,
+          "geocode": "University of Victoria, Cadboro Bay Road, Oak Bay, Capital Regional District, British Columbia, V8N 1B8, Canada"
         },
         {
           "id": "299195d3-4d6d-812f-9f15-e08512629243",
@@ -3895,7 +3985,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d812f9f15e08512629243"
+          "url": "https://www.notion.so/299195d34d6d812f9f15e08512629243",
+          "lat": 50.0888947,
+          "lon": 14.4162757,
+          "geocode": "Faculty of Arts, Charles University in Prague, Kaprova, Josefov, obvod Praha 1, Prague, 116 93, Czechia"
         },
         {
           "id": "299195d3-4d6d-81b6-bcf1-ccc7f8e84159",
@@ -4013,7 +4106,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81b6bcf1ccc7f8e84159"
+          "url": "https://www.notion.so/299195d34d6d81b6bcf1ccc7f8e84159",
+          "lat": 56.1670905,
+          "lon": 10.2026177,
+          "geocode": "Aarhus University, Østbanetorvet, Trøjborg, Aarhus, Aarhus Municipality, Central Denmark Region, 8000, Denmark"
         },
         {
           "id": "299195d3-4d6d-81e9-9990-d162051e40fc",
@@ -4141,7 +4237,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81e99990d162051e40fc"
+          "url": "https://www.notion.so/299195d34d6d81e99990d162051e40fc",
+          "lat": 55.6731787,
+          "lon": 12.5737989,
+          "geocode": "The Royal Danish Academy of Sciences and Letters, Dantes Plads, Postbyen, Islands Brygge, Ballonparken, Copenhagen, Copenhagen Municipality, Capital Region of Denmark, 1556, Denmark"
         },
         {
           "id": "2c7772e0-9794-45f4-b92e-f9437461bb87",
@@ -4264,7 +4363,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2c7772e0979445f4b92ef9437461bb87"
+          "url": "https://www.notion.so/2c7772e0979445f4b92ef9437461bb87",
+          "lat": 55.6731787,
+          "lon": 12.5737989,
+          "geocode": "The Royal Danish Academy of Sciences and Letters, Dantes Plads, Postbyen, Islands Brygge, Ballonparken, Copenhagen, Copenhagen Municipality, Capital Region of Denmark, 1556, Denmark"
         },
         {
           "id": "299195d3-4d6d-8132-b0ca-d8c3451be034",
@@ -4387,7 +4489,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8132b0cad8c3451be034"
+          "url": "https://www.notion.so/299195d34d6d8132b0cad8c3451be034",
+          "lat": 55.3678533,
+          "lon": 10.4280534,
+          "geocode": "University of Southern Denmark, Moseskovvej, Cortex Park, Odense, Odense Municipality, Region of Southern Denmark, 5220, Denmark"
         },
         {
           "id": "299195d3-4d6d-8129-989c-e77370d86a52",
@@ -4520,7 +4625,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8129989ce77370d86a52"
+          "url": "https://www.notion.so/299195d34d6d8129989ce77370d86a52",
+          "lat": 55.8618812,
+          "lon": -4.2419566,
+          "geocode": "University of Strathclyde, Rottenrow East, Townhead, Glasgow, Glasgow City, Scotland, G4 0NW, United Kingdom"
         },
         {
           "id": "299195d3-4d6d-81ed-b7de-dc6489e754de",
@@ -4643,7 +4751,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81edb7dedc6489e754de"
+          "url": "https://www.notion.so/299195d34d6d81edb7dedc6489e754de",
+          "lat": 51.5218979,
+          "lon": -0.1288676,
+          "geocode": "SOAS University of London, Russell Square, Bloomsbury, London Borough of Camden, Greater London, England, WC1H 0XG, United Kingdom"
         },
         {
           "id": "299195d3-4d6d-8178-b9c4-edeee28a851c",
@@ -4781,7 +4892,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8178b9c4edeee28a851c"
+          "url": "https://www.notion.so/299195d34d6d8178b9c4edeee28a851c",
+          "lat": 53.4123844,
+          "lon": -2.980927,
+          "geocode": "Liverpool John Moores University City Campus, 3, Byrom Street, St George's Quarter / Cultural Quarter, Vauxhall, Liverpool, Liverpool City Region, England, L3 3AF, United Kingdom"
         },
         {
           "id": "299195d3-4d6d-81b8-9266-fc55c6d8c9c0",
@@ -4919,7 +5033,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81b89266fc55c6d8c9c0"
+          "url": "https://www.notion.so/299195d34d6d81b89266fc55c6d8c9c0",
+          "lat": 52.91164,
+          "lon": -1.1866048,
+          "geocode": "Nottingham Trent University (Clifton Campus), Merlin Close, Clifton, Nottingham, East Midlands, England, NG11 8BB, United Kingdom"
         },
         {
           "id": "299195d3-4d6d-819e-a19c-f62a9a35bad4",
@@ -5017,7 +5134,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d819ea19cf62a9a35bad4"
+          "url": "https://www.notion.so/299195d34d6d819ea19cf62a9a35bad4",
+          "lat": 53.3729622,
+          "lon": -1.5059315,
+          "geocode": "University of Sheffield, Western Bank, Saint George's Quarter, Netherthorpe, Sheffield, South Yorkshire, England, S10 2TN, United Kingdom"
         },
         {
           "id": "299195d3-4d6d-8167-9ddf-fe0885ada6de",
@@ -5160,7 +5280,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81679ddffe0885ada6de"
+          "url": "https://www.notion.so/299195d34d6d81679ddffe0885ada6de",
+          "lat": 53.982244,
+          "lon": -1.0763834,
+          "geocode": "York St John University, Moatside Court, Bootham, Bishophill, York, York and North Yorkshire, England, YO31 7EX, United Kingdom"
         },
         {
           "id": "2b1195d3-4d6d-80ca-9ba4-e43d08ae572c",
@@ -5248,7 +5371,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2b1195d34d6d80ca9ba4e43d08ae572c"
+          "url": "https://www.notion.so/2b1195d34d6d80ca9ba4e43d08ae572c",
+          "lat": 52.6297131,
+          "lon": -1.139284,
+          "geocode": "De Montfort University, The Newarke, Bede Island, Leicester, City of Leicester, England, LE2 7GY, United Kingdom"
         },
         {
           "id": "299195d3-4d6d-816b-af92-d413b920e400",
@@ -5361,7 +5487,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d816baf92d413b920e400"
+          "url": "https://www.notion.so/299195d34d6d816baf92d413b920e400",
+          "lat": 59.4393125,
+          "lon": 24.7723471,
+          "geocode": "Tallinn University, Narva mnt, Raua, City center, Tallinn, Harju County, 10120, Estonia"
         },
         {
           "id": "299195d3-4d6d-8162-b272-ed8f59ea340f",
@@ -5489,7 +5618,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8162b272ed8f59ea340f"
+          "url": "https://www.notion.so/299195d34d6d8162b272ed8f59ea340f",
+          "lat": 60.4560732,
+          "lon": 22.2864097,
+          "geocode": "University of Turku, University Hill, I, City Centre, Turku, Turku sub-region, Southwest Finland, Mainland Finland, 20500, Finland"
         },
         {
           "id": "299195d3-4d6d-812a-88f7-ef356fd0a5d8",
@@ -5617,7 +5749,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d812a88f7ef356fd0a5d8"
+          "url": "https://www.notion.so/299195d34d6d812a88f7ef356fd0a5d8",
+          "lat": 61.5041278,
+          "lon": 23.8083919,
+          "geocode": "Tampere University of Applied Sciences, 3, Kuntokatu, Kauppi, Keskustan suuralue, Tampere, Tampere sub-region, Pirkanmaa, Mainland Finland, 33520, Finland"
         },
         {
           "id": "0a69a1ba-223a-437d-87bf-3d9d0a987d35",
@@ -5735,7 +5870,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/0a69a1ba223a437d87bf3d9d0a987d35"
+          "url": "https://www.notion.so/0a69a1ba223a437d87bf3d9d0a987d35",
+          "lat": 61.5041278,
+          "lon": 23.8083919,
+          "geocode": "Tampere University of Applied Sciences, 3, Kuntokatu, Kauppi, Keskustan suuralue, Tampere, Tampere sub-region, Pirkanmaa, Mainland Finland, 33520, Finland"
         },
         {
           "id": "299195d3-4d6d-81b1-a286-e5691564a11e",
@@ -5858,7 +5996,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81b1a286e5691564a11e"
+          "url": "https://www.notion.so/299195d34d6d81b1a286e5691564a11e",
+          "lat": 63.1064129,
+          "lon": 21.5916924,
+          "geocode": "Vaasa University of Applied Sciences, 30, Wolffintie, Onkilahden ranta, Viikinga, Yliopisto, Vaasa, Vaasa sub-region, Ostrobothnia, Mainland Finland, 65200, Finland"
         },
         {
           "id": "299195d3-4d6d-8126-8a04-e3c6eaffd19e",
@@ -5986,7 +6127,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81268a04e3c6eaffd19e"
+          "url": "https://www.notion.so/299195d34d6d81268a04e3c6eaffd19e",
+          "lat": 60.2013724,
+          "lon": 24.9653266,
+          "geocode": "Arcada, University of Applied Sciences, 1, Jan-Magnus Janssonin aukio, Arabianranta, Toukola, Central major district, Helsinki, Helsinki sub-region, Uusimaa, Mainland Finland, 00560, Finland"
         },
         {
           "id": "299195d3-4d6d-8100-bfc2-f8c36e60399c",
@@ -6099,7 +6243,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8100bfc2f8c36e60399c"
+          "url": "https://www.notion.so/299195d34d6d8100bfc2f8c36e60399c",
+          "lat": 61.1944053,
+          "lon": 25.1079932,
+          "geocode": "Häme University of Applied Sciences, Evo, 1, Saarelantie, Lammi, Evo, Hämeenlinna, Hämeenlinna sub-region, Kanta-Häme, Mainland Finland, 16970, Finland"
         },
         {
           "id": "299195d3-4d6d-81cd-af94-f486389b9afe",
@@ -6217,7 +6364,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81cdaf94f486389b9afe"
+          "url": "https://www.notion.so/299195d34d6d81cdaf94f486389b9afe",
+          "lat": 65.0612305,
+          "lon": 25.4690204,
+          "geocode": "Oulu University of Applied Sciences, Erkki Koiso-Kanttilan katu, Puulinnanmaa, Linnanmaa, Kaijonharju, Oulu, Oulu sub-region, North Ostrobothnia, Mainland Finland, 90570, Finland"
         },
         {
           "id": "299195d3-4d6d-818b-85a4-ecaf18686112",
@@ -6345,7 +6495,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d818b85a4ecaf18686112"
+          "url": "https://www.notion.so/299195d34d6d818b85a4ecaf18686112",
+          "lat": 50.6729687,
+          "lon": 3.1660828,
+          "geocode": "EDHEC Business School, Rue Verte, Croix, Lille, Nord, Hauts-de-France, Metropolitan France, 59170, France"
         },
         {
           "id": "299195d3-4d6d-81d8-a63d-feeb5dc94b8e",
@@ -6463,7 +6616,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81d8a63dfeeb5dc94b8e"
+          "url": "https://www.notion.so/299195d34d6d81d8a63dfeeb5dc94b8e",
+          "lat": 48.1274799,
+          "lon": -1.6903697,
+          "geocode": "Rennes School of Business, 2, Rue Robert d'Arbrissel, Beauregard, Villejean - Beauregard, Quartiers Nord-Ouest, Rennes, Ille-et-Vilaine, Brittany, Metropolitan France, 35000, France"
         },
         {
           "id": "299195d3-4d6d-81fb-9e35-e8011a76c086",
@@ -6586,7 +6742,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81fb9e35e8011a76c086"
+          "url": "https://www.notion.so/299195d34d6d81fb9e35e8011a76c086",
+          "lat": 43.5259126,
+          "lon": 5.4141035,
+          "geocode": "Aix Marseille Université, chemin piéton, Jas de Bouffan, Aix-en-Provence, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, Metropolitan France, 13097, France"
         },
         {
           "id": "299195d3-4d6d-812c-a79b-f80f6a6988c2",
@@ -6719,7 +6878,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d812ca79bf80f6a6988c2"
+          "url": "https://www.notion.so/299195d34d6d812ca79bf80f6a6988c2",
+          "lat": 52.4496832,
+          "lon": -1.9241077,
+          "geocode": "University House Business School, The Ash Path, Selly Park, Metchley, Birmingham, West Midlands, England, B15 2UB, United Kingdom"
         },
         {
           "id": "299195d3-4d6d-81cd-a43f-e302e6bd3943",
@@ -6842,7 +7004,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81cda43fe302e6bd3943"
+          "url": "https://www.notion.so/299195d34d6d81cda43fe302e6bd3943",
+          "lat": 48.8578622,
+          "lon": 2.3326429,
+          "geocode": "Maison de la Recherche - INaLCO, Rue de Lille, Quartier Saint-Thomas-d'Aquin, 7th Arrondissement, Paris, Ile-de-France, Metropolitan France, 75007, France"
         },
         {
           "id": "299195d3-4d6d-81b9-b45b-ec9ba3df8c32",
@@ -6965,7 +7130,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81b9b45bec9ba3df8c32"
+          "url": "https://www.notion.so/299195d34d6d81b9b45bec9ba3df8c32",
+          "lat": 45.8260427,
+          "lon": 1.2585756,
+          "geocode": "Université de Limoges, 33, Rue François Mitterrand, Le Château, Clos Moreau, Limoges, Haute-Vienne, Nouvelle-Aquitaine, Metropolitan France, 87000, France"
         },
         {
           "id": "299195d3-4d6d-81ee-8649-e9c3977ba775",
@@ -7083,7 +7251,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81ee8649e9c3977ba775"
+          "url": "https://www.notion.so/299195d34d6d81ee8649e9c3977ba775",
+          "lat": 48.1250257,
+          "lon": -1.6970328,
+          "geocode": "Epita, 12, Rue Jean-Louis Bertrand, Atalante-Villejean, Villejean, Villejean - Beauregard, Quartiers Nord-Ouest, Rennes, Ille-et-Vilaine, Brittany, Metropolitan France, 35000, France"
         },
         {
           "id": "299195d3-4d6d-812d-b84c-e4a008032c7a",
@@ -7196,7 +7367,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d812db84ce4a008032c7a"
+          "url": "https://www.notion.so/299195d34d6d812db84ce4a008032c7a",
+          "lat": 47.9072112,
+          "lon": 1.8905255,
+          "geocode": "Excelia, Boulevard de Châteaudun, Dunois Madeleine, Orléans, Loiret, Centre-Val de Loire, Metropolitan France, 45000, France"
         },
         {
           "id": "299195d3-4d6d-8117-9474-dfb37b3c59c1",
@@ -7314,7 +7488,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81179474dfb37b3c59c1"
+          "url": "https://www.notion.so/299195d34d6d81179474dfb37b3c59c1",
+          "lat": 40.9272305,
+          "lon": -73.7856909,
+          "geocode": "Iona University, 715;45, North Avenue, Pine Brook, Beechmont, City of New Rochelle, Westchester County, New York, 10801, United States"
         },
         {
           "id": "131195d3-4d6d-81db-83c3-caf2b81b00e5",
@@ -7437,7 +7614,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/131195d34d6d81db83c3caf2b81b00e5"
+          "url": "https://www.notion.so/131195d34d6d81db83c3caf2b81b00e5",
+          "lat": 50.3641999,
+          "lon": 3.5276507,
+          "geocode": "Rue du Fer à Cheval, Faubourg de Paris, Valenciennes, Nord, Hauts-de-France, Metropolitan France, 59300, France"
         },
         {
           "id": "299195d3-4d6d-811b-9c0f-f356b19bb2c1",
@@ -7540,7 +7720,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d811b9c0ff356b19bb2c1"
+          "url": "https://www.notion.so/299195d34d6d811b9c0ff356b19bb2c1",
+          "lat": 48.8514684,
+          "lon": 2.341089,
+          "geocode": "Paris Cité University, 15, Rue de l'École de Médecine, Quartier de la Monnaie, 6th Arrondissement, Paris, Ile-de-France, Metropolitan France, 75006, France"
         },
         {
           "id": "299195d3-4d6d-81fa-9501-e72721fb6602",
@@ -7673,7 +7856,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81fa9501e72721fb6602"
+          "url": "https://www.notion.so/299195d34d6d81fa9501e72721fb6602",
+          "lat": 48.8473977,
+          "lon": 2.3455085,
+          "geocode": "Université Paris 1 Panthéon-Sorbonne, 2, Rue Cujas, Quartier de la Sorbonne, 5th Arrondissement, Paris, Ile-de-France, Metropolitan France, 75005, France"
         },
         {
           "id": "29d195d3-4d6d-80c9-8396-e9a755f13c98",
@@ -7766,7 +7952,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/29d195d34d6d80c98396e9a755f13c98"
+          "url": "https://www.notion.so/29d195d34d6d80c98396e9a755f13c98",
+          "lat": 48.8701102,
+          "lon": 2.2734842,
+          "geocode": "Université Paris-Dauphine, 1, Place du Maréchal de Lattre de Tassigny, Quartier de la Porte-Dauphine, 16th Arrondissement, Paris, Ile-de-France, Metropolitan France, 75116, France"
         },
         {
           "id": "2b9195d3-4d6d-80e1-b5de-c0feddab341a",
@@ -7864,7 +8053,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2b9195d34d6d80e1b5dec0feddab341a"
+          "url": "https://www.notion.so/2b9195d34d6d80e1b5dec0feddab341a",
+          "lat": 44.7964286,
+          "lon": -0.6008878,
+          "geocode": "Kedge Business School, Avenue Pey-Berland, Thouars, Talence, Bordeaux, Gironde, Nouvelle-Aquitaine, Metropolitan France, 33400, France"
         },
         {
           "id": "2d5195d3-4d6d-8017-9631-ffac6a4929c8",
@@ -7962,7 +8154,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2d5195d34d6d80179631ffac6a4929c8"
+          "url": "https://www.notion.so/2d5195d34d6d80179631ffac6a4929c8",
+          "lat": 48.845373,
+          "lon": 2.3466344,
+          "geocode": "1, Place du Panthéon, Quartier de la Sorbonne, 5th Arrondissement, Paris, Ile-de-France, Metropolitan France, 75005, France"
         },
         {
           "id": "299195d3-4d6d-8152-9757-d9644d126f48",
@@ -8080,7 +8275,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81529757d9644d126f48"
+          "url": "https://www.notion.so/299195d34d6d81529757d9644d126f48",
+          "lat": 52.2868026,
+          "lon": 8.0182286,
+          "geocode": "Hochschule Osnabrück, Heinrich-Böll-Straße, Musikantenviertel, Westerberg, Osnabrück, Lower Saxony, 49076, Germany"
         },
         {
           "id": "3146fa13-6808-4247-a0af-e4821f9b59b3",
@@ -8198,7 +8396,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/3146fa1368084247a0afe4821f9b59b3"
+          "url": "https://www.notion.so/3146fa1368084247a0afe4821f9b59b3",
+          "lat": 53.1079646,
+          "lon": 8.8556646,
+          "geocode": "University of Bremen, 1, Bibliothekstraße, Lehe, Horn-Lehe, Bremen-Ost, Bremen, 28359, Germany"
         },
         {
           "id": "299195d3-4d6d-81ff-94ab-e8a7b9cab895",
@@ -8301,7 +8502,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81ff94abe8a7b9cab895"
+          "url": "https://www.notion.so/299195d34d6d81ff94abe8a7b9cab895",
+          "lat": 48.5340595,
+          "lon": 9.0712444,
+          "geocode": "Climate Garden of University Tuebingen, Sand, Lustnau, Tübingen, Landkreis Tübingen, Baden-Württemberg, 72076, Germany"
         },
         {
           "id": "299195d3-4d6d-819c-b767-fb5b6e8f072f",
@@ -8409,7 +8613,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d819cb767fb5b6e8f072f"
+          "url": "https://www.notion.so/299195d34d6d819cb767fb5b6e8f072f",
+          "lat": 52.2731713,
+          "lon": 8.0457212,
+          "geocode": "Library of the University of Osnabrueck, Kamp, Heger-Tor-Viertel, Altstadt, Innenstadt, Osnabrück, Lower Saxony, 49074, Germany"
         },
         {
           "id": "299195d3-4d6d-814a-ab1d-d726e9adf3db",
@@ -8512,7 +8719,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d814aab1dd726e9adf3db"
+          "url": "https://www.notion.so/299195d34d6d814aab1dd726e9adf3db",
+          "lat": 53.5909051,
+          "lon": 9.9753758,
+          "geocode": "University of Hamburg, Rothenburgsort, Hamburg-Mitte, Hamburg, 20539, Germany"
         },
         {
           "id": "299195d3-4d6d-8179-b4c5-cc044281ec0b",
@@ -8635,7 +8845,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8179b4c5cc044281ec0b"
+          "url": "https://www.notion.so/299195d34d6d8179b4c5cc044281ec0b",
+          "lat": 49.0066424,
+          "lon": 8.3940515,
+          "geocode": "Karlshochschule International University, 36-38, Karlstraße, Innenstadt-West Westlicher Teil, Innenstadt-West, Karlsruhe, Baden-Württemberg, 76133, Germany"
         },
         {
           "id": "299195d3-4d6d-8100-b05a-c222af76c635",
@@ -8743,7 +8956,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8100b05ac222af76c635"
+          "url": "https://www.notion.so/299195d34d6d8100b05ac222af76c635",
+          "lat": 52.4528565,
+          "lon": 13.2907249,
+          "geocode": "Freie Universität Berlin, Fabeckstraße, Dahlem, Steglitz-Zehlendorf, Berlin, 14195, Germany"
         },
         {
           "id": "2b8195d3-4d6d-8012-8d35-eb9ce55fc487",
@@ -8871,7 +9087,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2b8195d34d6d80128d35eb9ce55fc487"
+          "url": "https://www.notion.so/2b8195d34d6d80128d35eb9ce55fc487",
+          "lat": 53.1079646,
+          "lon": 8.8556646,
+          "geocode": "University of Bremen, 1, Bibliothekstraße, Lehe, Horn-Lehe, Bremen-Ost, Bremen, 28359, Germany"
         },
         {
           "id": "2bf195d3-4d6d-80aa-8744-da9778d56535",
@@ -8989,7 +9208,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2bf195d34d6d80aa8744da9778d56535"
+          "url": "https://www.notion.so/2bf195d34d6d80aa8744da9778d56535",
+          "lat": 50.7791732,
+          "lon": 6.0689207,
+          "geocode": "RWTH Aachen University, Matthiashofstraße, Burtscheid, Aachen-Mitte, Aachen, Aachen (district), North Rhine-Westphalia, 52064, Germany"
         },
         {
           "id": "2c3195d3-4d6d-8053-8ac2-e8cf328e29c4",
@@ -9087,7 +9309,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2c3195d34d6d80538ac2e8cf328e29c4"
+          "url": "https://www.notion.so/2c3195d34d6d80538ac2e8cf328e29c4",
+          "lat": 48.1107057,
+          "lon": 11.4693622,
+          "geocode": "LMU Klinikum – Campus Großhadern, 15, Marchioninistraße, Großhadern, Hadern, Munich, Bavaria, 81377, Germany"
         },
         {
           "id": "299195d3-4d6d-81c4-ab06-f81010cf5ca1",
@@ -9210,7 +9435,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81c4ab06f81010cf5ca1"
+          "url": "https://www.notion.so/299195d34d6d81c4ab06f81010cf5ca1",
+          "lat": 22.3044867,
+          "lon": 114.1796935,
+          "geocode": "The Hong Kong Polytechnic University, 11, Yuk Choi Road, Gun Club Hill, East Tsim Sha Tsui, Yau Tsim Mong District, Kowloon, Hong Kong, China"
         },
         {
           "id": "299195d3-4d6d-816f-879c-c84b064189de",
@@ -9358,7 +9586,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d816f879cc84b064189de"
+          "url": "https://www.notion.so/299195d34d6d816f879cc84b064189de",
+          "lat": 22.337988,
+          "lon": 114.1826259,
+          "geocode": "Hong Kong Baptist University, Sha Tin District, New Territories, Hong Kong, China"
         },
         {
           "id": "2b9195d3-4d6d-8027-a8ea-d3abf06bf946",
@@ -9501,7 +9732,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2b9195d34d6d8027a8ead3abf06bf946"
+          "url": "https://www.notion.so/2b9195d34d6d8027a8ead3abf06bf946",
+          "lat": 22.4123588,
+          "lon": 113.9812776,
+          "geocode": "Lingnan University, 8, Castle Peak Road – Lingnan, Fu Tei, Chung Wong Toi, Tuen Mun District, New Territories, Hong Kong, China"
         },
         {
           "id": "299195d3-4d6d-8151-90ba-d8459c1bb27a",
@@ -9619,7 +9853,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d815190bad8459c1bb27a"
+          "url": "https://www.notion.so/299195d34d6d815190bad8459c1bb27a",
+          "lat": -6.2288537,
+          "lon": 106.7967702,
+          "geocode": "Binus University, Jalan Terusan Hang Lekir I, RW 02, Gelora, Tanah Abang, Central Jakarta, Special Capital Region of Jakarta, 10270, Indonesia"
         },
         {
           "id": "299195d3-4d6d-8138-883c-d09e48dfaa3b",
@@ -9747,7 +9984,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8138883cd09e48dfaa3b"
+          "url": "https://www.notion.so/299195d34d6d8138883cd09e48dfaa3b",
+          "lat": -6.3603157,
+          "lon": 106.8271856,
+          "geocode": "University of Indonesia, Jalan Prof. Dr. Sudjono D. Pusponegoro, Kukusan, Beji, Depok, West Java, 16424, Indonesia"
         },
         {
           "id": "2b6195d3-4d6d-80a0-8f04-e9f402935288",
@@ -9845,7 +10085,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2b6195d34d6d80a08f04e9f402935288"
+          "url": "https://www.notion.so/2b6195d34d6d80a08f04e9f402935288",
+          "lat": 53.3821766,
+          "lon": -6.5987338,
+          "geocode": "Maynooth University, Kilcock Road, Maynooth ED, The Municipal District of Clane — Maynooth, County Kildare, Leinster, Ireland"
         },
         {
           "id": "299195d3-4d6d-8167-a5e7-de3c12a426d0",
@@ -9968,7 +10211,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8167a5e7de3c12a426d0"
+          "url": "https://www.notion.so/299195d34d6d8167a5e7de3c12a426d0",
+          "lat": 36.7663159,
+          "lon": 21.7069357,
+          "geocode": "Sapientza, Methoni, Methoni Municipal Unit, Municipality of Pylos and Nestor, Messenia Regional Unit, Peloponnese Region, Peloponnese, Western Greece and the Ionian, 240 06, Greece"
         },
         {
           "id": "299195d3-4d6d-8130-bde7-c9c0640f5558",
@@ -10106,7 +10352,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8130bde7c9c0640f5558"
+          "url": "https://www.notion.so/299195d34d6d8130bde7c9c0640f5558",
+          "lat": 45.4345657,
+          "lon": 12.3265552,
+          "geocode": "Ca' Foscari, Calle Giustinian, Dorsoduro, Venezia-Murano-Burano, Lido, Venice, Venezia, Veneto, 30123, Italy"
         },
         {
           "id": "299195d3-4d6d-816b-a444-e760af402300",
@@ -10259,7 +10508,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d816ba444e760af402300"
+          "url": "https://www.notion.so/299195d34d6d816ba444e760af402300",
+          "lat": 35.8396929,
+          "lon": 139.7948767,
+          "geocode": "Dokkyo University, グランド通り, 松原三丁目, 学園町, Soka, Saitama Prefecture, 340-0046, Japan"
         },
         {
           "id": "3f6b5b44-e511-4d07-b60f-8cd64754c115",
@@ -10402,7 +10654,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/3f6b5b44e5114d07b60f8cd64754c115"
+          "url": "https://www.notion.so/3f6b5b44e5114d07b60f8cd64754c115",
+          "lat": 35.8396929,
+          "lon": 139.7948767,
+          "geocode": "Dokkyo University, グランド通り, 松原三丁目, 学園町, Soka, Saitama Prefecture, 340-0046, Japan"
         },
         {
           "id": "299195d3-4d6d-8109-9120-c1e4295ef89f",
@@ -10545,7 +10800,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81099120c1e4295ef89f"
+          "url": "https://www.notion.so/299195d34d6d81099120c1e4295ef89f",
+          "lat": 35.6567104,
+          "lon": 140.0428837,
+          "geocode": "Kanda University of International Studies, Business-dori Ave., Nakase 1-chome, Mihama Ward, Chiba, Chiba Prefecture, 261-0023, Japan"
         },
         {
           "id": "299195d3-4d6d-81e5-95b9-ef060d8eef62",
@@ -10673,7 +10931,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81e595b9ef060d8eef62"
+          "url": "https://www.notion.so/299195d34d6d81e595b9ef060d8eef62",
+          "lat": 34.7727832,
+          "lon": 135.5104521,
+          "geocode": "Kansai University Senriyama Campus, Meishin Expressway, Senriyama-higashi 1-chome, Suita, Osaka Prefecture, 565-0842, Japan"
         },
         {
           "id": "299195d3-4d6d-81f6-af75-dbf33fbdbb5c",
@@ -10811,7 +11072,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81f6af75dbf33fbdbb5c"
+          "url": "https://www.notion.so/299195d34d6d81f6af75dbf33fbdbb5c",
+          "lat": 35.0733427,
+          "lon": 135.7563402,
+          "geocode": "Kyoto Sangyo University, Kyoto Keihoku Line, Kamigamo-Aoinomoricho, Kita Ward, Kyoto, Kyoto Prefecture, 603-8035, Japan"
         },
         {
           "id": "299195d3-4d6d-81fb-9165-dddc873dac83",
@@ -10969,7 +11233,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81fb9165dddc873dac83"
+          "url": "https://www.notion.so/299195d34d6d81fb9165dddc873dac83",
+          "lat": 35.6403751,
+          "lon": 139.4045306,
+          "geocode": "Chuo University, Chudai Tunnel, Higashinakano, Hachioji, Tokyo, 191-8506, Japan"
         },
         {
           "id": "299195d3-4d6d-81d6-910e-d5cb6e041df2",
@@ -11107,7 +11374,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81d6910ed5cb6e041df2"
+          "url": "https://www.notion.so/299195d34d6d81d6910ed5cb6e041df2",
+          "lat": 35.8000386,
+          "lon": -78.6562053,
+          "geocode": "J. M. Provost Property, Oberlin, Raleigh, Wake County, North Carolina, United States"
         },
         {
           "id": "299195d3-4d6d-81fb-8c79-efb40685f389",
@@ -11245,7 +11515,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81fb8c79efb40685f389"
+          "url": "https://www.notion.so/299195d34d6d81fb8c79efb40685f389",
+          "lat": 33.3359195,
+          "lon": 131.4688206,
+          "geocode": "立命館アジア太平洋大学, 1, Beppu, Oita Prefecture, 874-8577, Japan"
         },
         {
           "id": "299195d3-4d6d-8110-b77b-fd2e6d35f33c",
@@ -11393,7 +11666,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8110b77bfd2e6d35f33c"
+          "url": "https://www.notion.so/299195d34d6d8110b77bfd2e6d35f33c",
+          "lat": 34.6517298,
+          "lon": 135.5913154,
+          "geocode": "Kindai university, 近大前商店街, Kowakae 4-chome, Higashiōsaka, Osaka Prefecture, 577-0818, Japan"
         },
         {
           "id": "299195d3-4d6d-8161-90f5-dd51007b2629",
@@ -11541,7 +11817,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d816190f5dd51007b2629"
+          "url": "https://www.notion.so/299195d34d6d816190f5dd51007b2629",
+          "lat": 34.7291419,
+          "lon": 135.2683786,
+          "geocode": "Konan University, 1, Okamoto 8-chome, Higashinada Ward, Kobe, Hyogo Prefecture, 658-8501, Japan"
         },
         {
           "id": "299195d3-4d6d-8176-98f9-d6b614f57353",
@@ -11679,7 +11958,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d817698f9d6b614f57353"
+          "url": "https://www.notion.so/299195d34d6d817698f9d6b614f57353",
+          "lat": 35.6741728,
+          "lon": 139.5204339,
+          "geocode": "Tokyo University of Foreign Studies, 1, Asahicho 3-chome, Fuchu, Tokyo, 183-8534, Japan"
         },
         {
           "id": "299195d3-4d6d-81b0-a3a9-cf6c496a5af9",
@@ -11827,7 +12109,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81b0a3a9cf6c496a5af9"
+          "url": "https://www.notion.so/299195d34d6d81b0a3a9cf6c496a5af9",
+          "lat": 35.6975029,
+          "lon": 139.7613917,
+          "geocode": "Meiji University, Tochinoki-dori, Kanda-Surugadai 1, Kanda-Surugadai, Chiyoda, Tokyo, 101-0062, Japan"
         },
         {
           "id": "299195d3-4d6d-81bc-ba93-e76a891a255a",
@@ -11970,7 +12255,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81bcba93e76a891a255a"
+          "url": "https://www.notion.so/299195d34d6d81bcba93e76a891a255a",
+          "lat": 35.034404,
+          "lon": 135.726647,
+          "geocode": "Ritsumeikan University, Kitsuji street, Hirano-Kamiyanagicho, 馬喰町, Kita Ward, Kyoto, Kyoto Prefecture, 603-8577, Japan"
         },
         {
           "id": "299195d3-4d6d-8118-9c20-fae79d14f662",
@@ -12108,7 +12396,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81189c20fae79d14f662"
+          "url": "https://www.notion.so/299195d34d6d81189c20fae79d14f662",
+          "lat": 35.6969313,
+          "lon": 139.7539119,
+          "geocode": "Senshu University, Sendai-dori, Kanda-Jimbocho 2, Kanda-Jimbocho, Chiyoda, Tokyo, 101-0051, Japan"
         },
         {
           "id": "299195d3-4d6d-811c-942e-f05342b0e08b",
@@ -12236,7 +12527,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d811c942ef05342b0e08b"
+          "url": "https://www.notion.so/299195d34d6d811c942ef05342b0e08b",
+          "lat": 42.7023794,
+          "lon": -84.4803869,
+          "geocode": "Michigan State University, 426, Auditorium Road, North Neighborhood, East Lansing, Ingham County, Michigan, 48824, United States"
         },
         {
           "id": "299195d3-4d6d-8141-b46f-f42459808b27",
@@ -12374,7 +12668,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8141b46ff42459808b27"
+          "url": "https://www.notion.so/299195d34d6d8141b46ff42459808b27",
+          "lat": 35.6971554,
+          "lon": 139.7625818,
+          "geocode": "Nihon University, Ochanomizu Naka-dori, Kanda-Surugadai 3, Kanda-Surugadai, Chiyoda, Tokyo, 101-0062, Japan"
         },
         {
           "id": "299195d3-4d6d-8124-ab9c-e518c87bb61b",
@@ -12472,7 +12769,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8124ab9ce518c87bb61b"
+          "url": "https://www.notion.so/299195d34d6d8124ab9ce518c87bb61b",
+          "lat": 52.3282251,
+          "lon": 4.8032706,
+          "geocode": "The International, Koekoekslaan, Badhoevedorp, Haarlemmermeer, North Holland, Netherlands, 1171 PE, Netherlands"
         },
         {
           "id": "48af4eb9-a6f0-4f7f-90df-46ba45c6a85e",
@@ -12615,7 +12915,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/48af4eb9a6f04f7f90df46ba45c6a85e"
+          "url": "https://www.notion.so/48af4eb9a6f04f7f90df46ba45c6a85e",
+          "lat": 33.5484434,
+          "lon": 130.3645137,
+          "geocode": "Fukuoka University, 県道49号大野城二丈線, Umebayashi 1-chome, Umebayashi, Jonan Ward, Fukuoka, Fukuoka Prefecture, 814-0142, Japan"
         },
         {
           "id": "299195d3-4d6d-81d0-a7a2-e66cd07576f3",
@@ -12723,7 +13026,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81d0a7a2e66cd07576f3"
+          "url": "https://www.notion.so/299195d34d6d81d0a7a2e66cd07576f3",
+          "lat": 35.7178122,
+          "lon": 139.6804514,
+          "geocode": "Mejiro University Shinjuku Campus, 1, Naka-Ochiai 4, Naka-Ochiai, Shinjuku, Tokyo, 161-8539, Japan"
         },
         {
           "id": "299195d3-4d6d-8104-8c5f-d17f4270c04b",
@@ -12846,7 +13152,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81048c5fd17f4270c04b"
+          "url": "https://www.notion.so/299195d34d6d81048c5fd17f4270c04b",
+          "lat": 35.7091798,
+          "lon": 139.7197213,
+          "geocode": "Waseda University Waseda Campus, 1, Nishi-Waseda 1, Nishi-Waseda, Shinjuku, Tokyo, 169-8050, Japan"
         },
         {
           "id": "157195d3-4d6d-805b-b854-d2f6031c8fde",
@@ -12954,7 +13263,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/157195d34d6d805bb854d2f6031c8fde"
+          "url": "https://www.notion.so/157195d34d6d805bb854d2f6031c8fde",
+          "lat": 38.2541921,
+          "lon": 140.8407024,
+          "geocode": "Tohoku University Aobayama East Campus, 6, Aoba Ward, Sendai, Miyagi Prefecture, 980-8579, Japan"
         },
         {
           "id": "299195d3-4d6d-812a-a24c-f56aea12ab52",
@@ -13087,7 +13399,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d812aa24cf56aea12ab52"
+          "url": "https://www.notion.so/299195d34d6d812aa24cf56aea12ab52",
+          "lat": 35.6563628,
+          "lon": 138.6016277,
+          "geocode": "山梨学院大学, Joto bypass, Sakaori 1-chome, Satoyoshicho, Kōfu, Yamanashi Prefecture, 400-0806, Japan"
         },
         {
           "id": "2b9195d3-4d6d-804e-9669-f49b85234f86",
@@ -13175,7 +13490,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2b9195d34d6d804e9669f49b85234f86"
+          "url": "https://www.notion.so/2b9195d34d6d804e9669f49b85234f86",
+          "lat": 32.7861999,
+          "lon": 129.865345,
+          "geocode": "Nagasaki University, Nagasaki, Nagasaki Prefecture, 852-8521, Japan"
         },
         {
           "id": "299195d3-4d6d-819a-b86d-d36c80296687",
@@ -13308,7 +13626,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d819ab86dd36c80296687"
+          "url": "https://www.notion.so/299195d34d6d819ab86dd36c80296687",
+          "lat": 43.2416004,
+          "lon": 76.9552551,
+          "geocode": "KIMEP University, Shokan Valikhanov Street, Медеу ауданы, Almaty, 050050, Kazakhstan"
         },
         {
           "id": "299195d3-4d6d-8183-ba38-eaffae68de2f",
@@ -13451,7 +13772,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8183ba38eaffae68de2f"
+          "url": "https://www.notion.so/299195d34d6d8183ba38eaffae68de2f",
+          "lat": 54.6828203,
+          "lon": 25.2878334,
+          "geocode": "Vilnius University, Simonas Daukantas Square, Old Town, Senamiesčio seniūnija, Vilnius, Vilnius city municipality, Vilnius County, 01122, Lithuania"
         },
         {
           "id": "299195d3-4d6d-8154-a918-f78ec29540ef",
@@ -13599,7 +13923,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8154a918f78ec29540ef"
+          "url": "https://www.notion.so/299195d34d6d8154a918f78ec29540ef",
+          "lat": 55.7310323,
+          "lon": 21.1336188,
+          "geocode": "LCC International university, 36, Kretingos g., Miškas, Luizė, Klaipėda, Klaipėda City Municipality, Klaipėda County, 92307, Lithuania"
         },
         {
           "id": "c17d8bc7-17ed-4bbc-9e0e-acebeb6a680e",
@@ -13732,7 +14059,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/c17d8bc717ed4bbc9e0eacebeb6a680e"
+          "url": "https://www.notion.so/c17d8bc717ed4bbc9e0eacebeb6a680e",
+          "lat": 55.7310323,
+          "lon": 21.1336188,
+          "geocode": "LCC International university, 36, Kretingos g., Miškas, Luizė, Klaipėda, Klaipėda City Municipality, Klaipėda County, 92307, Lithuania"
         },
         {
           "id": "299195d3-4d6d-8137-a01e-c76e1b8a417b",
@@ -13850,7 +14180,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8137a01ec76e1b8a417b"
+          "url": "https://www.notion.so/299195d34d6d8137a01ec76e1b8a417b",
+          "lat": 54.8697097,
+          "lon": 23.9082135,
+          "geocode": "Botanical Garden of Vytautas Magnus University, Aleksoto seniūnija, Kaunas, Kauno miesto savivaldybė, Kaunas County, Lithuania"
         },
         {
           "id": "299195d3-4d6d-814e-8204-fee1b69a21ce",
@@ -13958,7 +14291,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d814e8204fee1b69a21ce"
+          "url": "https://www.notion.so/299195d34d6d814e8204fee1b69a21ce",
+          "lat": 54.6757469,
+          "lon": 25.2870142,
+          "geocode": "ISM University of Management and Economics, 18, Arklių g., Old Town, Senamiesčio seniūnija, Vilnius, Vilnius city municipality, Vilnius County, 01305, Lithuania"
         },
         {
           "id": "2bf195d3-4d6d-80d3-a80e-ed6629c8c326",
@@ -14056,7 +14392,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2bf195d34d6d80d3a80eed6629c8c326"
+          "url": "https://www.notion.so/2bf195d34d6d80d3a80eed6629c8c326",
+          "lat": 22.1526454,
+          "lon": 113.568041,
+          "geocode": "Macau University of Science and Technology, 路氹連貫公路圓形地下層行車道 Via de Circulação Desnivelada na Rotunda do Istmo Coloane-Taipa, Taipa Old Village, 松樹尾 Chun Su Mei, 嘉模堂區 Nossa Senhora do Carmo, Taipa, Macau, 999078, China"
         },
         {
           "id": "299195d3-4d6d-8175-ae2b-e27859b9405e",
@@ -14204,7 +14543,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8175ae2be27859b9405e"
+          "url": "https://www.notion.so/299195d34d6d8175ae2be27859b9405e",
+          "lat": 22.1283648,
+          "lon": 113.5437784,
+          "geocode": "University of Macau, 环岛东路, 荷塘社区, Hengqin, Guangdong-Macao In-Depth Cooperation Zone in Hengqin, Xiangzhou, Zhuhai, Guangdong, 519000, China"
         },
         {
           "id": "299195d3-4d6d-813e-97a3-fb6fc0103e67",
@@ -14342,7 +14684,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d813e97a3fb6fc0103e67"
+          "url": "https://www.notion.so/299195d34d6d813e97a3fb6fc0103e67",
+          "lat": 32.0565957,
+          "lon": 118.7740883,
+          "geocode": "Nanjing University (Gulou Campus), Shanghai Road, Hunanlu, Gulou District, Nanjing City, Jiangsu, 210093, China"
         },
         {
           "id": "162e74f5-176a-4c38-9c81-9c79b761f8d2",
@@ -14460,7 +14805,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/162e74f5176a4c389c819c79b761f8d2"
+          "url": "https://www.notion.so/162e74f5176a4c389c819c79b761f8d2",
+          "lat": 31.206218,
+          "lon": 121.4105479,
+          "geocode": "Donghua University, West Yan'an Road, Tianshanlu, Fahua, Changning District, Shanghai, 200051, China"
         },
         {
           "id": "299195d3-4d6d-81a9-9e94-f6146297281c",
@@ -14583,7 +14931,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81a99e94f6146297281c"
+          "url": "https://www.notion.so/299195d34d6d81a99e94f6146297281c",
+          "lat": 43.8538108,
+          "lon": 125.3281858,
+          "geocode": "Jilin University (Nanling Campus), 5988, Renmin Avenue, Nanling Subdistrict, Nanguan District, Changchun City, Nanguan, Jilin, 130025, China"
         },
         {
           "id": "e559c0be-4914-4ee6-8a4f-87494944cf60",
@@ -14711,7 +15062,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/e559c0be49144ee68a4f87494944cf60"
+          "url": "https://www.notion.so/e559c0be49144ee68a4f87494944cf60",
+          "lat": 40.002875,
+          "lon": 116.3354804,
+          "geocode": "Beijing Forestry University, Qinghua East Road, Xueyuanlu Subdistrict, Haidian District, Beijing, 100083, China"
         },
         {
           "id": "299195d3-4d6d-81df-b54e-f9db6f5faf2b",
@@ -14834,7 +15188,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81dfb54ef9db6f5faf2b"
+          "url": "https://www.notion.so/299195d34d6d81dfb54ef9db6f5faf2b",
+          "lat": 34.8194726,
+          "lon": 113.8143648,
+          "geocode": "Henan University (Zhengzhou Campus), West Liujiang Street, Longzihu Subdistrict, Jinshui District, Zhengzhou, Henan, 450046, China"
         },
         {
           "id": "75fdf6a4-b618-48a8-b083-61b81f1e6bc2",
@@ -14932,7 +15289,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/75fdf6a4b61848a8b08361b81f1e6bc2"
+          "url": "https://www.notion.so/75fdf6a4b61848a8b08361b81f1e6bc2",
+          "lat": 34.8194726,
+          "lon": 113.8143648,
+          "geocode": "Henan University (Zhengzhou Campus), West Liujiang Street, Longzihu Subdistrict, Jinshui District, Zhengzhou, Henan, 450046, China"
         },
         {
           "id": "299195d3-4d6d-81a6-b92f-f61f23643f5c",
@@ -15050,7 +15410,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81a6b92ff61f23643f5c"
+          "url": "https://www.notion.so/299195d34d6d81a6b92ff61f23643f5c",
+          "lat": 23.160342,
+          "lon": 113.3372426,
+          "geocode": "South China University of Technology (Wushan Campus), Wushan Road, 华南理工大学南新村, Zhusigang, Wushan, Tianhe District, Guangzhou City, Guangdong, 510630, China"
         },
         {
           "id": "c2a23d20-44ef-471d-bfb7-33fa92e35a1d",
@@ -15198,7 +15561,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/c2a23d2044ef471dbfb733fa92e35a1d"
+          "url": "https://www.notion.so/c2a23d2044ef471dbfb733fa92e35a1d",
+          "lat": 36.3688546,
+          "lon": 120.6737612,
+          "geocode": "Shandong University, 蓝谷路, 山大路社区, Aoshanwei, Jimo, Qingdao, Shandong, 266200, China"
         },
         {
           "id": "14f5cf29-fd19-46d2-beef-a7b379315b75",
@@ -15326,7 +15692,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/14f5cf29fd1946d2beefa7b379315b75"
+          "url": "https://www.notion.so/14f5cf29fd1946d2beefa7b379315b75",
+          "lat": 29.5699522,
+          "lon": 106.4596103,
+          "geocode": "Chongqing University, 沙坪坝北街, Shapingba, Shapingba District, Jiulongpo, Chongqing, 400030, China"
         },
         {
           "id": "299195d3-4d6d-81f5-9093-c28df6f272c5",
@@ -15434,7 +15803,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81f59093c28df6f272c5"
+          "url": "https://www.notion.so/299195d34d6d81f59093c28df6f272c5",
+          "lat": 34.2526178,
+          "lon": 108.9823819,
+          "geocode": "Jiaotong University·Xingqing Palace, West Xianning Road, Dongguannanjie, Beilin District, Xi'an, Shaanxi, 710049, China"
         },
         {
           "id": "299195d3-4d6d-816b-849b-c6ae2325f904",
@@ -15537,7 +15909,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d816b849bc6ae2325f904"
+          "url": "https://www.notion.so/299195d34d6d816b849bc6ae2325f904",
+          "lat": 31.2847393,
+          "lon": 121.4969491,
+          "geocode": "Tongji University, 1239, Siping Road, Anshan, Sipinglu, Yangpu District, Shanghai, 200092, China"
         },
         {
           "id": "6c7c8c38-776b-45b1-9b92-719e3c9f7752",
@@ -15630,7 +16005,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/6c7c8c38776b45b19b92719e3c9f7752"
+          "url": "https://www.notion.so/6c7c8c38776b45b19b92719e3c9f7752",
+          "lat": 30.5373773,
+          "lon": 114.361535,
+          "geocode": "Wuhan University, 299, 八一路, Luojiashan Subdistrict, Wuchang District, Wuhan, Hubei, 430072, China"
         },
         {
           "id": "299195d3-4d6d-81ae-9858-d550c295110e",
@@ -15738,7 +16116,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81ae9858d550c295110e"
+          "url": "https://www.notion.so/299195d34d6d81ae9858d550c295110e",
+          "lat": 30.5373773,
+          "lon": 114.361535,
+          "geocode": "Wuhan University, 299, 八一路, Luojiashan Subdistrict, Wuchang District, Wuhan, Hubei, 430072, China"
         },
         {
           "id": "299195d3-4d6d-81ee-99a3-e3fe8f106940",
@@ -15836,7 +16217,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81ee99a3e3fe8f106940"
+          "url": "https://www.notion.so/299195d34d6d81ee99a3e3fe8f106940",
+          "lat": 5.3574323,
+          "lon": 100.3035504,
+          "geocode": "University of Science, Malaysia, Jalan Universiti, Gelugor, North-East, George Town, Penang, 11700, Malaysia"
         },
         {
           "id": "299195d3-4d6d-81cc-b227-e74ea72a2cde",
@@ -15949,7 +16333,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81ccb227e74ea72a2cde"
+          "url": "https://www.notion.so/299195d34d6d81ccb227e74ea72a2cde",
+          "lat": 3.1126872,
+          "lon": 101.6541474,
+          "geocode": "University of Malaya Medical Centre, Jalan Profesor Diraja Ungku Aziz, Pantai Dalam, Kuala Lumpur, 50603, Malaysia"
         },
         {
           "id": "2be195d3-4d6d-8018-a51a-e714087f1dfb",
@@ -16042,7 +16429,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2be195d34d6d8018a51ae714087f1dfb"
+          "url": "https://www.notion.so/2be195d34d6d8018a51ae714087f1dfb",
+          "lat": 2.9240809,
+          "lon": 101.7812216,
+          "geocode": "National University of Malaysia, Jalan 3/23, Seksyen 3, Bandar Baru Bangi, Kajang Municipal Council, Hulu Langat, Selangor, 43600, Malaysia"
         },
         {
           "id": "2cb195d3-4d6d-8088-a9d8-d4b30ed14cd2",
@@ -16140,7 +16530,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2cb195d34d6d8088a9d8d4b30ed14cd2"
+          "url": "https://www.notion.so/2cb195d34d6d8088a9d8d4b30ed14cd2",
+          "lat": 3.0632813,
+          "lon": 101.6170616,
+          "geocode": "Taylor's University Lakeside Campus, Jalan Taylors, PJS 7, Sunway City, Puchong, Subang Jaya City Council, Petaling, Selangor, 46150, Malaysia"
         },
         {
           "id": "299195d3-4d6d-81e6-8e42-c5a1620c2c21",
@@ -16243,7 +16636,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81e68e42c5a1620c2c21"
+          "url": "https://www.notion.so/299195d34d6d81e68e42c5a1620c2c21",
+          "lat": 20.6954234,
+          "lon": -103.4191743,
+          "geocode": "Universidad Autonoma de Guadalajara, Calle Paseo de los Virreyes, San Wenceslao, Zapopan, Región Centro, Jalisco, 44100, Mexico"
         },
         {
           "id": "299195d3-4d6d-8134-a7f3-fb8cb370d3b4",
@@ -16386,7 +16782,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8134a7f3fb8cb370d3b4"
+          "url": "https://www.notion.so/299195d34d6d8134a7f3fb8cb370d3b4",
+          "lat": 20.6770061,
+          "lon": -105.2233601,
+          "geocode": "Tecnologico de Monterrey, Puerto Vallarta, Región Costa Norte, Jalisco, 48300, Mexico"
         },
         {
           "id": "299195d3-4d6d-8105-94bd-fd9cde4ccb9b",
@@ -16499,7 +16898,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d810594bdfd9cde4ccb9b"
+          "url": "https://www.notion.so/299195d34d6d810594bdfd9cde4ccb9b",
+          "lat": 32.2186496,
+          "lon": -7.9363261,
+          "geocode": "Mohammed VI Polytechnic University, Lot 660, RP2109, ابن جرير, Ben Guerir, Pachalik de Benguerir باشوية ابن جرير, Rhamna Province, Marrakech-Safi, 43150, Morocco"
         },
         {
           "id": "299195d3-4d6d-8126-a52e-df6dd2add818",
@@ -16597,7 +16999,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8126a52edf6dd2add818"
+          "url": "https://www.notion.so/299195d34d6d8126a52edf6dd2add818",
+          "lat": 51.9176312,
+          "lon": 4.5259623,
+          "geocode": "Erasmus Universiteit Rotterdam, 50, Burgemeester Oudlaan, Kralingen-Oost, De Esch, Kralingen, Rotterdam, South Holland, Netherlands, 3062 PA, Netherlands"
         },
         {
           "id": "2d8195d3-4d6d-8058-bce1-e6d4680b3b82",
@@ -16695,7 +17100,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2d8195d34d6d8058bce1e6d4680b3b82"
+          "url": "https://www.notion.so/2d8195d34d6d8058bce1e6d4680b3b82",
+          "lat": 51.9176312,
+          "lon": 4.5259623,
+          "geocode": "Erasmus Universiteit Rotterdam, 50, Burgemeester Oudlaan, Kralingen-Oost, De Esch, Kralingen, Rotterdam, South Holland, Netherlands, 3062 PA, Netherlands"
         },
         {
           "id": "299195d3-4d6d-8102-bbf1-f87b5b159b7f",
@@ -16793,7 +17201,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8102bbf1f87b5b159b7f"
+          "url": "https://www.notion.so/299195d34d6d8102bbf1f87b5b159b7f",
+          "lat": 52.160782,
+          "lon": 5.0058838,
+          "geocode": "Nyenrode Business Universiteit, Nieuw Nijenrode, Broeckland, Breukelen, Stichtse Vecht, Utrecht, Netherlands, 3621 MA, Netherlands"
         },
         {
           "id": "299195d3-4d6d-8156-a8dd-f93f55c1dc28",
@@ -16896,7 +17307,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8156a8ddf93f55c1dc28"
+          "url": "https://www.notion.so/299195d34d6d8156a8ddf93f55c1dc28",
+          "lat": 52.2433268,
+          "lon": 6.8509157,
+          "geocode": "University of Twente, Oude Horstlindeweg, Enschede, Overijssel, Netherlands, 7522 NP, Netherlands"
         },
         {
           "id": "299195d3-4d6d-8181-9f7d-fd55e853ac7b",
@@ -17044,7 +17458,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81819f7dfd55e853ac7b"
+          "url": "https://www.notion.so/299195d34d6d81819f7dfd55e853ac7b",
+          "lat": 52.08705,
+          "lon": 5.0989734,
+          "geocode": "Hogeschool Utrecht, 9, Koningsbergerstraat, Leidseweg E.o., Lombok, Leidseweg, West, Utrecht, Netherlands, 3531 AJ, Netherlands"
         },
         {
           "id": "299195d3-4d6d-8136-bf7a-f8711aebd982",
@@ -17152,7 +17569,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8136bf7af8711aebd982"
+          "url": "https://www.notion.so/299195d34d6d8136bf7af8711aebd982",
+          "lat": 53.2194416,
+          "lon": 6.5629863,
+          "geocode": "University of Groningen, Rodeweeshuisstraat, City centre North, City centre, Centrum, Groningen, Netherlands, 9712 ES, Netherlands"
         },
         {
           "id": "299195d3-4d6d-81bd-b4ff-c1adce8b82f5",
@@ -17275,7 +17695,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81bdb4ffc1adce8b82f5"
+          "url": "https://www.notion.so/299195d34d6d81bdb4ffc1adce8b82f5",
+          "lat": 51.5386681,
+          "lon": 5.0784942,
+          "geocode": "Fontys University of Applied Sciences, Stappegoorweg, Oud-Zuid, Tilburg, North Brabant, Netherlands, 5022 DE, Netherlands"
         },
         {
           "id": "9938f05c-0500-4f13-b115-772ec2d7b731",
@@ -17373,7 +17796,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/9938f05c05004f13b115772ec2d7b731"
+          "url": "https://www.notion.so/9938f05c05004f13b115772ec2d7b731",
+          "lat": 49.9886462,
+          "lon": 36.2299615,
+          "geocode": "In memory of the meeting of Gulak-Artemovsky Pyotr Petrovych and Adam Mickiewicz, 16, Universytetska Street, University Hill, Shevchenkivskyi district, Kharkiv, Kharkiv Urban Hromada, Kharkiv Raion, Kharkiv Oblast, 61003, Ukraine"
         },
         {
           "id": "2c6195d3-4d6d-80f7-bee6-cd96b74ab95b",
@@ -17471,7 +17897,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2c6195d34d6d80f7bee6cd96b74ab95b"
+          "url": "https://www.notion.so/2c6195d34d6d80f7bee6cd96b74ab95b",
+          "lat": 52.1686355,
+          "lon": 4.4597028,
+          "geocode": "Leiden University, Blauwpoortsbrug, Oude Morsch, Binnenstad, Leiden, South Holland, Netherlands, 2312 EL, Netherlands"
         },
         {
           "id": "299195d3-4d6d-8188-9ff5-ebea73c32b20",
@@ -17594,7 +18023,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81889ff5ebea73c32b20"
+          "url": "https://www.notion.so/299195d34d6d81889ff5ebea73c32b20",
+          "lat": -36.8529871,
+          "lon": 174.76642,
+          "geocode": "Auckland University of Technology, Wellesley Street East, Learning Quarter, City Centre, Auckland, Waitematā, Auckland, 1010, New Zealand"
         },
         {
           "id": "299195d3-4d6d-8191-95c6-c3e5a656eb49",
@@ -17717,7 +18149,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d819195c6c3e5a656eb49"
+          "url": "https://www.notion.so/299195d34d6d819195c6c3e5a656eb49",
+          "lat": 52.2715024,
+          "lon": 21.0139678,
+          "geocode": "Kozminski University, 57/59, Jagiellońska, Golędzinów, Pelcowizna, Praga-Północ, Warsaw, Masovian Voivodeship, 03-301, Poland"
         },
         {
           "id": "299195d3-4d6d-817b-82f6-c95cfab1e651",
@@ -17845,7 +18280,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d817b82f6c95cfab1e651"
+          "url": "https://www.notion.so/299195d34d6d817b82f6c95cfab1e651",
+          "lat": 52.2216394,
+          "lon": 21.007377,
+          "geocode": "Warsaw University of Technology, 1, Plac Politechniki, Koszyki, Śródmieście Południowe, Midtown, Warsaw, Masovian Voivodeship, 00-661, Poland"
         },
         {
           "id": "299195d3-4d6d-814c-be85-c3d4932629ec",
@@ -17953,7 +18391,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d814cbe85c3d4932629ec"
+          "url": "https://www.notion.so/299195d34d6d814cbe85c3d4932629ec",
+          "lat": 38.7367455,
+          "lon": -9.1383914,
+          "geocode": "Instituto Superior Técnico, 1, Avenida Rovisco Pais, Arroios, Lisbon, 1049-001, Portugal"
         },
         {
           "id": "2bc195d3-4d6d-8044-a657-c302c707870b",
@@ -18041,7 +18482,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2bc195d34d6d8044a657c302c707870b"
+          "url": "https://www.notion.so/2bc195d34d6d8044a657c302c707870b",
+          "lat": 44.4356445,
+          "lon": 26.1009263,
+          "geocode": "University of Bucharest, 4-12, Bulevardul Regina Elisabeta, Colțea, Centrul Istoric, Sector 3, Bucharest, 030018, Romania"
         },
         {
           "id": "299195d3-4d6d-81c2-87d3-e6314653f9b4",
@@ -18159,7 +18603,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81c287d3e6314653f9b4"
+          "url": "https://www.notion.so/299195d34d6d81c287d3e6314653f9b4",
+          "lat": 55.6725952,
+          "lon": 37.4857089,
+          "geocode": "Moscow State Institute of International Relations, улица Лобачевского, Prospekt Vernadskogo District, Moscow, Central Federal District, 119454, Russia"
         },
         {
           "id": "299195d3-4d6d-8184-b0c7-dcb171ce9427",
@@ -18277,7 +18724,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8184b0c7dcb171ce9427"
+          "url": "https://www.notion.so/299195d34d6d8184b0c7dcb171ce9427",
+          "lat": 59.9556525,
+          "lon": 30.312814,
+          "geocode": "Baltic House, 4 литТ, Александровский парк, Alexander Park, Petrograd Side, округ Кронверкское, Saint Petersburg, Northwestern Federal District, 197198, Russia"
         },
         {
           "id": "eff7e0f4-09bb-413f-872a-7c5f26c649e0",
@@ -18385,7 +18835,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/eff7e0f409bb413f872a7c5f26c649e0"
+          "url": "https://www.notion.so/eff7e0f409bb413f872a7c5f26c649e0",
+          "lat": 59.9556525,
+          "lon": 30.312814,
+          "geocode": "Baltic House, 4 литТ, Александровский парк, Alexander Park, Petrograd Side, округ Кронверкское, Saint Petersburg, Northwestern Federal District, 197198, Russia"
         },
         {
           "id": "299195d3-4d6d-81f2-99d0-dcce9f3b148f",
@@ -18493,7 +18946,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81f299d0dcce9f3b148f"
+          "url": "https://www.notion.so/299195d34d6d81f299d0dcce9f3b148f",
+          "lat": 55.7388624,
+          "lon": 37.5942003,
+          "geocode": "Moscow State Linguistic University, Eropkinskiy Lane, 33, Khamovniki District, Moscow, Central Federal District, 119034, Russia"
         },
         {
           "id": "299195d3-4d6d-819d-b486-f57f32cb77d4",
@@ -18606,7 +19062,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d819db486f57f32cb77d4"
+          "url": "https://www.notion.so/299195d34d6d819db486f57f32cb77d4",
+          "lat": 1.3484104,
+          "lon": 103.6829332,
+          "geocode": "Nanyang Technological University, 50, Nanyang Avenue, Murai, Western Water Catchment, West Region, Singapore, 639798, Singapore"
         },
         {
           "id": "299195d3-4d6d-8151-9731-ce486fe76191",
@@ -18719,7 +19178,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81519731ce486fe76191"
+          "url": "https://www.notion.so/299195d34d6d81519731ce486fe76191",
+          "lat": 1.296168,
+          "lon": 103.8500437,
+          "geocode": "Singapore Management University, 81, Victoria Street, Bras Basah, Museum, Central Region, Singapore, 188065, Singapore"
         },
         {
           "id": "2b8195d3-4d6d-8066-baaa-ef206b1dbbd9",
@@ -18812,7 +19274,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2b8195d34d6d8066baaaef206b1dbbd9"
+          "url": "https://www.notion.so/2b8195d34d6d8066baaaef206b1dbbd9",
+          "lat": 41.5630424,
+          "lon": 2.0232878,
+          "geocode": "ESEIAAT (PDI - PAS), Carrer de Rafael Roig, Barri Universitari-Cementiri Vell, Districte 1, Terrassa, Vallès Occidental, Barcelona, Catalonia, 08222, Spain"
         },
         {
           "id": "299195d3-4d6d-816a-b299-ec7e46b811e4",
@@ -18960,7 +19425,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d816ab299ec7e46b811e4"
+          "url": "https://www.notion.so/299195d34d6d816ab299ec7e46b811e4",
+          "lat": 42.801154,
+          "lon": -1.6585695,
+          "geocode": "Universidad de Navarra, Unibertsitateko errepidea, Cizur Menor, Cizur, Iruñerria, Navarre, 31190, Spain"
         },
         {
           "id": "299195d3-4d6d-8128-a644-ff4202a9312e",
@@ -19108,7 +19576,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8128a644ff4202a9312e"
+          "url": "https://www.notion.so/299195d34d6d8128a644ff4202a9312e",
+          "lat": 42.801154,
+          "lon": -1.6585695,
+          "geocode": "Universidad de Navarra, Unibertsitateko errepidea, Cizur Menor, Cizur, Iruñerria, Navarre, 31190, Spain"
         },
         {
           "id": "299195d3-4d6d-8131-b146-d2b3665bf47e",
@@ -19231,7 +19702,10 @@
               "text": "Both, Santiago de Compostela and Lugo"
             }
           ],
-          "url": "https://www.notion.so/299195d34d6d8131b146d2b3665bf47e"
+          "url": "https://www.notion.so/299195d34d6d8131b146d2b3665bf47e",
+          "lat": 32.8609269,
+          "lon": -117.2334732,
+          "geocode": "Via Alicante, La Jolla Colony, University City, San Diego, San Diego County, California, 92161, United States"
         },
         {
           "id": "299195d3-4d6d-8111-9869-d2c6032094f3",
@@ -19364,7 +19838,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81119869d2c6032094f3"
+          "url": "https://www.notion.so/299195d34d6d81119869d2c6032094f3",
+          "lat": 42.1697395,
+          "lon": -8.6833125,
+          "geocode": "Campus of As Lagoas-Marcosende, Estrada das Pedras Miúdas, Zamáns, Vigo, Pontevedra, Galicia, 36310, Spain"
         },
         {
           "id": "299195d3-4d6d-815c-970a-c76cc7f8291d",
@@ -19482,7 +19959,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d815c970ac76cc7f8291d"
+          "url": "https://www.notion.so/299195d34d6d815c970ac76cc7f8291d",
+          "lat": 57.7780222,
+          "lon": 14.162141,
+          "geocode": "Jönköping University, Barnarpsgatan, Tändsticksområdet, Väster, Jönköping, Jönköpings kommun, Jönköping County, 553 18, Sweden"
         },
         {
           "id": "51d3d081-ec98-491e-a3f6-01cd8f40d142",
@@ -19595,7 +20075,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/51d3d081ec98491ea3f601cd8f40d142"
+          "url": "https://www.notion.so/51d3d081ec98491ea3f601cd8f40d142",
+          "lat": 57.7780222,
+          "lon": 14.162141,
+          "geocode": "Jönköping University, Barnarpsgatan, Tändsticksområdet, Väster, Jönköping, Jönköpings kommun, Jönköping County, 553 18, Sweden"
         },
         {
           "id": "299195d3-4d6d-81f0-b8f1-e329b268e675",
@@ -19733,7 +20216,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81f0b8f1e329b268e675"
+          "url": "https://www.notion.so/299195d34d6d81f0b8f1e329b268e675",
+          "lat": 58.3977911,
+          "lon": 15.5754544,
+          "geocode": "Linköping University, Kemigränd, Västra Valla, Linköpings domkyrkodistrikt, Linköping, Linköpings kommun, Östergötland County, 583 26, Sweden"
         },
         {
           "id": "2b7195d3-4d6d-804e-b32b-d5fe14fea0b0",
@@ -19831,7 +20317,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2b7195d34d6d804eb32bd5fe14fea0b0"
+          "url": "https://www.notion.so/2b7195d34d6d804eb32bd5fe14fea0b0",
+          "lat": 58.3977911,
+          "lon": 15.5754544,
+          "geocode": "Linköping University, Kemigränd, Västra Valla, Linköpings domkyrkodistrikt, Linköping, Linköpings kommun, Östergötland County, 583 26, Sweden"
         },
         {
           "id": "299195d3-4d6d-8130-be98-de5b7ed9d7a9",
@@ -19979,7 +20468,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8130be98de5b7ed9d7a9"
+          "url": "https://www.notion.so/299195d34d6d8130be98de5b7ed9d7a9",
+          "lat": 55.6088853,
+          "lon": 12.9932225,
+          "geocode": "Malmö University, Storgatan, Davidshall, Norr, Malmö, Malmö kommun, Skåne County, 211 42, Sweden"
         },
         {
           "id": "299195d3-4d6d-81f4-af31-d00804947195",
@@ -20107,7 +20599,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81f4af31d00804947195"
+          "url": "https://www.notion.so/299195d34d6d81f4af31d00804947195",
+          "lat": 52.3134736,
+          "lon": 5.0127018,
+          "geocode": "Linnaeus, Weesp, Driemond, Amsterdam, North Holland, Netherlands"
         },
         {
           "id": "299195d3-4d6d-812b-be50-f163582e262a",
@@ -20245,7 +20740,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d812bbe50f163582e262a"
+          "url": "https://www.notion.so/299195d34d6d812bbe50f163582e262a",
+          "lat": 47.2232303,
+          "lon": 8.8173602,
+          "geocode": "Ostschweizer Fachhochschule Campus Rapperswil Jona, Strandweg, Rapperswil, Rapperswil-Jona, Wahlkreis See-Gaster, St. Gallen, 8640, Switzerland"
         },
         {
           "id": "299195d3-4d6d-811a-a5bd-de50a4974e31",
@@ -20388,7 +20886,10 @@
               "text": "Business School)"
             }
           ],
-          "url": "https://www.notion.so/299195d34d6d811aa5bdde50a4974e31"
+          "url": "https://www.notion.so/299195d34d6d811aa5bdde50a4974e31",
+          "lat": 46.9514413,
+          "lon": 7.435327,
+          "geocode": "Bern University of Applied Sciences BFH, Falkenweg, Länggasse, Stadtteil II, Bern, Bern-Mittelland administrative district, Bernese Mittelland administrative region, Bern, 3012, Switzerland"
         },
         {
           "id": "299195d3-4d6d-81c8-9ed6-c94f01c2706e",
@@ -20506,7 +21007,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81c89ed6c94f01c2706e"
+          "url": "https://www.notion.so/299195d34d6d81c89ed6c94f01c2706e",
+          "lat": 23.5629482,
+          "lon": 120.4751218,
+          "geocode": "National Chung Cheng University, 168, Daxue Road Section 1, Chencuoliao, Sanxing Village, Minxueng Township, Chiayi County, 62102, Taiwan"
         },
         {
           "id": "8b089a8f-67b5-4469-8028-2cb7024cfd4a",
@@ -20599,7 +21103,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/8b089a8f67b5446980282cb7024cfd4a"
+          "url": "https://www.notion.so/8b089a8f67b5446980282cb7024cfd4a",
+          "lat": 23.5629482,
+          "lon": 120.4751218,
+          "geocode": "National Chung Cheng University, 168, Daxue Road Section 1, Chencuoliao, Sanxing Village, Minxueng Township, Chiayi County, 62102, Taiwan"
         },
         {
           "id": "299195d3-4d6d-8142-85cf-ee1de0cde1f6",
@@ -20747,7 +21254,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d814285cfee1de0cde1f6"
+          "url": "https://www.notion.so/299195d34d6d814285cfee1de0cde1f6",
+          "lat": 25.0168175,
+          "lon": 121.5384571,
+          "geocode": "National Taiwan University, 1, Section 4, Roosevelt Road, Shuiyuan Village, Zhongzheng District, Gongguan, Taipei, 106319, Taiwan"
         },
         {
           "id": "299195d3-4d6d-8188-a906-f90650a988ec",
@@ -20855,7 +21365,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8188a906f90650a988ec"
+          "url": "https://www.notion.so/299195d34d6d8188a906f90650a988ec",
+          "lat": 22.9999348,
+          "lon": 120.2199044,
+          "geocode": "National Cheng Kung University Main Library, 1, Dasyue Road, Daxue Village, East District, Sanfenzi, Tainan, 70101, Taiwan"
         },
         {
           "id": "299195d3-4d6d-81ac-a6c4-f092e1a33e60",
@@ -20988,7 +21501,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81aca6c4f092e1a33e60"
+          "url": "https://www.notion.so/299195d34d6d81aca6c4f092e1a33e60",
+          "lat": 25.0082321,
+          "lon": 121.5357715,
+          "geocode": "National Taiwan Normal University (Gongguan Campus), 88, Tingzhou Road Section 4, Wannian Village, Wenshan District, Gongguan, Taipei, 11677, Taiwan"
         },
         {
           "id": "299195d3-4d6d-810a-94d1-e63452c78079",
@@ -21126,7 +21642,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d810a94d1e63452c78079"
+          "url": "https://www.notion.so/299195d34d6d810a94d1e63452c78079",
+          "lat": 24.9802091,
+          "lon": 121.5749593,
+          "geocode": "National Chengchi University, 64, Zhinan Road Section 2, Zhinan Village, Wenshan District, Taipei, 11605, Taiwan"
         },
         {
           "id": "299195d3-4d6d-8179-ad01-d70a5b4ad963",
@@ -21274,7 +21793,10 @@
               "text": "https://oia.tu.ac.th/criteria-course/"
             }
           ],
-          "url": "https://www.notion.so/299195d34d6d8179ad01d70a5b4ad963"
+          "url": "https://www.notion.so/299195d34d6d8179ad01d70a5b4ad963",
+          "lat": 14.0793369,
+          "lon": 100.5885128,
+          "geocode": "Thammasat University, Yoongthong Road, Khlong Nueng Subdistrict, Tha Khlong Town Municipality, Khlong Luang District, Pathum Thani Province, 12121, Thailand"
         },
         {
           "id": "299195d3-4d6d-8167-8a2c-f44c9020b367",
@@ -21387,7 +21909,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81678a2cf44c9020b367"
+          "url": "https://www.notion.so/299195d34d6d81678a2cf44c9020b367",
+          "lat": 13.7927827,
+          "lon": 100.3260556,
+          "geocode": "Mahidol University International College, 999, Phutthamonthon Sai 4 Road, Sala Ya Township Municipality, Khlong Yong, Phutthamonthon District, Nakhon Pathom Province, 73170, Thailand"
         },
         {
           "id": "299195d3-4d6d-8108-952f-fb4097511d20",
@@ -21505,7 +22030,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8108952ffb4097511d20"
+          "url": "https://www.notion.so/299195d34d6d8108952ffb4097511d20",
+          "lat": 39.870469,
+          "lon": 32.7539193,
+          "geocode": "Bilkent University, 3. Cadde, Bilkent Yurtlar, Üniversiteler Mahallesi, Çankaya, Ankara, Central Anatolia Region, 06800, Turkey"
         },
         {
           "id": "2bf195d3-4d6d-80b2-949b-ff9448a891b6",
@@ -21598,7 +22126,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2bf195d34d6d80b2949bff9448a891b6"
+          "url": "https://www.notion.so/2bf195d34d6d80b2949bff9448a891b6",
+          "lat": 35.0866328,
+          "lon": -106.6202094,
+          "geocode": "University of New Mexico, Central Avenue Southeast, Silver Hill, Nob Hill, Albuquerque, Bernalillo County, New Mexico, 87131, United States"
         },
         {
           "id": "2b6195d3-4d6d-801f-8b2f-f997adac8368",
@@ -21696,7 +22227,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2b6195d34d6d801f8b2ff997adac8368"
+          "url": "https://www.notion.so/2b6195d34d6d801f8b2ff997adac8368",
+          "lat": 21.2985487,
+          "lon": -157.8210666,
+          "geocode": "University Avenue, McCully, East Honolulu, Honolulu, Honolulu County, Hawaii, 96848, United States"
         },
         {
           "id": "299195d3-4d6d-8153-8b01-ceacc1a125c6",
@@ -21819,7 +22353,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81538b01ceacc1a125c6"
+          "url": "https://www.notion.so/299195d34d6d81538b01ceacc1a125c6",
+          "lat": 40.7111164,
+          "lon": -74.0048044,
+          "geocode": "Pace University, 1, Pace Plaza, Civic Center, Lower Manhattan, Manhattan, New York County, New York, 10038, United States"
         },
         {
           "id": "299195d3-4d6d-8129-85bb-dc732e35d8af",
@@ -21932,7 +22469,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d812985bbdc732e35d8af"
+          "url": "https://www.notion.so/299195d34d6d812985bbdc732e35d8af",
+          "lat": 40.7478327,
+          "lon": -73.9436942,
+          "geocode": "CUNY School of Law, 2, Hunter Street, Court Square, Long Island City, Queens, Queens County, New York, 11101, United States"
         },
         {
           "id": "299195d3-4d6d-8191-9212-d2785e417ae7",
@@ -22085,7 +22625,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81919212d2785e417ae7"
+          "url": "https://www.notion.so/299195d34d6d81919212d2785e417ae7",
+          "lat": 42.0225482,
+          "lon": -73.9107242,
+          "geocode": "Bard College, 30, Campus Road, Annandale-on-Hudson, Town of Red Hook, Dutchess County, New York, 12504, United States"
         },
         {
           "id": "299195d3-4d6d-81bd-a84e-d4241990daf6",
@@ -22238,7 +22781,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81bda84ed4241990daf6"
+          "url": "https://www.notion.so/299195d34d6d81bda84ed4241990daf6",
+          "lat": 41.1441814,
+          "lon": -81.3398329,
+          "geocode": "Kent State University, Whitehall Boulevard, Kent, Portage County, Ohio, 44242, United States"
         },
         {
           "id": "990683f0-a705-419a-bcab-5212b1b23286",
@@ -22336,7 +22882,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/990683f0a705419abcab5212b1b23286"
+          "url": "https://www.notion.so/990683f0a705419abcab5212b1b23286",
+          "lat": 41.6929277,
+          "lon": -72.765429,
+          "geocode": "Central Connecticut State University, 1615, Stanley Street, New Britain, Capitol Planning Region, Connecticut, 06050, United States"
         },
         {
           "id": "9c085f53-6935-4758-9d96-0400ba0e1f31",
@@ -22489,7 +23038,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/9c085f53693547589d960400ba0e1f31"
+          "url": "https://www.notion.so/9c085f53693547589d960400ba0e1f31",
+          "lat": 37.6748541,
+          "lon": -113.0731048,
+          "geocode": "Southern Utah University, 351, 800 West, Cedar City, Iron County, Utah, 84720, United States"
         },
         {
           "id": "299195d3-4d6d-8129-84c8-c9214da770e0",
@@ -22607,7 +23159,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d812984c8c9214da770e0"
+          "url": "https://www.notion.so/299195d34d6d812984c8c9214da770e0",
+          "lat": 37.5461246,
+          "lon": -77.4540609,
+          "geocode": "Virginia Commonwealth University, 907, Floyd Avenue, Richmond, Virginia, 23284, United States"
         },
         {
           "id": "299195d3-4d6d-815a-9946-c752d1eb62cf",
@@ -22715,7 +23270,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d815a9946c752d1eb62cf"
+          "url": "https://www.notion.so/299195d34d6d815a9946c752d1eb62cf",
+          "lat": 38.5664697,
+          "lon": -121.4284035,
+          "geocode": "California State University Drive, Sacramento, Sacramento County, California, 95819, United States"
         },
         {
           "id": "71b4d256-08e6-4fb6-a11b-52e568fa5032",
@@ -22823,7 +23381,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/71b4d25608e64fb6a11b52e568fa5032"
+          "url": "https://www.notion.so/71b4d25608e64fb6a11b52e568fa5032",
+          "lat": 38.4362412,
+          "lon": -78.8687576,
+          "geocode": "James Madison University, 800, South Main Street, Harrisonburg, Virginia, 22807, United States"
         },
         {
           "id": "299195d3-4d6d-8140-b66f-cbd5636dd254",
@@ -22946,7 +23507,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8140b66fcbd5636dd254"
+          "url": "https://www.notion.so/299195d34d6d8140b66fcbd5636dd254",
+          "lat": 30.442216,
+          "lon": -84.297453,
+          "geocode": "Florida State University, 600, Learning Way, College Town, Tallahassee, Leon County, Florida, 32306, United States"
         },
         {
           "id": "299195d3-4d6d-8105-b547-da988fbcec70",
@@ -23049,7 +23613,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8105b547da988fbcec70"
+          "url": "https://www.notion.so/299195d34d6d8105b547da988fbcec70",
+          "lat": 43.4525481,
+          "lon": -76.5450409,
+          "geocode": "State University of New York at Oswego, 7060, State Route 104, Oswego Beach, Town of Oswego, Oswego County, New York, 13126, United States"
         },
         {
           "id": "2b8195d3-4d6d-80c1-92fb-e3ae47fac3a5",
@@ -23177,7 +23744,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2b8195d34d6d80c192fbe3ae47fac3a5"
+          "url": "https://www.notion.so/2b8195d34d6d80c192fbe3ae47fac3a5",
+          "lat": 13.4323798,
+          "lon": 144.8029233,
+          "geocode": "University of Guam, University Drive, Mangilao Municipality, Guam, 96923, United States"
         },
         {
           "id": "2b8195d3-4d6d-8008-b623-de410fc7fee9",
@@ -23275,7 +23845,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2b8195d34d6d8008b623de410fc7fee9"
+          "url": "https://www.notion.so/2b8195d34d6d8008b623de410fc7fee9",
+          "lat": 42.2514681,
+          "lon": -71.8229509,
+          "geocode": "Clark University, Sylvan Street, Ludlow, Worcester, Worcester County, Massachusetts, 01603, United States"
         },
         {
           "id": "2b8195d3-4d6d-8004-a7e3-e07b42fae5c1",
@@ -23423,7 +23996,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2b8195d34d6d8004a7e3e07b42fae5c1"
+          "url": "https://www.notion.so/2b8195d34d6d8004a7e3e07b42fae5c1",
+          "lat": 37.6748541,
+          "lon": -113.0731048,
+          "geocode": "Southern Utah University, 351, 800 West, Cedar City, Iron County, Utah, 84720, United States"
         },
         {
           "id": "2b9195d3-4d6d-80b0-9897-c5f72f2bb4c4",
@@ -23551,7 +24127,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2b9195d34d6d80b09897c5f72f2bb4c4"
+          "url": "https://www.notion.so/2b9195d34d6d80b09897c5f72f2bb4c4",
+          "lat": 43.5158881,
+          "lon": -83.9593131,
+          "geocode": "Saginaw Valley State University, Fine Arts Drive, Kochville Township, Carrollton Township, Saginaw County, Michigan, 48710, United States"
         },
         {
           "id": "2bf195d3-4d6d-800d-9783-e398a75278d9",
@@ -23679,7 +24258,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2bf195d34d6d800d9783e398a75278d9"
+          "url": "https://www.notion.so/2bf195d34d6d800d9783e398a75278d9",
+          "lat": 40.9090809,
+          "lon": -73.1205518,
+          "geocode": "Stony Brook University, 100, Nicolls Road, Stony Brook, Town of Brookhaven, Suffolk County, New York, 11794, United States"
         },
         {
           "id": "2c3195d3-4d6d-80f5-bc63-c2165fafadb9",
@@ -23807,7 +24389,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2c3195d34d6d80f5bc63c2165fafadb9"
+          "url": "https://www.notion.so/2c3195d34d6d80f5bc63c2165fafadb9",
+          "lat": 34.2249827,
+          "lon": -77.8690774,
+          "geocode": "University of North Carolina at Wilmington, 601, South College Road, College Acres, Wilmington, New Hanover County, North Carolina, 28403, United States"
         },
         {
           "id": "299195d3-4d6d-8125-a009-e277ee923bba",
@@ -23915,7 +24500,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d8125a009e277ee923bba"
+          "url": "https://www.notion.so/299195d34d6d8125a009e277ee923bba",
+          "lat": -34.9054527,
+          "lon": -54.9557331,
+          "geocode": "CEI ORT, Doctor Juan T. Edye, Barrio Centro, Sarubbi, Maldonado, 20000, Uruguay"
         },
         {
           "id": "299195d3-4d6d-81bf-ad32-d251ebb0df9f",
@@ -24038,7 +24626,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81bfad32d251ebb0df9f"
+          "url": "https://www.notion.so/299195d34d6d81bfad32d251ebb0df9f",
+          "lat": 21.0225029,
+          "lon": 105.805148,
+          "geocode": "Foreign Trade University, 91, Ngách 69/2 Phố Chùa Láng, Láng Trung, Ke Lang, Lang Ward, Hà Nội, 11528, Vietnam"
         },
         {
           "id": "2d9195d3-4d6d-8067-9d98-dc2f1629c546",
@@ -24136,7 +24727,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/2d9195d34d6d80679d98dc2f1629c546"
+          "url": "https://www.notion.so/2d9195d34d6d80679d98dc2f1629c546",
+          "lat": 22.3400205,
+          "lon": 114.1697162,
+          "geocode": "City University of Hong Kong, Sunshine Grove, Yuen Chau Kok, Sha Tin District, New Territories, Hong Kong, China"
         },
         {
           "id": "3ca02469-a3a8-4788-a5ad-6f13b98acf0f",
@@ -24249,7 +24843,10 @@
               "text": "[Fact Sheet] 2023_FPT University.pdf"
             }
           ],
-          "url": "https://www.notion.so/3ca02469a3a84788a5ad6f13b98acf0f"
+          "url": "https://www.notion.so/3ca02469a3a84788a5ad6f13b98acf0f",
+          "lat": 21.0135277,
+          "lon": 105.5252615,
+          "geocode": "FPT University, Đường N16, Hoa Lac Hi-Tech Park, Hoa Lac Commune, Hà Nội, 13117, Vietnam"
         }
       ]
     },
@@ -24382,7 +24979,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d811c942ef05342b0e08b"
+          "url": "https://www.notion.so/299195d34d6d811c942ef05342b0e08b",
+          "lat": 42.7023794,
+          "lon": -84.4803869,
+          "geocode": "Michigan State University, 426, Auditorium Road, North Neighborhood, East Lansing, Ingham County, Michigan, 48824, United States"
         },
         {
           "id": "299195d3-4d6d-81f2-a569-c0e885954b39",
@@ -24500,7 +25100,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81f2a569c0e885954b39"
+          "url": "https://www.notion.so/299195d34d6d81f2a569c0e885954b39",
+          "lat": 33.6487724,
+          "lon": -117.8364995,
+          "geocode": "Berkeley Court Apartments, University Town Center, Irvine, Orange County, California, United States"
         },
         {
           "id": "299195d3-4d6d-81bd-ac1d-e671fee3b787",
@@ -24628,7 +25231,10 @@
             }
           },
           "content": [],
-          "url": "https://www.notion.so/299195d34d6d81bdac1de671fee3b787"
+          "url": "https://www.notion.so/299195d34d6d81bdac1de671fee3b787",
+          "lat": 51.4905582,
+          "lon": -2.6304825,
+          "geocode": "University of Bristol, Barrow Gurney, North Somerset, England, BS9 3RZ, United Kingdom"
         }
       ]
     }

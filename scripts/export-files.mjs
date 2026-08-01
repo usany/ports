@@ -11,6 +11,9 @@ for (const [key, list] of Object.entries(data.lists)) {
       id: r.id,
       title: r.title,
       url: r.url,
+      lat: r.lat ?? null,
+      lon: r.lon ?? null,
+      geocode: r.geocode ?? null,
       properties: Object.fromEntries(
         Object.entries(r.properties).map(([pid, p]) => [p.name, p.value])
       ),
