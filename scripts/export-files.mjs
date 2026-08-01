@@ -1,4 +1,4 @@
-const fs = require("fs")
+import fs from "node:fs"
 
 const data = JSON.parse(fs.readFileSync("scripts/universities.json", "utf8"))
 

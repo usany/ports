@@ -1,4 +1,5 @@
-const fs = require("fs")
+import fs from "node:fs"
+
 const BASE = "https://www.notion.so/api/v3"
 const SPACE_ID = "3283ce48-6b9b-4c12-845a-1c3b2888b2d1"
 const PAGE_ID = "299195d3-4d6d-81ad-8d62-f3b191e63222"
@@ -125,7 +126,6 @@ async function runCollection(cfg) {
   const pageSort = await getPageSort(cfg.viewId)
   console.log(`[${cfg.key}] page_sort entries:`, pageSort.length)
 
-  // Batch-verify all candidates via syncRecordValues (gets properties too)
   const rows = []
   for (let i = 0; i < pageSort.length; i += 100) {
     const batch = pageSort.slice(i, i + 100)
@@ -138,6 +138,7 @@ async function runCollection(cfg) {
       rows.push({
         id,
         title: decodeProp(vv.properties && vv.properties.title),
+        url: `https://www.notion.so/${id.replace(/-/g, "")}`,
         properties: propsFromRow(vv, schema),
         content: [],
       })
@@ -147,7 +148,6 @@ async function runCollection(cfg) {
   }
   console.log(`[${cfg.key}] valid rows: ${rows.length}`)
 
-  // Load content for each valid row
   for (let i = 0; i < rows.length; i += 5) {
     const batch = rows.slice(i, i + 5)
     await Promise.all(
@@ -163,10 +163,7 @@ async function runCollection(cfg) {
   return { label: cfg.label, rows }
 }
 
-;(async () => {
-  const [exchange, study] = await Promise.all([runCollection(EXCHANGE), runCollection(STUDY)])
-  const out = { generatedAt: new Date().toISOString(), lists: { exchange, study } }
-  fs.writeFileSync("scripts/universities.json", JSON.stringify(out, null, 2))
-  console.log("saved scripts/universities.json")
-  process.exit(0)
-})()
+const [exchange, study] = await Promise.all([runCollection(EXCHANGE), runCollection(STUDY)])
+const out = { generatedAt: new Date().toISOString(), lists: { exchange, study } }
+fs.writeFileSync("scripts/universities.json", JSON.stringify(out, null, 2))
+console.log("saved scripts/universities.json")
