@@ -57,7 +57,7 @@ export async function GET(request) {
 
       priceMatches.forEach((match) => {
         const num = parseInt(match.replace(/,/g, ""))
-        if (num >= 500000 && num <= 5000000) {
+        if (num >= 100000 && num <= 5000000) {
           prices.push(num)
         }
       })
@@ -119,7 +119,7 @@ export async function GET(request) {
 
       // Remove duplicates and sort by price
       const uniqueFlights = flights
-        .filter((f) => f.price && f.price >= 500000 && f.price <= 5000000)
+        .filter((f) => f.price && f.price >= 100000 && f.price <= 5000000)
         .sort((a, b) => a.price - b.price)
 
       return {
