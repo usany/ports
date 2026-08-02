@@ -43,6 +43,7 @@ export default function Home() {
   const mapRef = useRef(null)
   const mapInstanceRef = useRef(null)
   const markersRef = useRef([])
+  const shownAirportsRef = useRef(new Map())
 
   const filterMarkers = (searchText) => {
     const text = searchText.toLowerCase()
@@ -52,6 +53,23 @@ export default function Home() {
         markerData.marker.addTo(mapInstanceRef.current)
       } else {
         mapInstanceRef.current.removeLayer(markerData.marker)
+        // Hide associated airport marker when location marker is hidden
+        if (markerData.airport) {
+          const airportKey = markerData.airport.iata || markerData.airport.icao || `${markerData.airport.lat},${markerData.airport.lon}`
+          if (shownAirportsRef.current && shownAirportsRef.current.has(airportKey)) {
+            const airportMarker = shownAirportsRef.current.get(airportKey)
+            mapInstanceRef.current.removeLayer(airportMarker)
+            shownAirportsRef.current.delete(airportKey)
+
+            // Reset button state
+            const btnId = `show-airport-btn-${airportKey}`
+            const btn = document.getElementById(btnId)
+            if (btn) {
+              btn.textContent = "Show on map"
+              btn.style.background = "#0f766e"
+            }
+          }
+        }
       }
     })
   }
@@ -69,16 +87,14 @@ export default function Home() {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       }).addTo(map)
 
-      const shownAirports = new Map()
-
       const toggleAirportMarker = (airport, button) => {
         const code = airport.iata || airport.icao
         const key = code || `${airport.lat},${airport.lon}`
 
-        if (shownAirports.has(key)) {
-          const marker = shownAirports.get(key)
+        if (shownAirportsRef.current.has(key)) {
+          const marker = shownAirportsRef.current.get(key)
           map.removeLayer(marker)
-          shownAirports.delete(key)
+          shownAirportsRef.current.delete(key)
           button.textContent = "Show on map"
           button.style.background = "#0f766e"
           return
@@ -99,7 +115,7 @@ export default function Home() {
           )
           .addTo(map)
 
-        shownAirports.set(key, marker)
+        shownAirportsRef.current.set(key, marker)
         button.textContent = "Hide from map"
         button.style.background = "#d97706"
 
@@ -170,10 +186,10 @@ export default function Home() {
         marker.on("popupclose", () => {
           // Hide airport marker when its popup is closed
           const markerKey = code || `${airport.lat},${airport.lon}`
-          if (shownAirports.has(markerKey)) {
-            const airportMarker = shownAirports.get(markerKey)
+          if (shownAirportsRef.current.has(markerKey)) {
+            const airportMarker = shownAirportsRef.current.get(markerKey)
             map.removeLayer(airportMarker)
-            shownAirports.delete(markerKey)
+            shownAirportsRef.current.delete(markerKey)
 
             // Update button state in location marker popup
             const btnId = `show-airport-btn-${markerKey}`
@@ -219,6 +235,7 @@ export default function Home() {
           markersRef.current.push({
             name: row.title,
             marker: marker,
+            airport: row.nearestAirport,
           })
 
           marker.on("popupopen", () => {
