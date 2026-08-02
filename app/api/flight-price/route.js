@@ -52,8 +52,8 @@ export async function GET(request) {
       const text = document.body.innerText
 
       // Find the element with "최저가" (lowest price)
-      const lowestPriceElement = Array.from(document.querySelectorAll("i, span, div")).find(
-        (el) => el.textContent && el.textContent.includes("최저가")
+      const lowestPriceElement = Array.from(document.querySelectorAll("i, span, div, em, b")).find(
+        (el) => el.textContent && el.textContent.trim() === "최저가"
       )
 
       // If found, get the parent container with flight info
@@ -61,11 +61,11 @@ export async function GET(request) {
       if (lowestPriceElement) {
         let parent = lowestPriceElement.parentElement
         // Go up the DOM tree to find the flight result container
-        for (let i = 0; i < 10 && parent; i++) {
+        for (let i = 0; i < 15 && parent; i++) {
           const parentText = parent.textContent || ""
           if (
             (parentText.includes("시간") || parentText.includes("분")) &&
-            (parentText.includes("직항") || parentText.includes("경유") || parentText.includes("₩"))
+            (parentText.includes("직항") || parentText.includes("경유"))
           ) {
             lowestPriceContainer = parent
             break
@@ -78,9 +78,19 @@ export async function GET(request) {
       if (lowestPriceContainer) {
         const containerText = lowestPriceContainer.textContent || ""
 
-        // Extract price
-        const priceMatch = containerText.match(/₩?\s*(\d{1,3}(?:,\d{3})+)/)
-        const price = priceMatch ? parseInt(priceMatch[1].replace(/,/g, "")) : null
+        // Extract all numbers that look like prices
+        const priceMatches = containerText.match(/\d+,\d{3}|\d{5,}/g) || []
+        let price = null
+
+        // Filter for reasonable flight prices (100k - 5M won)
+        const validPrices = priceMatches
+          .map((p) => parseInt(p.replace(/,/g, "")))
+          .filter((p) => p >= 100000 && p <= 5000000)
+
+        // Get the lowest valid price
+        if (validPrices.length > 0) {
+          price = Math.min(...validPrices)
+        }
 
         // Extract duration
         const durationMatch = containerText.match(/(\d+)\s*시간\s*(\d+)\s*분/)
@@ -179,16 +189,25 @@ export async function GET(request) {
           .filter((f) => f.price && f.price >= 100000 && f.price <= 5000000)
           .sort((a, b) => a.price - b.price)
 
+        // Always return the lowest price found
+        const lowestPrice = prices.length > 0 ? Math.min(...prices) : null
+
         return {
           prices: [...new Set(prices)].sort((a, b) => a - b),
           flights: uniqueFlights.slice(0, 5),
+          lowestPrice: lowestPrice,
           pageLength: text.length,
         }
       }
 
+      // Return lowest price from flights
+      const flightPrices = flights.map((f) => f.price).filter(Boolean)
+      const lowestPrice = flightPrices.length > 0 ? Math.min(...flightPrices) : null
+
       return {
-        prices: flights.map((f) => f.price).filter(Boolean),
+        prices: flightPrices.sort((a, b) => a - b),
         flights: flights.slice(0, 5),
+        lowestPrice: lowestPrice,
         pageLength: text.length,
       }
     })

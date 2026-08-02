@@ -102,32 +102,37 @@ export default function Home() {
 
           const flightData = await getFlightPrice("SEL", code, dateStr)
 
-          if (flightData && flightData.success && flightData.price) {
-            const priceStr = flightData.price.toLocaleString()
-            let html = `<div style="margin-top:4px;font-size:12px;color:#059669"><b>₩${priceStr}</b></div>`
+          if (flightData && flightData.success) {
+            const displayPrice = flightData.lowestPrice || flightData.price
+            if (displayPrice) {
+              const priceStr = displayPrice.toLocaleString()
+              let html = `<div style="margin-top:4px;font-size:12px;color:#059669"><b>₩${priceStr}</b></div>`
 
-            if (flightData.flights && flightData.flights.length > 0) {
-              const flight = flightData.flights[0]
-              if (flight.duration || flight.stops !== null || flight.isDirect) {
-                html += `<div style="margin-top:3px;font-size:10px;color:#666">`
+              if (flightData.flights && flightData.flights.length > 0) {
+                const flight = flightData.flights[0]
+                if (flight.duration || flight.stops !== null || flight.isDirect) {
+                  html += `<div style="margin-top:3px;font-size:10px;color:#666">`
 
-                if (flight.isDirect) {
-                  html += `직항`
-                } else if (flight.stops !== null && flight.stops > 0) {
-                  html += `${flight.stops}회 경유`
+                  if (flight.isDirect) {
+                    html += `직항`
+                  } else if (flight.stops !== null && flight.stops > 0) {
+                    html += `${flight.stops}회 경유`
+                  }
+
+                  if (flight.duration) {
+                    const hasPreviousInfo = flight.isDirect || (flight.stops !== null && flight.stops > 0)
+                    html += hasPreviousInfo ? ` · ` : ``
+                    html += flight.duration
+                  }
+
+                  html += `</div>`
                 }
-
-                if (flight.duration) {
-                  const hasPreviousInfo = flight.isDirect || (flight.stops !== null && flight.stops > 0)
-                  html += hasPreviousInfo ? ` · ` : ``
-                  html += flight.duration
-                }
-
-                html += `</div>`
               }
-            }
 
-            priceDiv.innerHTML = html
+              priceDiv.innerHTML = html
+            } else {
+              priceDiv.innerHTML = `<div style="margin-top:4px;font-size:11px;color:#999">Price unavailable</div>`
+            }
           } else {
             priceDiv.innerHTML = `<div style="margin-top:4px;font-size:11px;color:#999">Price unavailable</div>`
           }
