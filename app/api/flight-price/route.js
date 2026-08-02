@@ -51,27 +51,47 @@ export async function GET(request) {
       const flights = []
       const text = document.body.innerText
 
-      // Find the element with "최저가" (lowest price)
-      const lowestPriceElement = Array.from(document.querySelectorAll("i, span, div, em, b")).find(
+      // Strategy 1: Find the element with "최저가" (lowest price)
+      let lowestPriceElement = Array.from(document.querySelectorAll("i, span, div, em, b")).find(
         (el) => el.textContent && el.textContent.trim() === "최저가"
       )
+
+      // Strategy 2: If not found, look for it as partial text match
+      if (!lowestPriceElement) {
+        lowestPriceElement = Array.from(document.querySelectorAll("*")).find(
+          (el) => el.textContent && el.textContent.includes("최저가")
+        )
+      }
 
       // If found, get the parent container with flight info
       let lowestPriceContainer = null
       if (lowestPriceElement) {
         let parent = lowestPriceElement.parentElement
         // Go up the DOM tree to find the flight result container
-        for (let i = 0; i < 15 && parent; i++) {
+        for (let i = 0; i < 20 && parent; i++) {
           const parentText = parent.textContent || ""
           if (
             (parentText.includes("시간") || parentText.includes("분")) &&
-            (parentText.includes("직항") || parentText.includes("경유"))
+            (parentText.includes("직항") || parentText.includes("경유") || parentText.includes("경유") || /\d+,\d{3}/.test(parentText))
           ) {
             lowestPriceContainer = parent
             break
           }
           parent = parent.parentElement
         }
+      }
+
+      // Strategy 3: If still not found, look for first flight result with time and transfer info
+      if (!lowestPriceContainer) {
+        const allElements = Array.from(document.querySelectorAll("div, li, section, article"))
+        lowestPriceContainer = allElements.find((el) => {
+          const text = el.textContent || ""
+          return (
+            (text.includes("시간") || text.includes("분")) &&
+            (text.includes("직항") || text.includes("경유")) &&
+            /\d{2,3},\d{3}|\d{5,}/.test(text)
+          )
+        })
       }
 
       // Extract info from lowest price container if found
@@ -132,10 +152,23 @@ export async function GET(request) {
       }
 
       // Return extracted flight data from "최저가" element
+      console.log("Flight data extracted:", {
+        flightsCount: flights.length,
+        flights: flights,
+        lowestPriceElementFound: !!lowestPriceElement,
+        lowestPriceContainerFound: !!lowestPriceContainer,
+      })
+
       return {
+        success: true,
         prices: flights.map((f) => f.price).filter(Boolean),
         flights: flights,
         pageLength: text.length,
+        debug: {
+          lowestPriceElementFound: !!lowestPriceElement,
+          lowestPriceContainerFound: !!lowestPriceContainer,
+          containerText: lowestPriceContainer ? lowestPriceContainer.textContent.substring(0, 500) : null,
+        },
       }
     })
 

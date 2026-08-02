@@ -101,8 +101,9 @@ export default function Home() {
           const dateStr = futureDate.toISOString().split("T")[0].replace(/-/g, "")
 
           const flightData = await getFlightPrice("SEL", code, dateStr)
+          console.log("Flight response for", code, ":", flightData)
 
-          if (flightData && flightData.success && flightData.flights && flightData.flights.length > 0) {
+          if (flightData && flightData.flights && flightData.flights.length > 0) {
             const flight = flightData.flights[0]
             if (flight.price) {
               const priceStr = flight.price.toLocaleString()
