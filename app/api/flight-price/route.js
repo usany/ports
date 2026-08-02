@@ -47,7 +47,7 @@ export async function GET(request) {
     })
 
     // Extract flight data including prices and transfer info
-    const flightData = await page.evaluate(() => {
+    const flightData = await page.evaluate((destination) => {
       const flights = []
 
       // Find all flight result containers - look for elements with price + time + transfer info
@@ -63,14 +63,24 @@ export async function GET(request) {
         // Skip if too large (probably a container, not a result)
         if (text.length > 2000) return
 
-        // Extract ALL prices from this element and get the first/largest valid one
+        // For airport results, try to match destination airport code if provided
+        // Look for destination airport code or city name in the element
+        if (destination && destination.length > 0) {
+          // Check if this element contains the destination airport/city
+          const hasDestination = text.includes(destination.toUpperCase()) || text.includes(destination)
+          if (!hasDestination) return
+        }
+
+        // Extract ALL prices from this element and get the LAST/HIGHEST valid one
+        // (The most relevant price is typically at the end)
         const priceMatches = text.match(/(\d{1,3}(?:,\d{3})+|\d{5,})/g) || []
         let price = null
 
-        for (const priceMatch of priceMatches) {
-          const priceStr = priceMatch.replace(/,/g, "")
+        // Get the last valid price (usually the main price)
+        for (let i = priceMatches.length - 1; i >= 0; i--) {
+          const priceStr = priceMatches[i].replace(/,/g, "")
           const priceNum = parseInt(priceStr)
-          // Get the first valid price found
+          // Get the last valid price found
           if (priceNum >= 100000 && priceNum <= 9999999) {
             price = priceNum
             break
@@ -114,6 +124,7 @@ export async function GET(request) {
       const bestFlights = flights.slice(0, 10)
 
       console.log("Flight data extracted:", {
+        destination: destination,
         totalFlights: flights.length,
         allFlights: flights.map((f) => ({ price: f.price, duration: f.duration, stops: f.stops })),
         bestFlights: bestFlights.map((f) => ({ price: f.price, duration: f.duration, stops: f.stops })),
@@ -125,7 +136,7 @@ export async function GET(request) {
         flights: bestFlights,
         pageLength: document.body.innerText.length,
       }
-    })
+    }, destination)
 
     await browser.close()
 
