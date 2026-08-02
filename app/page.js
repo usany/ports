@@ -114,7 +114,7 @@ export default function Home() {
       const seoulLon = 126.4
 
       const drawArc = (map, fromLat, fromLon, toLat, toLon) => {
-        return L.polyline([[fromLat, fromLon], [toLat, toLon]], { color: "#f59e0b", weight: 2.5, opacity: 0.8, dashArray: "5, 5" })
+        return L.polyline([[fromLat, fromLon], [toLat, toLon]], { color: "#f59e0b", weight: 2.5, opacity: 0.8, dashArray: "5, 5" }).addTo(map)
       }
 
       const toggleAirportMarker = (airport, button, dateStr = null) => {
@@ -234,6 +234,12 @@ export default function Home() {
             const airportMarker = shownAirportsRef.current.get(markerKey)
             map.removeLayer(airportMarker)
             shownAirportsRef.current.delete(markerKey)
+
+            const arc = shownAirportsRef.current.get(`${markerKey}-arc`)
+            if (arc) {
+              map.removeLayer(arc)
+              shownAirportsRef.current.delete(`${markerKey}-arc`)
+            }
 
             // Update button state in location marker popup
             const formId = `show-airport-form-${markerKey}`
