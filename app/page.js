@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useRef } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import universities from "../universities.json"
 
 const esc = (s) =>
@@ -44,12 +44,25 @@ export default function Home() {
   const mapInstanceRef = useRef(null)
   const markersRef = useRef([])
   const shownAirportsRef = useRef(new Map())
+  const [searchType, setSearchType] = useState("name")
+  const [searchText, setSearchText] = useState("")
 
-  const filterMarkers = (searchText) => {
-    const text = searchText.toLowerCase()
+  const filterMarkers = (text, type) => {
+    const searchTerm = text.toLowerCase()
     markersRef.current.forEach((markerData) => {
-      const markerName = markerData.name.toLowerCase()
-      if (markerName.includes(text)) {
+      let matches = false
+
+      if (type === "name") {
+        matches = markerData.name.toLowerCase().includes(searchTerm)
+      } else if (type === "language") {
+        const languages = markerData.language ? markerData.language.toLowerCase() : ""
+        matches = languages.includes(searchTerm)
+      } else if (type === "departments") {
+        const departments = markerData.departments ? markerData.departments.toLowerCase() : ""
+        matches = departments.includes(searchTerm)
+      }
+
+      if (matches || searchTerm === "") {
         markerData.marker.addTo(mapInstanceRef.current)
       } else {
         mapInstanceRef.current.removeLayer(markerData.marker)
@@ -232,10 +245,13 @@ export default function Home() {
             .addTo(map)
 
           // Track marker for filtering
+          const properties = row.properties || {}
           markersRef.current.push({
             name: row.title,
             marker: marker,
             airport: row.nearestAirport,
+            language: properties["Language(수학언어)"] || properties.Language || "",
+            departments: properties.Departments || "",
           })
 
           marker.on("popupopen", () => {
@@ -270,20 +286,49 @@ export default function Home() {
 
   return (
     <div style={{ height: "100vh", width: "100%", display: "flex", flexDirection: "column" }}>
-      <input
-        type="text"
-        placeholder="Search university name..."
-        onChange={(e) => filterMarkers(e.target.value)}
-        style={{
-          padding: "10px 15px",
-          margin: "10px",
-          marginBottom: "5px",
-          borderRadius: "4px",
-          border: "1px solid #ccc",
-          fontSize: "14px",
-          zIndex: 1000,
-        }}
-      />
+      <div style={{ display: "flex", gap: "10px", padding: "10px", alignItems: "center" }}>
+        <select
+          value={searchType}
+          onChange={(e) => {
+            setSearchType(e.target.value)
+            filterMarkers(searchText, e.target.value)
+          }}
+          style={{
+            padding: "8px 12px",
+            borderRadius: "4px",
+            border: "1px solid #ccc",
+            fontSize: "14px",
+            zIndex: 1000,
+          }}
+        >
+          <option value="name">Search by Name</option>
+          <option value="language">Search by Language</option>
+          <option value="departments">Search by Departments</option>
+        </select>
+        <input
+          type="text"
+          placeholder={
+            searchType === "name"
+              ? "Search university name..."
+              : searchType === "language"
+              ? "Search language..."
+              : "Search departments..."
+          }
+          value={searchText}
+          onChange={(e) => {
+            setSearchText(e.target.value)
+            filterMarkers(e.target.value, searchType)
+          }}
+          style={{
+            flex: 1,
+            padding: "8px 12px",
+            borderRadius: "4px",
+            border: "1px solid #ccc",
+            fontSize: "14px",
+            zIndex: 1000,
+          }}
+        />
+      </div>
       <div ref={mapRef} style={{ flex: 1, width: "100%" }} />
     </div>
   )
