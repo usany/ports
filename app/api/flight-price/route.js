@@ -93,34 +93,43 @@ export async function GET(request) {
 
         if (!price) return
 
-        // Extract airline - look for common airline names or 항공 (airline)
+        // Extract airline - look for common airline names
         let airline = null
+
+        // Split text into lines and look for airline info
+        const lines = text.split('\n').map(l => l.trim())
+
+        // Common airline patterns to search for
         const airlinePatterns = [
-          /아시아나항공|Asiana/i,
-          /대한항공|Korean Air|KE/i,
-          /진에어|Jin Air/i,
-          /에어부산|Air Busan/i,
-          /제주항공|Jeju Air/i,
-          /에어서울|Air Seoul/i,
-          /이스타항공|Eastair/i,
-          /스카이팀/i,
-          /탈린|Talin/i,
+          /아시아나항공/i,
+          /대한항공/i,
+          /진에어/i,
+          /에어부산/i,
+          /제주항공/i,
+          /에어서울/i,
+          /이스타항공/i,
           /델타|Delta/i,
           /아메리칸|American/i,
           /유나이티드|United/i,
           /루프트한자|Lufthansa/i,
           /에미레이트|Emirates/i,
-          /카타르항공|Qatar/i,
-          /싱가포르항공|Singapore/i,
-          /([A-Z][A-Za-z\s]+항공)/,  // Generic airline with 항공
+          /카타르|Qatar/i,
+          /싱가포르|Singapore/i,
+          /KE|Korean Air/i,
+          /OZ|Asiana/i,
+          /([가-힣]+항공)/,  // Any Korean airline with 항공
         ]
 
-        for (const pattern of airlinePatterns) {
-          const match = text.match(pattern)
-          if (match) {
-            airline = match[1] || match[0]
-            break
+        // Search each line for airline keywords
+        for (const line of lines) {
+          for (const pattern of airlinePatterns) {
+            const match = line.match(pattern)
+            if (match) {
+              airline = match[1] || match[0]
+              break
+            }
           }
+          if (airline) break
         }
 
         // Extract duration
