@@ -29,8 +29,11 @@ export async function GET(request) {
     console.log(`Navigating to: ${url}`)
     await page.goto(url, { waitUntil: "load", timeout: 40000 })
 
-    // Wait even longer for dynamic content
-    await page.waitForTimeout(5000)
+    // Wait for 최저가 (lowest price) element to appear
+    await page.waitForFunction(
+      () => document.body.innerText.includes("최저가"),
+      { timeout: 30000 }
+    )
 
     // Get page info
     const pageInfo = await page.evaluate(() => ({

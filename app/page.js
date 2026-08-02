@@ -114,7 +114,7 @@ export default function Home() {
       const seoulLon = 126.4
 
       const drawArc = (map, fromLat, fromLon, toLat, toLon) => {
-        return L.polyline([[fromLat, fromLon], [toLat, toLon]], { color: "#f59e0b", weight: 2.5, opacity: 0.8, dashArray: "5, 5" }).addTo(map)
+        return L.polyline([[fromLat, fromLon], [toLat, toLon]], { color: "#f59e0b", weight: 2.5, opacity: 0.8, dashArray: "5, 5" })
       }
 
       const toggleAirportMarker = (airport, button, dateStr = null) => {
