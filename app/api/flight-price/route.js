@@ -179,8 +179,8 @@ export async function GET(request) {
       console.log("Flight data extracted:", {
         destination: destination,
         totalFlights: flights.length,
-        allFlights: flights.map((f) => ({ price: f.price, duration: f.duration, stops: f.stops })),
-        bestFlights: bestFlights.map((f) => ({ price: f.price, duration: f.duration, stops: f.stops })),
+        allFlights: flights.map((f) => ({ price: f.price, airline: f.airline, duration: f.duration, stops: f.stops })),
+        bestFlights: bestFlights.map((f) => ({ price: f.price, airline: f.airline, duration: f.duration, stops: f.stops })),
         priceRange: flights.length > 0 ? { min: flights[0].price, max: flights[flights.length - 1].price } : null,
       })
 
