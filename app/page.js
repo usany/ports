@@ -307,8 +307,8 @@ export default function Home() {
         >
           <option value="name">Search by Name</option>
           <option value="language">Search by Language</option>
-          <option value="departments">Search by Departments</option>
           <option value="country">Search by Country</option>
+          <option value="departments">Search by Departments</option>
         </select>
         <input
           type="text"
