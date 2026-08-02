@@ -103,11 +103,16 @@ export default function Home() {
           const flightData = await getFlightPrice("SEL", code, dateStr)
           console.log("Flight response for", code, ":", flightData)
 
+          let html = ""
+          let priceFound = false
+
+          // Try to get price from flights array first
           if (flightData && flightData.flights && flightData.flights.length > 0) {
             const flight = flightData.flights[0]
             if (flight.price) {
               const priceStr = flight.price.toLocaleString()
-              let html = `<div style="margin-top:4px;font-size:12px;color:#059669"><b>₩${priceStr}</b></div>`
+              html = `<div style="margin-top:4px;font-size:12px;color:#059669"><b>₩${priceStr}</b></div>`
+              priceFound = true
 
               if (flight.duration || flight.stops !== null || flight.isDirect) {
                 html += `<div style="margin-top:3px;font-size:10px;color:#666">`
@@ -126,14 +131,22 @@ export default function Home() {
 
                 html += `</div>`
               }
-
-              priceDiv.innerHTML = html
-            } else {
-              priceDiv.innerHTML = `<div style="margin-top:4px;font-size:11px;color:#999">Price unavailable</div>`
             }
-          } else {
-            priceDiv.innerHTML = `<div style="margin-top:4px;font-size:11px;color:#999">Price unavailable</div>`
           }
+
+          // Fallback to main price from API if flights extraction failed
+          if (!priceFound && flightData && flightData.price) {
+            const priceStr = flightData.price.toLocaleString()
+            html = `<div style="margin-top:4px;font-size:12px;color:#059669"><b>₩${priceStr}</b></div>`
+            priceFound = true
+          }
+
+          // Show unavailable if no price found
+          if (!priceFound) {
+            html = `<div style="margin-top:4px;font-size:11px;color:#999">Price unavailable</div>`
+          }
+
+          priceDiv.innerHTML = html
         })
 
         marker.openPopup()

@@ -174,14 +174,22 @@ export async function GET(request) {
 
     await browser.close()
 
+    // Ensure we return a price if flights were found
+    let mainPrice = null
+    if (flightData.flights && flightData.flights.length > 0) {
+      mainPrice = flightData.flights[0].price
+    } else if (flightData.prices && flightData.prices.length > 0) {
+      mainPrice = flightData.prices[0]
+    }
+
     return Response.json({
       success: true,
       origin,
       destination,
       date,
-      price: flightData.prices.length > 0 ? flightData.prices[0] : null,
-      allPrices: flightData.prices.slice(0, 10),
-      flights: flightData.flights,
+      price: mainPrice,
+      allPrices: flightData.prices?.slice(0, 10) || [],
+      flights: flightData.flights || [],
       url,
     })
   } catch (error) {
