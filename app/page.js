@@ -12,18 +12,11 @@ function popupHtml(row, onShowAirport) {
   const a = row.nearestAirport
   if (a) {
     const code = a.iata || a.icao || ""
-    const today = new Date()
-    const defaultDate = new Date(today.getTime() + 9 * 24 * 60 * 60 * 1000)
-    const defaultDateStr = defaultDate.toISOString().split("T")[0]
-
     parts.push(
       `<div style="margin-top:4px;font-size:12px;color:#0f766e">✈ ${esc(a.name)}` +
         (code ? ` (${esc(code)})` : "") +
         ` &middot; ${a.distanceKm} km</div>` +
-        `<form id="airport-form-${code || a.lat}-${a.lon}" style="margin-top:6px;display:flex;gap:4px;align-items:center;">` +
-        `<input type="date" id="airport-date-${code || a.lat}-${a.lon}" value="${defaultDateStr}" style="padding:4px;border:1px solid #ccc;border-radius:3px;font-size:12px;">` +
-        `<button type="submit" style="padding:4px 8px;background:#0f766e;color:white;border:none;border-radius:3px;cursor:pointer;font-size:12px;white-space:nowrap;">Show on map</button>` +
-        `</form>`
+        `<button id="show-airport-btn-${code || a.lat}-${a.lon}" style="margin-top:6px;padding:4px 8px;background:#0f766e;color:white;border:none;border-radius:3px;cursor:pointer;font-size:12px">Show on map</button>`
     )
   }
   const add = (k, label) => {
@@ -227,118 +220,6 @@ export default function Home() {
         marker.openPopup()
       }
 
-      const toggleAirportMarkerWithDate = (airport, button, selectedDate) => {
-        const code = airport.iata || airport.icao
-        const key = code || `${airport.lat},${airport.lon}`
-
-        if (shownAirportsRef.current.has(key)) {
-          const marker = shownAirportsRef.current.get(key)
-          map.removeLayer(marker)
-          shownAirportsRef.current.delete(key)
-          button.textContent = "Show on map"
-          button.style.background = "#0f766e"
-          return
-        }
-
-        const marker = L.marker([airport.lat, airport.lon], {
-          icon: L.divIcon({
-            className: "",
-            html: `<div style="width:10px;height:10px;background:#f59e0b;border:2px solid #fff;border-radius:2px;transform:rotate(45deg);box-shadow:0 0 2px rgba(0,0,0,.5)"></div>`,
-            iconSize: [14, 14],
-            iconAnchor: [7, 7],
-          }),
-        })
-          .bindPopup(
-            `<b style="font-size:14px">✈ ${esc(airport.name)}</b>` +
-              `<div style="margin-top:2px;color:#555">${esc(airport.city)}${code ? " &middot; " + esc(code) : ""}</div>` +
-              `<div id="flight-price-${code}" style="margin-top:8px;font-size:12px;color:#666"></div>`
-          )
-          .addTo(map)
-
-        shownAirportsRef.current.set(key, marker)
-        button.textContent = "Hide from map"
-        button.style.background = "#d97706"
-
-        marker.on("popupopen", async () => {
-          if (!code) return
-          const priceDiv = document.getElementById(`flight-price-${code}`)
-          if (!priceDiv) return
-
-          priceDiv.innerHTML = `<div style="color:#999">Loading prices...</div>`
-
-          const flightData = await getFlightPrice("SEL", code, selectedDate)
-          console.log("Flight response for", code, ":", flightData)
-
-          let html = ""
-          let priceFound = false
-
-          if (flightData && flightData.flights && flightData.flights.length > 0) {
-            const flight = flightData.flights[0]
-            if (flight.price) {
-              const priceStr = flight.price.toLocaleString()
-              html = `<div style="margin-top:4px;font-size:12px;color:#059669"><b>₩${priceStr}</b></div>`
-              priceFound = true
-
-              if (flight.airline) {
-                html += `<div style="margin-top:2px;font-size:11px;color:#555">${flight.airline}</div>`
-              }
-
-              if (flight.duration || flight.stops !== null || flight.isDirect) {
-                html += `<div style="margin-top:3px;font-size:10px;color:#666">`
-
-                if (flight.isDirect) {
-                  html += `직항`
-                } else if (flight.stops !== null && flight.stops > 0) {
-                  html += `${flight.stops}회 경유`
-                }
-
-                if (flight.duration) {
-                  const hasPreviousInfo = flight.isDirect || (flight.stops !== null && flight.stops > 0)
-                  html += hasPreviousInfo ? ` · ` : ``
-                  html += flight.duration
-                }
-
-                html += `</div>`
-              }
-            }
-          }
-
-          if (!priceFound && flightData && flightData.price) {
-            const priceStr = flightData.price.toLocaleString()
-            html = `<div style="margin-top:4px;font-size:12px;color:#059669"><b>₩${priceStr}</b></div>`
-            priceFound = true
-          }
-
-          if (!priceFound) {
-            html = `<div style="margin-top:4px;font-size:11px;color:#999">Price unavailable</div>`
-          }
-
-          priceDiv.innerHTML = html
-        })
-
-        marker.on("popupclose", () => {
-          const markerKey = code || `${airport.lat},${airport.lon}`
-          if (shownAirportsRef.current.has(markerKey)) {
-            const airportMarker = shownAirportsRef.current.get(markerKey)
-            map.removeLayer(airportMarker)
-            shownAirportsRef.current.delete(markerKey)
-
-            const formId = `airport-form-${markerKey}`
-            const form = document.getElementById(formId)
-            if (form) {
-              form.dataset.attached = ""
-              const btn = form.querySelector("button")
-              if (btn) {
-                btn.textContent = "Show on map"
-                btn.style.background = "#0f766e"
-              }
-            }
-          }
-        })
-
-        marker.openPopup()
-      }
-
       const getFlightPrice = async (origin, destination, date) => {
         try {
           const url = `/api/flight-price?origin=${origin}&destination=${destination}&date=${date}`
@@ -380,20 +261,12 @@ export default function Home() {
           marker.on("popupopen", () => {
             if (row.nearestAirport) {
               const code = row.nearestAirport.iata || row.nearestAirport.icao
-              const formId = `airport-form-${code || row.nearestAirport.lat}-${row.nearestAirport.lon}`
-              const dateInputId = `airport-date-${code || row.nearestAirport.lat}-${row.nearestAirport.lon}`
-              const form = document.getElementById(formId)
-              const dateInput = document.getElementById(dateInputId)
-
-              if (form && !form.dataset.attached) {
-                form.dataset.attached = "true"
-                form.addEventListener("submit", (e) => {
-                  e.preventDefault()
-                  const selectedDate = dateInput.value.replace(/-/g, "")
-                  const btn = form.querySelector("button")
-
-                  // Show airport marker with selected date
-                  toggleAirportMarkerWithDate(row.nearestAirport, btn, selectedDate)
+              const btnId = `show-airport-btn-${code || row.nearestAirport.lat}-${row.nearestAirport.lon}`
+              const btn = document.getElementById(btnId)
+              if (btn && !btn.dataset.attached) {
+                btn.dataset.attached = "true"
+                btn.addEventListener("click", () => {
+                  toggleAirportMarker(row.nearestAirport, btn)
                 })
               }
             }
