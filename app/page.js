@@ -6,7 +6,7 @@ import universities from "../universities.json"
 const esc = (s) =>
   String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;")
 
-function popupHtml(row) {
+function popupHtml(row, onShowAirport) {
   const p = row.properties || {}
   const parts = [`<b style="font-size:15px">${esc(row.title)}</b>`]
   const a = row.nearestAirport
@@ -15,7 +15,8 @@ function popupHtml(row) {
     parts.push(
       `<div style="margin-top:4px;font-size:12px;color:#0f766e">✈ ${esc(a.name)}` +
         (code ? ` (${esc(code)})` : "") +
-        ` &middot; ${a.distanceKm} km</div>`
+        ` &middot; ${a.distanceKm} km</div>` +
+        `<button id="show-airport-btn-${code || a.lat}-${a.lon}" style="margin-top:6px;padding:4px 8px;background:#0f766e;color:white;border:none;border-radius:3px;cursor:pointer;font-size:12px">Show on map</button>`
     )
   }
   const add = (k, label) => {
@@ -55,23 +56,73 @@ export default function Home() {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       }).addTo(map)
 
-      const addMarkers = (rows, color) => {
-        rows.forEach((row) => {
-          if (row.lat == null || row.lon == null) return
-          L.circleMarker([row.lat, row.lon], {
-            radius: 5,
-            color: "#fff",
-            weight: 1,
-            fillColor: color,
-            fillOpacity: 0.85,
-          })
-            .bindPopup(popupHtml(row))
-            .addTo(map)
+      const shownAirports = new Set()
+
+      const addAirportMarker = (airport) => {
+        const code = airport.iata || airport.icao
+        const key = code || `${airport.lat},${airport.lon}`
+
+        if (shownAirports.has(key)) return
+        shownAirports.add(key)
+
+        const marker = L.marker([airport.lat, airport.lon], {
+          icon: L.divIcon({
+            className: "",
+            html: `<div style="width:10px;height:10px;background:#f59e0b;border:2px solid #fff;border-radius:2px;transform:rotate(45deg);box-shadow:0 0 2px rgba(0,0,0,.5)"></div>`,
+            iconSize: [14, 14],
+            iconAnchor: [7, 7],
+          }),
+        })
+          .bindPopup(
+            `<b style="font-size:14px">✈ ${esc(airport.name)}</b>` +
+              `<div style="margin-top:2px;color:#555">${esc(airport.city)}${code ? " &middot; " + esc(code) : ""}</div>` +
+              `<div id="flight-price-${code}" style="margin-top:8px;font-size:12px;color:#666"></div>`
+          )
+          .addTo(map)
+
+        marker.on("popupopen", async () => {
+          if (!code) return
+          const priceDiv = document.getElementById(`flight-price-${code}`)
+          if (!priceDiv) return
+
+          priceDiv.innerHTML = `<div style="color:#999">Loading prices...</div>`
+          const today = new Date()
+          const futureDate = new Date(today.getTime() + 9 * 24 * 60 * 60 * 1000)
+          const dateStr = futureDate.toISOString().split("T")[0].replace(/-/g, "")
+
+          const flightData = await getFlightPrice("SEL", code, dateStr)
+
+          if (flightData && flightData.success && flightData.price) {
+            const priceStr = flightData.price.toLocaleString()
+            let html = `<div style="margin-top:4px;font-size:12px;color:#059669"><b>₩${priceStr}</b></div>`
+
+            if (flightData.flights && flightData.flights.length > 0) {
+              const flight = flightData.flights[0]
+              if (flight.duration || flight.stops !== null || flight.isDirect) {
+                html += `<div style="margin-top:3px;font-size:10px;color:#666">`
+
+                if (flight.isDirect) {
+                  html += `직항`
+                } else if (flight.stops !== null && flight.stops > 0) {
+                  html += `${flight.stops}회 경유`
+                }
+
+                if (flight.duration) {
+                  const hasPreviousInfo = flight.isDirect || (flight.stops !== null && flight.stops > 0)
+                  html += hasPreviousInfo ? ` · ` : ``
+                  html += flight.duration
+                }
+
+                html += `</div>`
+              }
+            }
+
+            priceDiv.innerHTML = html
+          } else {
+            priceDiv.innerHTML = `<div style="margin-top:4px;font-size:11px;color:#999">Price unavailable</div>`
+          }
         })
       }
-
-      addMarkers(universities.exchange.rows, "#3b82f6")
-      addMarkers(universities.study.rows, "#10b981")
 
       const getFlightPrice = async (origin, destination, date) => {
         try {
@@ -87,83 +138,36 @@ export default function Home() {
         }
       }
 
-      const addAirports = () => {
-        const seen = new Set()
-        const airports = []
-        const collect = (rows) =>
-          rows.forEach((row) => {
-            const a = row.nearestAirport
-            if (!a) return
-            const key = a.iata || a.icao || `${a.lat},${a.lon}`
-            if (seen.has(key)) return
-            seen.add(key)
-            airports.push(a)
+      const addMarkers = (rows, color) => {
+        rows.forEach((row) => {
+          if (row.lat == null || row.lon == null) return
+          const marker = L.circleMarker([row.lat, row.lon], {
+            radius: 5,
+            color: "#fff",
+            weight: 1,
+            fillColor: color,
+            fillOpacity: 0.85,
           })
-        collect(universities.exchange.rows)
-        collect(universities.study.rows)
-        airports.forEach((a) => {
-          const code = a.iata || a.icao
-          const marker = L.marker([a.lat, a.lon], {
-            icon: L.divIcon({
-              className: "",
-              html: `<div style="width:10px;height:10px;background:#f59e0b;border:2px solid #fff;border-radius:2px;transform:rotate(45deg);box-shadow:0 0 2px rgba(0,0,0,.5)"></div>`,
-              iconSize: [14, 14],
-              iconAnchor: [7, 7],
-            }),
-          })
-            .bindPopup(
-              `<b style="font-size:14px">✈ ${esc(a.name)}</b>` +
-                `<div style="margin-top:2px;color:#555">${esc(a.city)}${code ? " &middot; " + esc(code) : ""}</div>` +
-                `<div id="flight-price-${code}" style="margin-top:8px;font-size:12px;color:#666"></div>`
-            )
+            .bindPopup(popupHtml(row))
             .addTo(map)
 
-          marker.on("popupopen", async () => {
-            if (!code) return
-            const priceDiv = document.getElementById(`flight-price-${code}`)
-            if (!priceDiv) return
-
-            priceDiv.innerHTML = `<div style="color:#999">Loading prices...</div>`
-            const today = new Date()
-            const futureDate = new Date(today.getTime() + 9 * 24 * 60 * 60 * 1000)
-            const dateStr = futureDate.toISOString().split("T")[0].replace(/-/g, "")
-
-            const flightData = await getFlightPrice("SEL", code, dateStr)
-
-            if (flightData && flightData.success && flightData.price) {
-              const priceStr = flightData.price.toLocaleString()
-              let html = `<div style="margin-top:4px;font-size:12px;color:#059669"><b>₩${priceStr}</b></div>`
-
-              // Show flight details if available
-              if (flightData.flights && flightData.flights.length > 0) {
-                const flight = flightData.flights[0]
-                if (flight.duration || flight.stops !== null || flight.isDirect) {
-                  html += `<div style="margin-top:3px;font-size:10px;color:#666">`
-
-                  if (flight.isDirect) {
-                    html += `직항`
-                  } else if (flight.stops !== null && flight.stops > 0) {
-                    html += `${flight.stops}회 경유`
-                  }
-
-                  if (flight.duration) {
-                    const hasPreviousInfo = flight.isDirect || (flight.stops !== null && flight.stops > 0)
-                    html += hasPreviousInfo ? ` · ` : ``
-                    html += flight.duration
-                  }
-
-                  html += `</div>`
-                }
+          marker.on("popupopen", () => {
+            if (row.nearestAirport) {
+              const code = row.nearestAirport.iata || row.nearestAirport.icao
+              const btnId = `show-airport-btn-${code || row.nearestAirport.lat}-${row.nearestAirport.lon}`
+              const btn = document.getElementById(btnId)
+              if (btn) {
+                btn.addEventListener("click", () => {
+                  addAirportMarker(row.nearestAirport)
+                })
               }
-
-              priceDiv.innerHTML = html
-            } else {
-              priceDiv.innerHTML = `<div style="margin-top:4px;font-size:11px;color:#999">Price unavailable</div>`
             }
           })
         })
       }
-      addAirports()
+
+      addMarkers(universities.exchange.rows, "#3b82f6")
+      addMarkers(universities.study.rows, "#10b981")
 
       mapInstanceRef.current = map
     })
