@@ -110,6 +110,22 @@ export default function Home() {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       }).addTo(map)
 
+      const seoulLat = 37.46
+      const seoulLon = 126.4
+
+      const drawArc = (map, fromLat, fromLon, toLat, toLon) => {
+        const points = []
+        const steps = 100
+        for (let i = 0; i <= steps; i++) {
+          const f = i / steps
+          const cosF = Math.cos((1 - f) * Math.PI)
+          const lat = fromLat * (1 - f) + toLat * f + Math.sin(f * Math.PI) * 5 * (1 - cosF)
+          const lon = fromLon * (1 - f) + toLon * f
+          points.push([lat, lon])
+        }
+        return L.polyline(points, { color: "#3b82f6", weight: 2, opacity: 0.6, dashArray: "5, 5" }).addTo(map)
+      }
+
       const toggleAirportMarker = (airport, button, dateStr = null) => {
         const code = airport.iata || airport.icao
         const key = code || `${airport.lat},${airport.lon}`
@@ -118,6 +134,13 @@ export default function Home() {
           const marker = shownAirportsRef.current.get(key)
           map.removeLayer(marker)
           shownAirportsRef.current.delete(key)
+
+          const arc = shownAirportsRef.current.get(`${key}-arc`)
+          if (arc) {
+            map.removeLayer(arc)
+            shownAirportsRef.current.delete(`${key}-arc`)
+          }
+
           button.textContent = "Show on map"
           button.style.background = "#0f766e"
           return
@@ -138,8 +161,11 @@ export default function Home() {
           )
           .addTo(map)
 
+        const arc = drawArc(map, seoulLat, seoulLon, airport.lat, airport.lon)
+
         shownAirportsRef.current.set(key, marker)
         shownAirportsRef.current.set(`${key}-date`, dateStr)
+        shownAirportsRef.current.set(`${key}-arc`, arc)
         button.textContent = "Hide from map"
         button.style.background = "#d97706"
 
