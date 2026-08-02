@@ -42,6 +42,19 @@ function popupHtml(row, onShowAirport) {
 export default function Home() {
   const mapRef = useRef(null)
   const mapInstanceRef = useRef(null)
+  const markersRef = useRef([])
+
+  const filterMarkers = (searchText) => {
+    const text = searchText.toLowerCase()
+    markersRef.current.forEach((markerData) => {
+      const markerName = markerData.name.toLowerCase()
+      if (markerName.includes(text)) {
+        markerData.marker.addTo(mapInstanceRef.current)
+      } else {
+        mapInstanceRef.current.removeLayer(markerData.marker)
+      }
+    })
+  }
 
   useEffect(() => {
     if (mapInstanceRef.current || !mapRef.current) return
@@ -202,6 +215,12 @@ export default function Home() {
             .bindPopup(popupHtml(row))
             .addTo(map)
 
+          // Track marker for filtering
+          markersRef.current.push({
+            name: row.title,
+            marker: marker,
+          })
+
           marker.on("popupopen", () => {
             if (row.nearestAirport) {
               const code = row.nearestAirport.iata || row.nearestAirport.icao
@@ -232,5 +251,23 @@ export default function Home() {
     }
   }, [])
 
-  return <div ref={mapRef} style={{ height: "100vh", width: "100%" }} />
+  return (
+    <div style={{ height: "100vh", width: "100%", display: "flex", flexDirection: "column" }}>
+      <input
+        type="text"
+        placeholder="Search university name..."
+        onChange={(e) => filterMarkers(e.target.value)}
+        style={{
+          padding: "10px 15px",
+          margin: "10px",
+          marginBottom: "5px",
+          borderRadius: "4px",
+          border: "1px solid #ccc",
+          fontSize: "14px",
+          zIndex: 1000,
+        }}
+      />
+      <div ref={mapRef} style={{ flex: 1, width: "100%" }} />
+    </div>
+  )
 }
