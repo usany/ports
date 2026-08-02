@@ -78,18 +78,28 @@ export async function GET(request) {
       if (lowestPriceContainer) {
         const containerText = lowestPriceContainer.textContent || ""
 
-        // Extract all numbers that look like prices
-        const priceMatches = containerText.match(/\d+,\d{3}|\d{5,}/g) || []
+        // Extract price - look for price pattern near "최저가"
+        // Prices typically appear as "₩171,510" or "171510" or "171,510"
         let price = null
 
-        // Filter for reasonable flight prices (100k - 5M won)
-        const validPrices = priceMatches
-          .map((p) => parseInt(p.replace(/,/g, "")))
-          .filter((p) => p >= 100000 && p <= 5000000)
+        // Look for numbers followed by Korean won symbol or in price context
+        const pricePatterns = [
+          /₩\s*(\d{1,3}(?:,\d{3})+)/,        // ₩171,510
+          /\d{1,3}(?:,\d{3})+\s*원?/,         // 171,510 or 171,510원
+          /(\d{4,7})\s*원/,                   // 171510원
+        ]
 
-        // Get the lowest valid price
-        if (validPrices.length > 0) {
-          price = Math.min(...validPrices)
+        for (const pattern of pricePatterns) {
+          const match = containerText.match(pattern)
+          if (match) {
+            const priceStr = match[0].replace(/[₩원\s,]/g, "")
+            const priceNum = parseInt(priceStr)
+            // Only accept if it's a reasonable flight price
+            if (priceNum >= 100000 && priceNum <= 5000000) {
+              price = priceNum
+              break
+            }
+          }
         }
 
         // Extract duration
@@ -121,93 +131,10 @@ export async function GET(request) {
         }
       }
 
-      // Fallback: if no lowest price found, extract all prices
-      if (flights.length === 0) {
-        const priceMatches = text.match(/\d{1,3}(?:,\d{3})+/g) || []
-        const prices = []
-
-        priceMatches.forEach((match) => {
-          const num = parseInt(match.replace(/,/g, ""))
-          if (num >= 100000 && num <= 5000000) {
-            prices.push(num)
-          }
-        })
-
-        // Try to extract flight details from page elements
-        const flightElements = document.querySelectorAll(
-          "div, li, button, [class*='flight'], [class*='result']"
-        )
-
-        flightElements.forEach((el) => {
-          const text = el.textContent || ""
-
-          // Look for flight information patterns
-          if (text.includes("시간") || text.includes("분") || text.includes("직항") || text.includes("경유")) {
-            // Extract duration
-            const durationMatch =
-              text.match(/(\d+)\s*시간\s*(\d+)\s*분/) || text.match(/(\d+)h\s*(\d+)m/)
-
-            // Try multiple patterns for stops
-            let stopsMatch =
-              text.match(/(\d+)\s*회\s*경유/) ||
-              text.match(/(\d+)\s*경유/) ||
-              text.match(/경유\s*(\d+)\s*회/) ||
-              text.match(/경유\s*(\d+)/)
-
-            // Extract price from this element
-            const priceInElement = text.match(/\d{1,3}(?:,\d{3})+/)
-
-            // Determine if direct
-            let stops = null
-            let isDirect = false
-
-            if (stopsMatch) {
-              stops = parseInt(stopsMatch[1])
-              isDirect = false
-            } else if (text.includes("경유")) {
-              stops = 1
-              isDirect = false
-            } else if (text.includes("직항")) {
-              isDirect = true
-              stops = 0
-            }
-
-            if (priceInElement || durationMatch || stops !== null || isDirect) {
-              flights.push({
-                price: priceInElement ? parseInt(priceInElement[0].replace(/,/g, "")) : null,
-                duration: durationMatch ? `${durationMatch[1]}시간 ${durationMatch[2]}분` : null,
-                stops,
-                isDirect,
-                rawText: text.substring(0, 150),
-              })
-            }
-          }
-        })
-
-        // Remove duplicates and sort by price
-        const uniqueFlights = flights
-          .filter((f) => f.price && f.price >= 100000 && f.price <= 5000000)
-          .sort((a, b) => a.price - b.price)
-
-        // Always return the lowest price found
-        const lowestPrice = prices.length > 0 ? Math.min(...prices) : null
-
-        return {
-          prices: [...new Set(prices)].sort((a, b) => a - b),
-          flights: uniqueFlights.slice(0, 5),
-          lowestPrice: lowestPrice,
-          pageLength: text.length,
-        }
-      }
-
-      // Return lowest price from flights
-      const flightPrices = flights.map((f) => f.price).filter(Boolean)
-      const lowestPrice = flightPrices.length > 0 ? Math.min(...flightPrices) : null
-
+      // Return extracted flight data from "최저가" element
       return {
-        prices: flightPrices.sort((a, b) => a - b),
-        flights: flights.slice(0, 5),
-        lowestPrice: lowestPrice,
+        prices: flights.map((f) => f.price).filter(Boolean),
+        flights: flights,
         pageLength: text.length,
       }
     })
