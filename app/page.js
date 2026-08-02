@@ -114,6 +114,11 @@ export default function Home() {
               html = `<div style="margin-top:4px;font-size:12px;color:#059669"><b>₩${priceStr}</b></div>`
               priceFound = true
 
+              // Show airline if available
+              if (flight.airline) {
+                html += `<div style="margin-top:2px;font-size:11px;color:#555">${flight.airline}</div>`
+              }
+
               if (flight.duration || flight.stops !== null || flight.isDirect) {
                 html += `<div style="margin-top:3px;font-size:10px;color:#666">`
 

@@ -89,6 +89,36 @@ export async function GET(request) {
 
         if (!price) return
 
+        // Extract airline - look for common airline names or 항공 (airline)
+        let airline = null
+        const airlinePatterns = [
+          /아시아나항공|Asiana/i,
+          /대한항공|Korean Air|KE/i,
+          /진에어|Jin Air/i,
+          /에어부산|Air Busan/i,
+          /제주항공|Jeju Air/i,
+          /에어서울|Air Seoul/i,
+          /이스타항공|Eastair/i,
+          /스카이팀/i,
+          /탈린|Talin/i,
+          /델타|Delta/i,
+          /아메리칸|American/i,
+          /유나이티드|United/i,
+          /루프트한자|Lufthansa/i,
+          /에미레이트|Emirates/i,
+          /카타르항공|Qatar/i,
+          /싱가포르항공|Singapore/i,
+          /([A-Z][A-Za-z\s]+항공)/,  // Generic airline with 항공
+        ]
+
+        for (const pattern of airlinePatterns) {
+          const match = text.match(pattern)
+          if (match) {
+            airline = match[1] || match[0]
+            break
+          }
+        }
+
         // Extract duration
         const durationMatch = text.match(/(\d+)\s*시간\s*(\d+)\s*분/)
         const duration = durationMatch ? `${durationMatch[1]}시간 ${durationMatch[2]}분` : null
@@ -132,6 +162,7 @@ export async function GET(request) {
             duration,
             stops,
             isDirect,
+            airline,
             text: text.substring(0, 300),
           })
         }
