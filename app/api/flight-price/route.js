@@ -93,22 +93,40 @@ export async function GET(request) {
         const durationMatch = text.match(/(\d+)\s*시간\s*(\d+)\s*분/)
         const duration = durationMatch ? `${durationMatch[1]}시간 ${durationMatch[2]}분` : null
 
-        // Extract stops/direct - prioritize "회 경유" pattern
+        // Extract stops/direct - try multiple patterns
         let stops = null
         let isDirect = false
 
-        const stopsMatch = text.match(/(\d+)\s*회\s*경유/)
-        if (stopsMatch) {
-          stops = parseInt(stopsMatch[1])
-        } else if (text.includes("경유")) {
+        // Try various patterns for transfer info
+        const stopsPatterns = [
+          /(\d+)\s*회\s*경유/,           // "2회 경유" or "2 회 경유"
+          /(\d+)회경유/,                  // "2회경유" (no space)
+          /경유\s*(\d+)\s*회/,            // "경유 2회"
+          /경유\s*(\d+)/,                 // "경유 2"
+          /(\d+)\s*경유/,                 // "2 경유"
+        ]
+
+        for (const pattern of stopsPatterns) {
+          const match = text.match(pattern)
+          if (match) {
+            stops = parseInt(match[1])
+            break
+          }
+        }
+
+        // If no stops found but "경유" is mentioned, assume 1 stop
+        if (stops === null && text.includes("경유")) {
           stops = 1
-        } else if (text.includes("직항")) {
+        }
+
+        // Check for direct flight
+        if (text.includes("직항")) {
           isDirect = true
           stops = 0
         }
 
-        // Add valid flight
-        if (price && (duration || isDirect)) {
+        // Add valid flight (with or without complete duration)
+        if (price) {
           flights.push({
             price,
             duration,
