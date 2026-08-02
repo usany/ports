@@ -50,125 +50,88 @@ export async function GET(request) {
     const flightData = await page.evaluate(() => {
       const flights = []
       const text = document.body.innerText
+      const prices = []
 
-      // Strategy 1: Find the element with "최저가" (lowest price)
-      let lowestPriceElement = Array.from(document.querySelectorAll("i, span, div, em, b")).find(
-        (el) => el.textContent && el.textContent.trim() === "최저가"
-      )
+      // Extract ALL prices from the page
+      const priceRegex = /(\d{2,3},\d{3}|\d{5,})\s*원?/g
+      let priceMatch
+      while ((priceMatch = priceRegex.exec(text)) !== null) {
+        const priceStr = priceMatch[1].replace(/,/g, "")
+        const priceNum = parseInt(priceStr)
+        // Only collect reasonable flight prices (100k - 5M won)
+        if (priceNum >= 100000 && priceNum <= 5000000) {
+          prices.push(priceNum)
+        }
+      }
 
-      // Strategy 2: If not found, look for it as partial text match
-      if (!lowestPriceElement) {
-        lowestPriceElement = Array.from(document.querySelectorAll("*")).find(
-          (el) => el.textContent && el.textContent.includes("최저가")
+      // Remove duplicates and sort
+      const uniquePrices = [...new Set(prices)].sort((a, b) => a - b)
+
+      // Get the minimum price (most likely to be direct/cheapest)
+      const lowestPrice = uniquePrices.length > 0 ? uniquePrices[0] : null
+
+      // Now find flight details near the lowest price or first result
+      const allElements = Array.from(document.querySelectorAll("div, li, section, article, span"))
+
+      // Look for element containing flight info (time + transfer info)
+      let flightElement = allElements.find((el) => {
+        const text = el.textContent || ""
+        return (
+          (text.includes("시간") || text.includes("분")) &&
+          (text.includes("직항") || text.includes("경유"))
         )
-      }
+      })
 
-      // If found, get the parent container with flight info
-      let lowestPriceContainer = null
-      if (lowestPriceElement) {
-        let parent = lowestPriceElement.parentElement
-        // Go up the DOM tree to find the flight result container
-        for (let i = 0; i < 20 && parent; i++) {
-          const parentText = parent.textContent || ""
-          if (
-            (parentText.includes("시간") || parentText.includes("분")) &&
-            (parentText.includes("직항") || parentText.includes("경유") || parentText.includes("경유") || /\d+,\d{3}/.test(parentText))
-          ) {
-            lowestPriceContainer = parent
-            break
-          }
-          parent = parent.parentElement
-        }
-      }
-
-      // Strategy 3: If still not found, look for first flight result with time and transfer info
-      if (!lowestPriceContainer) {
-        const allElements = Array.from(document.querySelectorAll("div, li, section, article"))
-        lowestPriceContainer = allElements.find((el) => {
-          const text = el.textContent || ""
-          return (
-            (text.includes("시간") || text.includes("분")) &&
-            (text.includes("직항") || text.includes("경유")) &&
-            /\d{2,3},\d{3}|\d{5,}/.test(text)
-          )
-        })
-      }
-
-      // Extract info from lowest price container if found
-      if (lowestPriceContainer) {
-        const containerText = lowestPriceContainer.textContent || ""
-
-        // Extract price - look for price pattern near "최저가"
-        // Prices typically appear as "₩171,510" or "171510" or "171,510"
-        let price = null
-
-        // Look for numbers followed by Korean won symbol or in price context
-        const pricePatterns = [
-          /₩\s*(\d{1,3}(?:,\d{3})+)/,        // ₩171,510
-          /\d{1,3}(?:,\d{3})+\s*원?/,         // 171,510 or 171,510원
-          /(\d{4,7})\s*원/,                   // 171510원
-        ]
-
-        for (const pattern of pricePatterns) {
-          const match = containerText.match(pattern)
-          if (match) {
-            const priceStr = match[0].replace(/[₩원\s,]/g, "")
-            const priceNum = parseInt(priceStr)
-            // Only accept if it's a reasonable flight price
-            if (priceNum >= 100000 && priceNum <= 5000000) {
-              price = priceNum
-              break
-            }
-          }
-        }
+      // Extract flight details from the element
+      if (flightElement) {
+        const flightText = flightElement.textContent || ""
 
         // Extract duration
-        const durationMatch = containerText.match(/(\d+)\s*시간\s*(\d+)\s*분/)
+        const durationMatch = flightText.match(/(\d+)\s*시간\s*(\d+)\s*분/)
         const duration = durationMatch ? `${durationMatch[1]}시간 ${durationMatch[2]}분` : null
 
         // Extract stops/direct
         let stops = null
         let isDirect = false
 
-        const stopsMatch = containerText.match(/(\d+)\s*회\s*경유/)
+        const stopsMatch = flightText.match(/(\d+)\s*회\s*경유/)
         if (stopsMatch) {
           stops = parseInt(stopsMatch[1])
-        } else if (containerText.includes("경유")) {
+        } else if (flightText.includes("경유")) {
           stops = 1
-        } else if (containerText.includes("직항")) {
+        } else if (flightText.includes("직항")) {
           isDirect = true
           stops = 0
         }
 
-        if (price) {
+        if (lowestPrice) {
           flights.push({
-            price,
+            price: lowestPrice,
             duration,
             stops,
             isDirect,
-            rawText: containerText.substring(0, 150),
           })
         }
+      } else if (lowestPrice) {
+        // If we can't find transfer details, at least return the price
+        flights.push({
+          price: lowestPrice,
+          duration: null,
+          stops: null,
+          isDirect: false,
+        })
       }
 
-      // Return extracted flight data from "최저가" element
       console.log("Flight data extracted:", {
-        flightsCount: flights.length,
+        allPrices: uniquePrices,
+        lowestPrice: lowestPrice,
         flights: flights,
-        lowestPriceElementFound: !!lowestPriceElement,
-        lowestPriceContainerFound: !!lowestPriceContainer,
       })
 
       return {
-        success: true,
-        prices: flights.map((f) => f.price).filter(Boolean),
+        prices: uniquePrices,
         flights: flights,
         pageLength: text.length,
-        debug: {
-          lowestPriceElementFound: !!lowestPriceElement,
-          lowestPriceContainerFound: !!lowestPriceContainer,
-          containerText: lowestPriceContainer ? lowestPriceContainer.textContent.substring(0, 500) : null,
-        },
       }
     })
 
