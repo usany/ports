@@ -137,17 +137,21 @@ export default function Home() {
               // Show flight details if available
               if (flightData.flights && flightData.flights.length > 0) {
                 const flight = flightData.flights[0]
-                if (flight.duration || flight.stops !== null) {
+                if (flight.duration || flight.stops !== null || flight.isDirect) {
                   html += `<div style="margin-top:3px;font-size:10px;color:#666">`
+
                   if (flight.isDirect) {
                     html += `직항`
-                  } else if (flight.stops !== null) {
+                  } else if (flight.stops !== null && flight.stops > 0) {
                     html += `${flight.stops}회 경유`
                   }
+
                   if (flight.duration) {
-                    html += flight.isDirect || flight.stops !== null ? ` · ` : ``
+                    const hasPreviousInfo = flight.isDirect || (flight.stops !== null && flight.stops > 0)
+                    html += hasPreviousInfo ? ` · ` : ``
                     html += flight.duration
                   }
+
                   html += `</div>`
                 }
               }

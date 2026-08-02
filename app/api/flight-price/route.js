@@ -71,24 +71,39 @@ export async function GET(request) {
         const text = el.textContent || ""
 
         // Look for flight information patterns
-        if (text.includes("시간") || text.includes("분") || text.includes("직항")) {
-          // Extract duration (e.g., "15시간 30분")
-          const durationMatch = text.match(/(\d+)시간\s*(\d+)분/)
+        if (text.includes("시간") || text.includes("분") || text.includes("직항") || text.includes("경유")) {
+          // Extract duration (e.g., "15시간 30분" or "15h 30m")
+          const durationMatch = text.match(/(\d+)\s*시간\s*(\d+)\s*분/) ||
+                               text.match(/(\d+)h\s*(\d+)m/)
 
-          // Check for stops (직항 = direct)
+          // Check for stops - more flexible patterns
           const isDirect = text.includes("직항")
-          const stopsMatch = text.match(/(\d+)회\s*경유/) || text.match(/경유\s*(\d+)회/)
+
+          // Try multiple patterns for stops
+          let stopsMatch = text.match(/(\d+)\s*회\s*경유/) ||  // "1회 경유"
+                          text.match(/(\d+)\s*경유/) ||         // "1경유"
+                          text.match(/경유\s*(\d+)\s*회/) ||    // "경유 1회"
+                          text.match(/경유\s*(\d+)/)             // "경유 1"
 
           // Extract price from this element
           const priceInElement = text.match(/\d{1,3}(?:,\d{3})+/)
 
-          if (priceInElement || durationMatch || stopsMatch) {
+          // Count stops more accurately
+          let stops = null
+          if (!isDirect && stopsMatch) {
+            stops = parseInt(stopsMatch[1])
+          } else if (!isDirect && text.includes("경유")) {
+            // If "경유" is mentioned but no number, assume 1 stop
+            stops = 1
+          }
+
+          if (priceInElement || durationMatch || stopsMatch || isDirect) {
             flights.push({
               price: priceInElement ? parseInt(priceInElement[0].replace(/,/g, "")) : null,
               duration: durationMatch
                 ? `${durationMatch[1]}시간 ${durationMatch[2]}분`
                 : null,
-              stops: isDirect ? 0 : stopsMatch ? parseInt(stopsMatch[1]) : null,
+              stops: isDirect ? 0 : stops,
               isDirect,
               rawText: text.substring(0, 150),
             })
