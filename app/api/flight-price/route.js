@@ -71,6 +71,10 @@ export async function GET(request) {
           if (!hasDestination) return
         }
 
+        // Check if this element has "최저가" (lowest price) badge
+        const hasLowestPrice = text.includes("최저가")
+        if (!hasLowestPrice) return
+
         // Extract ALL prices from this element and get the LAST/HIGHEST valid one
         // (The most relevant price is typically at the end)
         const priceMatches = text.match(/(\d{1,3}(?:,\d{3})+|\d{5,})/g) || []
