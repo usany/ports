@@ -56,14 +56,20 @@ export default function Home() {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       }).addTo(map)
 
-      const shownAirports = new Set()
+      const shownAirports = new Map()
 
-      const addAirportMarker = (airport) => {
+      const toggleAirportMarker = (airport, button) => {
         const code = airport.iata || airport.icao
         const key = code || `${airport.lat},${airport.lon}`
 
-        if (shownAirports.has(key)) return
-        shownAirports.add(key)
+        if (shownAirports.has(key)) {
+          const marker = shownAirports.get(key)
+          map.removeLayer(marker)
+          shownAirports.delete(key)
+          button.textContent = "Show on map"
+          button.style.background = "#0f766e"
+          return
+        }
 
         const marker = L.marker([airport.lat, airport.lon], {
           icon: L.divIcon({
@@ -79,6 +85,10 @@ export default function Home() {
               `<div id="flight-price-${code}" style="margin-top:8px;font-size:12px;color:#666"></div>`
           )
           .addTo(map)
+
+        shownAirports.set(key, marker)
+        button.textContent = "Hide from map"
+        button.style.background = "#d97706"
 
         marker.on("popupopen", async () => {
           if (!code) return
@@ -122,6 +132,8 @@ export default function Home() {
             priceDiv.innerHTML = `<div style="margin-top:4px;font-size:11px;color:#999">Price unavailable</div>`
           }
         })
+
+        marker.openPopup()
       }
 
       const getFlightPrice = async (origin, destination, date) => {
@@ -156,9 +168,10 @@ export default function Home() {
               const code = row.nearestAirport.iata || row.nearestAirport.icao
               const btnId = `show-airport-btn-${code || row.nearestAirport.lat}-${row.nearestAirport.lon}`
               const btn = document.getElementById(btnId)
-              if (btn) {
+              if (btn && !btn.dataset.attached) {
+                btn.dataset.attached = "true"
                 btn.addEventListener("click", () => {
-                  addAirportMarker(row.nearestAirport)
+                  toggleAirportMarker(row.nearestAirport, btn)
                 })
               }
             }
