@@ -12,11 +12,15 @@ function popupHtml(row, onShowAirport) {
   const a = row.nearestAirport
   if (a) {
     const code = a.iata || a.icao || ""
+    const today = new Date().toISOString().split("T")[0]
     parts.push(
       `<div style="margin-top:4px;font-size:12px;color:#0f766e">✈ ${esc(a.name)}` +
         (code ? ` (${esc(code)})` : "") +
         ` &middot; ${a.distanceKm} km</div>` +
-        `<button id="show-airport-btn-${code || a.lat}-${a.lon}" style="margin-top:6px;padding:4px 8px;background:#0f766e;color:white;border:none;border-radius:3px;cursor:pointer;font-size:12px">Show on map</button>`
+        `<form id="show-airport-form-${code || a.lat}-${a.lon}" style="margin-top:6px;display:flex;gap:6px;align-items:center">` +
+        `<input type="date" id="airport-date-${code || a.lat}-${a.lon}" value="${today}" style="padding:4px 6px;font-size:12px;border:1px solid #ccc;border-radius:3px">` +
+        `<button type="submit" style="padding:4px 8px;background:#0f766e;color:white;border:none;border-radius:3px;cursor:pointer;font-size:12px">Show on map</button>` +
+        `</form>`
     )
   }
   const add = (k, label) => {
@@ -78,11 +82,14 @@ export default function Home() {
             shownAirportsRef.current.delete(airportKey)
 
             // Reset button state
-            const btnId = `show-airport-btn-${airportKey}`
-            const btn = document.getElementById(btnId)
-            if (btn) {
-              btn.textContent = "Show on map"
-              btn.style.background = "#0f766e"
+            const formId = `show-airport-form-${airportKey}`
+            const form = document.getElementById(formId)
+            if (form) {
+              const btn = form.querySelector("button[type='submit']")
+              if (btn) {
+                btn.textContent = "Show on map"
+                btn.style.background = "#0f766e"
+              }
             }
           }
         }
@@ -103,7 +110,7 @@ export default function Home() {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       }).addTo(map)
 
-      const toggleAirportMarker = (airport, button) => {
+      const toggleAirportMarker = (airport, button, dateStr = null) => {
         const code = airport.iata || airport.icao
         const key = code || `${airport.lat},${airport.lon}`
 
@@ -132,6 +139,7 @@ export default function Home() {
           .addTo(map)
 
         shownAirportsRef.current.set(key, marker)
+        shownAirportsRef.current.set(`${key}-date`, dateStr)
         button.textContent = "Hide from map"
         button.style.background = "#d97706"
 
@@ -141,11 +149,14 @@ export default function Home() {
           if (!priceDiv) return
 
           priceDiv.innerHTML = `<div style="color:#999">Loading prices...</div>`
-          const today = new Date()
-          const futureDate = new Date(today.getTime() + 9 * 24 * 60 * 60 * 1000)
-          const dateStr = futureDate.toISOString().split("T")[0].replace(/-/g, "")
+          let finalDateStr = dateStr
+          if (!finalDateStr) {
+            const today = new Date()
+            const futureDate = new Date(today.getTime() + 9 * 24 * 60 * 60 * 1000)
+            finalDateStr = futureDate.toISOString().split("T")[0].replace(/-/g, "")
+          }
 
-          const flightData = await getFlightPrice("SEL", code, dateStr)
+          const flightData = await getFlightPrice("SEL", code, finalDateStr)
           console.log("Flight response for", code, ":", flightData)
 
           let html = ""
@@ -208,11 +219,14 @@ export default function Home() {
             shownAirportsRef.current.delete(markerKey)
 
             // Update button state in location marker popup
-            const btnId = `show-airport-btn-${markerKey}`
-            const btn = document.getElementById(btnId)
-            if (btn) {
-              btn.textContent = "Show on map"
-              btn.style.background = "#0f766e"
+            const formId = `show-airport-form-${markerKey}`
+            const form = document.getElementById(formId)
+            if (form) {
+              const btn = form.querySelector("button[type='submit']")
+              if (btn) {
+                btn.textContent = "Show on map"
+                btn.style.background = "#0f766e"
+              }
             }
           }
         })
@@ -261,12 +275,17 @@ export default function Home() {
           marker.on("popupopen", () => {
             if (row.nearestAirport) {
               const code = row.nearestAirport.iata || row.nearestAirport.icao
-              const btnId = `show-airport-btn-${code || row.nearestAirport.lat}-${row.nearestAirport.lon}`
-              const btn = document.getElementById(btnId)
-              if (btn && !btn.dataset.attached) {
-                btn.dataset.attached = "true"
-                btn.addEventListener("click", () => {
-                  toggleAirportMarker(row.nearestAirport, btn)
+              const formId = `show-airport-form-${code || row.nearestAirport.lat}-${row.nearestAirport.lon}`
+              const dateId = `airport-date-${code || row.nearestAirport.lat}-${row.nearestAirport.lon}`
+              const form = document.getElementById(formId)
+              if (form && !form.dataset.attached) {
+                form.dataset.attached = "true"
+                form.addEventListener("submit", (e) => {
+                  e.preventDefault()
+                  const dateInput = document.getElementById(dateId)
+                  const selectedDate = dateInput.value.replace(/-/g, "")
+                  const submitBtn = form.querySelector("button[type='submit']")
+                  toggleAirportMarker(row.nearestAirport, submitBtn, selectedDate)
                 })
               }
             }
