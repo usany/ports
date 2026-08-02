@@ -154,6 +154,24 @@ export default function Home() {
           priceDiv.innerHTML = html
         })
 
+        marker.on("popupclose", () => {
+          // Hide airport marker when its popup is closed
+          const markerKey = code || `${airport.lat},${airport.lon}`
+          if (shownAirports.has(markerKey)) {
+            const airportMarker = shownAirports.get(markerKey)
+            map.removeLayer(airportMarker)
+            shownAirports.delete(markerKey)
+
+            // Update button state in location marker popup
+            const btnId = `show-airport-btn-${markerKey}`
+            const btn = document.getElementById(btnId)
+            if (btn) {
+              btn.textContent = "Show on map"
+              btn.style.background = "#0f766e"
+            }
+          }
+        })
+
         marker.openPopup()
       }
 
