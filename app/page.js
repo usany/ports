@@ -9,6 +9,15 @@ const esc = (s) =>
 function popupHtml(row) {
   const p = row.properties || {}
   const parts = [`<b style="font-size:15px">${esc(row.title)}</b>`]
+  const a = row.nearestAirport
+  if (a) {
+    const code = a.iata || a.icao || ""
+    parts.push(
+      `<div style="margin-top:4px;font-size:12px;color:#0f766e">✈ ${esc(a.name)}` +
+        (code ? ` (${esc(code)})` : "") +
+        ` &middot; ${a.distanceKm} km</div>`
+    )
+  }
   const add = (k, label) => {
     const v = p[k]
     if (v && String(v).trim()) parts.push(`<div style="margin-top:4px"><b>${label}:</b> ${esc(v)}</div>`)
@@ -63,6 +72,74 @@ export default function Home() {
 
       addMarkers(universities.exchange.rows, "#3b82f6")
       addMarkers(universities.study.rows, "#10b981")
+
+      const getFlightPrice = async (origin, destination, date) => {
+        try {
+          const url = `/api/flight-price?origin=${origin}&destination=${destination}&date=${date}`
+          console.log("Fetching flight prices from:", url)
+          const response = await fetch(url)
+          const data = await response.json()
+          console.log("Flight price response:", data)
+          return data
+        } catch (error) {
+          console.error("Error fetching flight price:", error)
+          return { error: error.message }
+        }
+      }
+
+      const addAirports = () => {
+        const seen = new Set()
+        const airports = []
+        const collect = (rows) =>
+          rows.forEach((row) => {
+            const a = row.nearestAirport
+            if (!a) return
+            const key = a.iata || a.icao || `${a.lat},${a.lon}`
+            if (seen.has(key)) return
+            seen.add(key)
+            airports.push(a)
+          })
+        collect(universities.exchange.rows)
+        collect(universities.study.rows)
+        airports.forEach((a) => {
+          const code = a.iata || a.icao
+          const marker = L.marker([a.lat, a.lon], {
+            icon: L.divIcon({
+              className: "",
+              html: `<div style="width:10px;height:10px;background:#f59e0b;border:2px solid #fff;border-radius:2px;transform:rotate(45deg);box-shadow:0 0 2px rgba(0,0,0,.5)"></div>`,
+              iconSize: [14, 14],
+              iconAnchor: [7, 7],
+            }),
+          })
+            .bindPopup(
+              `<b style="font-size:14px">✈ ${esc(a.name)}</b>` +
+                `<div style="margin-top:2px;color:#555">${esc(a.city)}${code ? " &middot; " + esc(code) : ""}</div>` +
+                `<div id="flight-price-${code}" style="margin-top:8px;font-size:12px;color:#666"></div>`
+            )
+            .addTo(map)
+
+          marker.on("popupopen", async () => {
+            if (!code) return
+            const priceDiv = document.getElementById(`flight-price-${code}`)
+            if (!priceDiv) return
+
+            priceDiv.innerHTML = `<div style="color:#999">Loading prices...</div>`
+            const today = new Date()
+            const futureDate = new Date(today.getTime() + 9 * 24 * 60 * 60 * 1000)
+            const dateStr = futureDate.toISOString().split("T")[0].replace(/-/g, "")
+
+            const flightData = await getFlightPrice("SEL", code, dateStr)
+
+            if (flightData && flightData.success && flightData.price) {
+              const priceStr = flightData.price.toLocaleString()
+              priceDiv.innerHTML = `<div style="margin-top:4px;font-size:12px;color:#059669"><b>₩${priceStr}</b></div>`
+            } else {
+              priceDiv.innerHTML = `<div style="margin-top:4px;font-size:11px;color:#999">Price unavailable</div>`
+            }
+          })
+        })
+      }
+      addAirports()
 
       mapInstanceRef.current = map
     })

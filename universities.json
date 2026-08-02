@@ -43,7 +43,16 @@
             "type": "bookmark",
             "text": "[Fact sheet] 2022-2023 Cafoscari University.pdf"
           }
-        ]
+        ],
+        "nearestAirport": {
+          "name": "Venice Marco Polo Airport",
+          "city": "Venice",
+          "iata": "VCE",
+          "icao": "LIPZ",
+          "lat": 45.505299,
+          "lon": 12.3519,
+          "distanceKm": 8.1
+        }
       },
       {
         "id": "12a24cc6-2246-46f4-a345-14c3e732bdaf",
@@ -77,7 +86,16 @@
           "Note": "- One year (2 semesters) available (1년 파견 가능 대학)\n- TPU video presentation : https://youtu.be/t-SVCRNk6CQ\n- Additional medical examination and fingerprinting for staying in Russia more than 90 days.\n\nIncoming TPU students have to fulfill fingerprinting procedure within 90 days after arrival in RF: https://news.tpu.ru/en/news/2022/08/26/41110/",
           "Departments": "TPU Engineering,Computer Science and Robotics,Nondestructive Testing,Earth Science and Engineering,Engineering Entrepreneurship,Advanced Manufacturing Technologies,Energy and Power Engineering,Russian Language and Literature"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Bogashevo Airport",
+          "city": "Tomsk",
+          "iata": "TOF",
+          "icao": "UNTT",
+          "lat": 56.380298614502,
+          "lon": 85.208297729492,
+          "distanceKm": 18.1
+        }
       },
       {
         "id": "299195d3-4d6d-8158-bc49-ca959ab7ee92",
@@ -112,7 +130,16 @@
           "Note": "You are required to enrol in a full-time load at UNSW. The normal full-time load is 18 units of credit per term and 24 units of credit for tailored terms (3 subjects per term or 4 subjects per tailored term). It is not possible to overload or underload.\n\nExchange Office\nEmail: exchange@unsw.edu.au\nVisit us on the web at www.unsw.edu.au or Study Abroad and Exchange at UNSW",
           "Departments": "Arts Design and Architecture,Engineering,Law and Justice,Medicine and health,Science,Business school"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Sydney Kingsford Smith International Airport",
+          "city": "Sydney",
+          "iata": "SYD",
+          "icao": "YSSY",
+          "lat": -33.94609832763672,
+          "lon": 151.177001953125,
+          "distanceKm": 5.9
+        }
       },
       {
         "id": "299195d3-4d6d-8188-9b9d-ca02e5ec9bf4",
@@ -163,7 +190,16 @@
           "Note": "1. Student Visa Conditions: All international students in our Study Abroad and Exchange programs\nare required to have a valid student visa. See this page for details regarding Student Visa\n(Subclass 500) conditions. https://students.mq.edu.au/support/international/student-visa\n2. Overseas Student Health Cover: Student visa holders are required to have an OSHC.\nMacquarie’s chosen provider of OSHC is Medibank. https://students.mq.edu.au/support/international/student-visa/overseas-student-health-cover\n3. Accommodation: see an overview of on- and off-campus accommodation options. Contact all\nproviders directly for further support. https://students.mq.edu.au/uni-life/accommodation\n4. Calendar of Dates: Find session start and end dates, enrolment deadlines, exam periods and\nmore for the academic year. https://www.mq.edu.au/study/admissions-and-entry/calendar\n5. Course Handbook: Students must ensure that they have met the academic equivalent pre-\nrequisites at their home university for the units they want to study at Macquarie. See the Course\nHandbook for unit overview, level, offerings, pre-requisites, learning outcomes, learning and\nteaching activities. https://coursehandbook.mq.edu.au/\n6. Unit Guide: information about staff contacts, learning outcomes, assessment tasks, delivery mode\nand resources. https://unitguides.mq.edu.au/\n7. Restricted Units List: Check the restricted units list list to see which units are not available to Study\nAbroad and Exchange students. https://www.mq.edu.au/__data/assets/pdf_file/0006/1348719/Restricted-units-list-2026.pdf\n8. Accessibility Services: Accessibility and disability support should be arranged at the time of\nenrolment so that the University has adequate time to implement the required support. https://students.mq.edu.au/support/accessibility-disability\n9. Support services: Macquarie University employs a robust support system including services for\nstudent needs in academics, technology, health, wellbeing, counselling, and accessibility. https://students.mq.edu.au/support\n• Service Connect Portal: all communication with students about enrolment, services, technology,\n events and orientation\n• MQ Application Portal: all communication with students about admission\n",
           "Departments": "Business,Engineering,Science,Arts and social sciences,Languages and linguistics,Psychology and cognitive science,Education,Law,Medicine and health,Information technologies,Media communications and creative arts,Security intelligence and criminology,International studies"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Sydney Kingsford Smith International Airport",
+          "city": "Sydney",
+          "iata": "SYD",
+          "icao": "YSSY",
+          "lat": -33.94609832763672,
+          "lon": 151.177001953125,
+          "distanceKm": 20
+        }
       },
       {
         "id": "6feb1db2-a700-4326-9cea-0befdecc2074",
@@ -196,7 +232,16 @@
           "Note": "Etc. : https://www.flinders.edu.au/content/dam/documents/study/international/living/flinders-university-inbound-exchange.pdf",
           "Departments": "Business,Government,Law,Public Health,Science,Education,Humanities,Social Sciences,Engineering,Information Technology,Psychology,Social Work,Environment"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Adelaide International Airport",
+          "city": "Adelaide",
+          "iata": "ADL",
+          "icao": "YPAD",
+          "lat": -34.945,
+          "lon": 138.531006,
+          "distanceKm": 9.7
+        }
       },
       {
         "id": "299195d3-4d6d-81d2-9a7e-f2dea1fc927f",
@@ -230,7 +275,16 @@
           "Note": "Etc. : https://www.flinders.edu.au/content/dam/documents/study/international/living/flinders-university-inbound-exchange.pdf",
           "Departments": "Business,Government,Law,Public Health,Science,Education,Humanities,Social Sciences,Engineering,Information Technology,Psychology,Social Work,Environment"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Adelaide International Airport",
+          "city": "Adelaide",
+          "iata": "ADL",
+          "icao": "YPAD",
+          "lat": -34.945,
+          "lon": 138.531006,
+          "distanceKm": 9.7
+        }
       },
       {
         "id": "299195d3-4d6d-81a9-bf51-d9e18316299f",
@@ -269,7 +323,16 @@
             "type": "text",
             "text": "@uvigo.es"
           }
-        ]
+        ],
+        "nearestAirport": {
+          "name": "Wollongong Airport",
+          "city": "Wollongong",
+          "iata": "WOL",
+          "icao": "YWOL",
+          "lat": -34.561100006103516,
+          "lon": 150.78900146484375,
+          "distanceKm": 19.2
+        }
       },
       {
         "id": "299195d3-4d6d-8196-a7f8-c6058f7557dd",
@@ -303,7 +366,16 @@
           "Note": "Brochure : https://acrobat.adobe.com/link/review?uri=urn%3Aaaid%3Ascds%3AUS%3Ac70163a2-41b4-361e-8c2e-ee0860a47c67\n*Overseas Student Health Cover : https://www.westernsydney.edu.au/international/arriving/preparing-to-arrive/health-cover",
           "Departments": "Accounting,Architecture and Urban Envir.,Business and Social Sciences,Sciences,Building,Business and Management,Creative Arts,Engineering,Complementary Therapies,Digital Communications and Media Science,Computer Science,Other society and Culture,Graphic and Design,Economics and Econometrics,Banking Finance and related,Food and Hospitality,Technology,Justice and Law Enforcement,Language and Literature,Law,Mathematics,Mangement and Commerce,Sales and Marketing,Arts,Philosophy and Religious,Physics and Astronomy,Tourism,Human welfare and Services"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Barrow Island Airport",
+          "city": "Barrow Island",
+          "iata": "BWB",
+          "icao": "YBWX",
+          "lat": -20.86440086364746,
+          "lon": 115.40599822998047,
+          "distanceKm": 6831.6
+        }
       },
       {
         "id": "299195d3-4d6d-8199-8015-ff3f438978c6",
@@ -336,7 +408,16 @@
           "Note": "- Campuses Available for Exchange Students: Melbourne (Bundoora) and Bendigo\n- Handbook: https://handbook.latrobe.edu.au/\n- Brochure: https://www.latrobe.edu.au/__data/assets/pdf_file/0009/1528335/Study-Abroad-Brochure-International.pdf",
           "Departments": "Arts social sciences and communications,Business and Commerce,Education and Teaching,IT and engineering,Law and Criminology,Science"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Melbourne Essendon Airport",
+          "city": "Melbourne",
+          "iata": "MEB",
+          "icao": "YMEN",
+          "lat": -37.7281,
+          "lon": 144.901993,
+          "distanceKm": 12.6
+        }
       },
       {
         "id": "2b7195d3-4d6d-802d-b048-d003031dd67d",
@@ -365,7 +446,16 @@
           "Note": "https://www.scu.edu.au/study/international-study/international-student-support/\n* Cost of Living Information : Accommodation: private rental: $170-300 room/week or $400-800 house/week, unilodge: from $230/week, homestay: $300-345/week, food: $130-180 (food included for homestay), public transport: $30-60 or walk to university, utilities: $30+ (utilities included for unilidge and homestay), internet: $25+ (internet included for unilodge and homestay). \n* Southern Cross University (SCU) charges a one-off international student enrolment deposit which functions as a placement fee, and this deposit amount is specified on your offer letter; you can pay this deposit via the university's online payment portal. This fee is separate from tuition costs and Overseas Student Health Cover (OSHC). \n* Overseas Student Health Cover (OSHC) is mandatory health insurance for international students in Australia, covering expenses for medical services like doctors and public hospitals as a condition of their student visa. To apply, you must choose an approved OSHC provider (such as Bupa, Medibank, or Allianz Care), select a policy, purchase it, and submit the details with your visa application. ",
           "Departments": "Business,Arts and Education,Health,Information Technology,Engineering"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Melbourne Essendon Airport",
+          "city": "Melbourne",
+          "iata": "MEB",
+          "icao": "YMEN",
+          "lat": -37.7281,
+          "lon": 144.901993,
+          "distanceKm": 10.8
+        }
       },
       {
         "id": "2bd195d3-4d6d-808a-ac49-cb532cfd246d",
@@ -394,7 +484,16 @@
           "Note": "Overseas Student Health Cover (OSHC): https://www.unisq.edu.au/current-students/support/wellbeing/wellbeing-resources/overseas-student-health-cover",
           "Departments": "Business and Commerce,Creative Arts & Media,Education,Engineering & Built Environment,Health & Community,Humanities & Communication,Information Technology,Law & Justice,Sciences"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Toowoomba Airport",
+          "city": "Toowoomba",
+          "iata": "TWB",
+          "icao": "YTWB",
+          "lat": -27.542801,
+          "lon": 151.916,
+          "distanceKm": 7.2
+        }
       },
       {
         "id": "299195d3-4d6d-8171-b460-d2d4b1f3996f",
@@ -428,7 +527,16 @@
           "Note": "* Students are expected to arrive before the Orientation Days\n* ÖH Fee: Mandatory ÖH fee is used e.g. for accident and liability insurance of the students or the ÖH administration. 87% of the sum remains with the local ÖH representation and benefits the students in Kufstein through a variety of activities, projects and services. (Summer semester 2024: € 24.70 ÖH fee per semester; a yearly increase has to be expected; the actual amount is listed in the bill submitted by our service departements.)",
           "Departments": "International Marketing,Management,Finance,Technology"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Salzburg Airport",
+          "city": "Salzburg",
+          "iata": "SZG",
+          "icao": "LOWS",
+          "lat": 47.793300628699996,
+          "lon": 13.0043001175,
+          "distanceKm": 66.4
+        }
       },
       {
         "id": "299195d3-4d6d-810c-9b94-f49d722e6023",
@@ -462,7 +570,16 @@
           "Note": "All relevant information can be found on our exchange student website:\n https://www.mci4me.at/en/international/study-internationally/exchange-students\nThere is a mandatory administrative & student union fee of 50 EUR.",
           "Departments": "Law,Engineering,Communication,IT,Mechatronics,Social Work,Tourism"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Innsbruck Airport",
+          "city": "Innsbruck",
+          "iata": "INN",
+          "icao": "LOWI",
+          "lat": 47.260201,
+          "lon": 11.344,
+          "distanceKm": 4.2
+        }
       },
       {
         "id": "299195d3-4d6d-81e5-b051-e41d2c7062d1",
@@ -513,7 +630,16 @@
           "Note": "* Students must have completed one full year of studies before applying for an exchange semester\n* Students have to take a minimum of 18 ECTS credits per semester. The maximum semester workload are 30 ECTS credits\n* Around 25 Euros student union fee\n* Additional Fee: health insurance fee and other special campus fees\n* Due to timetable constraints, taking classes from multiple programmes is not possible",
           "Departments": "International Business,Electrical Engineering Dual,Mechatronics,Computer Science,Software Engineering,Environment and Engineering,Psycology"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Hohenems-Dornbirn Airport",
+          "city": "Hohenems",
+          "iata": "HOH",
+          "icao": "LOIH",
+          "lat": 47.3849983215,
+          "lon": 9.69999980927,
+          "distanceKm": 4.1
+        }
       },
       {
         "id": "299195d3-4d6d-8158-942c-e06fecb4a226",
@@ -547,7 +673,16 @@
           "Note": "*Students have to pay the Austrian student union fee which is around 26€",
           "Departments": "Management,Business,Civil engineering and Architecture,IT and engineering,Health science,Social Work"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Klagenfurt Airport",
+          "city": "Klagenfurt",
+          "iata": "KLU",
+          "icao": "LOWK",
+          "lat": 46.642502,
+          "lon": 14.3377,
+          "distanceKm": 66
+        }
       },
       {
         "id": "486ddcc9-de5a-4451-a5d6-30d687f339ab",
@@ -579,7 +714,16 @@
           "Note": "*Only for the fall semester",
           "Departments": "Global Tourism Management,International Hotel Management,Business,Tourism and Hospitality,Communication and Culture"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Victoria Harbour Seaplane Base",
+          "city": "Victoria",
+          "iata": "YWH",
+          "icao": "CYWH",
+          "lat": 48.4249858939,
+          "lon": -123.388867378,
+          "distanceKm": 6.7
+        }
       },
       {
         "id": "91595b7a-690d-43b0-8229-fa4f3ced3d2b",
@@ -609,7 +753,16 @@
           "Email": "Kerstin.berg@vamk.fi / Hanna.peltola@vamk.fi / international@vamk.fi",
           "Departments": "International Business,Informational Technology,Energy Technology"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Vaasa Airport",
+          "city": "Vaasa",
+          "iata": "VAA",
+          "icao": "EFVA",
+          "lat": 63.050701141357,
+          "lon": 21.762199401855,
+          "distanceKm": 10.6
+        }
       },
       {
         "id": "9155fe2f-199b-45e7-89de-27abe32682ba",
@@ -641,7 +794,16 @@
           "Email": "margaux.bruno@rennes-sb.com",
           "Departments": "Marketing,Finance and Accounting,Management and Organisation,Supply Chain Management and Information Systems,Strategy and Innovation"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Rennes-Saint-Jacques Airport",
+          "city": "Rennes",
+          "iata": "RNS",
+          "icao": "LFRN",
+          "lat": 48.069499969499994,
+          "lon": -1.73478996754,
+          "distanceKm": 7.2
+        }
       },
       {
         "id": "299195d3-4d6d-81c1-9ca6-ee3960299972",
@@ -673,7 +835,16 @@
           "Note": "- Students can take courses in multiple faculties, depending on the campus.\n- Additional Fee: ~25 Euros student union fee",
           "Departments": "International Management,Industrial Management"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Graz Airport",
+          "city": "Graz",
+          "iata": "GRZ",
+          "icao": "LOWG",
+          "lat": 46.9911003112793,
+          "lon": 15.439599990844727,
+          "distanceKm": 9
+        }
       },
       {
         "id": "299195d3-4d6d-8122-b9bb-c1807d724a69",
@@ -702,7 +873,16 @@
           "Note": "Students must arrive in time for the Orientation Days, in case of participation in the intensive\nGerman course in time for the start of the German course.\nOrientation Days are mandatory. Sessions are NO walk-in sessions!\n• All exchange students must successfully complete a minimum of 16 ECTS per semester at University of Graz as their primary host institution \n• Additional Fees\nmandatory for all: student union fee approx. EUR 26 (subject to change); costs for logging travel documents in the context of the registering their Graz address\nmandatory for non-EU/EEA semester students: costs for Austrian visa\noptional: costs for sports activities, local transport, German language courses",
           "Departments": "Ancient History and Classical Antiquities,Archaeology,Art History,Business Administration,Catholic Theology,Chemistry,Classical Philology(Latin/Greek),Earth Sciences,Economics,Educational Sciences,English and American Studies,Environmental Systems Sciences,Geography,German Language and Literature,History,Linguistics,Mathematics,Molecular Biology,Physics,Sociology,Sports Science and Kinesiology"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Graz Airport",
+          "city": "Graz",
+          "iata": "GRZ",
+          "icao": "LOWG",
+          "lat": 46.9911003112793,
+          "lon": 15.439599990844727,
+          "distanceKm": 7.6
+        }
       },
       {
         "id": "2bd195d3-4d6d-80f1-a736-eec1fe32dba6",
@@ -738,7 +918,16 @@
           "Note": "There is a membership fee of around 26 EUR for the Austrian Students Union\n*Application Information \nhttps://drive.google.com/file/d/1mxFRA3FVnLggAuL5jWL4z2tugzTdo9rU/view?usp=drive_link\n",
           "Departments": "Banking and Finance,European Economy and Business Management,Film TV and Media Production,Logistics and Transport Management,Project Management and Information Technology,Technical Sales and Distribution Management,Work Design and HR Management"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Vienna International Airport",
+          "city": "Vienna",
+          "iata": "VIE",
+          "icao": "LOWW",
+          "lat": 48.110298156738,
+          "lon": 16.569700241089,
+          "distanceKm": 17.4
+        }
       },
       {
         "id": "299195d3-4d6d-8158-bc06-cc82b5accf83",
@@ -776,7 +965,16 @@
             "type": "text",
             "text": "*Course regislation deadlines\n> Fall semester : 23 September (TBC)\n> Spring semester : 17 February (TBC)"
           }
-        ]
+        ],
+        "nearestAirport": {
+          "name": "Brussels Airport",
+          "city": "Brussels",
+          "iata": "BRU",
+          "icao": "EBBR",
+          "lat": 50.901401519800004,
+          "lon": 4.48443984985,
+          "distanceKm": 12.2
+        }
       },
       {
         "id": "299195d3-4d6d-81c4-a628-ff7323b3695b",
@@ -811,7 +1009,16 @@
           "Email": "mobil.in@uliege.be",
           "Departments": "Political Science,Management,Business,Economics"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Liège Airport",
+          "city": "Liege",
+          "iata": "LGG",
+          "icao": "EBLG",
+          "lat": 50.63740158081055,
+          "lon": 5.443220138549805,
+          "distanceKm": 8.4
+        }
       },
       {
         "id": "299195d3-4d6d-8196-aad7-c9ab9d8f3fb2",
@@ -845,7 +1052,16 @@
           "Note": "We recommend taking courses only in the faculty of management. Courses from other faculties are taught in French, not in English. ",
           "Departments": "Business,Management"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Brussels South Charleroi Airport",
+          "city": "Charleroi",
+          "iata": "CRL",
+          "icao": "EBCI",
+          "lat": 50.459202,
+          "lon": 4.45382,
+          "distanceKm": 25.9
+        }
       },
       {
         "id": "299195d3-4d6d-8184-bb41-d27f74170102",
@@ -879,7 +1095,16 @@
           "Note": "* Ancillary fees* vary depending on a student's selected campus.\n- Thunder Bay Campus: Approx. $150.00 up to $330.00\n- Orillia Campus: Approx. $67.00 up to $240.00\n* For the 2025-2026 academic year, ancillary fees are currently under review and are subject to change.\n* Orientation & First Year Experience Fee Approx. $83.00 CAD\n* All fees are subject to change without notice\n* Inbound exchange students will be automatically enrolled and billed for the mandatory health insurance plan (Guard.Me) for a rate of $1.95 CAD per day.",
           "Departments": "Aboriginal Education,Anthropology,Applied Life Sciences,Bioinformatics,Biology,Business,Chemistry,Computer Science,Criminology,Economics,Engineering,English,Environmental Management,Environmental Studies,Forestry (HBSCF),Gender and Women's Studies,General Arts,General Science,Geoarchaeology,Geography,Geology,History,Interdisciplinary Studies,Kinesiology,Languages,Mathematics,Media Film and Communications,Music,Natural Resources Management,Natural Sciences,Outdoor Recreation Parks & Tourism,Philosophy,Physics,Political Science,Psychology,Resource and Environmental Economics,Visual Arts,Water Resource Science"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Thunder Bay Airport",
+          "city": "Thunder Bay",
+          "iata": "YQT",
+          "icao": "CYQT",
+          "lat": 48.37189865112305,
+          "lon": -89.32389831542969,
+          "distanceKm": 7
+        }
       },
       {
         "id": "299195d3-4d6d-8198-bcbc-c6f254e5a75c",
@@ -913,7 +1138,16 @@
           "Note": "*Mandatory Exchange Program Fees\n• $300 Exchange Program Administration & Services Fee\n• $170 UPass\n• $20 per Official Transcript Request\n*Nomination Information - Inbound Exchange\n  : https://drive.google.com/file/d/1RBrs05E-v7R7SWHP2FHTjxAxHviw4KzT/view?usp=drive_link",
           "Departments": "Arts,Business and Communication Studies,Continuing Education and Extension,Health Community and Education,Science and Technology"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Calgary International Airport",
+          "city": "Calgary",
+          "iata": "YYC",
+          "icao": "CYYC",
+          "lat": 51.113899231,
+          "lon": -114.019996643,
+          "distanceKm": 13.8
+        }
       },
       {
         "id": "131195d3-4d6d-8174-ab4a-e6d2fdaafefc",
@@ -945,7 +1179,16 @@
           "Email": "GSBWelcome@uvic.ca",
           "Departments": "Business"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Victoria Harbour Seaplane Base",
+          "city": "Victoria",
+          "iata": "YWH",
+          "icao": "CYWH",
+          "lat": 48.4249858939,
+          "lon": -123.388867378,
+          "distanceKm": 7
+        }
       },
       {
         "id": "299195d3-4d6d-8175-a20e-ef514e29b0ad",
@@ -975,7 +1218,16 @@
           "Note": "*Brochure : https://drive.google.com/file/d/1liiFOeixin6LeMHRG1IyEKvQheLCogIt/view?usp=drive_link\n*Please refer to the Additional Student Fees on Arrival to TRU on factsheet\n*All students are automatically OPTED-IN to the Medical Insurance Plan with Guard.me prior to arrival at TRU, regardless. Students must Opt-Out to cancel the policy. The cost is approximately C$60.00/month (these fees are subject to change without notice). Follow this link for more information:\nhttps://www.tru.ca/truworld/new-students/medical-insurance.html\n*Mandatory fees approximately $151.37 include TRU U-pass and International student activity fee(noted in fact sheet)",
           "Departments": "Fine Arts,Geography,Journalism,Sociology,Anthropology,Economics,English,Environmental Studies,History,Modern Languages,Philosophy,Political Science,Accounting,Finance,Human Resource Management,Marketing,International Business,Biology,Chemistry,Mathematics,Natural Sciences,Tourism"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Kamloops Airport",
+          "city": "Kamloops",
+          "iata": "YKA",
+          "icao": "CYKA",
+          "lat": 50.7022018433,
+          "lon": -120.444000244,
+          "distanceKm": 6.5
+        }
       },
       {
         "id": "299195d3-4d6d-8167-9566-cad36efda09c",
@@ -1023,7 +1275,16 @@
           "Note": "- Undergraduate: at least 2 semesters completed before exchange. \n- If you are currently taking courses in English Studies at your home university, you will be prioritised in the selection process.\n- A minimum of 12 credits (4 courses*) per semester and a maximum of 15 credits (5 courses*) per semester\n- All exchange students attending UdeM are automatically registered for group medical insurance. (around 350$ CAN per term but varies each term) : https://international.umontreal.ca/english/international-students/student-exchange-program/#administrative-information\n- Spots at the Faculty of Music are limited and only the best applications will be accepted. ",
           "Departments": "Law,Environmental Design,Music,Education,English,Economy,Sociology,International studies,Political Science"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Montréal / Saint-Hubert Airport",
+          "city": "Montreal",
+          "iata": "YHU",
+          "icao": "CYHU",
+          "lat": 45.5175018311,
+          "lon": -73.4169006348,
+          "distanceKm": 36.9
+        }
       },
       {
         "id": "2bf195d3-4d6d-800c-b4fb-d4eb6c773897",
@@ -1052,7 +1313,16 @@
           "Note": "$265 for Mandatory Temporary Medical Insurance (MTMI): https://www.uvic.ca/international-experiences/living-in-victoria/health-insurance/guard-me-uvic-plan/index.php",
           "Departments": "Business,Commerce,Entrepreneurship,International business"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Victoria Harbour Seaplane Base",
+          "city": "Victoria",
+          "iata": "YWH",
+          "icao": "CYWH",
+          "lat": 48.4249858939,
+          "lon": -123.388867378,
+          "distanceKm": 7
+        }
       },
       {
         "id": "299195d3-4d6d-812f-9f15-e08512629243",
@@ -1083,7 +1353,16 @@
           "Email": "adriana.cernohorska@ruk.cuni.cz",
           "Departments": "Arts,Social Sciences"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Václav Havel Airport Prague",
+          "city": "Prague",
+          "iata": "PRG",
+          "icao": "LKPR",
+          "lat": 50.1008,
+          "lon": 14.26,
+          "distanceKm": 11.2
+        }
       },
       {
         "id": "299195d3-4d6d-81b6-bcf1-ccc7f8e84159",
@@ -1116,7 +1395,16 @@
           "Email": "bss.international@au.dk",
           "Departments": "Management,Economics,Business Economics"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Aarhus Airport",
+          "city": "Aarhus",
+          "iata": "AAR",
+          "icao": "EKAH",
+          "lat": 56.2999992371,
+          "lon": 10.619000434899998,
+          "distanceKm": 29.7
+        }
       },
       {
         "id": "299195d3-4d6d-81e9-9990-d162051e40fc",
@@ -1151,7 +1439,16 @@
           "Note": "no additional fees (except sometimes a study trip inside Denmark as part of the program at students own expensed",
           "Departments": "Journalism,corporate communication,Media"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Copenhagen Kastrup Airport",
+          "city": "Copenhagen",
+          "iata": "CPH",
+          "icao": "EKCH",
+          "lat": 55.617900848389,
+          "lon": 12.656000137329,
+          "distanceKm": 8
+        }
       },
       {
         "id": "2c7772e0-9794-45f4-b92e-f9437461bb87",
@@ -1185,7 +1482,16 @@
           "Email": "anna@dmjx.dk",
           "Departments": "Journalism,corporate communication,Media"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Copenhagen Kastrup Airport",
+          "city": "Copenhagen",
+          "iata": "CPH",
+          "icao": "EKCH",
+          "lat": 55.617900848389,
+          "lon": 12.656000137329,
+          "distanceKm": 8
+        }
       },
       {
         "id": "299195d3-4d6d-8132-b0ca-d8c3451be034",
@@ -1219,7 +1525,16 @@
           "Note": "We dont have any fees if you are an exchange student, However, you need to pay for your own accommodation, books, food, etc. \nRegarding insurance: We recommend that students take out insurance before they leave for Denmark. It is also possible to take out insurance while in Denmark, but the insurance policy will most likely only be available in Danish.",
           "Departments": "Engineering,Humanities,Science"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Odense Airport",
+          "city": "Odense",
+          "iata": "ODE",
+          "icao": "EKOD",
+          "lat": 55.47669982910156,
+          "lon": 10.330900192260742,
+          "distanceKm": 13.6
+        }
       },
       {
         "id": "299195d3-4d6d-8129-989c-e77370d86a52",
@@ -1255,7 +1570,16 @@
           "Note": "*Additional Fee: Insurance, Dormitory fee, Library Fee for rebting books for the semester",
           "Departments": "Humanities,Social Science,Journalism,Communication,Media,History,English,Politics & International Relations,Social Policy"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Glasgow International Airport",
+          "city": "Glasgow",
+          "iata": "GLA",
+          "icao": "EGPF",
+          "lat": 55.8718986511,
+          "lon": -4.43306016922,
+          "distanceKm": 12
+        }
       },
       {
         "id": "299195d3-4d6d-81ed-b7de-dc6489e754de",
@@ -1289,7 +1613,16 @@
           "Note": "* mandatory NHS surcharge as part of student visa.\n*Classes go from 6 January to 21 March 2025. Easter break goes from 22 March to 20 April 2025. Exams are usually held in May 2025 and students may leave when they have submitted their final assignment. Term dates available at https://www.soas.ac.uk/about/term-dates\n*Academic Calendar: https://www.soas.ac.uk/about/academic-calendar",
           "Departments": "Anthropology,Sociology,Arts,Development Studies,East Asian Languages & Cultures,Economics,Finance and Management Studies,History Religions and Philosophies,Interdisciplinary Studies,Languages,Cultures,Linguistics,Politics and International Studies,Cultural Literary and Postcolonial Studies,Film Studies,Media Studies"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "London City Airport",
+          "city": "London",
+          "iata": "LCY",
+          "icao": "EGLC",
+          "lat": 51.505299,
+          "lon": 0.055278,
+          "distanceKm": 12.9
+        }
       },
       {
         "id": "299195d3-4d6d-8178-b9c4-edeee28a851c",
@@ -1326,7 +1659,16 @@
           "Departments": "Accounting and finance,Architecture,Art,Biochemistry,Biology,Biomedical science,Built environment,Business,Chemistry,Civil Engineering,Computing,Creative writing,Design,Drama,Education,Electrical and Electronics Engineering,English,Fashion,Film Studies,Forensic science,Geography,Health,History,Journalism,Justice studies,Law,Maritime,Mathematics,Mechanical engineering,Media,Nutrition,Pharmaceutical science",
           "fc0c0a98-08ec-4365-b049-ebaa08fd257a": ""
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Liverpool John Lennon Airport",
+          "city": "Liverpool",
+          "iata": "LPL",
+          "icao": "EGGP",
+          "lat": 53.33359909057617,
+          "lon": -2.849720001220703,
+          "distanceKm": 12.3
+        }
       },
       {
         "id": "299195d3-4d6d-81b8-9266-fc55c6d8c9c0",
@@ -1363,7 +1705,16 @@
           "Departments": "Business school,Social Sciences",
           "fc0c0a98-08ec-4365-b049-ebaa08fd257a": ""
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Nottingham Airport",
+          "city": "Nottingham",
+          "iata": "NQT",
+          "icao": "EGBN",
+          "lat": 52.91999816894531,
+          "lon": -1.0791699886322021,
+          "distanceKm": 7.3
+        }
       },
       {
         "id": "299195d3-4d6d-819e-a19c-f62a9a35bad4",
@@ -1392,7 +1743,16 @@
           "Note": "Semester only: For single semester exchange students, who are not applying for a study visa, this declaration will be taken in place of provision of an English language qualification. Students coming for a full academic year or from a non exchange partner for a semester or full year will need to provide an English language qualification in line with University of Sheffield and UKVI requirements. NB: if a student wishes to extend their study at the University of Sheffield, they will require an English language qualification accepted by the University for the purposes of applying for a Student visa. Please see here for more details: https://www.sheffield.ac.uk/undergraduate/apply/english-language. ",
           "Departments": "Economics,Chemistry,Biosciences,Management,Materials Science and Engineering,Music,Physics,Philosophy,Journalism Media and Communication,Geography,History,English,Architecture,Politics and International Relations,Sociological Studies,Science,Computer Science,Electrical and Electronic Engineering,Mechanical engineering,Civil Engineering,Aerospace Engineering,Mathematics,Data Science,Landscape Architecture,East Asian Languages & Cultures,Mechatronics,Modern Languages,Psychology"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Robin Hood Doncaster Sheffield Airport",
+          "city": "Doncaster, Sheffield",
+          "iata": "DSA",
+          "icao": "EGCN",
+          "lat": 53.4805378105,
+          "lon": -1.01065635681,
+          "distanceKm": 34.9
+        }
       },
       {
         "id": "299195d3-4d6d-8167-9ddf-fe0885ada6de",
@@ -1430,7 +1790,16 @@
           "f0b7fe6a-796f-49cc-8081-e6fcd360f50c": "3 slots",
           "Departments": "Film Studies,Fine Arts,Design,Language,English,Literature,Psychology,Humanities,Media,Geography,History,International Relations,Political Science,Philosophy,Computer Science,Software Engineering,Business,Music,Education,and etc"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "RAF Linton-On-Ouse",
+          "city": "Linton-on-ouse",
+          "iata": "HRT",
+          "icao": "EGXU",
+          "lat": 54.0489006042,
+          "lon": -1.2527500391,
+          "distanceKm": 13.7
+        }
       },
       {
         "id": "2b1195d3-4d6d-80ca-9ba4-e43d08ae572c",
@@ -1457,7 +1826,16 @@
           "Email": "studentexchange@dmu.ac.uk",
           "Departments": "Business,Accounting and finance,Economics,Marketing,Law,Health and Life Sciences,technology arts and culture"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "East Midlands Airport",
+          "city": "East Midlands",
+          "iata": "EMA",
+          "icao": "EGNX",
+          "lat": 52.8311004639,
+          "lon": -1.32806003094,
+          "distanceKm": 25.7
+        }
       },
       {
         "id": "299195d3-4d6d-816b-af92-d413b920e400",
@@ -1489,7 +1867,16 @@
           "Note": "For practical information : www.tlu.ee/practical",
           "Departments": "Digital Technologies,Educational Sciences,Governance Law and Society,Humanities,Natural Sciences and Health,Baltic Film Media and Arts school"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Lennart Meri Tallinn Airport",
+          "city": "Tallinn-ulemiste International",
+          "iata": "TLL",
+          "icao": "EETN",
+          "lat": 59.41329956049999,
+          "lon": 24.832799911499997,
+          "distanceKm": 4.5
+        }
       },
       {
         "id": "299195d3-4d6d-8162-b272-ed8f59ea340f",
@@ -1524,7 +1911,16 @@
           "Note": "Student union membership(approximately 55 €) is voluntary but highly recommended for the exchange students.\nhttps://www.tyy.fi/en/members/membership",
           "Departments": "Education,Humanities,Law,Medicine,Science,Technology,Social Sciences,Economics"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Turku Airport",
+          "city": "Turku",
+          "iata": "TKU",
+          "icao": "EFTU",
+          "lat": 60.514099121094,
+          "lon": 22.262800216675,
+          "distanceKm": 6.6
+        }
       },
       {
         "id": "299195d3-4d6d-812a-88f7-ef356fd0a5d8",
@@ -1559,7 +1955,16 @@
           "Note": "*Students are expected to take at least 5 cr/month. (1 cr (credit)=1 ECTS credit=27 hours of student work, One Term=30 cr)",
           "Departments": "International Business,Engineering,ICT,Forestry,Media and Arts,Hospitality Management,Nursing,Social Services,Science,Bioproduct Engineering,Business information system,Electrical Engineering,Environmental Engineering,Software Engineering,Vehicle Technology,Business and Administration,Construction Engineering and Construction Architecture,Mechanical engineering,Textile and Material Engineering,Emergency care,Physiotherapy,Music"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Tampere-Pirkkala Airport",
+          "city": "Tampere",
+          "iata": "TMP",
+          "icao": "EFTP",
+          "lat": 61.414100646973,
+          "lon": 23.604400634766,
+          "distanceKm": 14.8
+        }
       },
       {
         "id": "0a69a1ba-223a-437d-87bf-3d9d0a987d35",
@@ -1592,7 +1997,16 @@
           "Note": "*Students applying for Media & Art studies: The structure of the studies includes 13 minor modules (30 cr.) and the incoming student should choose only ONE minor per each semester.\n*Students are expected to take at least 5 cr/month.\n(1 cr (credit)=1 ECTS credit=27 hours of student work, One Term=30 cr)",
           "Departments": "International Business,Engineering,ICT,Forestry,Media and Arts,Hospitality Management,Nursing,Social Services,Bioproduct Engineering,Software Engineering"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Tampere-Pirkkala Airport",
+          "city": "Tampere",
+          "iata": "TMP",
+          "icao": "EFTP",
+          "lat": 61.414100646973,
+          "lon": 23.604400634766,
+          "distanceKm": 14.8
+        }
       },
       {
         "id": "299195d3-4d6d-81b1-a286-e5691564a11e",
@@ -1626,7 +2040,16 @@
           "Note": "No scholarship available, no uniform needed, no meal plan\n",
           "Departments": "International Business,Information Technology,Engineering"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Vaasa Airport",
+          "city": "Vaasa",
+          "iata": "VAA",
+          "icao": "EFVA",
+          "lat": 63.050701141357,
+          "lon": 21.762199401855,
+          "distanceKm": 10.6
+        }
       },
       {
         "id": "299195d3-4d6d-8126-8a04-e3c6eaffd19e",
@@ -1661,7 +2084,16 @@
           "Note": "Exchange students coming to Arcada should obtain all necessary insurances (e.g. health, medical expenses, luggage, home insurance) prior their arrival to Finland. Students from EU countries should additionally acquire a European Health Insurance Card before arriving in Finland. It is also recommended to have liability insurance",
           "Departments": "Business,International business"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Helsinki Malmi Airport",
+          "city": "Helsinki",
+          "iata": "HEM",
+          "icao": "EFHF",
+          "lat": 60.254600524902344,
+          "lon": 25.042800903320312,
+          "distanceKm": 7.3
+        }
       },
       {
         "id": "299195d3-4d6d-8100-bfc2-f8c36e60399c",
@@ -1693,7 +2125,16 @@
           "Email": "international@hamk.fi",
           "Departments": "Business Administration,Biotechnology and Food Engineering,Business Information Technology / Computer Applications,Construction Engineering,Social Services,Electrical and Automation Engineering,International Business,Information and Communication Technology,Mechanical Engineering,Production Technology"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Lahti Vesivehmaa Airport",
+          "city": "Vesivehmaa",
+          "iata": "QLF",
+          "icao": "EFLA",
+          "lat": 61.144199,
+          "lon": 25.693501,
+          "distanceKm": 31.9
+        }
       },
       {
         "id": "299195d3-4d6d-81cd-af94-f486389b9afe",
@@ -1726,7 +2167,16 @@
           "Note": "*Students can usually apply for only one programme at a time. However, if courses are offered in different teaching periods (first or second half of the semester) within specific programmes, you can combine them. Please note that a prerequisite for combining programmes is that our universities must have an agreement covering the respective fields.\n\n*marketing materials: https://oamk.fi/en/study/exchange-student/guidance/#marketing-material\n*Application instructions: https://oamk.fi/en/how-to-apply-for-exchange/",
           "Departments": "Business,Engineering,Health,Information Technology,Media,performing arts,natural resources"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Oulu Airport",
+          "city": "Oulu",
+          "iata": "OUL",
+          "icao": "EFOU",
+          "lat": 64.930099487305,
+          "lon": 25.354600906372,
+          "distanceKm": 15.5
+        }
       },
       {
         "id": "299195d3-4d6d-818b-85a4-ecaf18686112",
@@ -1761,7 +2211,16 @@
           "Note": "- Generally speaking, the students in the French programme find it harder than those in the English programme as they are mixed with native speakers and are assessed on the same criteria (there are no special exceptions for exchange students). It would be good for you to know this ahead of time and to see whether you think you would be capable of following the courses. (프랑스어 트랙 지원 가능하나 경영관련 수업만 있으며 영어로 진행되는 수업보다 난이도가 높으므로 사전 고려 필요)\n- Once the Learning Agreement is signed and approved by your home institution, changes to your course choice are not allowed.",
           "Departments": "Business Fundamentals,International Business Track,Hospitality and Event Management,Finance or Marketing"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Lille-Lesquin Airport",
+          "city": "Lille",
+          "iata": "LIL",
+          "icao": "LFQQ",
+          "lat": 50.563332,
+          "lon": 3.086886,
+          "distanceKm": 13.4
+        }
       },
       {
         "id": "299195d3-4d6d-81d8-a63d-feeb5dc94b8e",
@@ -1794,7 +2253,16 @@
           "Email": "exchange@rennes-sb.com",
           "Departments": "Marketing,Finance and Accounting,Management and Organisation,Supply Chain Management and Information Systems,Strategy and Innovation"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Rennes-Saint-Jacques Airport",
+          "city": "Rennes",
+          "iata": "RNS",
+          "icao": "LFRN",
+          "lat": 48.069499969499994,
+          "lon": -1.73478996754,
+          "distanceKm": 7.2
+        }
       },
       {
         "id": "299195d3-4d6d-81fb-9e35-e8011a76c086",
@@ -1828,7 +2296,16 @@
           "Note": "*One year (2 semesters) available for French track students (1년 파견 가능, 프랑스어 수학의 경우에 한함)\n*Due to the limitation in English-taught courese offerings, English Language applicants can not apply for thie university.\n*It is highly recommended students choose a faculty at AMU that is aligned with their major at home.",
           "Departments": "Arts,Humanities"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Marseille Provence Airport",
+          "city": "Marseille",
+          "iata": "MRS",
+          "icao": "LFML",
+          "lat": 43.439271922,
+          "lon": 5.22142410278,
+          "distanceKm": 18.3
+        }
       },
       {
         "id": "299195d3-4d6d-812c-a79b-f80f6a6988c2",
@@ -1864,7 +2341,16 @@
           "Note": "Advanced level of English is highly recommended",
           "Departments": "Business,Finance,Information Technology,International business"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Cherbourg-Maupertus Airport",
+          "city": "Cherbourg",
+          "iata": "CER",
+          "icao": "LFRC",
+          "lat": 49.65010070800781,
+          "lon": -1.4702800512313843,
+          "distanceKm": 312.9
+        }
       },
       {
         "id": "299195d3-4d6d-81cd-a43f-e302e6bd3943",
@@ -1898,7 +2384,16 @@
           "Note": "A full semester workload is 30 ECTS credits.",
           "Departments": "Chinese Studies,Arabic Studies,Africa and the Indian Ocean,Hebrew and Jewish Studies,Russian Studies,South Asia and the Himalayas,Southeast Asia and the Pacific,Eurasia,Languages and Cultures of the Americas,Europe"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Villacoublay-Vélizy (BA 107) Air Base",
+          "city": "Villacoublay",
+          "iata": "VIY",
+          "icao": "LFPV",
+          "lat": 48.7741667,
+          "lon": 2.1916667,
+          "distanceKm": 13.9
+        }
       },
       {
         "id": "299195d3-4d6d-81b9-b45b-ec9ba3df8c32",
@@ -1932,7 +2427,16 @@
           "Note": "One year (2 semesters) available (1년 파견 가능 대학)\n*Students who are going to study 1 year starting from Spring semester (Spring~Fall semester) : Dormitory may not be available for the second semester(fall semester) and During summer break.  Please check the availability in advance.\nhttps://www.flsh.unilim.fr/kit-start-to-limoges/",
           "Departments": "Etudes anglophones,Langues appliquées,Géographie,Histoire,Lettres,Sciences du langage de l'information et de la communication,Sciences de l'éducation,Sociologie,European studies program"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Limoges Airport",
+          "city": "Limoges",
+          "iata": "LIG",
+          "icao": "LFBL",
+          "lat": 45.86280059814453,
+          "lon": 1.1794400215148926,
+          "distanceKm": 7.4
+        }
       },
       {
         "id": "299195d3-4d6d-81ee-8649-e9c3977ba775",
@@ -1965,7 +2469,16 @@
           "Note": "*Exchange Students Handbook : https://drive.google.com/file/d/1gQIJz2QsCNKIySPxHhjTs04PwvRGOzzl/view?usp=sharing\n*Exchange Information : https://sway.cloud.microsoft/pw0vfIJzSxUAjaxp?ref=Link",
           "Departments": "Computer Science"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Rennes-Saint-Jacques Airport",
+          "city": "Rennes",
+          "iata": "RNS",
+          "icao": "LFRN",
+          "lat": 48.069499969499994,
+          "lon": -1.73478996754,
+          "distanceKm": 6.8
+        }
       },
       {
         "id": "299195d3-4d6d-812d-b84c-e4a008032c7a",
@@ -1997,7 +2510,16 @@
           "Note": "-Sports facilities available for exchange students.\n-Welcome Days organized at the beginning of each semester (mandatory for non french-speaking students).\n-The recommended minimum for exchange students is 20 ECTS credits per semester, with a maximum of 30 ECTS credits.\n- Students will be required to pay for a house insurance.",
           "Departments": "Business,Management,Tourism and Hospitality,Digital Strategies,Tourism,Hospitality Management"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Orléans-Bricy (BA 123) Air Base",
+          "city": "Orleans",
+          "iata": "ORE",
+          "icao": "LFOJ",
+          "lat": 47.9878005981,
+          "lon": 1.7605600357100002,
+          "distanceKm": 13.2
+        }
       },
       {
         "id": "299195d3-4d6d-8117-9474-dfb37b3c59c1",
@@ -2030,7 +2552,16 @@
           "Note": "One year (2 semesters) available for Fall semester recruitment (가을학기 선발자 1년 파견 가능. 단, 봄학기 선발에서는 1년 파견 불가)",
           "Departments": "Sciences,Humanities,Languages,Economics,Civil Engineering,Mathematics,Physics,Management,Geography,History"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Gustaf III Airport",
+          "city": "Gustavia",
+          "iata": "SBH",
+          "icao": "TFFJ",
+          "lat": 17.904399871826172,
+          "lon": -62.84360122680664,
+          "distanceKm": 2765.2
+        }
       },
       {
         "id": "131195d3-4d6d-81db-83c3-caf2b81b00e5",
@@ -2064,7 +2595,16 @@
           "Email": "incoming@univ-paris13.fr",
           "Departments": "Health Medicine and Human Biology,Economics and Management,Humanities Languages Social Sciences and Societies,Law Political Science and Social Sciences,Information and Communication Sciences"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Valenciennes-Denain Airport",
+          "city": "Valenciennes",
+          "iata": "XVS",
+          "icao": "LFAV",
+          "lat": 50.325801849365234,
+          "lon": 3.4612600803375244,
+          "distanceKm": 6.4
+        }
       },
       {
         "id": "299195d3-4d6d-811b-9c0f-f356b19bb2c1",
@@ -2094,7 +2634,16 @@
           "Note": "-             GHES – Geography, History, Economics, Societies : https://u-paris.fr/ghes/en/our-programs/    \n-             IHSS – Psychoanalysis, Social Sciences, History and Philosophy of Sciences : https://fr.u-paris.fr/structures/ufr-institut-humanites-sciences-et-societes-ihss       \n-             LCAO – East Asian Languages and Civilizations : https://u-paris.fr/lcao/en/education/     \n-             Linguisitics : https://u-paris.fr/linguistique/en/education/      \n-             EILA – Intercultural Studies and Applied Languages : https://u-paris.fr/eila/en/education/     \n-             LAC – Literature, Arts, Film Studies : https://u-paris.fr/lac/en/education/     \n-             English and American Studies : https://u-paris.fr/etudes-anglophones/en/homepage/\n\n*Welcome Guide: https://drive.google.com/file/d/1M1ZwXANhJmqV1jM3rE6ON7-qv_fvd9sy/view?usp=share_link",
           "Departments": "Technology,Humanities,Social Sciences,Law,Economics,Management,Arts,Letters,Languages,Sciences and Techniques of Physical and Sporting Activities,Human and Social Sciences,Linguistics,Geography History Economy and Societies,Languages and Civilization of East Asia,Letters Arts and Cinema,Intercultural Studies of Applied Languages"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Villacoublay-Vélizy (BA 107) Air Base",
+          "city": "Villacoublay",
+          "iata": "VIY",
+          "icao": "LFPV",
+          "lat": 48.7741667,
+          "lon": 2.1916667,
+          "distanceKm": 13.9
+        }
       },
       {
         "id": "299195d3-4d6d-81fa-9501-e72721fb6602",
@@ -2130,7 +2679,16 @@
           "Email": "incoming-iae@u-pec.fr",
           "Departments": "Business,Economics,Management"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Villacoublay-Vélizy (BA 107) Air Base",
+          "city": "Villacoublay",
+          "iata": "VIY",
+          "icao": "LFPV",
+          "lat": 48.7741667,
+          "lon": 2.1916667,
+          "distanceKm": 13.9
+        }
       },
       {
         "id": "29d195d3-4d6d-80c9-8396-e9a755f13c98",
@@ -2158,7 +2716,16 @@
           "Email": "contact.exchange@dauphine.fr",
           "Departments": "Management,Economics,Law,Social Sciences,Mathematics,Computer Science"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Villacoublay-Vélizy (BA 107) Air Base",
+          "city": "Villacoublay",
+          "iata": "VIY",
+          "icao": "LFPV",
+          "lat": 48.7741667,
+          "lon": 2.1916667,
+          "distanceKm": 12.2
+        }
       },
       {
         "id": "2b9195d3-4d6d-80e1-b5de-c0feddab341a",
@@ -2187,7 +2754,16 @@
           "Note": "*Additional Fee: \nStudents will have to pay a Civil liability (an insurance that protects people and which covers damage to another person or property), it costs about 12€ per year, and a housing insurance (an insurance that protects damages to one's accomodation, such as flooding, fire...), it costs about 4€/month.",
           "Departments": "Business and Management,Marketing,Finance"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Bordeaux-Mérignac Airport",
+          "city": "Bordeaux",
+          "iata": "BOD",
+          "icao": "LFBD",
+          "lat": 44.828300476100004,
+          "lon": -0.715556025505,
+          "distanceKm": 9.7
+        }
       },
       {
         "id": "2d5195d3-4d6d-8017-9631-ffac6a4929c8",
@@ -2216,7 +2792,16 @@
           "Note": "*Academic Calendar : https://www.pantheonsorbonne.fr/formation/calendrier-universitaire\n\n*International Students Welcome Guide: https://international.pantheonsorbonne.fr/sites/default/files/2025-07/Guide_25-26_EN_Web.pdf",
           "Departments": "Development Studies,History,Management,Political Science,Tourism"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Paris-Orly Airport",
+          "city": "Paris",
+          "iata": "ORY",
+          "icao": "LFPO",
+          "lat": 48.7233333,
+          "lon": 2.3794444,
+          "distanceKm": 13.8
+        }
       },
       {
         "id": "299195d3-4d6d-8152-9757-d9644d126f48",
@@ -2249,7 +2834,16 @@
           "Note": "*All students of the university have to pay a semester fee(eg. administration fee)\n https://www.hs-osnabrueck.de/en/study/all-about-studying/study-organization/#c15968\n\n*The monthly costs for living in Germany typically include various expenses. Accommodation usually ranges between 250 and 350 euros per month. For meals, students can expect to pay around 3 to 4 euros per meal in the university canteen and an additional 80 to 130 euros for other food expenses. Statutory health insurance amounts to approximately 110 euros per month. Public transportation is generally free of charge, as it is covered by the semester ticket. Altogether, a monthly budget of 800 to 950 euros should be planned.\n\n*Handbook for International Students: https://www.hs-osnabrueck.de/fileadmin/HSOS/Wir/Fakultaeten/Wirtschafts-_und_Sozialwissenschaften/Internationales/Incoming/Handbook_for_international_students.pdf\n\n*Application and Admission prodedure: \nhttps://drive.google.com/file/d/1a8G0PvCT8iItQmr2A8JUjXgyWL0LZmRu/view?usp=sharing",
           "Departments": "Business Management,Social Science"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Münster Osnabrück Airport",
+          "city": "Munster",
+          "iata": "FMO",
+          "icao": "EDDG",
+          "lat": 52.134601593,
+          "lon": 7.68483018875,
+          "distanceKm": 28.3
+        }
       },
       {
         "id": "3146fa13-6808-4247-a0af-e4821f9b59b3",
@@ -2282,7 +2876,16 @@
           "Note": "Most courses at the University of Bremen are taught in German.\nHowever, there are a multitude of courses offered in English in many programs.",
           "Departments": "Business Studies and Economics"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Bremen Airport",
+          "city": "Bremen",
+          "iata": "BRE",
+          "icao": "EDDW",
+          "lat": 53.0475006104,
+          "lon": 8.78666973114,
+          "distanceKm": 8.2
+        }
       },
       {
         "id": "299195d3-4d6d-81ff-94ab-e8a7b9cab895",
@@ -2312,7 +2915,16 @@
           "Note": "Exchange students will be required to pay a non‐waivable student services fee (currently around € 120 per semester) to the\nStudierendenwerk (governmental student service organization of\nGerman universities). The fee is mandatory for all students (also the German students) and subsidizes the semester bus ticket, meals at the cafeteria, as well as free psychological counselling.\n* All students can either buy student health insurance at any German insurance company (ca 120€ / month), or as students in the European Union, they can take their EHIC-card to a “statutory health insurcane company”.",
           "Departments": "Mathematics,Humanities,Economics,Social Sciences"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Stuttgart Airport",
+          "city": "Stuttgart",
+          "iata": "STR",
+          "icao": "EDDS",
+          "lat": 48.689899444599995,
+          "lon": 9.22196006775,
+          "distanceKm": 20.6
+        }
       },
       {
         "id": "299195d3-4d6d-819c-b767-fb5b6e8f072f",
@@ -2343,7 +2955,16 @@
           "Note": "-All students under 30 have to present a valid health insurance when enrolling at the university.\n-There is a mandatory health insurance of approx. 120 € per month.\n-There is a semester fee of approx. 300 € which is a social fee. It allows subsidized meals in the cafeteria, affordable accommodation, student representation and free transport on buses and local trains.",
           "Departments": "Cultural Studies and Social Sciences,Educational and Cultural Studies,Physics,Mathematics/Computer Science,Langauge and Literary Studies,Human Sciences,Business Administration and Economics,Law"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Münster Osnabrück Airport",
+          "city": "Munster",
+          "iata": "FMO",
+          "icao": "EDDG",
+          "lat": 52.134601593,
+          "lon": 7.68483018875,
+          "distanceKm": 29
+        }
       },
       {
         "id": "299195d3-4d6d-814a-ab1d-d726e9adf3db",
@@ -2373,7 +2994,16 @@
           "Note": "*All students of Universität Hamburg, including exchange students, pay a mandatory contribution fee per semester (reduced fee for exchange students in Summer Semester 2025: EUR 293), which includes a public transport pass for the Hamburg Public Transport Area.\n*Incoming exchange students without European Health Insurance Card (EHIC) are required to take out German statutory health insurance (approx. 110 EUR/month for students). A list of all statutory health insurance providers in Germany can be found at https://www.gkv-spitzenverband.de/english/english.jsp.\n*Applications are reviewed by the faculties. In case of acceptance, the exchangecoordinator sends an invitation letter to the student (winter semester: end of May;summer semester: end of November). The students will be guided through the registration process at Universität Hamburg and provided with information on housing, course selection etc.",
           "Departments": "Humanities,Law,Business Economics and Social Sciences,Education,Mathematics Informatics and Natural Sciences,Psychology and Human Movement Science,Business Administration"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Hamburg Airport",
+          "city": "Hamburg",
+          "iata": "HAM",
+          "icao": "EDDH",
+          "lat": 53.630401611328,
+          "lon": 9.9882297515869,
+          "distanceKm": 4.5
+        }
       },
       {
         "id": "299195d3-4d6d-8179-b4c5-cc044281ec0b",
@@ -2407,7 +3037,16 @@
           "Note": "*Karlshochschule_Exchange Student Guide_AY_2025_26.pdf\n*Students can take courses in multiple faculites.\n*Students have to pay the \"Semesterbeitrag (Semester Fee)\" each semester, currently the fee is 67,70€ ",
           "Departments": "Business,Management,international business,International Relations,Political Science,Philosophy,Economics"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Karlsruhe Baden-Baden Airport",
+          "city": "Karlsruhe/Baden-Baden",
+          "iata": "FKB",
+          "icao": "EDSB",
+          "lat": 48.7793998718,
+          "lon": 8.08049964905,
+          "distanceKm": 34.1
+        }
       },
       {
         "id": "299195d3-4d6d-8100-b05a-c222af76c635",
@@ -2438,7 +3077,16 @@
           "Note": "*Students need to proof EUR 992 monthly in order to apply for a visa\n*Exchange students are exempt from university fees, but they still need to pay the semester ticket and social fees of approx. € 310 per semester. These fees are not paid to the university, but instead go to the student union and cover the cost of a public transportation ticket for the Berlin metropolitan area for the entire semester. Students will be asked to pay the fees before arrival in Berlin as part of the enrollment process",
           "Departments": "English,Cultural Studies,History,Political Science,Economics,North American Studies"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Berlin-Tempelhof International Airport",
+          "city": "Berlin",
+          "iata": "THF",
+          "icao": "EDDI",
+          "lat": 52.472999572753906,
+          "lon": 13.403900146484375,
+          "distanceKm": 8
+        }
       },
       {
         "id": "2b8195d3-4d6d-8012-8d35-eb9ce55fc487",
@@ -2473,7 +3121,16 @@
           "Note": "*Most courses at the University of Bremen are taught in German. However, there are a multitude of courses offered in English in many programs.\n*All enrolled students have to pay the semester contribution before their arrival. It includes mainly the Semester ticket for the free public transport in and around Bremen, membership in the “Studierendenwerk” (Student Welfare Service Union). It entitles to purchase meals on campus at reduced prices) and membership in the “AStA” (Student Union).\nhttps://www.uni-bremen.de/en/studies/starting-your-studies/formalitaeten/re-registration-and-semester-fee\nExchange students from partner universities are exempted from paying the Admin Fees (“Verwaltungskosten”)",
           "Departments": "Business Studies and Economics"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Bremen Airport",
+          "city": "Bremen",
+          "iata": "BRE",
+          "icao": "EDDW",
+          "lat": 53.0475006104,
+          "lon": 8.78666973114,
+          "distanceKm": 8.2
+        }
       },
       {
         "id": "2bf195d3-4d6d-80aa-8744-da9778d56535",
@@ -2506,7 +3163,16 @@
           "Note": "*There is a social contribution fee for all programs and students\n€ 320 per semester (includes public transport ticket for whole Germany)\n\n*Health insurance must comply with German rules and will be checked by German public health insurance company. Extra costs are possible for students outside the EU.\n\n*Personal Liability & Accident Insurance are highly recommended",
           "Departments": "Accounting,Business,Economics,Tourism"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Aachen-Merzbrück Airport",
+          "city": "Aachen",
+          "iata": "AAH",
+          "icao": "EDKA",
+          "lat": 50.823055267333984,
+          "lon": 6.186388969421387,
+          "distanceKm": 9.6
+        }
       },
       {
         "id": "2c3195d3-4d6d-8053-8ac2-e8cf328e29c4",
@@ -2535,7 +3201,16 @@
           "Note": "*Additional Fee: 85 Euros for social fees like cafeteria and student services",
           "Departments": "Business Administration,Economics,Law,Psychology,Education,Philosophy,History,Art,Cultural Studies,Modern Languages and Literatures,Social Sciences,Mathematics,Computer Science,Statistics,Chemistry,Physics,Biology,Geosciences,International Affairs"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Oberpfaffenhofen Airport",
+          "city": "Oberpfaffenhofen",
+          "iata": "OBF",
+          "icao": "EDMO",
+          "lat": 48.081402,
+          "lon": 11.2831,
+          "distanceKm": 14.2
+        }
       },
       {
         "id": "299195d3-4d6d-81c4-ab06-f81010cf5ca1",
@@ -2569,7 +3244,16 @@
           "Note": "-Upon receiving nomination from Home institution, an invitation (a token) will be sent to the student via email for making application. Students are required to complete the online application with supporting documents uploaded, and dispatch or send by express post to Global Engagement Office (GEO) for our handling. \n-Students have to pay a non-refundable administrative fee of HK$550. Such fee covers visa application, courier service and courier of transcript etc. \n-Students will be responsible for their own medical and dental costs during their stay in Hong Kong. They are therefore required to take out an appropriate travel and health insurance scheme.",
           "Departments": "Business,Construction and Environment,Engineering,Health and Social Sciences,Humanities,Design,Hotel and Tourism Management,Science,Fashion and Textiles,Computer and Mathematical Sciences"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Shun Tak Heliport",
+          "city": "Hong Kong",
+          "iata": "HHP",
+          "icao": "VHST",
+          "lat": 22.2893714905,
+          "lon": 114.152153015,
+          "distanceKm": 3.3
+        }
       },
       {
         "id": "299195d3-4d6d-816f-879c-c84b064189de",
@@ -2608,7 +3292,16 @@
           "Note": "Administrative fee : HK $1,800\nhttps://intl.hkbu.edu.hk/student-exchange/incoming-students/preparing-for-your-exchange-at-hkbu/cost-of-living-fees-and-payment\n\n*Checklist for Incoming Student Exchange Application\nhttps://drive.google.com/file/d/1fXtjcfSJTu7L05cEk59yUV5fz3t4QsGE/view?usp=sharing\n\n*Student Exchange Programme General Information\nhttps://drive.google.com/file/d/1fXtjcfSJTu7L05cEk59yUV5fz3t4QsGE/view?usp=sharing",
           "Departments": "Accounting,Taxation,Chinese,Law,Communication,Film Studies,Media,Biology,Chemistry,Computer Science,Economics,Education,English,Management,Business,Geography,Political Science,International Relations,History,Humanities,Journalism,Language,Mathematics,Music,Physics,Philosophy,Social Science,Art"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Shun Tak Heliport",
+          "city": "Hong Kong",
+          "iata": "HHP",
+          "icao": "VHST",
+          "lat": 22.2893714905,
+          "lon": 114.152153015,
+          "distanceKm": 6.2
+        }
       },
       {
         "id": "2b9195d3-4d6d-8027-a8ea-d3abf06bf946",
@@ -2646,7 +3339,16 @@
           "Note": "*Application and visa: https://www.ln.edu.hk/oge/incoming-students/incoming-exchange/application-visa\n*Hostel Fee (2025-2026): HK$7,800 per term. The hostel fee is under University's review and subject to change.\n- Visa Application: HKD230\n- Air-conditioning Fee: HKD330 (This is the hostel fee for 2025-26. The amount for 2026-2027 is under University review and subject to change)\n- Linen Set Fee (Optional): HKD430",
           "Departments": "Art,Business,Social Science,Liberal Arts"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Hong Kong International Airport",
+          "city": "Hong Kong",
+          "iata": "HKG",
+          "icao": "VHHH",
+          "lat": 22.308901,
+          "lon": 113.915001,
+          "distanceKm": 13.4
+        }
       },
       {
         "id": "299195d3-4d6d-8151-90ba-d8459c1bb27a",
@@ -2679,7 +3381,16 @@
           "Note": "- Mandatory eVisa and Stay Permit fee : IDR 6.100.000 (subject to change), e-book (only for several courses: around IDR 500.000/ class\n- BINUS will provide local buddy to help international students.",
           "Departments": "Accounting,Architecture,Business,Hotel Management,Civil Engineering,Computer Science,Industrial Engineering,Information Systems,International Relations,English Literature,Communication,Finance,Design,Biotechnology"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Halim Perdanakusuma International Airport",
+          "city": "Jakarta",
+          "iata": "HLP",
+          "icao": "WIHH",
+          "lat": -6.266610145568848,
+          "lon": 106.89099884033203,
+          "distanceKm": 11.2
+        }
       },
       {
         "id": "299195d3-4d6d-8138-883c-d09e48dfaa3b",
@@ -2714,7 +3425,16 @@
           "Note": "Estimated Living Cost(per month)\n- Housing: IDR 3.500.000/USD 217\n- Meals: IDR 3.100.000/USD 193\n- Books and supplies: IDR 750.000/USD 46\n- Transportation: IDR 500.000/USD 31\n- Communication & Internet Connection: IDR 500.000/USD 31\n- Photocopies: IDR 300.000/USD 19\n- Personal monthly needs: IDR 1.000.000/USD 62\n- Incidentals: IDR 500.000/USD 31\nTotal: IDR 10.150.000/USD 630",
           "Departments": "Medicine,Public Health,Engineering,Law,Computer Science,Psycology,Social Science,Political Science,Humanities,Economics,Business"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Pondok Cabe Air Base",
+          "city": "Jakarta",
+          "iata": "PCB",
+          "icao": "WIHP",
+          "lat": -6.3369598388671875,
+          "lon": 106.76499938964844,
+          "distanceKm": 7.3
+        }
       },
       {
         "id": "2b6195d3-4d6d-80a0-8f04-e9f402935288",
@@ -2743,7 +3463,16 @@
           "Note": "- Disability support available: https://www.maynoothuniversity.ie/international/how-apply\n- Passport scan and transcript upload required\n- If students wish to join any Student Clubs & Societies they will be required to pay a €3 membership fee for each club/society they join.\n- Students must have valid travel/medical insurance which includes repatriation (assisted return to the home country in the case of severe illness or fatality) for the entire duration of their time at MU.\nhttps://www.maynoothuniversity.ie/international/key-information\n*Budget Guide: https://drive.google.com/file/d/1K3J8B1MdAiVmhVuPRdGFFolkKNd3zIE8/view?usp=drive_link",
           "Departments": "Arts,Language,History,Social Science,Economics,Education,Geography,Business,Sociology,Anthropology,Biology,Chemistry,Computer Science,Electronic Engineering,Mathematics,Physics,Psychology"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Dublin Airport",
+          "city": "Dublin",
+          "iata": "DUB",
+          "icao": "EIDW",
+          "lat": 53.421299,
+          "lon": -6.27007,
+          "distanceKm": 22.2
+        }
       },
       {
         "id": "299195d3-4d6d-8167-a5e7-de3c12a426d0",
@@ -2777,7 +3506,16 @@
           "Note": "- Students Guide\nhttps://www.uniroma1.it/sites/default/files/field_file_allegati/international_student_guide_3.pdf\n- Students must be nominated within the Faculty of Arts and Humanities and can take courses in other faculties. At least one course should be taken from the Faculty of Arts and Humanities.\n-No scholarships for incoming students.\n-We offer a free Italian Language course and discounts for the canteen service.",
           "Departments": "Information Engineering,Informatics and Statistics,Mathematics,Physics and Natural Sciences,Humanities,Civil and Industrial Engineering"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Crotone Airport",
+          "city": "Crotone",
+          "iata": "CRV",
+          "icao": "LIBC",
+          "lat": 38.9972,
+          "lon": 17.0802,
+          "distanceKm": 475.7
+        }
       },
       {
         "id": "299195d3-4d6d-8130-bde7-c9c0640f5558",
@@ -2814,7 +3552,16 @@
           "Note": "*Information for Incoming Studnets :\nhttps://drive.google.com/file/d/1R7ZgHHMii4pw32jHRqKFZ867TZr5-eU9/view?usp=sharing",
           "Departments": "Business,Economics,Philosophy,Informatics,Language,Cultural Studies,Humanities,Hospitality Innovation and E-Tourism,Computer Science and Information Technology,Philosophy and Cultural Heritage,Linguistics and Comparative Cultureal Studies,Asian and North American Studies,Molecular Sciences and Nanosystems,Social Sciences and Social Work"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Venice Marco Polo Airport",
+          "city": "Venice",
+          "iata": "VCE",
+          "icao": "LIPZ",
+          "lat": 45.505299,
+          "lon": 12.3519,
+          "distanceKm": 8.1
+        }
       },
       {
         "id": "299195d3-4d6d-816b-a444-e760af402300",
@@ -2854,7 +3601,16 @@
           "e5b11948-4e47-42c7-b439-af7f255b0e4a": "",
           "Departments": "Japanese,Language,Economics,Law"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Tokyo Haneda International Airport",
+          "city": "Tokyo",
+          "iata": "HND",
+          "icao": "RJTT",
+          "lat": 35.552299,
+          "lon": 139.779999,
+          "distanceKm": 32
+        }
       },
       {
         "id": "3f6b5b44-e511-4d07-b60f-8cd64754c115",
@@ -2892,7 +3648,16 @@
           "e5b11948-4e47-42c7-b439-af7f255b0e4a": "",
           "Departments": "Japanese,Language,Economics,Law"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Tokyo Haneda International Airport",
+          "city": "Tokyo",
+          "iata": "HND",
+          "icao": "RJTT",
+          "lat": 35.552299,
+          "lon": 139.779999,
+          "distanceKm": 32
+        }
       },
       {
         "id": "299195d3-4d6d-8109-9120-c1e4295ef89f",
@@ -2930,7 +3695,16 @@
           "Note": "*Students normally take classes from the classes for exchange students and the faculty classes with Japanese students.\n* National Health Insurance and  our university insurance fees are mandatory.",
           "Departments": "Foreign Languages"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Tokyo Haneda International Airport",
+          "city": "Tokyo",
+          "iata": "HND",
+          "icao": "RJTT",
+          "lat": 35.552299,
+          "lon": 139.779999,
+          "distanceKm": 26.5
+        }
       },
       {
         "id": "299195d3-4d6d-81e5-95b9-ef060d8eef62",
@@ -2965,7 +3739,16 @@
           "Note": "【GTN】Starting from the 2026 academic year, our university has decided to introduce the \"GTN assistants\" for the purpose of enhancing the safety and well-being of international students. All international students will be required to enroll in this service.\nThrough this service, students can access lifestyle consultations and basic medical interpretation via 24-hour chat or phone support. It also provides useful daily life information, emergency disaster updates, and earthquake alerts.Please note that the cost of this service will be borne by the students themselves. For more details, please refer to the flyer. https://www.kansai-u.ac.jp/Kokusai/ES/GTNen.pdf\n【National Health Insurance】\nIf students gets sick or injured during your stay in Japan, National Health Insurance makes it possible to receive medical treatment with only a part payment of the medical expenses (partial obligation). In principle, you can receive medical treatment with a payment of just 30% of the total medical care expenses. Exchange students are obligated to buy the National Health Insurance （13,000JPY to 14,000JPY per semester）\n【Other costs】https://www.kansai-u.ac.jp/Kokusai/ES/expenses.pdf\n\n",
           "Departments": "Engineering,Food Science & Biotechnology,International Business & Entrepreneurship,Japan Studies,Language Teaching & Communication,Studies on Foreign Affairs,Fundamentals for Social Science Studies,Science,Mathematics,Physics,Chemistry,Informatics"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Osaka International Airport",
+          "city": "Osaka",
+          "iata": "ITM",
+          "icao": "RJOO",
+          "lat": 34.785499572753906,
+          "lon": 135.43800354003906,
+          "distanceKm": 6.8
+        }
       },
       {
         "id": "299195d3-4d6d-81f6-af75-dbf33fbdbb5c",
@@ -3002,7 +3785,16 @@
           "Note": "- Students should contact KSU before applying to confirm enrollment options. Particularly if they are planning to enroll in English taught courses.\n- Mandatory health insurance, approx. 2,000yen per month\n- Student accommodation and access is inconvenient for people using wheelchairs or who very limited leg movement.",
           "Departments": "Economy,Business,Law,Psycology,International Relations,Foreign Studies,Cultural Studies,Science,Information Science,Engineering,Life Science"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Osaka International Airport",
+          "city": "Osaka",
+          "iata": "ITM",
+          "icao": "RJOO",
+          "lat": 34.785499572753906,
+          "lon": 135.43800354003906,
+          "distanceKm": 43.2
+        }
       },
       {
         "id": "299195d3-4d6d-81fb-9165-dddc873dac83",
@@ -3043,7 +3835,16 @@
           "Note": "- Your application form study plan is very important: it will be considered when the Faculty/Graduate School decides your acceptance.\n- Students are required to sign up for National Health Insurance during their stay in Japan, which costs about 1,800 yen per month.\n- Japanese Language Courses : Free if charge for Exchange students, with grade and credit. Not mandatory.",
           "Departments": "Economics,Commerce,Letters,Science and Engineering,Policy Studies,Global Management,International Relations,Social Sciences"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Yokota Air Base",
+          "city": "Yokota",
+          "iata": "OKO",
+          "icao": "RJTY",
+          "lat": 35.74850082397461,
+          "lon": 139.34800720214844,
+          "distanceKm": 13.1
+        }
       },
       {
         "id": "299195d3-4d6d-81d6-910e-d5cb6e041df2",
@@ -3080,7 +3881,16 @@
           "Note": "*Student service fee, National Health Insurance, mandatory\n*Registration(JPY30000)、Student Service Fee(JPY30000)、Housing（Fall:JPY429300・Spring:JPY420000）、Insurance（JPY17000／YR) Book(JPY4500/sem) etc.\n* minimum credits and class time：：Minimum: 600 minutes of classes/week (VISA requirement)\nMaximum: 20 credits",
           "Departments": "Language,Business,Communication,History,Philosophy,International Relations,Sociology,Public Policy,Media,Education,Sciences,Information Science,Environmental Sciences"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Wakkanai Airport",
+          "city": "Wakkanai",
+          "iata": "WKJ",
+          "icao": "RJCW",
+          "lat": 45.4042015076,
+          "lon": 141.800994873,
+          "distanceKm": 10114.3
+        }
       },
       {
         "id": "299195d3-4d6d-81fb-8c79-efb40685f389",
@@ -3117,7 +3927,16 @@
           "Note": "The list of courses for each semester is finalized roughly one month before the start of each semester. Please refer to the general course list for your reference. \nhttps://en.apu.ac.jp/abroad/prospective/incoming/course/\nPlease also be aware that there are a number of courses to which registration is restricted as an exchange student.\n\nRequired Number of Credits:\nMinimum-  14 credits in one semester (10 hours of classes per week)\nMaximum- No limit (APU’s degree-seeking students usually register 18~20 credits per semester)\n- Important note: As a student on a student visa, students must register a minimum of 14 credits throughout the entire semester AND their weekly class hours must be at least 10 hours. Students are not allowed to register for courses during only one of two quarters.",
           "Departments": "innovation and economics,Marketing,Strategic Management and Organization,Accounting and finance,Environment and Development,International Relations and Peace Studies,Culture Society and Media,Sustainability and Tourism"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Oita Airport",
+          "city": "Oita",
+          "iata": "OIT",
+          "icao": "RJFO",
+          "lat": 33.479400634799994,
+          "lon": 131.736999512,
+          "distanceKm": 29.6
+        }
       },
       {
         "id": "299195d3-4d6d-8110-b77b-fd2e6d35f33c",
@@ -3156,7 +3975,16 @@
           "Note": "*We do not contact students directly until we receive an official nomination from the partners.\n If there are any questions, please make sure that inquiries are made by the person in charge of the exchange program.\n* Kindai Exchange Program Flow :\nhttps://docs.google.com/spreadsheets/d/1vLyqiHU8r6s8o4BWxgPQzXNfiibWVxaH5YoCl_HBmR8/edit?gid=0#gid=0",
           "Departments": "Higashiosaka Campus,Economics,Business,Science,Engineering,Architecture,International Studies,Literature,Informatics,Literature Arts and Cultural Studies,Applied Sociology,Law"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Osaka International Airport",
+          "city": "Osaka",
+          "iata": "ITM",
+          "icao": "RJOO",
+          "lat": 34.785499572753906,
+          "lon": 135.43800354003906,
+          "distanceKm": 20.4
+        }
       },
       {
         "id": "299195d3-4d6d-8161-90f5-dd51007b2629",
@@ -3195,7 +4023,16 @@
           "eb772f62-3fdb-43a8-805e-1f5ddcf5116a": "",
           "Departments": "Economics,Business,Science,Engineering,Informatics,Letters,Administration,Intelligence"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Kobe Airport",
+          "city": "Kobe",
+          "iata": "UKB",
+          "icao": "RJBE",
+          "lat": 34.6328010559082,
+          "lon": 135.2239990234375,
+          "distanceKm": 11.5
+        }
       },
       {
         "id": "299195d3-4d6d-8176-98f9-d6b614f57353",
@@ -3232,7 +4069,16 @@
           "Note": "- FAQ: http://www.tufs.ac.jp/english/admission/non-degree/exchange/faq.html\n- Additional Fee information: Please refer to the latest fact sheet. https://www.tufs.ac.jp/english/admission/non-degree/exchange/overview.html",
           "Departments": "Liberal Arts,Language,Cultural Studies,Japan Studies,Japanese"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Yokota Air Base",
+          "city": "Yokota",
+          "iata": "OKO",
+          "icao": "RJTY",
+          "lat": 35.74850082397461,
+          "lon": 139.34800720214844,
+          "distanceKm": 17.6
+        }
       },
       {
         "id": "299195d3-4d6d-81b0-a3a9-cf6c496a5af9",
@@ -3271,7 +4117,16 @@
           "Note": "* Please read both fact sheet and application guidelines carefully \n*Mandatory National Health Insurance for all exchange students : About ¥15,000/year\n*Mandatory Student health insurance\nfor all exchange students : ¥3,000 (one-time payment upon arrival)",
           "Departments": "Law,Commerce,Political Science,Economics,Science and Technology,Agriculture,Business,Maths,Arts and Letters,Global Japanese Studies,Information and Communication Technology"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Tokyo Haneda International Airport",
+          "city": "Tokyo",
+          "iata": "HND",
+          "icao": "RJTT",
+          "lat": 35.552299,
+          "lon": 139.779999,
+          "distanceKm": 16.2
+        }
       },
       {
         "id": "299195d3-4d6d-81bc-ba93-e76a891a255a",
@@ -3309,7 +4164,16 @@
           "Note": "* Estimated Living Expenses and Scholarship (https://en.ritsumei.ac.jp/skp/academics/scholarships/)\n\n* There are courses offered in English with limited enrolment capacity. If the number of applicants for these courses exceeds the limit, a lottery may be held to determine the placement, therefore, it is possible that students may not be able to take all their preferred courses.",
           "Departments": "Business,Social Sciences,Economics,Information Science,Engineering,Life Science,Letters,Law,Policy Science,Comprehensive Psychology,Image Arts and Science,Sport and Health Science,Gastronomy Management"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Osaka International Airport",
+          "city": "Osaka",
+          "iata": "ITM",
+          "icao": "RJOO",
+          "lat": 34.785499572753906,
+          "lon": 135.43800354003906,
+          "distanceKm": 38.2
+        }
       },
       {
         "id": "299195d3-4d6d-8118-9c20-fae79d14f662",
@@ -3346,7 +4210,16 @@
           "Note": "Students must have National Health Insurance (国民健康保険, The fee ranges from 2,000 yen to 3,000 yen per month) and travel insurance that covers the entire period of study abroad from the date of departure from your home country to the date of return home.\nIn addition, Students also must enroll in Gakkensai Insurance【学研災】(i.e. “Personal Accident Insurance for Students Pursuing Education and Research” provided by JEES [Japan Educational Exchanges and Services]). The fee is 11,500 yen (as of October.2025) for one year. ",
           "Departments": "Economics,Law,Business Administration,Commerce,Human Sciences,International Communication,Network & Information,School of Letter,Geography,Journalism,Sociology,Politics,Marketing,Accounting"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Tokyo Haneda International Airport",
+          "city": "Tokyo",
+          "iata": "HND",
+          "icao": "RJTT",
+          "lat": 35.552299,
+          "lon": 139.779999,
+          "distanceKm": 16.3
+        }
       },
       {
         "id": "299195d3-4d6d-811c-942e-f05342b0e08b",
@@ -3418,7 +4291,16 @@
           "Departments": "Economics,Commerce,Art,International Relations,Engineering,Science and Technology,Humanities and Social Sciences,Risk Management,Law,Sports Science,Industrial Technology,Bioresource Science",
           "ff74989e-a87d-4fce-a593-6ce6bbac9b9b": "Not decided yet"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Tokyo Haneda International Airport",
+          "city": "Tokyo",
+          "iata": "HND",
+          "icao": "RJTT",
+          "lat": 35.552299,
+          "lon": 139.779999,
+          "distanceKm": 16.2
+        }
       },
       {
         "id": "299195d3-4d6d-8124-ab9c-e518c87bb61b",
@@ -3447,7 +4329,16 @@
           "Note": "International student who stay in Japan over three months must purchase National Insurance,  probably ¥20,000~30,000/year. Personal accident insurance for students pursuing education and research ¥1,400/year.",
           "Departments": "Economics,International Studies,Welfare Society"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Rishiri Airport",
+          "city": "Rishiri Island",
+          "iata": "RIS",
+          "icao": "RJER",
+          "lat": 45.2420005798,
+          "lon": 141.186004639,
+          "distanceKm": 8394.3
+        }
       },
       {
         "id": "48af4eb9-a6f0-4f7f-90df-46ba45c6a85e",
@@ -3485,7 +4376,16 @@
           "Note": "*Spring semester only",
           "Departments": "Humanities,English,Japanese,History,Language,Law,Economy,Science,Engineering,Sports"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Fukuoka Airport",
+          "city": "Fukuoka",
+          "iata": "FUK",
+          "icao": "RJFF",
+          "lat": 33.585899353027344,
+          "lon": 130.4510040283203,
+          "distanceKm": 9
+        }
       },
       {
         "id": "299195d3-4d6d-81d0-a7a2-e66cd07576f3",
@@ -3516,7 +4416,16 @@
           "Note": "* Please purchase overseas insurance that covers the period of their study abroad in home country in advance.\nAfter arriving in Japan, students will be required to join the medical assistance service for international students designated by Mejiro university.\nCost of medical assistance service for international students to be joined after arriving in Japan: 2,900 yen per year.\n*All students are required to enter Japan on the designated entry date and use the pick-up service.\n*Should any student fall into one of the following categories, we may need to consult with you about the possibility of canceling their study abroad program;\n   1) Students who require ongoing medical treatment in Japan but are unable to attend appointments independently due to their health condition or Japanese language limitations\n   2) Students who may pose a risk of harm to themselves or others\nWe sincerely ask for your understanding of this matter.\n* All applicants must submit a “Health Certificate” stating that they are “fit to study abroad,” signed by a physician who is thoroughly familiar with their health condition. Depending on the contents of the medical certificate, our university maybe unable to accept the applicant. Should health issues arise during the study abroad period, or should our university instruct the students to discontinue their studies or return home urgently, we request that the students’ home university and guardians assume responsibility for providing support to the student.",
           "Departments": "Japanese and Japanese Language Education"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Tokyo Haneda International Airport",
+          "city": "Tokyo",
+          "iata": "HND",
+          "icao": "RJTT",
+          "lat": 35.552299,
+          "lon": 139.779999,
+          "distanceKm": 20.5
+        }
       },
       {
         "id": "299195d3-4d6d-8104-8c5f-d17f4270c04b",
@@ -3550,7 +4459,16 @@
           "Note": "***Application Guidelines 2026\n*At the time of application, applicants must have completed at least one semester at home university.\n*Before coming to Japan, it is strongly recommended to buy travel insurance in your home country which covers the entire exchange period. \n*All exchange students residing with a visa lasting three months or longer are required to enroll Japan’s National Health Insurance at the city office they reside. With this insurance, medical expenses will be reduced to 20-30 % of total amount (with some exceptions at certain medical facilities)  \nMonthly insurance fee may vary by your residential area (city/ward), but usually around 2,000 yen or less. \n*Additional fee : Differ depending on individual life styles, but the average monthly cost is 80,000 yen for housing, and 80,000 yen for living expenses (food, transportation and daily necessities).\n\nMore information on insurance will be provided at the general orientation.  ",
           "Departments": "Political Science,Law,Commerce,Engineering,Horticulture,Humanities,Sport Sciences,Liberal Studies,Social Sciences,Culture Media and Society,Education,Science,Sports"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Tokyo Haneda International Airport",
+          "city": "Tokyo",
+          "iata": "HND",
+          "icao": "RJTT",
+          "lat": 35.552299,
+          "lon": 139.779999,
+          "distanceKm": 18.3
+        }
       },
       {
         "id": "157195d3-4d6d-805b-b854-d2f6031c8fde",
@@ -3581,7 +4499,16 @@
           "Note": "Accommodation: 13,000 yen to 30,000 yen/month\nFood: 20,000 yen\nTransport: 1,500 yen\nOthers (Entertainment, clothes, mobile phone, utilities, books etc.): 20,000 yen\nEstimated monthly expenditure: 80,000 yen\nInsurance:\nhttps://sup.bureau.tohoku.ac.jp/en/after-arrival-e/student-insurance-e/",
           "Departments": "Science,Pharmaceutical,Engineering,Agriculture,Natural Sciences,Humanities,Social Sciences"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Sendai Airport",
+          "city": "Sendai",
+          "iata": "SDJ",
+          "icao": "RJSS",
+          "lat": 38.1397018433,
+          "lon": 140.917007446,
+          "distanceKm": 14.4
+        }
       },
       {
         "id": "299195d3-4d6d-812a-a24c-f56aea12ab52",
@@ -3617,7 +4544,16 @@
           "Note": "Students must enroll in Japanese National Health Insurance (approximately 6,000 yen for one semester) as well as student insurance specified by iCLA  (approximately 1,030 JPY for one semester) \n\nBased on iCLA student dormitory, room and board (3 meals/day on class days), utilities, optional rental items and student insurance:\n1 semester JPY 475,000 – 543,200\n2 semesters JPY 950,000 – 1,018,200\n\n*Exchange prgram brochure : https://www.icla.ygu.ac.jp/wp-content/uploads/2025/09/iCLA-ExchangeProgram-Brochure-Spring-2026.pdf\n*Academic calendar 2026 : https://www.icla.ygu.ac.jp/wp-content/uploads/2025/08/iCLA-Academic-Calendar-2026.pdf",
           "Departments": "Political Science,Data Science,Health and Physical Education,Sociology,Psycology,Global Business&Economics,Interdisciplinary Arts,Quantitative Reasoning,Japan Studies,Natural Sciences"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Yokota Air Base",
+          "city": "Yokota",
+          "iata": "OKO",
+          "icao": "RJTY",
+          "lat": 35.74850082397461,
+          "lon": 139.34800720214844,
+          "distanceKm": 68.2
+        }
       },
       {
         "id": "2b9195d3-4d6d-804e-9669-f49b85234f86",
@@ -3644,7 +4580,16 @@
           "Email": "lim-h-y@nagasaki-u.ac.jp",
           "Departments": "Global Humanities and Social Sciences,Education,Economics,Engineering,Informative and Data Sciences,Environmental Sciences"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Nagasaki Airport",
+          "city": "Nagasaki",
+          "iata": "NGS",
+          "icao": "RJFU",
+          "lat": 32.916900634799994,
+          "lon": 129.914001465,
+          "distanceKm": 15.2
+        }
       },
       {
         "id": "299195d3-4d6d-819a-b86d-d36c80296687",
@@ -3680,7 +4625,16 @@
           "Note": "*Visa Information for International Students: https://drive.google.com/file/d/1e-WioJPbt-RKEisB-LhxvqaELblryQ11/view?usp=drive_link\n*Flyer-Exchange at KIMEP University 2025: https://drive.google.com/file/d/1SDDLJTJg36rr98TFzBg6cshRsze7jp_S/view?usp=drive_link\n*Insurance, Dormitory fee, Library Fee for rebting books for the semester\n*On-campus Medical Center available. A student can have free service if buying the domestic insurance(Kazakhstan). If a student has already purchased an insurance in Korea, it is necessary to check if the insurance provides the repayment method. (카자흐스탄 내 보험을 가입하는 경우 무료로 진료를 받을 수 있음. 국내에서 가입한 보험인 경우, 상환방식으로 가능하나 보험사와 확인필요)\nhttps://www.kimep.kz/current-students/en/student-affairs/medical-center/\n*Free airport pick-up is provided",
           "Departments": "Accounting,Economics,Finance,International Relations,Foreign Studies,Business,Journalism,Management,Public Administration,Marketing,Translation,International Law,Foreign Languages,Cognitive Science,Information Systems in Business,Psycology,Computer Science,Information Systems,Physical Education"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Almaty Airport",
+          "city": "Alma-ata",
+          "iata": "ALA",
+          "icao": "UAAA",
+          "lat": 43.35210037231445,
+          "lon": 77.04049682617188,
+          "distanceKm": 14.1
+        }
       },
       {
         "id": "299195d3-4d6d-8183-ba38-eaffae68de2f",
@@ -3718,7 +4672,16 @@
           "Note": "- Health Matters : https://www.vu.lt/en/studies/exchange-students/living-in-lithuania/health-matters\n- Information about study in Lithuania https://www.vu.lt/en/studies/exchange-students/living-in-lithuania \n- application instructions: https://www.vu.lt/en/studies/exchange-students/how-to-apply \n- Min 15, Max 35 ECTS credits per semester\n- Academic Calendar 2025/26 : https://www.vu.lt/en/studies/exchange-students/academic-calendar#autumn-semester-academic-year-2025-2026",
           "Departments": "Business,Chemistry,Economics,History,Philology,Language,Physics,Political Science"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Vilnius International Airport",
+          "city": "Vilnius",
+          "iata": "VNO",
+          "icao": "EYVI",
+          "lat": 54.634102,
+          "lon": 25.285801,
+          "distanceKm": 5.4
+        }
       },
       {
         "id": "299195d3-4d6d-8154-a918-f78ec29540ef",
@@ -3757,7 +4720,16 @@
           "Note": "*If students pursue visa via LCC migration office, there will be insurance fee included into student bill. Student will also be requested to pay for housing. Some costs might apply for printing services if requested.\n*LCC purchases local health insurancefor you. The cost is70EUR and covers your entire stay in\nthe country.The insurance fee will be added to your student bill.",
           "Departments": "Psychology,Theology,International relation & Development,Global Business and Public Engagement,English Language and Literature,International Business and Administration"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Klaipėda Airport",
+          "city": "Klaipeda",
+          "iata": "KLJ",
+          "icao": "EYKL",
+          "lat": 55.7118988037,
+          "lon": 21.242799758900002,
+          "distanceKm": 7.2
+        }
       },
       {
         "id": "c17d8bc7-17ed-4bbc-9e0e-acebeb6a680e",
@@ -3793,7 +4765,16 @@
           "Note": "https://lcc.lt/study-abroad-erasmus",
           "Departments": "International Business,Contemporary Communication,English,Literature,Psychology,Theology,International relation & Development"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Klaipėda Airport",
+          "city": "Klaipeda",
+          "iata": "KLJ",
+          "icao": "EYKL",
+          "lat": 55.7118988037,
+          "lon": 21.242799758900002,
+          "distanceKm": 7.2
+        }
       },
       {
         "id": "299195d3-4d6d-8137-a01e-c76e1b8a417b",
@@ -3826,7 +4807,16 @@
           "Note": "*Practical information for Incoming Students : https://www.vdu.lt/en/international-cooperation/for-students/practical-information-for-incoming-students/\n*Academic Calendar : https://www.vdu.lt/wp-content/uploads/2025/06/academic-calendar-2025-2026.pdf",
           "Departments": "Engineering,Art,History,Economics,Management,Education,Biotechnology,Law,Humanities,Informatics,Theology,Music,Political Science,Social Science,Agriculture,Natural Sciences,Foreign Languages"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Kaunas International Airport",
+          "city": "Kaunas",
+          "iata": "KUN",
+          "icao": "EYKA",
+          "lat": 54.96390151977539,
+          "lon": 24.084800720214844,
+          "distanceKm": 15.4
+        }
       },
       {
         "id": "299195d3-4d6d-814e-8204-fee1b69a21ce",
@@ -3857,7 +4847,16 @@
           "Email": "indre.kasputyte@ism.lt",
           "Departments": "Management,Economics,Business,Finance"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Vilnius International Airport",
+          "city": "Vilnius",
+          "iata": "VNO",
+          "icao": "EYVI",
+          "lat": 54.634102,
+          "lon": 25.285801,
+          "distanceKm": 4.6
+        }
       },
       {
         "id": "2bf195d3-4d6d-80d3-a80e-ed6629c8c326",
@@ -3886,7 +4885,16 @@
           "Note": "Cost of Living: \n Off Campus Accommodation\n- Studio Apartment: HKD7000/month\n- Shared Apartment (with one roommate):\n   En-suite HKD6000/person/month\n   Single Room HKD5500/person/month\n- Shared Apartment (with two roommates)\n   En-suite HKD5200/person/month\n   Single Room HKD4000/person/month\n Transportation\n- Bus fare: MOP3 for normal lines and MOP4 for the fast lines (For Macau Pass holders)\n Lunch per day\n- Approximately MOP 40\n Dinner per day\n- Approximately MOP 50-60\n Miscellaneous (Water, Phone bills etc)\n- around MOP 300 per month\n\nIncoming students must pay the following fee:\nCaution fee of HKD 6,000.00 which will be refunded at the end of the semester unless they are found liable for any damages to the university properties",
           "Departments": "Innovation Engineering,Business,Hospitality and Tourism Management,Humanity and Arts,Liberal Arts"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Macau International Airport",
+          "city": "Macau",
+          "iata": "MFM",
+          "icao": "VMMC",
+          "lat": 22.149599,
+          "lon": 113.592003,
+          "distanceKm": 2.5
+        }
       },
       {
         "id": "299195d3-4d6d-8175-ae2b-e27859b9405e",
@@ -3925,7 +4933,16 @@
           "Note": "*Academic Calendar\n*Exchange students are allowed to take one to two courses offered by other faculties/institutes, however, at least 50% of the courses should be from the chosen Faculty.\n*Due to the adoption of a different grading system, exchange students who enroll in the Faculty of Law are not allowed to enroll in the courses of other departments. ",
           "Departments": "Arts and Humanities,Business Administration,Education,Health Sceinces,Law,Social Sciences,Science and Technology"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Macau International Airport",
+          "city": "Macau",
+          "iata": "MFM",
+          "icao": "VMMC",
+          "lat": 22.149599,
+          "lon": 113.592003,
+          "distanceKm": 5.5
+        }
       },
       {
         "id": "299195d3-4d6d-813e-97a3-fb6fc0103e67",
@@ -3962,7 +4979,16 @@
           "Note": "- Chinese Language Training Courses Courses of all levels (Elementary, Intermediate and Advanced) are offered.\n- Students are required to take a Chinese proficiency test before starting Chinese language classes.\n- English-taught Content Courses English-taught Content Courses are offered by various departments/schools of Nanjing University.\n- Chinese-taught Content Courses Exchange students could take Chinese-taught Content courses with the permission from course instructors.\n- Credits\n (1) Exchange students can get formal NJU credits as long as they finish the required class attendance and pass exams. One credit equals to 16 hours of study. \n(2) Exchange students are required to take at least 3 courses every semester. There is no maximum requirement.\n- All incoming students should purchase a student health insurance after arrival at NJU:400 RMB per semester. For more information, please refer to https://stuex.nju.edu.cn/en_/23289/list.htm",
           "Departments": "Geography,Chemistry,Chemical Engineering,Management,Journalism,Communication,Life Science,English,Artificial Intelligence,Foreign Studies,Arts,Electrical and Electronics Engineering,Applied Sciences,History"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Nanjing Lukou Airport",
+          "city": "Nanjing",
+          "iata": "NKG",
+          "icao": "ZSNJ",
+          "lat": 31.742000579833984,
+          "lon": 118.86199951171875,
+          "distanceKm": 36
+        }
       },
       {
         "id": "162e74f5-176a-4c38-9c81-9c79b761f8d2",
@@ -3995,7 +5021,16 @@
           "Note": "Insurance (mandatory)\nYou may purchase the international insurance at home country. However, you are REQUIRED to purchase the\ndesignated insurance -- Guoren Property & Casualty Insurance Co., Ltd. for Foreigners Staying in China –\nbefore the enrollment (CNY400/semester). \nFor those who want to get their X1/X2 visa to Residence Permit (RP) are required to pay for two semesters’ insurance fee (CNY 800 in total) at a lump sum according to the regulations on visa/residence permit. For more information about this insurance, you may refer to https://english.dhu.edu.cn/insurance/list.htm .",
           "Departments": "C.E.P"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Shanghai Hongqiao International Airport",
+          "city": "Shanghai",
+          "iata": "SHA",
+          "icao": "ZSSS",
+          "lat": 31.197900772094727,
+          "lon": 121.33599853515625,
+          "distanceKm": 7.2
+        }
       },
       {
         "id": "299195d3-4d6d-81a9-9e94-f6146297281c",
@@ -4029,7 +5064,16 @@
           "Note": "Q&A for International Students: http://cie.jlu.edu.cn/jldxhy/info/1188/1081.htm\n※ Factsheet for Fall 2026 is temporarily unavailable. It will be available in April 2026",
           "Departments": "Social Science,Science,Engineering,IT,Arts and Humanities"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Longjia Airport",
+          "city": "Changchun",
+          "iata": "CGQ",
+          "icao": "ZYCC",
+          "lat": 43.9962005615,
+          "lon": 125.684997559,
+          "distanceKm": 32.7
+        }
       },
       {
         "id": "e559c0be-4914-4ee6-8a4f-87494944cf60",
@@ -4064,7 +5108,16 @@
           "Departments": "Forestry,Science and Technology,Economics,Management,Humanities,Social Science,Science,Art,Design",
           "f844e93b-1439-40fc-81f5-2cc5bb8a6293": ""
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Beijing Capital International Airport",
+          "city": "Beijing",
+          "iata": "PEK",
+          "icao": "ZBAA",
+          "lat": 40.080101013183594,
+          "lon": 116.58499908447266,
+          "distanceKm": 22.9
+        }
       },
       {
         "id": "299195d3-4d6d-81df-b54e-f9db6f5faf2b",
@@ -4098,7 +5151,16 @@
           "Note": "Mandatory Health Insurance : 400 CNY (one semester)\n\n*Application process\n*List of Expenses",
           "Departments": "Science and Technology,Chinese language and Literature,History and Culture,Philosophy and Public Management,Foreign Languages,Physical Education,Music,Fine Arts,Journalism and Communication,Cultural Industry and Tourism Management,Business and Economics,Education,Civil engineering and Architecture,Computer and Information Engineering,Science,Mathematics and Statistics,Chemistry and Chemical Engineering"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Zhengzhou Xinzheng International Airport",
+          "city": "Zhengzhou",
+          "iata": "CGO",
+          "icao": "ZHCC",
+          "lat": 34.519699096699995,
+          "lon": 113.841003418,
+          "distanceKm": 33.4
+        }
       },
       {
         "id": "75fdf6a4-b618-48a8-b083-61b81f1e6bc2",
@@ -4127,7 +5189,16 @@
           "Note": "- No minimum GPA requirement",
           "Departments": "Chinese"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Zhengzhou Xinzheng International Airport",
+          "city": "Zhengzhou",
+          "iata": "CGO",
+          "icao": "ZHCC",
+          "lat": 34.519699096699995,
+          "lon": 113.841003418,
+          "distanceKm": 33.4
+        }
       },
       {
         "id": "299195d3-4d6d-81a6-b92f-f61f23643f5c",
@@ -4160,7 +5231,16 @@
           "Note": "APPLICATION FEE: RMB 450\nACCOMMODATION FEE ( if living on campus): about RMB 625~1250/month\nINSURANCE: RMB 400/half year\nFOREIGNER PGYSICAL EXAMINATION: RMB 482\nAPPLICATION FOR RESIDENT PERMIT:\nRMB 800 (12 months above)\nRMB 400 (less than 12 months)\nSTUDENT CARD: RMB 30",
           "Departments": "Science,Engineering,Architecture,Liberal Arts,Economics and Business Management,Arts,Design,Sport training,Language,Mathematics,Communication"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Guangzhou Baiyun International Airport",
+          "city": "Guangzhou",
+          "iata": "CAN",
+          "icao": "ZGGG",
+          "lat": 23.39240074157715,
+          "lon": 113.29900360107422,
+          "distanceKm": 26.1
+        }
       },
       {
         "id": "c2a23d20-44ef-471d-bfb7-33fa92e35a1d",
@@ -4199,7 +5279,16 @@
           "Note": "*QNA for inbound students : https://www.istudy.sdu.edu.cn/PDF/jiaohuanshengchangjianwentijieda.pdf\n*Medicial Insurance : 400 RBM/semester \n(Students who have not purchased medical insurance will not be registered. Please log in to http://www.lxbx.net for insurance contents and clains provedure)",
           "Departments": "Chinese,Philosophy,Economics,Literature,History,Science,Physics,Chemistry,Engineering,Social Developement,International Education,Physical Education,Political Science and Public Administration,Information Science and Engineering,Life Sciences,Innocation and Entrepreneurship,Journalism,Management,History and Culture,Mathematics"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Liuting Airport",
+          "city": "Qingdao",
+          "iata": "TAO",
+          "icao": "ZSQD",
+          "lat": 36.2661018372,
+          "lon": 120.374000549,
+          "distanceKm": 29.2
+        }
       },
       {
         "id": "14f5cf29-fd19-46d2-beef-a7b379315b75",
@@ -4234,7 +5323,16 @@
           "Email": "shanwei@cqu.edu.cn",
           "Departments": "Electronic Engineering,Meishi Film Academy,Law,Liberal Arts College,Public Administration,Management Science and Real Estate,Aerospace Engineering,Mechanical and vehicle Engineering,Computer Science,Architecture and Urban Planning,Economics and Business Administration,Big data and Software Engineering,Life Sciences,Foreign Languages and Cultures,Arts,Journalism and Communication,Environment and Ecology"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Chongqing Jiangbei International Airport",
+          "city": "Chongqing",
+          "iata": "CKG",
+          "icao": "ZUCK",
+          "lat": 29.719200134277344,
+          "lon": 106.64199829101562,
+          "distanceKm": 24.2
+        }
       },
       {
         "id": "299195d3-4d6d-81f5-9093-c28df6f272c5",
@@ -4265,7 +5363,16 @@
           "Note": "*Xi’an Jiaotong-Liverpool University (XJTLU) is a unique Higher Education institution located in\nSuzhou, Jiangsu Province, China. It is the largest international collaborative university in China\nestablished in 2006 by its parent institutions, the University of Liverpool (UK) and Xi’an Jiaotong\nUniversity (China).\n*small service charge students are required to pay at XJTLU to cover textbooks which may be issued, printing, transport costs relating to arrival and compulsory local insurance. The amount is RMB 600 for 1 year, and RMB 300 for 1 semester.\n*300 RMB per semester for printing",
           "Departments": "Accounting,Architecture,Biological Sciences,International Business,Communications and Networking,Cultural Technology,Comprehensive Foundation Studies,Chinese Culture,Civil Engineering,Chemistry,Media and Communication,Computing,Design,Data Science,Economics,Entrepreneurship,Environmental Sciences,Finance,Humanities,International Studies,Literature,Applied Linguistics,Physical Education,Physics,Science,Manufacturing Engineering"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Xi'an Xiguan Airport",
+          "city": "Xi\\'AN",
+          "iata": "SIA",
+          "icao": "ZLSN",
+          "lat": 34.376701,
+          "lon": 109.120003,
+          "distanceKm": 18.7
+        }
       },
       {
         "id": "299195d3-4d6d-816b-849b-c6ae2325f904",
@@ -4295,7 +5402,16 @@
           "Email": "icyxu@tongji.edu.cn",
           "Departments": "Economics and Business Management,Architecture and Urban Planning,Design and Innovation,Arts and Media,Civil Engineering,Automotive Studies,Railway and Urban Mass Transit,Transportation Engineering,Materials Science and Engineering,Electronics and Information Engineering,Software Engineering,Aerospace Engineering and Mechanics,Foreign Languages,Political Science& International   Relations,Life Science and Technology"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Shanghai Hongqiao International Airport",
+          "city": "Shanghai",
+          "iata": "SHA",
+          "icao": "ZSSS",
+          "lat": 31.197900772094727,
+          "lon": 121.33599853515625,
+          "distanceKm": 18.1
+        }
       },
       {
         "id": "6c7c8c38-776b-45b1-9b92-719e3c9f7752",
@@ -4323,7 +5439,16 @@
           "Email": "inbound@whu.edu.cn",
           "Departments": "Chinese,Economics,Management"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Wuhan Tianhe International Airport",
+          "city": "Wuhan",
+          "iata": "WUH",
+          "icao": "ZHHH",
+          "lat": 30.7838,
+          "lon": 114.208,
+          "distanceKm": 31.1
+        }
       },
       {
         "id": "299195d3-4d6d-81ae-9858-d550c295110e",
@@ -4354,7 +5479,16 @@
           "Note": "- Maximum 30credits per semester, while the minimum credit limit is up to the regulations of your home university.\n\n- All the students are required to pay for the local health insurance according to the regulation of our country. 400 RMB per semester, 800RMB per year.",
           "Departments": "Chinese,Economics,Management"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Wuhan Tianhe International Airport",
+          "city": "Wuhan",
+          "iata": "WUH",
+          "icao": "ZHHH",
+          "lat": 30.7838,
+          "lon": 114.208,
+          "distanceKm": 31.1
+        }
       },
       {
         "id": "299195d3-4d6d-81ee-99a3-e3fe8f106940",
@@ -4383,7 +5517,16 @@
           "Note": "*Academic calendar: https://drive.google.com/file/d/1pQ9ZvH26K6NPn-edPQFbL-p5QOlwIsrp/view?usp=drive_link\n",
           "Departments": "Biology,Chemistry,Computer Science,Humanities,Management,Mathematics,Physics,Arts,Social Sciences,Civil Engineering,Electrical and Electronic Engineering,Mechanical Engineering"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Penang International Airport",
+          "city": "Penang",
+          "iata": "PEN",
+          "icao": "WMKP",
+          "lat": 5.297140121459961,
+          "lon": 100.2770004272461,
+          "distanceKm": 7.3
+        }
       },
       {
         "id": "299195d3-4d6d-81cc-b227-e74ea72a2cde",
@@ -4415,7 +5558,16 @@
           "Note": "*Mandatory Administration Fee: 750 MYR",
           "Departments": "Sport and Exercise Sciences,Arts and Social Sciences,Built Enviroment,Business and Economics,Computer Science and Information Technology,Creative Arts,Education,Engineering,Languages and Linguistics,Law,Science"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Sultan Abdul Aziz Shah International Airport",
+          "city": "Kuala Lumpur",
+          "iata": "SZB",
+          "icao": "WMSA",
+          "lat": 3.130579948425293,
+          "lon": 101.54900360107422,
+          "distanceKm": 11.8
+        }
       },
       {
         "id": "2be195d3-4d6d-8018-a51a-e714087f1dfb",
@@ -4443,7 +5595,16 @@
           "Note": "Exchange students are required to pay registration fee (RM390 - undegraduate)",
           "Departments": "Business,Economics,Social Science,Humanities,Engineering,Information Science,Technology"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Kuala Lumpur International Airport",
+          "city": "Kuala Lumpur",
+          "iata": "KUL",
+          "icao": "WMKK",
+          "lat": 2.745579957962,
+          "lon": 101.70999908447,
+          "distanceKm": 21.4
+        }
       },
       {
         "id": "2cb195d3-4d6d-8088-a9d8-d4b30ed14cd2",
@@ -4472,7 +5633,16 @@
           "Note": "All modules are subject to availability at the beginning of the semester. \nMinimum credits to be taken: 16 credits (24 ECTS).\n• Maximum credits to be taken: 20 credits (30 ECTS). ",
           "Departments": "Business,Law,Creative Media,Computer Science,Information Technology,Software Engineering,Electrical and Electronics Engineering,Mechanical engineering,Chemical Engineering,international hospitality management,international tourism management,Mass Communication,International Relations,Biomedical science,Food Science,Biotechnology"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Sultan Abdul Aziz Shah International Airport",
+          "city": "Kuala Lumpur",
+          "iata": "SZB",
+          "icao": "WMSA",
+          "lat": 3.130579948425293,
+          "lon": 101.54900360107422,
+          "distanceKm": 10.6
+        }
       },
       {
         "id": "299195d3-4d6d-81e6-8e42-c5a1620c2c21",
@@ -4502,7 +5672,16 @@
           "Note": "*Requirements and process : https://www.uag.mx/es/studyabroadinmexico/requirements-process/m\n\nUAG does not recommend an exchange to students on the final period of their program as we cannot assure the availability of the courses that will complete their academic needs.",
           "Departments": "Nutrition,Physical Therapy,Education,Psychology,International Relations,Financial Administration,Public Accountant,Economics and Business Management,Tourism Business Management,Commerce and Trade,Fashion,Gastronomic Business,Digital Communications and Media Science,Visual Design,Architecture,Biotechnology,Industrial Design,Interior Design and Landscape,Electrical Mechanic,Chemistry,Biomedical Electronics,Business management,Industrial System,Mechatronic,Químico Farmacéutico Biólogo,Automotive Systems,Food and Business,Agro-business"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Don Miguel Hidalgo Y Costilla International Airport",
+          "city": "Guadalajara",
+          "iata": "GDL",
+          "icao": "MMGL",
+          "lat": 20.521799087524414,
+          "lon": -103.31099700927734,
+          "distanceKm": 22.3
+        }
       },
       {
         "id": "299195d3-4d6d-8134-a7f3-fb8cb370d3b4",
@@ -4540,7 +5719,16 @@
           "Note": "https://drive.google.com/file/d/1BFFFV3LJigrZTIZ4EHe1QiwQWw1CcMos/view?usp=drive_link",
           "Departments": "Humanities,Engineering,Social Science,Architecture,Business Administration and Finance,Education,Science"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Licenciado Gustavo Díaz Ordaz International Airport",
+          "city": "Puerto Vallarta",
+          "iata": "PVR",
+          "icao": "MMPR",
+          "lat": 20.680099487304688,
+          "lon": -105.25399780273438,
+          "distanceKm": 3.2
+        }
       },
       {
         "id": "299195d3-4d6d-8105-94bd-fd9cde4ccb9b",
@@ -4572,7 +5760,16 @@
           "Note": "*Brochure : https://drive.google.com/file/d/15DdcF9LPmRyjlBmUCpbuKmMQmF3c8jLh/view?usp=sharing\n*Incoming exchange students must hold a health insurance. International Students can arrange supplementary insurance upon arrival at the UM6P Health Center.",
           "Departments": "Economics,International Relations,Political Science,Behavioral Sciences,Data Science,Anthropology,Management,Sociology"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Menara Airport",
+          "city": "Marrakech",
+          "iata": "RAK",
+          "icao": "GMMX",
+          "lat": 31.606899261499997,
+          "lon": -8.03629970551,
+          "distanceKm": 68.7
+        }
       },
       {
         "id": "299195d3-4d6d-8126-a52e-df6dd2add818",
@@ -4601,7 +5798,16 @@
           "Note": "* All exchange students are legally obliged to have health insurance coverage. There are several insurance providers that offer health insurance for international students.: https://www.eur.nl/en/education/practical-matters/orientation-arrival/healthcare/insurance",
           "Departments": "Arts and Cultural Studies,History,Media and Communication"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Rotterdam The Hague Airport",
+          "city": "Rotterdam",
+          "iata": "RTM",
+          "icao": "EHRD",
+          "lat": 51.956902,
+          "lon": 4.43722,
+          "distanceKm": 7.5
+        }
       },
       {
         "id": "2d8195d3-4d6d-8058-bce1-e6d4680b3b82",
@@ -4630,7 +5836,16 @@
           "Note": "* All exchange students are legally obliged to have health insurance coverage. There are several insurance providers that offer health insurance for international students.: https://www.eur.nl/en/education/practical-matters/orientation-arrival/healthcare/insurance",
           "Departments": "Economics and Business,Humanities,Life Sciences,Social and Behavioral Sciences"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Rotterdam The Hague Airport",
+          "city": "Rotterdam",
+          "iata": "RTM",
+          "icao": "EHRD",
+          "lat": 51.956902,
+          "lon": 4.43722,
+          "distanceKm": 7.5
+        }
       },
       {
         "id": "299195d3-4d6d-8102-bbf1-f87b5b159b7f",
@@ -4659,7 +5874,16 @@
           "Note": "Students must pay housing costs and buy their own books.",
           "Departments": "Business Administration"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Soesterberg Air Base",
+          "city": "Soesterberg",
+          "iata": "UTC",
+          "icao": "EHSB",
+          "lat": 52.1273002625,
+          "lon": 5.27618980408,
+          "distanceKm": 18.8
+        }
       },
       {
         "id": "299195d3-4d6d-8156-a8dd-f93f55c1dc28",
@@ -4689,7 +5913,16 @@
           "Note": "*2025/2026 International Student Handbook\n: https://www.utwente.nl/en/education/student-services/get-started-guide/#international-student-handbook\n*Applicants have completed at least one year of study at home institution\n*Proper insurance is mandatory, but depends on the student. https://www.utwente.nl/en/education/student-services/upcoming-students/visa/insurance/",
           "Departments": "Behavioural Management & Social Sciences"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Twente Airport",
+          "city": "Enschede",
+          "iata": "ENS",
+          "icao": "EHTW",
+          "lat": 52.275833,
+          "lon": 6.889167,
+          "distanceKm": 4.5
+        }
       },
       {
         "id": "299195d3-4d6d-8181-9f7d-fd55e853ac7b",
@@ -4728,7 +5961,16 @@
           "e76ac8d6-bb65-4c58-8844-cdb5084ac87c": "https://drive.google.com/file/d/19mVLIUiFmThlhRseqPC-tA17LKyLngMq/view?usp=sharing",
           "Departments": "Business,Management,Creative Business"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Soesterberg Air Base",
+          "city": "Soesterberg",
+          "iata": "UTC",
+          "icao": "EHSB",
+          "lat": 52.1273002625,
+          "lon": 5.27618980408,
+          "distanceKm": 12.9
+        }
       },
       {
         "id": "299195d3-4d6d-8136-bf7a-f8711aebd982",
@@ -4759,7 +6001,16 @@
           "Note": "There is a fee for visa applications",
           "Departments": "American Studies,Art History,Arts Culture and Media,Communication and Information Studies,English Language and Culture,European Languages and Cultures,History,International relations and international organization,Media Studies"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Eelde Airport",
+          "city": "Groningen",
+          "iata": "GRQ",
+          "icao": "EHGG",
+          "lat": 53.1197013855,
+          "lon": 6.57944011688,
+          "distanceKm": 11.1
+        }
       },
       {
         "id": "299195d3-4d6d-81bd-b4ff-c1adce8b82f5",
@@ -4793,7 +6044,16 @@
           "Note": "Please choose a programme from Fontys School of Business and Communication (Eindhoven), if students want to do another programme please contact exchange-fsbc@fontys.nl",
           "Departments": "Business and Communication"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Gilze Rijen Air Base",
+          "city": "Gilze-rijen",
+          "iata": "GLZ",
+          "icao": "EHGR",
+          "lat": 51.56740188598633,
+          "lon": 4.931829929351807,
+          "distanceKm": 10.6
+        }
       },
       {
         "id": "9938f05c-0500-4f13-b115-772ec2d7b731",
@@ -4822,7 +6082,16 @@
           "Email": "kostiantyn.mazur@amu.edu.pl",
           "Departments": "Anthropology and Cultural Studies,Archeology,Arts Studies,Biology,Chemistry,Educational Studies,English,Geographical and Geological Sciences,History,Human Geography and Planning,Law and Administration,Mathematics and Computer Science,Modern Languages and Literatures,Philosophy,Physics,Polish and Classical Philology,Political Science and Journalism,Psychology and cognitive science,Sociology,Theology,Physical Education and Sport"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Biała Podlaska Airfield",
+          "city": "Biała Podlaska",
+          "iata": "BXP",
+          "icao": "EPBP",
+          "lat": 52.00078,
+          "lon": 23.1325278,
+          "distanceKm": 942.1
+        }
       },
       {
         "id": "2c6195d3-4d6d-80f7-bee6-cd96b74ab95b",
@@ -4851,7 +6120,16 @@
           "Note": "All students are obliged to have health insurance to cover any medical costs incurred during their stay.",
           "Departments": "Archaeology,Humanities,History,Philosophy,modern and ancient languages and cultures,Geography and Regional Studies,Linguisitics,Film and Literary Studies,Public Administration,Security Studies,Liberal Arts and Sciences,Social and Behavioral Sciences,Political Science,Hospitality Management and Tourism Studies"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Valkenburg Naval Air Base",
+          "city": "Valkenburg",
+          "iata": "LID",
+          "icao": "EHVB",
+          "lat": 52.166099548300004,
+          "lon": 4.41794013977,
+          "distanceKm": 2.9
+        }
       },
       {
         "id": "299195d3-4d6d-8188-9ff5-ebea73c32b20",
@@ -4885,7 +6163,16 @@
           "Note": "Students must obtain medical and travel insurance before arriving in New Zealand. Our preferred provider is StudentSafe, details can be found here: https://www.aut.ac.nz/international/check-before-you-come-to-new-zealand/Medical-and-travel-insurance (Insurance if bought through us is with StudentSafe Inbound. For 2026 this is about $449.50 NZD a semester.)",
           "Departments": "Te Ara Poutama(Maori and Indigenous Development),Language and Culture,Hospitality and Tourism,Social Sciences & Public Policy,Communication,Engineering Computer and Mathematical Sciences and Science,Science (Chemistry Food Science Biological Science Environmental Science)"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Auckland International Airport",
+          "city": "Auckland",
+          "iata": "AKL",
+          "icao": "NZAA",
+          "lat": -37.008098602299995,
+          "lon": 174.792007446,
+          "distanceKm": 17.4
+        }
       },
       {
         "id": "299195d3-4d6d-8191-95c6-c3e5a656eb49",
@@ -4919,7 +6206,16 @@
           "Note": "https://kozminski.my.site.com/s/article/What-is-the-application-process-for-incoming-students?language=en_US&_ga=2.107451330.1776496844.1647240692-193874309.1646646689",
           "Departments": "Management,Finance,Accounting"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Warsaw Chopin Airport",
+          "city": "Warsaw",
+          "iata": "WAW",
+          "icao": "EPWA",
+          "lat": 52.1656990051,
+          "lon": 20.967100143399996,
+          "distanceKm": 12.2
+        }
       },
       {
         "id": "299195d3-4d6d-817b-82f6-c95cfab1e651",
@@ -4954,7 +6250,16 @@
           "Note": "https://bwz.uw.edu.pl/en/incoming/students-and-phd-candidates-incoming/short-term-studies-incoming/incoming-students/before-you-arrive/",
           "Departments": "Education,Linguistics,Applied Social Sciences,Archeology,Biology,Chemistry,Culture and Arts,Economic Sciences,Geology,Geography and Regional Studies,History,Journalism Information and Book Studies,Law and Administration,Management,Mathematics Informatics and Mechanics,Languages,Oriental Studies,Philosophy,Physics,Political Science and International Studies,Psychology,Sociology"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Warsaw Chopin Airport",
+          "city": "Warsaw",
+          "iata": "WAW",
+          "icao": "EPWA",
+          "lat": 52.1656990051,
+          "lon": 20.967100143399996,
+          "distanceKm": 6.8
+        }
       },
       {
         "id": "299195d3-4d6d-814c-be85-c3d4932629ec",
@@ -4985,7 +6290,16 @@
           "Note": "School Insurance: 2,10€",
           "Departments": "Engineering"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Humberto Delgado Airport (Lisbon Portela Airport)",
+          "city": "Lisbon",
+          "iata": "LIS",
+          "icao": "LPPT",
+          "lat": 38.7813,
+          "lon": -9.13592,
+          "distanceKm": 5
+        }
       },
       {
         "id": "2bc195d3-4d6d-8044-a657-c302c707870b",
@@ -5012,7 +6326,16 @@
           "Note": "*Additional Fees for exchange students: Internet access around 10 Euros/month\n*There is an admission fee of: 100 EURO/admission (NOT refundable).",
           "Departments": "Political Science,Business and Administration,Psychology and Educational Science,Sociology,Social Work,Biology,Chemistry"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Băneasa International Airport",
+          "city": "Bucharest",
+          "iata": "BBU",
+          "icao": "LRBS",
+          "lat": 44.50320053100586,
+          "lon": 26.102100372314453,
+          "distanceKm": 7.5
+        }
       },
       {
         "id": "299195d3-4d6d-81c2-87d3-e6314653f9b4",
@@ -5045,7 +6368,16 @@
           "Note": "- Estimated Living expences : click\n\n- Exchange students can take Russian language course free of charge",
           "Departments": "International Business,Finance,Government,International Politics,Law,International Relations,Global Politics"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Vnukovo International Airport",
+          "city": "Moscow",
+          "iata": "VKO",
+          "icao": "UUWW",
+          "lat": 55.5914993286,
+          "lon": 37.2615013123,
+          "distanceKm": 16.7
+        }
       },
       {
         "id": "299195d3-4d6d-8184-b0c7-dcb171ce9427",
@@ -5078,7 +6410,16 @@
           "Note": "*Please check \"Expenses\" section: https://spb.hse.ru/en/io/semester/pre-arrival\n*HSE Saint Petersburg offers all exchange students a one-semester-long intensive Russian language course (8 ECTS) free of charge. After the placement test during the orientation program, the students will be split into groups according to the level of language proficiency. Please find more information in Russian as a Foreign Language section: https://spb.hse.ru/io/semester/studies\n- Promotional Booklet : https://drive.google.com/file/d/1UbOdqB9Ur_mP15aGkKQoeqUJs4NDkHZy/view?usp=share_link",
           "Departments": "Sociology,History,Economics,Management,Finance,Political Science,Business,Law,Humanities"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Pulkovo Airport",
+          "city": "St. Petersburg",
+          "iata": "LED",
+          "icao": "ULLI",
+          "lat": 59.80030059814453,
+          "lon": 30.262500762939453,
+          "distanceKm": 17.5
+        }
       },
       {
         "id": "eff7e0f4-09bb-413f-872a-7c5f26c649e0",
@@ -5109,7 +6450,16 @@
           "Note": "HSE Saint Petersburg offers all exchange students a one-semester-long intensive Russian language course (8 ECTS) free of charge. After the placement test during the orientation program, the students will be split into groups according to the level of language proficiency. Please find more information in Russian as a Foreign Language section: https://spb.hse.ru/io/semester/studies\n- Promotional Booklet : https://drive.google.com/file/d/1UbOdqB9Ur_mP15aGkKQoeqUJs4NDkHZy/view?usp=share_link",
           "Departments": "Sociology,History,Economics,Management,Finance,Political Science,Business,Law,Humanities"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Pulkovo Airport",
+          "city": "St. Petersburg",
+          "iata": "LED",
+          "icao": "ULLI",
+          "lat": 59.80030059814453,
+          "lon": 30.262500762939453,
+          "distanceKm": 17.5
+        }
       },
       {
         "id": "299195d3-4d6d-81f2-99d0-dcce9f3b148f",
@@ -5140,7 +6490,16 @@
           "Note": "https://linguanet.ru/sotrudnichestvo/inostrannym-studentam/",
           "Departments": "Information Security,Psychology,Sociology,Legal Studies,Regional Studies,Political Science,International Relations,Advertising and Public Relations,Journalism,Psychopedagogical education,Linguistics,Archives and Records Management,Cultural Studies,Library and information science"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Ostafyevo International Airport",
+          "city": "Moscow",
+          "iata": "OSF",
+          "icao": "UUMO",
+          "lat": 55.511667,
+          "lon": 37.507222,
+          "distanceKm": 25.8
+        }
       },
       {
         "id": "299195d3-4d6d-819d-b486-f57f32cb77d4",
@@ -5172,7 +6531,16 @@
           "Note": "Photo identification page of a valid passport with a validity period of no less than six-months beyond the end-date of the study term\n* IMPORTANT: Expired passports, or passports with less than the required validity period WILL NOT be accepted.\n* Students could have completed at least 2 semesters of study before they are with NTU for exchange.\n* Students are required to pay Registration fee (S$153) Miscellaneous fees (between S$230 to S$280 per semester). These cover the costs of providing insurance, health services, programmes and amenities, IT services, and other academic-related services.",
           "Departments": "Business,Engineering,Science,Humanitas Arts and Social Science"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Tengah Air Base",
+          "city": "Tengah",
+          "iata": "TGA",
+          "icao": "WSAT",
+          "lat": 1.38725996017,
+          "lon": 103.708999634,
+          "distanceKm": 5.2
+        }
       },
       {
         "id": "299195d3-4d6d-8151-9731-ce486fe76191",
@@ -5204,7 +6572,16 @@
           "Note": "Photo identification page of a valid passport with a validity period of no less than six-months beyond the end-date of the study term\n* IMPORTANT: Expired passports, or passports with less than the required validity period WILL NOT be accepted.\n* Fees : 1) Miscellaneous fee (non-refundable): approximately S$280 per term or S$400 per year (covers registration, matriculation, medical insurance, IT services and student activities)\n→ This fee is mandatory and non-refundable under any circumstances, regardless of the outcome of the Student’s Pass and other border entry applications.\n2) Visa/Student Pass fee to Immigration and Checkpoint Authority (ICA): ~S$135\nAbove is as of Spring 2025. Actual fees are subject to change.\n\n• Promotional material kit: https://www.canva.com/design/DAGJsfrl1EE/LJKh6BeqnIuBJkT-s-r3pw/edit?utm_content=DAGJsfrl1EE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton \n• Video: https://www.youtube.com/watch?v=WnMg6lmQyl4",
           "Departments": "Information Systems,Computer Science,Software Engineering,Social Sciences,Science(Economics),Law,Computing and Law"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Paya Lebar Air Base",
+          "city": "Paya Lebar",
+          "iata": "QPG",
+          "icao": "WSAP",
+          "lat": 1.3604199886322021,
+          "lon": 103.91000366210938,
+          "distanceKm": 9.8
+        }
       },
       {
         "id": "2b8195d3-4d6d-8066-baaa-ef206b1dbbd9",
@@ -5232,7 +6609,16 @@
           "Note": "*School Facts: https://eseiaat.upc.edu/ca/international-office/incomings\n\n*Student Survival Guide : https://drive.google.com/file/d/1LlhktdbnZ_6mw1kVQW-s5mrRoitLCx2a/view?usp=drive_link",
           "Departments": "Industrial Design,Product Development Engineering,Audiovisual Systems Engineering,Textile Technology,Electrical Engineering,Design Engineering,Industrial Electronics,Automatic Control Engineering,Aerospace Technology Engineering,Industrial Technology Engineering,Aerospace Vehicle Engineering,Mechanical engineering,Chemical Engineering"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Sabadell Airport",
+          "city": "Sabadell",
+          "iata": "QSA",
+          "icao": "LELL",
+          "lat": 41.52090072631836,
+          "lon": 2.1050798892974854,
+          "distanceKm": 8.3
+        }
       },
       {
         "id": "299195d3-4d6d-816a-b299-ec7e46b811e4",
@@ -5271,7 +6657,16 @@
           "Note": "Academic workload - ECTS credit\n24 ECTS credit - Total minimum\n30 ECTS credit - Total maximum\n18 ECTS credit - Minimum from the School of Economics & Business\n12 ECTS credit - Max from outside the School of Economics & Business\nOverlapping schedules are not allowed\n\nStudents must take between 24 and 30 ECTS, where a minimum of 18 ECTS must be from the School of Economics and Business. Therefore, 12 ECTS can be taken from other faculties/schools.",
           "Departments": "Economics and Business"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Pamplona Airport",
+          "city": "Pamplona",
+          "iata": "PNA",
+          "icao": "LEPP",
+          "lat": 42.77000045776367,
+          "lon": -1.6463299989700317,
+          "distanceKm": 3.6
+        }
       },
       {
         "id": "299195d3-4d6d-8128-a644-ff4202a9312e",
@@ -5310,7 +6705,16 @@
           "Note": "*The students can take any courses included in the course catalogue of the school they have been nominated to. \n*The student should be assigned to a particular reference school. He/she would be able to take courses in this school and from other schools.\nHowever the number of courses available from other Schools would be limited. At least 50% of the course load should be taken from the reference School (school which the student is nominated to) See more info here (please visit each course catalogue to decide the school your student would be nominated) https://www.unav.edu/estudiantes/programas-de-intercambio/incoming#courses\n*2025-2026 Factsheet for ISSA School of Applied Management",
           "Departments": "Architecture,Law,International Relations,Applied Management"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Pamplona Airport",
+          "city": "Pamplona",
+          "iata": "PNA",
+          "icao": "LEPP",
+          "lat": 42.77000045776367,
+          "lon": -1.6463299989700317,
+          "distanceKm": 3.6
+        }
       },
       {
         "id": "299195d3-4d6d-8131-b146-d2b3665bf47e",
@@ -5348,7 +6752,16 @@
             "type": "text",
             "text": "Both, Santiago de Compostela and Lugo"
           }
-        ]
+        ],
+        "nearestAirport": {
+          "name": "A Coruña Airport",
+          "city": "La Coruna",
+          "iata": "LCG",
+          "icao": "LECO",
+          "lat": 43.302101,
+          "lon": -8.37726,
+          "distanceKm": 8889.6
+        }
       },
       {
         "id": "299195d3-4d6d-8111-9869-d2c6032094f3",
@@ -5384,7 +6797,16 @@
           "Note": "Handbook : https://www.uvigo.gal/sites/uvigo.gal/files/contents/paragraph-file/2023-08/ORI_GuiaIncoming.pdf\nVideo :\nhttps://tv.uvigo.es/video/5b5b61528f42084e49602f10\n* Students may take courses in multiple facultues or departments as long as long as at least 50% of credits are taken at the faculty that accepted the student (the one in the application).",
           "Departments": "Mechanical Engineering,Biology,Law,Industrial Engineering,Economics,Business,Telecommunications,Energy Engineering,Marine Sciences,Public Management,Tourism"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Vigo Airport",
+          "city": "Vigo",
+          "iata": "VGO",
+          "icao": "LEVX",
+          "lat": 42.2318000793457,
+          "lon": -8.62677001953125,
+          "distanceKm": 8.3
+        }
       },
       {
         "id": "299195d3-4d6d-815c-970a-c76cc7f8291d",
@@ -5417,7 +6839,16 @@
           "Note": "*All students (including incoming exchange students) need to pay the Student Union fee (approximately 330 SEK per semester) and housing application fee 850 SEK\n*Your students are allowed to take 1 course at another JU School. Remaining 3 courses should be at School of Education and Communication",
           "Departments": "Media,Communication Science,Teacher Education,International Work,Human Resources,Child Studies"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Jönköping Airport",
+          "city": "Joenkoeping",
+          "iata": "JKG",
+          "icao": "ESGJ",
+          "lat": 57.757598876953125,
+          "lon": 14.068699836730957,
+          "distanceKm": 6
+        }
       },
       {
         "id": "51d3d081-ec98-491e-a3f6-01cd8f40d142",
@@ -5449,7 +6880,16 @@
           "Email": "mudar.hill@ju.se / outgoing.student@ju.se",
           "Departments": "Media,Communication Science,Teacher Education,International Work,Human Resources,Child Studies"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Jönköping Airport",
+          "city": "Joenkoeping",
+          "iata": "JKG",
+          "icao": "ESGJ",
+          "lat": 57.757598876953125,
+          "lon": 14.068699836730957,
+          "distanceKm": 6
+        }
       },
       {
         "id": "299195d3-4d6d-81f0-b8f1-e329b268e675",
@@ -5486,7 +6926,16 @@
           "Note": "* Essential Facts\n2025-2026- Essential Facts about Exchange Studies at the Faculty of Science and Engineering\nhttps://drive.google.com/file/d/1TImw_XmyKQ0jGyfGuLFXx9dxUJrxAoj5/view?usp=drive_link",
           "Departments": "Computer Science,Information Technology,Media technology,Electrical and Electronics Engineering,Applied Physics,Mechanical Engineering and Design,Industrial Engineering,Biology,Chemistry,Biotechnology,Biomedical Engineering"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Linköping City Airport",
+          "city": "Linkoeping",
+          "iata": "LPI",
+          "icao": "ESSL",
+          "lat": 58.4062004089,
+          "lon": 15.680500030500001,
+          "distanceKm": 6.2
+        }
       },
       {
         "id": "2b7195d3-4d6d-804e-b32b-d5fe14fea0b0",
@@ -5515,7 +6964,16 @@
           "Note": "- Students should fulfill the admission requirements of individual courses\n- Arrival Day/s and Orientation Programme take place a few days before the actual start of the semester.",
           "Departments": "Ageing and Social Change,Applied Ethics,Business Administration,Cognitive Science,Commercial Business Law,Computational Social Sciences,Economics,English,Environmental Sciences,Ethnic and Migration Studies,Global Studies,HRM/HRD,Language Studies and Literature,Political Science and International Relations,Social Work,Society History and Culture,Social and Cultural Analysis,Statistics,Urban and Regional Planning"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Linköping City Airport",
+          "city": "Linkoeping",
+          "iata": "LPI",
+          "icao": "ESSL",
+          "lat": 58.4062004089,
+          "lon": 15.680500030500001,
+          "distanceKm": 6.2
+        }
       },
       {
         "id": "299195d3-4d6d-8130-be98-de5b7ed9d7a9",
@@ -5554,7 +7012,16 @@
           "Departments": "Cultural Studies,Communication,Global Studies,Political Science,Health and Society,Technology",
           "ff7f1639-8411-4811-b878-6ca717480476": "January - June"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Malmö Sturup Airport",
+          "city": "Malmoe",
+          "iata": "MMX",
+          "icao": "ESMS",
+          "lat": 55.536305364,
+          "lon": 13.376197814900001,
+          "distanceKm": 25.4
+        }
       },
       {
         "id": "299195d3-4d6d-81f4-af31-d00804947195",
@@ -5589,7 +7056,16 @@
           "Note": "https://lnu.se/en/education/study-at-linnaeus-university/academic-calendar/\nStudents must apply for and be admitted to at least 30 credits of onsite courses to be eligable for a Swedish residence permit for studies. ",
           "Departments": "Economics,Computer Science,Humanities,Languages,Mathematics,Technology,Natural Sciences,Political Science,Mechanical Engineering,Social Science"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Malmö Sturup Airport",
+          "city": "Malmoe",
+          "iata": "MMX",
+          "icao": "ESMS",
+          "lat": 55.536305364,
+          "lon": 13.376197814900001,
+          "distanceKm": 653.8
+        }
       },
       {
         "id": "299195d3-4d6d-812b-be50-f163582e262a",
@@ -5626,7 +7102,16 @@
           "Note": "*All information for incoming students can be found here: https://www.dropbox.com/scl/fo/4ir9mv28vndgrer4ih09c/h?rlkey=47d1qljan4v3jphv9oxcymwjt&st=y833xqqg&dl=0\n*All students : A residence permit muct be obtained after entering Swtizerland. The costs for the visa and the residence permit are paid for by the student.",
           "Departments": "Business,Management"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Zürich Airport",
+          "city": "Zurich",
+          "iata": "ZRH",
+          "icao": "LSZH",
+          "lat": 47.464699,
+          "lon": 8.54917,
+          "distanceKm": 33.6
+        }
       },
       {
         "id": "299195d3-4d6d-811a-a5bd-de50a4974e31",
@@ -5668,7 +7153,16 @@
             "type": "text",
             "text": "Business School)"
           }
-        ]
+        ],
+        "nearestAirport": {
+          "name": "Bern Belp Airport",
+          "city": "Bern",
+          "iata": "BRN",
+          "icao": "LSZB",
+          "lat": 46.914100647,
+          "lon": 7.497149944309999,
+          "distanceKm": 6.3
+        }
       },
       {
         "id": "299195d3-4d6d-81c8-9ed6-c94f01c2706e",
@@ -5701,7 +7195,16 @@
           "Note": "-The CCU Chinese Language Center offers several Chinese Training Courses every semester. It’s credit-loaded and free for international students. We sincerely encourage our exchange students to join at least one Chinese training course during their stay at CCU. The course list is available at: http://kiki.ccu.edu.tw/~ccmisp06/Course/1334_e.html\n* Other information :  https://reurl.cc/DoVrDQ\n* Campus Videos : \n👉 https://www.youtube.com/watch?v=ggWsB4jjwCs\n👉 https://www.youtube.com/watch?v=SNXaMqC7b-4\n👉 https://youtu.be/VRh_XvDZT7k",
           "Departments": "Art,Science,Social Sciences,Management,Law,Education,Humanities,Foreign Langauge and Literatures,Linguistics,Seismology,Physics,Biology,Phychology,Economics,Finance and Banking,Business Administration,Accounting and Information Technology,Information Management,Criminology,Athletic Sports,Language Studies"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Chiayi Airport",
+          "city": "Chiayi",
+          "iata": "CYI",
+          "icao": "RCKU",
+          "lat": 23.46179962158203,
+          "lon": 120.39299774169922,
+          "distanceKm": 14
+        }
       },
       {
         "id": "8b089a8f-67b5-4469-8028-2cb7024cfd4a",
@@ -5729,7 +7232,16 @@
           "Note": "Our government is doing strictly the borders control management due to COVID-19; short-term exchange students are not allowed to enter Taiwan in the meanwhile. Whether you can come to Taiwan or not in Fall Semester 2022, depends on our government's policy at that time. ",
           "Departments": "Art,Science,Social Sciences,Engineering,Management,Law,Education,Humanities,Foreign Langauge and Literatures,Linguistics,Seismology,Physics,Biology,Phychology,Economics,Finance and Banking,Business Administration,Accounting and Information Technology,Information Management,Criminology,Athletic Sports,Language Studies"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Chiayi Airport",
+          "city": "Chiayi",
+          "iata": "CYI",
+          "icao": "RCKU",
+          "lat": 23.46179962158203,
+          "lon": 120.39299774169922,
+          "distanceKm": 14
+        }
       },
       {
         "id": "299195d3-4d6d-8142-85cf-ee1de0cde1f6",
@@ -5768,7 +7280,16 @@
           "Note": "- Exchange students must take at least 2 courses or 4 credits per semester.\n- Exchange students can enroll in the NTU General Chinese Course which is a complimentary Chinese Language course under the exchange program that offers NTU credits.\n-Exchange Students Info: https://oia.ntu.edu.tw/en/internationalstudents/exchange/overview\n-TWD 400-600 for Internet Access Fee\n\n- 2026 NTU International Mentorship Program참여 가능 : 파견교 제공 인턴십 프로그램 - 링크 정보 참조하시기 바랍니다. ",
           "Departments": "Liberal Arts,Science,Social Science,Engineering,Bioresource Sciences,Agriculture,Management,Public Health,Computer Science,Electronical Engineering,Law,Life Science,Physical Education"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Taipei Songshan Airport",
+          "city": "Taipei",
+          "iata": "TSA",
+          "icao": "RCSS",
+          "lat": 25.069400787353516,
+          "lon": 121.552001953125,
+          "distanceKm": 6
+        }
       },
       {
         "id": "299195d3-4d6d-8188-a906-f90650a988ec",
@@ -5799,7 +7320,16 @@
           "Note": "- NCKU Course Information and Enrollment System: https://course.ncku.edu.tw/index.php?c=portal\n- The link to the information webpage for Exchange Students: https://oia.ncku.edu.tw/p/404-1032-230512.php?Lang=en\n-Please must read department requirements and prepare all the required documents.",
           "Departments": "Chinese Literature,History,Arts Studies,Foreign Languages & Literature,Taiwanese Literature,Archaeology,Mathematics,Chemistry,Physics,Earth Sciences,Photonics,Space and Plasma Sciences,Engineering,Accountancy,Statistics,Business Administration,Transportation and Communication Management Science,Data Science,Political Science,Economics,Law,Psychology,Architecture,Urban Planning,Industrial Design,Life Sciences,Biochemistry and Molecular Biology,Physiology,Pharmacology,Environmental and Occupational Health,Nursing,Physical Therapy,Occupational Therapy,Medical Laboratory Science & Biotechnology,Clinical Pharmacy and Pharmaceutical Sciences,Basic Medical Sciences,Behavioral Medicine,Oral Medicine"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Tainan Airport",
+          "city": "Tainan",
+          "iata": "TNN",
+          "icao": "RCNN",
+          "lat": 22.95039939880371,
+          "lon": 120.20600128173828,
+          "distanceKm": 5.7
+        }
       },
       {
         "id": "299195d3-4d6d-81ac-a6c4-f092e1a33e60",
@@ -5835,7 +7365,16 @@
           "Note": "*Exchange student information : https://drive.google.com/file/d/1Q7CF8MziRxodRQPPFHt8ucTSvkicPC3P/view?usp=drive_link\n► Come Study at NTNU! https://youtu.be/WIeFdYGbHPw\n► NTNU Connects the World, Fights for Your Future https://youtu.be/EG0p12xyQX4\n► Korean's Adventure to NTNU https://youtu.be/pBUA4MLSvoM",
           "Departments": "Physical Education,Education,Family Studies,Liberal Arts,Chinese,Languages,Geography,Science,Mathematics,Chemistry,Physics,Life Science,Earth Science,Computer Science,Fine Arts,Design,Engineering,Music"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Taipei Songshan Airport",
+          "city": "Taipei",
+          "iata": "TSA",
+          "icao": "RCSS",
+          "lat": 25.069400787353516,
+          "lon": 121.552001953125,
+          "distanceKm": 7
+        }
       },
       {
         "id": "299195d3-4d6d-810a-94d1-e63452c78079",
@@ -5872,7 +7411,16 @@
           "Note": "-Mandatory insurance from NCCU are required to all students(NTD250 per semester).\n-2025/2026 Academic Calendar: https://drive.google.com/file/d/1VIMwC16X3aSs92ieMyly-K9n4fnyoPNB/view?usp=drive_link\n-OIC offers students all levels of Mandarin courses, including beginners. These courses are free of charge.\n",
           "Departments": "Business,Accounting,Management,Communication,Advertising,Journalism,Education,Early Childhood Education,Languages,Literature,International Studies,Law,Liberal Arts,History,Philosophy,Computer Science,Mathematical Science,Social Science,Political Science,Sociology,Administration"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Taipei Songshan Airport",
+          "city": "Taipei",
+          "iata": "TSA",
+          "icao": "RCSS",
+          "lat": 25.069400787353516,
+          "lon": 121.552001953125,
+          "distanceKm": 10.2
+        }
       },
       {
         "id": "299195d3-4d6d-8179-ad01-d70a5b4ad963",
@@ -5915,7 +7463,16 @@
             "type": "text",
             "text": "https://oia.tu.ac.th/criteria-course/"
           }
-        ]
+        ],
+        "nearestAirport": {
+          "name": "Don Mueang International Airport",
+          "city": "Bangkok",
+          "iata": "DMK",
+          "icao": "VTBD",
+          "lat": 13.9125995636,
+          "lon": 100.607002258,
+          "distanceKm": 18.6
+        }
       },
       {
         "id": "299195d3-4d6d-8167-8a2c-f44c9020b367",
@@ -5947,7 +7504,16 @@
           "Note": "Students must wear the regular uniform while attending classes at MUIC and anywhere else on campus. Uniforms can be purchased at the college, or students may bring white button-front shirts and black skirts for females or white button-front shirts and black trousers for males. Students must also wear plain black shoes or plain sport shoes. (모든 학생들은 반드시 유니폼 착용. Factsheet p.8 사진 참조)",
           "Departments": "Business Economics,International Business,Finance,Marketing,Intercultural Studies and Languages,International Relations and Global Affairs,Travel and Service Business,Communication Design,Media and Communication,Creative Technology,Applied Mathematics,Chemistry,Environmental Sciences,Food Science and Technology,Physics,Biological Sciences,Computer Science,Chinese,French,German,Japanese,Spanish"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Don Mueang International Airport",
+          "city": "Bangkok",
+          "iata": "DMK",
+          "icao": "VTBD",
+          "lat": 13.9125995636,
+          "lon": 100.607002258,
+          "distanceKm": 33.1
+        }
       },
       {
         "id": "299195d3-4d6d-8108-952f-fb4097511d20",
@@ -5980,7 +7546,16 @@
           "Note": "*http://www.exchange.bilkent.edu.tr/visa_permit.html\n*Students can take courses in multiple faculties or departments.",
           "Departments": "Applied Sciences,Arts Design and Architecture,Business Administration,Economics Administrative and Social Sciences,Education,Engineering,Humanities and Letters,Law,Music and Performing Arts,Science"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Etimesgut Air Base",
+          "city": "Ankara",
+          "iata": "ANK",
+          "icao": "LTAD",
+          "lat": 39.949798584,
+          "lon": 32.6885986328,
+          "distanceKm": 10.4
+        }
       },
       {
         "id": "2bf195d3-4d6d-80b2-949b-ff9448a891b6",
@@ -6008,7 +7583,16 @@
           "Note": "https://isss.unm.edu/students/coming-to-unm/student-application-process.html\nPlease refer to the latest information for mandatory fees at https://bursar.unm.edu/tuition-and-fees/tuition-fee-information.html. NOTE: After Fall 2020, \"Mandatory IT Fee ($50)\" is assessed to all students including exchange students. \n\nALL international exchange students are required to purchase one of the UNM-negotiated health insurance policies, found here: https://www.internationalstudentinsurance.com/schools/university\n-new-mexico.php\nNote:\n1) This plan will only cover major medical emergencies. Students are welcome to purchase additional policies, as needed.\n2) U.S. citizens are not allowed to purchase UNM International Student Insurance. Please contact exchange@unm.edu to ask for the details during nomination/application cycle.\n",
           "Departments": "Arts and Sciences,Asian Studies,Biology,Biomedical Engineering,Chemistry and Biological Engineering,Communication and Journalism,Computer Science,Architecture,Economics,Optical-Electrical and Computer Engineering,English,Family and Child Studies,Film and Digital Arts,Geography and Environmental Studies,History,International studies,Latin American Studies,Mathematics and Statistics,Mechanical engineering,nuclear engineering,Philosophy,Public Policy"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Albuquerque International Sunport",
+          "city": "Albuquerque",
+          "iata": "ABQ",
+          "icao": "KABQ",
+          "lat": 35.040199,
+          "lon": -106.609001,
+          "distanceKm": 5.3
+        }
       },
       {
         "id": "2b6195d3-4d6d-801f-8b2f-f997adac8368",
@@ -6037,7 +7621,16 @@
           "Note": "*Students are required to obtain insurance coverage, however, there is not a specific plan they are required to obtain. The plan they purchase must meet the minimum requirements of the university. See here: https://manoa.hawaii.edu/mix/inbound/healthinsurance/\nhttps://manoa.hawaii.edu/mix/inbound/costs-and-fees/\n*Academic Canlendar: https://manoa.hawaii.edu/registrar/academic-calendar/",
           "Departments": "Archaeology,English,Linguistics,Languages,Agriculture,Psychology,Geography,Geology,Physics and Astronomy,Communication,Education,Business,Political Science"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Daniel K Inouye International Airport",
+          "city": "Honolulu",
+          "iata": "HNL",
+          "icao": "PHNL",
+          "lat": 21.32062,
+          "lon": -157.924228,
+          "distanceKm": 11
+        }
       },
       {
         "id": "299195d3-4d6d-8153-8b01-ceacc1a125c6",
@@ -6071,7 +7664,16 @@
           "Email": "mbenitez@pace.edu",
           "Departments": "Accounting,American Studies,Behavioral Neuroscience,Biology,Science,Business,Chemistry,Health,Dance,Communication,Computer Science,Media,Economy,Finance,History,Literature,Mathematics,Music,Nursing,Physics,Political Science,Public Administration,Sociology,Taxation"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Downtown-Manhattan/Wall St Heliport",
+          "city": "New York",
+          "iata": "JRB",
+          "icao": "KJRB",
+          "lat": 40.70119858,
+          "lon": -74.00900269,
+          "distanceKm": 1.2
+        }
       },
       {
         "id": "299195d3-4d6d-8129-85bb-dc732e35d8af",
@@ -6103,7 +7705,16 @@
           "Note": "- Departments in detail: https://www.qc.cuny.edu/Academics/Degrees/Pages/default.aspx\n- March: Fall courses are posted on CUNYFirst.\n- Mandatory Arts & Events Fee: $250; Material & Transportation Fees associated with some classes (price varies); Official Transcript Fee ~$10; Fee for Switching Classes after the Semester Starts: Students may be charged an $18/day fee for switching classes after the semester starts",
           "Departments": "Accounting,Art,Biology,Business and Liberal Arts,Chemistry,Literature,Computer Science,Education,Economics,History,Socialogy,Physics,Psychology,Political Science,Religious Studies,Mathematics,Media Studies,Anthropology,Liberal Studies"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "West 30th St. Heliport",
+          "city": "New York",
+          "iata": "JRA",
+          "icao": "KJRA",
+          "lat": 40.754501,
+          "lon": -74.007103,
+          "distanceKm": 5.4
+        }
       },
       {
         "id": "299195d3-4d6d-8191-9212-d2785e417ae7",
@@ -6143,7 +7754,16 @@
           "Note": "- Exchange students are billed for housing, food, health/counseling fee, and insurance (which can be waived if students purchase another approved plan).\n- Current fees are listed here: https://www.bard.edu/studentaccounts/fees/  Please note that the costs listed there are for a full year (divide in half for semester costs). Exchange students do not take part in Language and Thinking, so wouldn't pay that fee.\n- Health insurance ($350-$1,525/semester, depending on plan); Health Service fee ($235/semester); Orientation fee ($154/semester). SUBJECT TO CHANGE",
           "Departments": "Art,Language,Literature,Science,Computer Science,Social Science,Economics,Political Science,International Relations,Film Studies,Dance,Music,Photography,Biology,Chemistry,Mathematics,Physics,Psycology,Anthropology,History,Philosophy,Religion,Sociology,Theatre"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Dutchess County Airport",
+          "city": "Poughkeepsie",
+          "iata": "POU",
+          "icao": "KPOU",
+          "lat": 41.6265983581543,
+          "lon": -73.88420104980469,
+          "distanceKm": 44.1
+        }
       },
       {
         "id": "299195d3-4d6d-81bd-a84e-d4241990daf6",
@@ -6183,7 +7803,16 @@
           "Note": "- Please see pages 2-3 of the fact sheet\n- There is a $70 nonrefundable application fee. \n- Attendance at International Student Orientation is mandatory and all international students are required to enroll in the KSU provided Student Health Insurance Plan.\n- Spring semester can be very cold in Ohio! ",
           "Departments": "Accounting,Advertising,Aeronautical Studies,African Studies,Air traffic and airspace management,American Sign Language,Anthropology,Applied Engineering,Applied Mathematics,Applied Media,Architectural Studies,Biology,Biotechnology,Business management,Chemistry,Communication Studies,Computer information,Computer Science,Cybersecurity Engineering,Dance,Early Childhood Education,Earth Science and Engineering,Economics,English,Fashion Design,Fachion Merchandising,Finance,Geography,Geology,History,Hospitality and Event Management,Intergrated Health Studies,International studies,Life Science,Journalism,Mechanical engineering,Nutrition,Neuroscience,Peace and Conflict Studies,Photography,Physics,Political Science,Psychology,Public Health,Sociology,Sport Administration,Sports Medicine,Translation,Theatre studeis,visual communication design"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Akron Fulton International Airport",
+          "city": "Akron",
+          "iata": "AKC",
+          "icao": "KAKR",
+          "lat": 41.0374984741,
+          "lon": -81.4669036865,
+          "distanceKm": 15.9
+        }
       },
       {
         "id": "990683f0-a705-419a-bcab-5212b1b23286",
@@ -6212,7 +7841,16 @@
           "f4a10e48-5b42-44f6-a882-7d12f4ecae83": "4 slots",
           "Departments": "Accounting,Art,Business,Biology,Engineering,Chemistry,Chinese,Technology,Communication,Science,Dance,Education,English,Entrepreneurship,Languages,Finance,French,History,Humanities,Japanese,Journalism,Law,Linguistics,Mathematics,Management,Marketing,Music,Nursing,Physical Education,Philosophy,Sociology,Spanish,Statistics,Social Work,Tourism,Theatre"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Hartford Brainard Airport",
+          "city": "Hartford",
+          "iata": "HFD",
+          "icao": "KHFD",
+          "lat": 41.736698150635,
+          "lon": -72.649398803711,
+          "distanceKm": 10.8
+        }
       },
       {
         "id": "9c085f53-6935-4758-9d96-0400ba0e1f31",
@@ -6252,7 +7890,16 @@
           "f58b6109-31f4-42b8-a5c7-a3dd52a58465": "",
           "Departments": "Accounting,Anthropology,Art,Biology,Business,Engineering,Chemistry,Communication,Computer Science,Management,Economics,Electrical and Electronics Engineering,Geology,English"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Cedar City Regional Airport",
+          "city": "Cedar City",
+          "iata": "CDC",
+          "icao": "KCDC",
+          "lat": 37.70100021362305,
+          "lon": -113.0989990234375,
+          "distanceKm": 3.7
+        }
       },
       {
         "id": "299195d3-4d6d-8129-84c8-c9214da770e0",
@@ -6285,7 +7932,16 @@
           "Note": "*If you are admitted as an undergraduate exchange student you need to enroll in a total of 12 credits each semester.\n* Mandatory health insurance costs ($1200 per semester approximately)\n기타 자료 : https://drive.google.com/file/d/1gTJifcvlq0LtHK0nfhAStPBFXrHR_7Zc/view?usp=drive_link",
           "Departments": "Engineering,Humanities and Social Sciences,Arts,Business,Education,Government and Public Affairs,Media and Culture,World Studies"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Richmond International Airport",
+          "city": "Richmond",
+          "iata": "RIC",
+          "icao": "KRIC",
+          "lat": 37.50519943237305,
+          "lon": -77.3197021484375,
+          "distanceKm": 12.7
+        }
       },
       {
         "id": "299195d3-4d6d-815a-9946-c752d1eb62cf",
@@ -6316,7 +7972,16 @@
           "Note": "*Student with dual citizenship (U.S. and another country) are now eligible to apply as exchange students. (a recent policy update) \n*Refer to the course list for departments information\n세부 학과 정보를 ‘Course list’ 의 카탈로그를 통해 확인하시기 바랍니다. \n*https://www.csus.edu/administration-business-affairs/bursar/tuition-living-costs.html\n*There are student service fees. There maybe lab fees as well depends on the classes.\n*All students attending Sacramento State on a J-1 visa are automatically enrolled in the mandatory CSUS health insurance plan.",
           "Departments": "Business,Education,Engineering,Health and Human Services,Mathematics,Interdisciplinary Studies,Arts,Athletics,Sciences,Chemistry,Languages,Dance,Design,Economics,Finance,Fashion,Geography,Geology,Health,History,Journalism,Linguistics,Music,Philosophy,Psychology,Sociology,Statistics,Literature"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Sacramento Executive Airport",
+          "city": "Sacramento",
+          "iata": "SAC",
+          "icao": "KSAC",
+          "lat": 38.5125007629,
+          "lon": -121.492996216,
+          "distanceKm": 8.2
+        }
       },
       {
         "id": "71b4d256-08e6-4fb6-a11b-52e568fa5032",
@@ -6347,7 +8012,16 @@
           "Note": "Health Insurance is mandatory to purchase. This can be waived if covered by another health insurance plan for abroad\nand is proven to be equal in coverage. This process can be done upon your arrival.",
           "Departments": "Art and Letters,Education,Health and Behavioral Studies,Intergarted Science and Engineering,Science and Mathematics,Visual and Performing Arts"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Shenandoah Valley Regional Airport",
+          "city": "Weyers Cave",
+          "iata": "SHD",
+          "icao": "KSHD",
+          "lat": 38.2638015747,
+          "lon": -78.8964004517,
+          "distanceKm": 19.3
+        }
       },
       {
         "id": "299195d3-4d6d-8140-b66f-cbd5636dd254",
@@ -6381,7 +8055,16 @@
           "Note": "*There is a mandatory insurance requirement and students have two options: FSU health insurance plan or an approved provider (currently ISO). Other plans are not reviewed or accepted. Students also have a $5 per semester ID card fee that is required for all students. (Please see P6-7 in Fact sheet)",
           "Departments": "Arts and Sciences,Communication,Hospitality Management,Social Sciences and Public Policy"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Tallahassee Regional Airport",
+          "city": "Tallahassee",
+          "iata": "TLH",
+          "icao": "KTLH",
+          "lat": 30.396499633789062,
+          "lon": -84.35030364990234,
+          "distanceKm": 7.2
+        }
       },
       {
         "id": "299195d3-4d6d-8105-b547-da988fbcec70",
@@ -6411,7 +8094,16 @@
           "Note": "                                                Free exchange students         Fee-paying students\nHealth insurance:                                 $1,150.00                               $1,150.00\nMandatory Fees                                   $878.00                                  $878.00\nHousing (room, board, fees):               $8,513.00                               $8,513.00\nAdditional expenses (personal):           $1,000.00                               $1,000.00\nTuition (fee-paying students only):      $5,125\nEstimated total:                                    $11,541.00                              $16,666.00",
           "Departments": "American Studies,Anthropology,Art,Audio Recording and Production,Biology,Brodcasting and mass Communication,Chemistry,Cinema and Screen Studies,Communication,Computer Science,Creative writing,Economics,English,French,Geology,Global and International Studies,Graphic Design and Digital Media,History,Human Development,Informative Science,Journalism,Linguistics,Language and International Trade,Mathematics,Music,Philosophy,Political Science,Physics,Psychology,Public Relations,Sociology,Theatre"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Syracuse Hancock International Airport",
+          "city": "Syracuse",
+          "iata": "SYR",
+          "icao": "KSYR",
+          "lat": 43.11119842529297,
+          "lon": -76.1063003540039,
+          "distanceKm": 52
+        }
       },
       {
         "id": "2b8195d3-4d6d-80c1-92fb-e3ae47fac3a5",
@@ -6446,7 +8138,16 @@
           "Note": "*Additional Fees : https://www.uog.edu/financial-aid/cost-to-attend#Fees\nTravel Insurance, Application fee, Dormitory fee(Meal plan fee included)",
           "Departments": "Accounting,Agriculture & Life Sciences,Anthropology,Biology,Business Administration,Chemistry,Civil Engineering,Communication & Media,Computer Science,Elementary Education,English,Fine Arts,Health science,History,Mathematics,Philosophy,Political Science,Psychology,Nursing,Public Administration,Sociology,Social Work"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Eareckson Air Station",
+          "city": "Shemya",
+          "iata": "SYA",
+          "icao": "PASY",
+          "lat": 52.71229935,
+          "lon": 174.1139984,
+          "distanceKm": 5079.8
+        }
       },
       {
         "id": "2b8195d3-4d6d-8008-b623-de410fc7fee9",
@@ -6475,7 +8176,16 @@
           "Note": "*Additional Fee: \n- International Student Fee: $375\n- Health Insurance: $932",
           "Departments": "Accounting,Art History,Asian Studies,Biochemistry and Molecular Biology,Biology,Business Administration,Business Economics,Chemistry,Climate/Environment/Society,Combined Languages,Community/Youth/Education Studies,Computer Science,Creative writing,Data Science,Economics,English,Environmental Sciences,Finance,Geography,Health/Science & Society,History,Interactive Media,International Development,Social Change,Marketing,Mathematics Education,Mathematics,Media/Culture and the Arts,Music,Philosophy,Physics,Political Science,Psychology,Screen Studies,Sociology,Spanish,Theater Arts,Women's and Gender Studies"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Worcester Regional Airport",
+          "city": "Worcester",
+          "iata": "ORH",
+          "icao": "KORH",
+          "lat": 42.26729965209961,
+          "lon": -71.87570190429688,
+          "distanceKm": 4.7
+        }
       },
       {
         "id": "2b8195d3-4d6d-8004-a7e3-e07b42fae5c1",
@@ -6514,7 +8224,16 @@
           "f58b6109-31f4-42b8-a5c7-a3dd52a58465": "",
           "Departments": "Accounting,Anthropology,Art,Biology,Business,Engineering,Chemistry,Communication,Computer Science,Management,Economics,Electrical and Electronics Engineering,Geology,English"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Cedar City Regional Airport",
+          "city": "Cedar City",
+          "iata": "CDC",
+          "icao": "KCDC",
+          "lat": 37.70100021362305,
+          "lon": -113.0989990234375,
+          "distanceKm": 3.7
+        }
       },
       {
         "id": "2b9195d3-4d6d-80b0-9897-c5f72f2bb4c4",
@@ -6549,7 +8268,16 @@
           "Note": "they are responsible for certain mandatory fees and personal expenses. These include a student services and facilities fee (approximately USD 150–250 per semester), health insurance required for all international students (approximately USD 1,000 per year), and housing and meal plan costs for those living on campus. Additional expenses may include textbooks, personal supplies, and optional recreational or activity fees. \n* Vlog from Exchanges students : https://youtu.be/rb95yx2tj0g?si=8HA-zfB7Qg9T0G-o\n\n* Viewbook 2026-27",
           "Departments": "Arts,Behavioral Sciences,Business,Education,Health & Human Services,Science,Engineering,Technology"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "MBS International Airport",
+          "city": "Saginaw",
+          "iata": "MBS",
+          "icao": "KMBS",
+          "lat": 43.532901763916016,
+          "lon": -84.07959747314453,
+          "distanceKm": 9.9
+        }
       },
       {
         "id": "2bf195d3-4d6d-800d-9783-e398a75278d9",
@@ -6584,7 +8312,16 @@
           "Note": "Exchange students are responsible for university fees, meal plan (if warranted), health insurance and on-campus housing fees.\n-University fees: $2,143 (subject to change)\n- A meal plan is required for students living in residence hall (dormitory) housing. Students residing in apartment style housing have the option to purchase a meal plan.\n- Cost: appx $3,725 per semester (subject to change)\nhttps://www.stonybrook.edu/commcms/mealplan/plans.php\n- All exchange visiting students are required to purchase the International Student Health Insurance(SBU SOLAR). This will automatically be charged to your student account prior to your arrival at Stony Brook. Additional information, including rates and coverage, can be found by visiting the Student Health Services webpage.\n- Cost: appx $981 (subject to change) \nhttps://www.stonybrook.edu/commcms/studentaffairs/shs/insurance/outbound.php",
           "Departments": "Arts and Science,Business,Engineering and Applied Sciences,Communication and Journalism,Marince and Atmospheric Sciences"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Long Island Mac Arthur Airport",
+          "city": "Islip",
+          "iata": "ISP",
+          "icao": "KISP",
+          "lat": 40.79520035,
+          "lon": -73.10019684,
+          "distanceKm": 12.8
+        }
       },
       {
         "id": "2c3195d3-4d6d-80f5-bc63-c2165fafadb9",
@@ -6619,7 +8356,16 @@
           "Email": "international@uncw.edu",
           "Departments": "Accounting,American Studies,Anthropology,Art,Biology,Business,Chemistry,Communication,Computer Science,Economics,Engineering,English"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Wilmington International Airport",
+          "city": "Wilmington",
+          "iata": "ILM",
+          "icao": "KILM",
+          "lat": 34.270599365234375,
+          "lon": -77.90260314941406,
+          "distanceKm": 5.9
+        }
       },
       {
         "id": "299195d3-4d6d-8125-a009-e277ee923bba",
@@ -6650,7 +8396,16 @@
           "Note": "Students are allowed to take any courses in different departments",
           "Departments": "Architecture,Management and Social Sciences,Communication and Design,Engineering"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Capitan Corbeta CA Curbelo International Airport",
+          "city": "Punta del Este",
+          "iata": "PDP",
+          "icao": "SULS",
+          "lat": -34.855098724365234,
+          "lon": -55.09429931640625,
+          "distanceKm": 13.8
+        }
       },
       {
         "id": "299195d3-4d6d-81bf-ad32-d251ebb0df9f",
@@ -6684,7 +8439,16 @@
           "Note": "International Student Fee of 135 USD or 3,000,000 VND, including orientation activities, welcome gifts, a welcome party, company visits, outdoor sightseeing activities (if possible), and postal service fees (sending hard-copy transcripts and other documents).",
           "Departments": "Economics,International Economics,International Business,Business Administration,Hotel Management,Banking and Finance,Accounting,Law,Finance and Banking"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Noi Bai International Airport",
+          "city": "Hanoi",
+          "iata": "HAN",
+          "icao": "VVNB",
+          "lat": 21.221200942993164,
+          "lon": 105.80699920654297,
+          "distanceKm": 22.1
+        }
       },
       {
         "id": "2d9195d3-4d6d-8067-9d98-dc2f1629c546",
@@ -6713,7 +8477,16 @@
           "Note": "- There are mandatory Insurance\n- Youtube: https://www.youtube.com/watch?v=OQ8H-s8HRZ0\n- Pamplet: https://drive.google.com/file/d/1lckHqENzKWWMbiA07r-BcGP3aGjysrJ5/view?usp=sharing\n- CityU & Me : Our Instagram page with fun videos to promote cultural integration: https://www.instagram.com/cityu_and_me/",
           "Departments": "Accountancy,Biomedical Engineering,biomedical sciences,architecture and civil engineering,Chemistry,Media and Communication,Computer Science,Energy and Environment,Electrical Engineering,economics and finance,English,Information Systems,linguistics and translation,Mathematics,Management,Marketing,Mechanical engineering,Physics,public and international affair,Social and Behavioral Sciences,Audiovisual Systems Engineering"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Shun Tak Heliport",
+          "city": "Hong Kong",
+          "iata": "HHP",
+          "icao": "VHST",
+          "lat": 22.2893714905,
+          "lon": 114.152153015,
+          "distanceKm": 5.9
+        }
       },
       {
         "id": "3ca02469-a3a8-4788-a5ad-6f13b98acf0f",
@@ -6749,7 +8522,16 @@
             "type": "bookmark",
             "text": "[Fact Sheet] 2023_FPT University.pdf"
           }
-        ]
+        ],
+        "nearestAirport": {
+          "name": "Noi Bai International Airport",
+          "city": "Hanoi",
+          "iata": "HAN",
+          "icao": "VVNB",
+          "lat": 21.221200942993164,
+          "lon": 105.80699920654297,
+          "distanceKm": 37.2
+        }
       }
     ]
   },
@@ -6790,7 +8572,16 @@
           "Language Requirements": "TOEFL (IBT)\nIf taken before January 21, 2026: Score of 79 with no subscore below 17\nIf taken on or after January 21, 2026: Score of 4 with no section score below 4, except\n3.5 for speaking (MyBest scores not accepted)\n- IELTS: 6.5, no band score below 6.0\n- Duolingo: 110 or higher",
           "Restrictions": "» Pre-professional programs are currently unavailable to visiting students. These include: Law; Nursing; Education; Osteopathic Medicine; Human Medicine, etc. \n» Other areas of study currently excluded include Game Development and Design; Aerospace Studies; Healthcare Management; Construction Management; MBA courses. (https://americansemester.isp.msu.edu/interested-students/about-academics/exchange-course-availability/)"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Capital City Airport",
+          "city": "Lansing",
+          "iata": "LAN",
+          "icao": "KLAN",
+          "lat": 42.77870178222656,
+          "lon": -84.58740234375,
+          "distanceKm": 12.2
+        }
       },
       {
         "id": "299195d3-4d6d-81f2-a569-c0e885954b39",
@@ -6823,7 +8614,16 @@
           "Language Requirements": "TOEFL 90+; IELTS 7+, or Duolingo 125+",
           "Restrictions": "All visiting students on an F-1 student visa to study in the United States must take a minimum of 12 semester units or credits. "
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "John Wayne Airport-Orange County Airport",
+          "city": "Santa Ana",
+          "iata": "SNA",
+          "icao": "KSNA",
+          "lat": 33.67570114,
+          "lon": -117.8679962,
+          "distanceKm": 4.2
+        }
       },
       {
         "id": "299195d3-4d6d-81bd-ac1d-e671fee3b787",
@@ -6858,7 +8658,16 @@
           "Language Requirements": "IETLS Academics : 6.5 overall with no score below 5.5\nTOEFL iBT : 88 overall, with Reading 18, Listening 17, Speaking 20, Writing 17\nhttps://www.bristol.ac.uk/centre-for-study-abroad/inbound/study-abroad-programmes-at-bristol/entry-requirements/?utm_source=short-url&utm_medium=print&utm_campaign=int-in-house-study-abroad-2024&utm_content=sa-guide-p18",
           "Restrictions": "• Engineering Faculty(Aerospace Engineering, Civil Engineering, Mechanical Engineering ects), Chemistry, Law \n: Please note many units from these departments are taught across the full academic year\n• Coumputer Science : Available for final-year Computer Science majors only"
         },
-        "content": []
+        "content": [],
+        "nearestAirport": {
+          "name": "Bristol Filton Airport",
+          "city": "Bristol",
+          "iata": "FZO",
+          "icao": "EGTG",
+          "lat": 51.5194015503,
+          "lon": -2.59083008766,
+          "distanceKm": 4.2
+        }
       }
     ]
   }
