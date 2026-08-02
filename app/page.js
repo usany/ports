@@ -132,7 +132,27 @@ export default function Home() {
 
             if (flightData && flightData.success && flightData.price) {
               const priceStr = flightData.price.toLocaleString()
-              priceDiv.innerHTML = `<div style="margin-top:4px;font-size:12px;color:#059669"><b>₩${priceStr}</b></div>`
+              let html = `<div style="margin-top:4px;font-size:12px;color:#059669"><b>₩${priceStr}</b></div>`
+
+              // Show flight details if available
+              if (flightData.flights && flightData.flights.length > 0) {
+                const flight = flightData.flights[0]
+                if (flight.duration || flight.stops !== null) {
+                  html += `<div style="margin-top:3px;font-size:10px;color:#666">`
+                  if (flight.isDirect) {
+                    html += `직항`
+                  } else if (flight.stops !== null) {
+                    html += `${flight.stops}회 경유`
+                  }
+                  if (flight.duration) {
+                    html += flight.isDirect || flight.stops !== null ? ` · ` : ``
+                    html += flight.duration
+                  }
+                  html += `</div>`
+                }
+              }
+
+              priceDiv.innerHTML = html
             } else {
               priceDiv.innerHTML = `<div style="margin-top:4px;font-size:11px;color:#999">Price unavailable</div>`
             }

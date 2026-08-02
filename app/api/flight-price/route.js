@@ -46,23 +46,64 @@ export async function GET(request) {
       bodyLength: pageInfo.bodyLength,
     })
 
-    // Extract prices
+    // Extract flight data including prices and transfer info
     const flightData = await page.evaluate(() => {
+      const flights = []
       const text = document.body.innerText
+
+      // Extract all prices
+      const priceMatches = text.match(/\d{1,3}(?:,\d{3})+/g) || []
       const prices = []
 
-      // Look for any 6-7 digit numbers that could be prices
-      const matches = text.match(/\d{1,3}(?:,\d{3})+/g) || []
-
-      matches.forEach((match) => {
+      priceMatches.forEach((match) => {
         const num = parseInt(match.replace(/,/g, ""))
         if (num >= 500000 && num <= 5000000) {
           prices.push(num)
         }
       })
 
+      // Try to extract flight details from page elements
+      const flightElements = document.querySelectorAll(
+        "div, li, button, [class*='flight'], [class*='result']"
+      )
+
+      flightElements.forEach((el) => {
+        const text = el.textContent || ""
+
+        // Look for flight information patterns
+        if (text.includes("시간") || text.includes("분") || text.includes("직항")) {
+          // Extract duration (e.g., "15시간 30분")
+          const durationMatch = text.match(/(\d+)시간\s*(\d+)분/)
+
+          // Check for stops (직항 = direct)
+          const isDirect = text.includes("직항")
+          const stopsMatch = text.match(/(\d+)회\s*경유/) || text.match(/경유\s*(\d+)회/)
+
+          // Extract price from this element
+          const priceInElement = text.match(/\d{1,3}(?:,\d{3})+/)
+
+          if (priceInElement || durationMatch || stopsMatch) {
+            flights.push({
+              price: priceInElement ? parseInt(priceInElement[0].replace(/,/g, "")) : null,
+              duration: durationMatch
+                ? `${durationMatch[1]}시간 ${durationMatch[2]}분`
+                : null,
+              stops: isDirect ? 0 : stopsMatch ? parseInt(stopsMatch[1]) : null,
+              isDirect,
+              rawText: text.substring(0, 150),
+            })
+          }
+        }
+      })
+
+      // Remove duplicates and sort by price
+      const uniqueFlights = flights
+        .filter((f) => f.price && f.price >= 500000 && f.price <= 5000000)
+        .sort((a, b) => a.price - b.price)
+
       return {
         prices: [...new Set(prices)].sort((a, b) => a - b),
+        flights: uniqueFlights.slice(0, 5),
         pageLength: text.length,
       }
     })
@@ -76,7 +117,7 @@ export async function GET(request) {
       date,
       price: flightData.prices.length > 0 ? flightData.prices[0] : null,
       allPrices: flightData.prices.slice(0, 10),
-      pageLength: flightData.pageLength,
+      flights: flightData.flights,
       url,
     })
   } catch (error) {
