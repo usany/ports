@@ -63,15 +63,21 @@ export async function GET(request) {
         // Skip if too large (probably a container, not a result)
         if (text.length > 2000) return
 
-        // Extract price
-        const priceMatch = text.match(/(\d{2,3},\d{3}|\d{5,})\s*원?/)
-        if (!priceMatch) return
+        // Extract ALL prices from this element and get the first/largest valid one
+        const priceMatches = text.match(/(\d{1,3}(?:,\d{3})+|\d{5,})/g) || []
+        let price = null
 
-        const priceStr = priceMatch[1].replace(/,/g, "")
-        const price = parseInt(priceStr)
+        for (const priceMatch of priceMatches) {
+          const priceStr = priceMatch.replace(/,/g, "")
+          const priceNum = parseInt(priceStr)
+          // Get the first valid price found
+          if (priceNum >= 100000 && priceNum <= 9999999) {
+            price = priceNum
+            break
+          }
+        }
 
-        // Only reasonable flight prices
-        if (price < 100000 || price > 5000000) return
+        if (!price) return
 
         // Extract duration
         const durationMatch = text.match(/(\d+)\s*시간\s*(\d+)\s*분/)
@@ -98,18 +104,20 @@ export async function GET(request) {
             duration,
             stops,
             isDirect,
-            text: text.substring(0, 200),
+            text: text.substring(0, 300),
           })
         }
       })
 
-      // Sort by price and get the cheapest
+      // Sort by price - return cheapest first
       flights.sort((a, b) => a.price - b.price)
-      const bestFlights = flights.slice(0, 5)
+      const bestFlights = flights.slice(0, 10)
 
       console.log("Flight data extracted:", {
         totalFlights: flights.length,
-        bestFlights: bestFlights,
+        allFlights: flights.map((f) => ({ price: f.price, duration: f.duration, stops: f.stops })),
+        bestFlights: bestFlights.map((f) => ({ price: f.price, duration: f.duration, stops: f.stops })),
+        priceRange: flights.length > 0 ? { min: flights[0].price, max: flights[flights.length - 1].price } : null,
       })
 
       return {
