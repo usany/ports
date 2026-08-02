@@ -60,6 +60,9 @@ export default function Home() {
       } else if (type === "departments") {
         const departments = markerData.departments ? markerData.departments.toLowerCase() : ""
         matches = departments.includes(searchTerm)
+      } else if (type === "country") {
+        const country = markerData.country ? markerData.country.toLowerCase() : ""
+        matches = country.includes(searchTerm)
       }
 
       if (matches || searchTerm === "") {
@@ -252,6 +255,7 @@ export default function Home() {
             airport: row.nearestAirport,
             language: properties["Language(수학언어)"] || properties.Language || "",
             departments: properties.Departments || "",
+            country: properties.Region || "",
           })
 
           marker.on("popupopen", () => {
@@ -304,6 +308,7 @@ export default function Home() {
           <option value="name">Search by Name</option>
           <option value="language">Search by Language</option>
           <option value="departments">Search by Departments</option>
+          <option value="country">Search by Country</option>
         </select>
         <input
           type="text"
@@ -312,7 +317,9 @@ export default function Home() {
               ? "Search university name..."
               : searchType === "language"
               ? "Search language..."
-              : "Search departments..."
+              : searchType === "departments"
+              ? "Search departments..."
+              : "Search country..."
           }
           value={searchText}
           onChange={(e) => {
