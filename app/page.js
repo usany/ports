@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useEffect, useRef, useState } from "react"
+import { useRouter, useSearchParams } from "next/navigation"
 import universities from "../universities.json"
 
 const esc = (s) =>
@@ -44,12 +45,21 @@ function popupHtml(row, onShowAirport) {
 }
 
 export default function Home() {
+  const router = useRouter()
+  const searchParams = useSearchParams()
   const mapRef = useRef(null)
   const mapInstanceRef = useRef(null)
   const markersRef = useRef([])
   const shownAirportsRef = useRef(new Map())
-  const [searchType, setSearchType] = useState("name")
-  const [searchText, setSearchText] = useState("")
+  const [searchType, setSearchType] = useState(() => searchParams.get("type") || "name")
+  const [searchText, setSearchText] = useState(() => searchParams.get("search") || "")
+
+  const updateUrl = (newText, newType) => {
+    const params = new URLSearchParams()
+    if (newText) params.set("search", newText)
+    if (newType !== "name") params.set("type", newType)
+    router.push(`?${params.toString()}`, { shallow: false })
+  }
 
   const filterMarkers = (text, type) => {
     const searchTerm = text.toLowerCase()
@@ -96,6 +106,12 @@ export default function Home() {
       }
     })
   }
+
+  useEffect(() => {
+    if (mapInstanceRef.current && markersRef.current.length > 0) {
+      filterMarkers(searchText, searchType)
+    }
+  }, [searchText, searchType])
 
   useEffect(() => {
     if (mapInstanceRef.current || !mapRef.current) return
@@ -338,6 +354,7 @@ export default function Home() {
           onChange={(e) => {
             setSearchType(e.target.value)
             filterMarkers(searchText, e.target.value)
+            updateUrl(searchText, e.target.value)
           }}
           style={{
             padding: "8px 12px",
@@ -367,6 +384,7 @@ export default function Home() {
           onChange={(e) => {
             setSearchText(e.target.value)
             filterMarkers(e.target.value, searchType)
+            updateUrl(e.target.value, searchType)
           }}
           style={{
             flex: 1,
