@@ -438,6 +438,22 @@ export default function Home() {
             zIndex: 1000,
           }}
         >
+          <button
+          type="button"
+          onClick={() => setDark((d) => !d)}
+          aria-label={dark ? "Switch to light mode" : "Switch to dark mode"}
+          title={dark ? "Switch to light mode" : "Switch to dark mode"}
+          style={{
+            padding: "8px 12px",
+            borderRadius: "4px",
+            border: "1px solid #ccc",
+            background: "transparent",
+            fontSize: "16px",
+            cursor: "pointer",
+            lineHeight: 1,
+            zIndex: 1000,
+          }}
+        >
           {dark ? "☀️" : "🌙"}
         </button>
         <button
