@@ -51,8 +51,15 @@ export default function Home() {
   const mapInstanceRef = useRef(null)
   const markersRef = useRef([])
   const shownAirportsRef = useRef(new Map())
+  const tileLayerRef = useRef(null)
   const [searchType, setSearchType] = useState(() => searchParams.get("type") || "name")
   const [searchText, setSearchText] = useState(() => searchParams.get("search") || "")
+  const [dark, setDark] = useState(() => {
+    if (typeof window === "undefined") return false
+    const stored = localStorage.getItem("theme")
+    if (stored) return stored === "dark"
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
+  })
 
   const updateUrl = (newText, newType) => {
     const params = new URLSearchParams()
@@ -108,6 +115,19 @@ export default function Home() {
   }
 
   useEffect(() => {
+    document.documentElement.classList.toggle("dark", dark)
+    localStorage.setItem("theme", dark ? "dark" : "light")
+    const tile = tileLayerRef.current
+    if (tile) {
+      tile.setUrl(
+        dark
+          ? "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+          : "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      )
+    }
+  }, [dark])
+
+  useEffect(() => {
     if (mapInstanceRef.current && markersRef.current.length > 0) {
       filterMarkers(searchText, searchType)
     }
@@ -121,7 +141,7 @@ export default function Home() {
 
       const map = L.map(mapRef.current).setView([20, 0], 2)
 
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      tileLayerRef.current = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         maxZoom: 19,
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       }).addTo(map)
@@ -395,6 +415,24 @@ export default function Home() {
             zIndex: 1000,
           }}
         />
+        <button
+          type="button"
+          onClick={() => setDark((d) => !d)}
+          aria-label={dark ? "Switch to light mode" : "Switch to dark mode"}
+          title={dark ? "Switch to light mode" : "Switch to dark mode"}
+          style={{
+            padding: "8px 12px",
+            borderRadius: "4px",
+            border: "1px solid #ccc",
+            background: "transparent",
+            fontSize: "16px",
+            cursor: "pointer",
+            lineHeight: 1,
+            zIndex: 1000,
+          }}
+        >
+          {dark ? "☀️" : "🌙"}
+        </button>
       </div>
       <div ref={mapRef} style={{ flex: 1, width: "100%" }} />
     </div>
