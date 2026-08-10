@@ -60,6 +60,21 @@ export default function Home() {
     if (stored) return stored === "dark"
     return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
   })
+  const [lang, setLang] = useState(() => (typeof window !== "undefined" ? localStorage.getItem("lang") || "en" : "en"))
+
+  const t = (ko, en) => (lang === "ko" ? ko : en)
+  const searchLabels = {
+    name: t("이름으로 검색", "Search by Name"),
+    language: t("언어로 검색", "Search by Language"),
+    country: t("국가로 검색", "Search by Country"),
+    departments: t("학과로 검색", "Search by Departments"),
+  }
+  const searchPlaceholders = {
+    name: t("대학교 이름 검색...", "Search university name..."),
+    language: t("언어 검색...", "Search language..."),
+    departments: t("학과 검색...", "Search departments..."),
+    country: t("국가 검색...", "Search country..."),
+  }
 
   const updateUrl = (newText, newType) => {
     const params = new URLSearchParams()
@@ -384,22 +399,14 @@ export default function Home() {
             zIndex: 1000,
           }}
         >
-          <option value="name">Search by Name</option>
-          <option value="language">Search by Language</option>
-          <option value="country">Search by Country</option>
-          <option value="departments">Search by Departments</option>
+          <option value="name">{searchLabels.name}</option>
+          <option value="language">{searchLabels.language}</option>
+          <option value="country">{searchLabels.country}</option>
+          <option value="departments">{searchLabels.departments}</option>
         </select>
         <input
           type="text"
-          placeholder={
-            searchType === "name"
-              ? "Search university name..."
-              : searchType === "language"
-              ? "Search language..."
-              : searchType === "departments"
-              ? "Search departments..."
-              : "Search country..."
-          }
+          placeholder={searchPlaceholders[searchType]}
           value={searchText}
           onChange={(e) => {
             setSearchText(e.target.value)
@@ -432,6 +439,29 @@ export default function Home() {
           }}
         >
           {dark ? "☀️" : "🌙"}
+        </button>
+        <button
+          type="button"
+          onClick={() => {
+            const next = lang === "ko" ? "en" : "ko"
+            setLang(next)
+            localStorage.setItem("lang", next)
+          }}
+          aria-label={t("언어 전환 (영어)", "Switch language (Korean)")}
+          title={t("언어 전환 (영어)", "Switch language (Korean)")}
+          style={{
+            padding: "8px 12px",
+            borderRadius: "4px",
+            border: "1px solid #ccc",
+            background: "transparent",
+            fontSize: "13px",
+            fontWeight: "bold",
+            cursor: "pointer",
+            lineHeight: 1,
+            zIndex: 1000,
+          }}
+        >
+          {t("EN", "KO")}
         </button>
       </div>
       <div ref={mapRef} style={{ flex: 1, width: "100%" }} />
