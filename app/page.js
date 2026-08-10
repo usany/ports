@@ -438,7 +438,7 @@ export default function Home() {
             zIndex: 1000,
           }}
         >
-          {dark ? "☀️" : "🌙"}
+          {dark ? "🌙" : "☀️"}
         </button>
         <button
           type="button"
@@ -461,7 +461,7 @@ export default function Home() {
             zIndex: 1000,
           }}
         >
-          {t("EN", "KO")}
+          {t("KO", "EN")}
         </button>
       </div>
       <div ref={mapRef} style={{ flex: 1, width: "100%" }} />
