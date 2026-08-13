@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect, useRef, useState } from "react"
+import React, { Suspense, useEffect, useRef, useState } from "react"
 import { useRouter, useSearchParams } from "next/navigation"
 import universities from "../universities.json"
 
@@ -47,7 +47,7 @@ function popupHtml(row, lang) {
   return parts.join("")
 }
 
-export default function Home() {
+function HomeContent() {
   const router = useRouter()
   const searchParams = useSearchParams()
   const mapRef = useRef(null)
@@ -494,5 +494,13 @@ export default function Home() {
       </div>
       <div ref={mapRef} style={{ flex: 1, width: "100%", height: "100%", minHeight: 0 }} />
     </div>
+  )
+}
+
+export default function Home() {
+  return (
+    <Suspense fallback={null}>
+      <HomeContent />
+    </Suspense>
   )
 }
