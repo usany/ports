@@ -7,26 +7,7 @@ import universities from "../universities.json"
 const esc = (s) =>
   String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;")
 
-const DEPARTURES = [
-  { code: "SEL", ko: "서울 (SEL)", en: "Seoul (SEL)" },
-  { code: "ICN", ko: "인천 (ICN)", en: "Incheon (ICN)" },
-  { code: "GMP", ko: "김포 (GMP)", en: "Gimpo (GMP)" },
-  { code: "PUS", ko: "부산 (PUS)", en: "Busan (PUS)" },
-]
-
-const departureSelectHtml = (id, lang, selected) => {
-  const label = lang === "ko" ? "출발지 선택" : "Select departure"
-  const options = DEPARTURES.map(
-    (d) =>
-      `<option value="${d.code}"${d.code === selected ? " selected" : ""}>${lang === "ko" ? d.ko : d.en}</option>`
-  ).join("")
-  return (
-    `<div style="display:flex;align-items:center;gap:6px">` +
-    `<label for="${id}" style="font-size:12px;color:#555;white-space:nowrap">${label}</label>` +
-    `<select id="${id}" style="flex:1;padding:4px 6px;font-size:12px;border:1px solid #ccc;border-radius:3px">${options}</select>` +
-    `</div>`
-  )
-}
+const DEPARTURE = "SEL"
 
 function popupHtml(row, lang) {
   const p = row.properties || {}
@@ -204,7 +185,7 @@ export default function Home() {
         return L.polyline([[fromLat, fromLon], [toLat, toLon]], { color: "#f59e0b", weight: 2.5, opacity: 0.8, dashArray: "5, 5" }).addTo(map)
       }
 
-      const toggleAirportMarker = (airport, button, dateStr = null, departure = "SEL") => {
+      const toggleAirportMarker = (airport, button, dateStr = null, departure = DEPARTURE) => {
         const code = airport.iata || airport.icao
         const key = code || `${airport.lat},${airport.lon}`
 
@@ -235,7 +216,6 @@ export default function Home() {
           .bindPopup(
             `<b style="font-size:14px">✈ ${esc(airport.name)}</b>` +
               `<div style="margin-top:2px;color:#555">${esc(airport.city)}${code ? " &middot; " + esc(code) : ""}</div>` +
-              departureSelectHtml(`departure-ticket-${code}`, langRef.current, departure) +
               `<div id="flight-price-${code}" style="margin-top:8px;font-size:12px;color:#666"></div>`
           )
           .addTo(map)
@@ -254,7 +234,6 @@ export default function Home() {
           const priceDiv = document.getElementById(`flight-price-${code}`)
           if (!priceDiv) return
 
-          const departureSel = document.getElementById(`departure-ticket-${code}`)
           const loadPrice = async (origin) => {
             priceDiv.innerHTML = `<div style="color:#999">${langRef.current === "ko" ? "가격 불러오는 중..." : "Loading prices..."}</div>`
             let finalDateStr = dateStr
@@ -317,12 +296,7 @@ export default function Home() {
 
           priceDiv.innerHTML = html
           }
-          if (departureSel) {
-            departureSel.addEventListener("change", () => loadPrice(departureSel.value))
-            loadPrice(departureSel.value)
-          } else {
-            loadPrice(departure)
-          }
+          loadPrice(departure)
         })
 
         marker.on("popupclose", () => {
