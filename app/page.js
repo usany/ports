@@ -7,20 +7,42 @@ import universities from "../universities.json"
 const esc = (s) =>
   String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;")
 
-function popupHtml(row, onShowAirport) {
+const DEPARTURES = [
+  { code: "SEL", ko: "서울 (SEL)", en: "Seoul (SEL)" },
+  { code: "ICN", ko: "인천 (ICN)", en: "Incheon (ICN)" },
+  { code: "GMP", ko: "김포 (GMP)", en: "Gimpo (GMP)" },
+  { code: "PUS", ko: "부산 (PUS)", en: "Busan (PUS)" },
+]
+
+const departureSelectHtml = (id, lang, selected) => {
+  const label = lang === "ko" ? "출발지 선택" : "Select departure"
+  const options = DEPARTURES.map(
+    (d) =>
+      `<option value="${d.code}"${d.code === selected ? " selected" : ""}>${lang === "ko" ? d.ko : d.en}</option>`
+  ).join("")
+  return (
+    `<div style="display:flex;align-items:center;gap:6px">` +
+    `<label for="${id}" style="font-size:12px;color:#555;white-space:nowrap">${label}</label>` +
+    `<select id="${id}" style="flex:1;padding:4px 6px;font-size:12px;border:1px solid #ccc;border-radius:3px">${options}</select>` +
+    `</div>`
+  )
+}
+
+function popupHtml(row, lang) {
   const p = row.properties || {}
   const parts = [`<b style="font-size:15px">${esc(row.title)}</b>`]
   const a = row.nearestAirport
   if (a) {
     const code = a.iata || a.icao || ""
     const today = new Date().toISOString().split("T")[0]
+    const suffix = `${code || a.lat}-${a.lon}`
     parts.push(
       `<div style="margin-top:4px;font-size:12px;color:#0f766e">✈ ${esc(a.name)}` +
         (code ? ` (${esc(code)})` : "") +
         ` &middot; ${a.distanceKm} km</div>` +
-        `<form id="show-airport-form-${code || a.lat}-${a.lon}" style="margin-top:6px;display:flex;gap:6px;align-items:center">` +
-        `<input type="date" id="airport-date-${code || a.lat}-${a.lon}" value="${today}" style="padding:4px 6px;font-size:12px;border:1px solid #ccc;border-radius:3px">` +
-        `<button type="submit" style="padding:4px 8px;background:#0f766e;color:white;border:none;border-radius:3px;cursor:pointer;font-size:12px">Show on map</button>` +
+        `<form id="show-airport-form-${suffix}" style="margin-top:6px;display:flex;gap:6px;align-items:center">` +
+        `<input type="date" id="airport-date-${suffix}" value="${today}" style="padding:4px 6px;font-size:12px;border:1px solid #ccc;border-radius:3px">` +
+        `<button type="submit" style="padding:4px 8px;background:#0f766e;color:white;border:none;border-radius:3px;cursor:pointer;font-size:12px">${lang === "ko" ? "티켓 검색" : "Search ticket"}</button>` +
         `</form>`
     )
   }
@@ -61,6 +83,10 @@ export default function Home() {
     return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
   })
   const [lang, setLang] = useState(() => (typeof window !== "undefined" ? localStorage.getItem("lang") || "en" : "en"))
+  const langRef = useRef(lang)
+  useEffect(() => {
+    langRef.current = lang
+  }, [lang])
 
   const t = (ko, en) => (lang === "ko" ? ko : en)
   const searchLabels = {
@@ -119,7 +145,7 @@ export default function Home() {
             if (form) {
               const btn = form.querySelector("button[type='submit']")
               if (btn) {
-                btn.textContent = "Show on map"
+                btn.textContent = "Search ticket"
                 btn.style.background = "#0f766e"
               }
             }
@@ -154,10 +180,20 @@ export default function Home() {
     import("leaflet").then(({ default: L }) => {
       import("leaflet/dist/leaflet.css")
 
-      const map = L.map(mapRef.current).setView([20, 0], 2)
+      // Choose a default zoom so the world map fills the screen width.
+      // World width at zoom z is 256 * 2^z px, so require that >= screen width.
+      const screenWidth = typeof window !== "undefined" ? window.innerWidth : 1024
+      const defaultZoom = Math.max(2, Math.ceil(Math.log2(screenWidth / 256)))
+
+      const map = L.map(mapRef.current, {
+        maxBounds: [[-85, -180], [85, 180]],
+        maxBoundsViscosity: 1.0,
+        worldCopyJump: false,
+      }).setView([20, 0], defaultZoom)
 
       tileLayerRef.current = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         maxZoom: 19,
+        noWrap: true,
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       }).addTo(map)
 
@@ -168,7 +204,7 @@ export default function Home() {
         return L.polyline([[fromLat, fromLon], [toLat, toLon]], { color: "#f59e0b", weight: 2.5, opacity: 0.8, dashArray: "5, 5" }).addTo(map)
       }
 
-      const toggleAirportMarker = (airport, button, dateStr = null) => {
+      const toggleAirportMarker = (airport, button, dateStr = null, departure = "SEL") => {
         const code = airport.iata || airport.icao
         const key = code || `${airport.lat},${airport.lon}`
 
@@ -183,7 +219,7 @@ export default function Home() {
             shownAirportsRef.current.delete(`${key}-arc`)
           }
 
-          button.textContent = "Show on map"
+          button.textContent = "Search ticket"
           button.style.background = "#0f766e"
           return
         }
@@ -199,6 +235,7 @@ export default function Home() {
           .bindPopup(
             `<b style="font-size:14px">✈ ${esc(airport.name)}</b>` +
               `<div style="margin-top:2px;color:#555">${esc(airport.city)}${code ? " &middot; " + esc(code) : ""}</div>` +
+              departureSelectHtml(`departure-ticket-${code}`, langRef.current, departure) +
               `<div id="flight-price-${code}" style="margin-top:8px;font-size:12px;color:#666"></div>`
           )
           .addTo(map)
@@ -207,6 +244,7 @@ export default function Home() {
 
         shownAirportsRef.current.set(key, marker)
         shownAirportsRef.current.set(`${key}-date`, dateStr)
+        shownAirportsRef.current.set(`${key}-departure`, departure)
         shownAirportsRef.current.set(`${key}-arc`, arc)
         button.textContent = "Hide from map"
         button.style.background = "#d97706"
@@ -216,19 +254,21 @@ export default function Home() {
           const priceDiv = document.getElementById(`flight-price-${code}`)
           if (!priceDiv) return
 
-          priceDiv.innerHTML = `<div style="color:#999">Loading prices...</div>`
-          let finalDateStr = dateStr
-          if (!finalDateStr) {
-            const today = new Date()
-            const futureDate = new Date(today.getTime() + 9 * 24 * 60 * 60 * 1000)
-            finalDateStr = futureDate.toISOString().split("T")[0].replace(/-/g, "")
-          }
+          const departureSel = document.getElementById(`departure-ticket-${code}`)
+          const loadPrice = async (origin) => {
+            priceDiv.innerHTML = `<div style="color:#999">${langRef.current === "ko" ? "가격 불러오는 중..." : "Loading prices..."}</div>`
+            let finalDateStr = dateStr
+            if (!finalDateStr) {
+              const today = new Date()
+              const futureDate = new Date(today.getTime() + 9 * 24 * 60 * 60 * 1000)
+              finalDateStr = futureDate.toISOString().split("T")[0].replace(/-/g, "")
+            }
 
-          const flightData = await getFlightPrice("SEL", code, finalDateStr)
-          console.log("Flight response for", code, ":", flightData)
+            const flightData = await getFlightPrice(origin, code, finalDateStr)
+            console.log("Flight response for", code, ":", flightData)
 
-          let html = ""
-          let priceFound = false
+            let html = ""
+            let priceFound = false
 
           // Try to get price from flights array first
           if (flightData && flightData.flights && flightData.flights.length > 0) {
@@ -272,10 +312,17 @@ export default function Home() {
 
           // Show unavailable if no price found
           if (!priceFound) {
-            html = `<div style="margin-top:4px;font-size:11px;color:#999">Price unavailable</div>`
+            html = `<div style="margin-top:4px;font-size:11px;color:#999">${t("가격을 확인할 수 없습니다. 다른 출발 날짜나 공항을 시도해 보세요.", "Price unavailable. Try a different departure date or airport.")}</div>`
           }
 
           priceDiv.innerHTML = html
+          }
+          if (departureSel) {
+            departureSel.addEventListener("change", () => loadPrice(departureSel.value))
+            loadPrice(departureSel.value)
+          } else {
+            loadPrice(departure)
+          }
         })
 
         marker.on("popupclose", () => {
@@ -298,7 +345,7 @@ export default function Home() {
             if (form) {
               const btn = form.querySelector("button[type='submit']")
               if (btn) {
-                btn.textContent = "Show on map"
+                btn.textContent = "Search ticket"
                 btn.style.background = "#0f766e"
               }
             }
@@ -332,7 +379,7 @@ export default function Home() {
             fillColor: color,
             fillOpacity: 0.85,
           })
-            .bindPopup(popupHtml(row))
+            .bindPopup(popupHtml(row, langRef.current))
             .addTo(map)
 
           // Track marker for filtering
@@ -349,8 +396,9 @@ export default function Home() {
           marker.on("popupopen", () => {
             if (row.nearestAirport) {
               const code = row.nearestAirport.iata || row.nearestAirport.icao
-              const formId = `show-airport-form-${code || row.nearestAirport.lat}-${row.nearestAirport.lon}`
-              const dateId = `airport-date-${code || row.nearestAirport.lat}-${row.nearestAirport.lon}`
+              const suffix = `${code || row.nearestAirport.lat}-${row.nearestAirport.lon}`
+              const formId = `show-airport-form-${suffix}`
+              const dateId = `airport-date-${suffix}`
               const form = document.getElementById(formId)
               if (form && !form.dataset.attached) {
                 form.dataset.attached = "true"
@@ -371,6 +419,11 @@ export default function Home() {
       addMarkers(universities.study.rows, "#10b981")
 
       mapInstanceRef.current = map
+
+      // Ensure the map fills the container width once it's laid out
+      requestAnimationFrame(() => {
+        map.invalidateSize()
+      })
     })
 
     return () => {
@@ -449,6 +502,7 @@ export default function Home() {
           }}
           aria-label={t("언어 전환 (영어)", "Switch language (Korean)")}
           title={t("언어 전환 (영어)", "Switch language (Korean)")}
+          className="lang-toggle"
           style={{
             padding: "8px 12px",
             borderRadius: "4px",
@@ -464,7 +518,7 @@ export default function Home() {
           {t("KO", "EN")}
         </button>
       </div>
-      <div ref={mapRef} style={{ flex: 1, width: "100%" }} />
+      <div ref={mapRef} style={{ flex: 1, width: "100%", height: "100%", minHeight: 0 }} />
     </div>
   )
 }
