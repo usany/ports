@@ -410,7 +410,18 @@ function HomeContent() {
 
   return (
     <div style={{ height: "100vh", width: "100%", display: "flex", flexDirection: "column" }}>
-      <div style={{ display: "flex", gap: "10px", padding: "10px", alignItems: "center" }}>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          gap: "10px",
+          padding: "10px",
+          alignItems: "center",
+          boxSizing: "border-box",
+          width: "100%",
+          maxWidth: "100%",
+        }}
+      >
         <select
           value={searchType}
           onChange={(e) => {
@@ -441,11 +452,13 @@ function HomeContent() {
             updateUrl(e.target.value, searchType)
           }}
           style={{
-            flex: 1,
+            flex: "1 1 160px",
+            minWidth: "0",
             padding: "8px 12px",
             borderRadius: "4px",
             border: "1px solid #ccc",
             fontSize: "14px",
+            boxSizing: "border-box",
             zIndex: 1000,
           }}
         />
