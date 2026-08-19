@@ -40,9 +40,42 @@ html.dark .lang-toggle {
   color: #111827;
 }
 
+.leaflet-popup {
+  max-width: 90vw;
+}
+
+.leaflet-popup-content-wrapper {
+  max-width: min(360px, calc(100vw - 24px));
+}
+
 .leaflet-popup-content {
-  max-height: 60vh;
+  margin: 10px 12px;
+  max-width: min(360px, calc(100vw - 24px));
+  max-height: 50vh;
   overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
+.leaflet-popup-content p {
+  margin: 6px 0;
+}
+
+@media (max-width: 640px) {
+  .leaflet-popup-content-wrapper {
+    max-width: calc(100vw - 16px);
+  }
+  .leaflet-popup-content {
+    max-width: calc(100vw - 16px);
+    max-height: 45vh;
+    margin: 8px 10px;
+  }
+}
+
+/* Keep small circle markers visually distinct on map */
+.leaflet-marker-icon .popup-trigger {
+  pointer-events: none;
 }
 
 .popup-btn {
