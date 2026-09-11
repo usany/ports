@@ -15,7 +15,7 @@ export async function GET(request) {
     if (!apiKey) {
       return Response.json({ error: "SERPAPI_KEY environment variable is not set" }, { status: 400 })
     }
-    const url = `https://serpapi.com/search?q=flight+prices+${origin}+to+${destination}+${date}&api_key=${apiKey}`
+    const url = `https://serpapi.com/search?engine=google_flights&departure_id=${origin}&arrival_id=${destination}&outbound_date=${date}&api_key=${apiKey}`
 
     const response = await fetch(url)
 
