@@ -17,12 +17,12 @@ function normalizeAirportCode(input) {
 
 export async function GET(request) {
   const { searchParams } = new URL(request.url)
-  const origin = normalizeAirportCode(searchParams.get("origin") || "")
+  const origin = "ICN"
   const destination = normalizeAirportCode(searchParams.get("destination") || "")
   const date = searchParams.get("date")
 
-  if (!origin || !destination || !date) {
-    return Response.json({ error: "Missing origin, destination, or date. Use IATA airport codes (e.g., LAX, JFK)" }, { status: 400 })
+  if (!destination || !date) {
+    return Response.json({ error: "Missing destination or date. Departure is fixed to ICN (Incheon)" }, { status: 400 })
   }
 
   try {
