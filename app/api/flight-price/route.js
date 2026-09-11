@@ -15,7 +15,10 @@ export async function GET(request) {
     if (!apiKey) {
       return Response.json({ error: "SERPAPI_KEY environment variable is not set" }, { status: 400 })
     }
-    const url = `https://serpapi.com/search?engine=google_flights&departure_id=${origin}&arrival_id=${destination}&outbound_date=${date}&api_key=${apiKey}`
+
+    // Format date from YYYYMMDD to YYYY-MM-DD
+    const formattedDate = `${date.substring(0, 4)}-${date.substring(4, 6)}-${date.substring(6, 8)}`
+    const url = `https://serpapi.com/search?engine=google_flights&departure_id=${origin}&arrival_id=${destination}&outbound_date=${formattedDate}&type=2&api_key=${apiKey}`
 
     const response = await fetch(url)
 
@@ -26,11 +29,12 @@ export async function GET(request) {
     const data = await response.json()
     console.log("SerpAPI Response:", JSON.stringify(data, null, 2))
     console.log("Available keys:", Object.keys(data))
-    if (data.flights) {
-      console.log("Flights data:", JSON.stringify(data.flights, null, 2))
+
+    if (data.error) {
+      console.log("SerpAPI Error:", data.error)
     }
-    if (data.shopping_results) {
-      console.log("Shopping results:", JSON.stringify(data.shopping_results, null, 2))
+    if (data.search_information) {
+      console.log("Search information:", data.search_information)
     }
 
     let browser = null
@@ -107,19 +111,20 @@ export async function GET(request) {
     let minPrice = null
     let priceInfo = []
 
-    // Extract from SerpAPI flights data
-    if (data.flights && data.flights.length > 0) {
-      console.log("Extracting prices from SerpAPI flights data")
-      data.flights.forEach((flight) => {
+    // Extract from google_flights best_flights
+    if (data.best_flights && data.best_flights.length > 0) {
+      console.log("Extracting prices from google_flights best_flights")
+      data.best_flights.forEach((flight) => {
         if (flight.price) {
-          const priceStr = flight.price.toString()
-          const cleanPrice = priceStr.replace(/[^\d]/g, '')
+          const cleanPrice = flight.price.toString().replace(/[^\d]/g, '')
           const priceNum = parseInt(cleanPrice)
           if (priceNum > 0) {
             priceInfo.push({
               price: flight.price,
               priceNum,
-              source: "SerpAPI flights",
+              source: "Google Flights",
+              airline: flight.airline,
+              departure_time: flight.departure_time,
             })
             if (!minPrice || priceNum < minPrice) {
               minPrice = priceNum
@@ -129,18 +134,19 @@ export async function GET(request) {
       })
     }
 
-    // Extract from SerpAPI shopping results
-    if (data.shopping_results && data.shopping_results.length > 0) {
-      console.log("Extracting prices from SerpAPI shopping results")
-      data.shopping_results.forEach((result) => {
-        if (result.price) {
-          const cleanPrice = result.price.toString().replace(/[^\d]/g, '')
+    // Fallback to other_flights
+    if (!minPrice && data.other_flights && data.other_flights.length > 0) {
+      console.log("Extracting prices from google_flights other_flights")
+      data.other_flights.forEach((flight) => {
+        if (flight.price) {
+          const cleanPrice = flight.price.toString().replace(/[^\d]/g, '')
           const priceNum = parseInt(cleanPrice)
           if (priceNum > 0) {
             priceInfo.push({
-              price: result.price,
+              price: flight.price,
               priceNum,
-              source: "SerpAPI shopping",
+              source: "Google Flights (Other)",
+              airline: flight.airline,
             })
             if (!minPrice || priceNum < minPrice) {
               minPrice = priceNum
