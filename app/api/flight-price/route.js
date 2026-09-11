@@ -25,6 +25,13 @@ export async function GET(request) {
 
     const data = await response.json()
     console.log("SerpAPI Response:", JSON.stringify(data, null, 2))
+    console.log("Available keys:", Object.keys(data))
+    if (data.flights) {
+      console.log("Flights data:", JSON.stringify(data.flights, null, 2))
+    }
+    if (data.shopping_results) {
+      console.log("Shopping results:", JSON.stringify(data.shopping_results, null, 2))
+    }
 
     let browser = null
     const siteResults = []
@@ -46,29 +53,43 @@ export async function GET(request) {
         const page = await context.newPage()
         await page.goto(googleSearchUrl, { waitUntil: "networkidle", timeout: 15000 })
 
-        // Extract content from flights-results class
-        const flightsResultsContent = await page.evaluate(() => {
-          const flightsResultsElement = document.querySelector(".flights-results")
-          if (!flightsResultsElement) {
-            return null
+        // Extract content from Google flights
+        const flightsContent = await page.evaluate(() => {
+          // Try multiple selectors for Google flights
+          let element = document.querySelector(".flights-results")
+          if (!element) element = document.querySelector("[data-view-type='flights']")
+          if (!element) element = document.querySelector(".yg3J7d") // Google flights container
+          if (!element) element = document.querySelector("div[role='listitem']")
+
+          // If still not found, get the page text and look for prices
+          if (!element) {
+            const bodyText = document.body.textContent
+            return {
+              text: bodyText,
+              html: null,
+              className: null,
+            }
           }
+
           return {
-            html: flightsResultsElement.innerHTML,
-            text: flightsResultsElement.textContent,
-            className: flightsResultsElement.className,
+            html: element.innerHTML,
+            text: element.textContent,
+            className: element.className,
           }
         })
 
-        if (flightsResultsContent) {
-          // Extract prices from flights-results content
-          const priceMatches = flightsResultsContent.text?.match(/[\d,]+(?:원|₩|\$)/g) || []
+        if (flightsContent) {
+          // Extract prices from content - look for currency patterns
+          const priceMatches = flightsContent.text?.match(/\$[\d,]+|₩[\d,]+|[\d,]+원/g) || []
 
-          siteResults.push({
-            source: "Google Search",
-            url: googleSearchUrl,
-            prices: priceMatches,
-            content: flightsResultsContent.text?.substring(0, 1000),
-          })
+          if (priceMatches.length > 0) {
+            siteResults.push({
+              source: "Google Search",
+              url: googleSearchUrl,
+              prices: priceMatches,
+              content: flightsContent.text?.substring(0, 1000),
+            })
+          }
         }
 
         await context.close()
@@ -86,8 +107,77 @@ export async function GET(request) {
     let minPrice = null
     let priceInfo = []
 
-    // Extract prices from flights-results content (from siteResults)
-    if (siteResults.length > 0 && siteResults[0].prices) {
+    // Extract from SerpAPI flights data
+    if (data.flights && data.flights.length > 0) {
+      console.log("Extracting prices from SerpAPI flights data")
+      data.flights.forEach((flight) => {
+        if (flight.price) {
+          const priceStr = flight.price.toString()
+          const cleanPrice = priceStr.replace(/[^\d]/g, '')
+          const priceNum = parseInt(cleanPrice)
+          if (priceNum > 0) {
+            priceInfo.push({
+              price: flight.price,
+              priceNum,
+              source: "SerpAPI flights",
+            })
+            if (!minPrice || priceNum < minPrice) {
+              minPrice = priceNum
+            }
+          }
+        }
+      })
+    }
+
+    // Extract from SerpAPI shopping results
+    if (data.shopping_results && data.shopping_results.length > 0) {
+      console.log("Extracting prices from SerpAPI shopping results")
+      data.shopping_results.forEach((result) => {
+        if (result.price) {
+          const cleanPrice = result.price.toString().replace(/[^\d]/g, '')
+          const priceNum = parseInt(cleanPrice)
+          if (priceNum > 0) {
+            priceInfo.push({
+              price: result.price,
+              priceNum,
+              source: "SerpAPI shopping",
+            })
+            if (!minPrice || priceNum < minPrice) {
+              minPrice = priceNum
+            }
+          }
+        }
+      })
+    }
+
+    // Extract from organic results snippets
+    if (!minPrice && data.organic_results && data.organic_results.length > 0) {
+      console.log("Extracting prices from organic results")
+      data.organic_results.forEach((result) => {
+        const text = `${result.title} ${result.snippet}`
+        const priceMatches = text.match(/\$[\d,]+|₩[\d,]+|[\d,]+원/g) || []
+        priceMatches.forEach((priceMatch) => {
+          const cleanPrice = priceMatch.replace(/[^\d]/g, '')
+          const priceNum = parseInt(cleanPrice)
+          if (priceNum > 0) {
+            priceInfo.push({
+              price: priceMatch,
+              priceNum,
+              source: "SerpAPI organic results",
+              title: result.title,
+              url: result.link,
+            })
+            if (!minPrice || priceNum < minPrice) {
+              minPrice = priceNum
+            }
+          }
+        })
+      })
+    }
+
+    // Fallback to Chromium extracted prices
+    if (!minPrice && siteResults.length > 0 && siteResults[0].prices) {
+      console.log("Falling back to Chromium extracted prices")
       siteResults[0].prices.forEach((priceMatch) => {
         const cleanPrice = priceMatch.replace(/[^\d]/g, '')
         const priceNum = parseInt(cleanPrice)
@@ -95,7 +185,7 @@ export async function GET(request) {
           priceInfo.push({
             price: priceMatch,
             priceNum,
-            source: "flights-results class",
+            source: "Chromium extraction",
           })
           if (!minPrice || priceNum < minPrice) {
             minPrice = priceNum
@@ -104,14 +194,23 @@ export async function GET(request) {
       })
     }
 
+    console.log("Final extracted price info:", priceInfo)
+    console.log("Minimum price:", minPrice)
+
     return Response.json({
-      success: true,
+      success: minPrice !== null,
       origin,
       destination,
       date,
       price: minPrice,
       priceInfo,
       siteResults,
+      organicResults: data.organic_results?.map(r => ({
+        title: r.title,
+        link: r.link,
+        snippet: r.snippet,
+      })) || [],
+      message: minPrice === null ? "No flight prices found in search results" : undefined,
     })
   } catch (error) {
     return Response.json(
