@@ -1,11 +1,28 @@
+const AIRPORT_CODES = {
+  "nyc": "JFK", "new york": "JFK", "jfk": "JFK",
+  "lax": "LAX", "los angeles": "LAX",
+  "lhr": "LHR", "london": "LHR", "heathrow": "LHR",
+  "icn": "ICN", "incheon": "ICN",
+  "cdg": "CDG", "paris": "CDG",
+  "aus": "AUS", "austin": "AUS",
+  "sel": "SEL", "seoul": "SEL",
+  "tao": "TAO", "qingdao": "TAO",
+}
+
+function normalizeAirportCode(input) {
+  const upper = input.toUpperCase()
+  if (upper.length === 3) return upper
+  return AIRPORT_CODES[input.toLowerCase()] || upper
+}
+
 export async function GET(request) {
   const { searchParams } = new URL(request.url)
-  const origin = searchParams.get("origin")
-  const destination = searchParams.get("destination")
+  const origin = normalizeAirportCode(searchParams.get("origin") || "")
+  const destination = normalizeAirportCode(searchParams.get("destination") || "")
   const date = searchParams.get("date")
 
   if (!origin || !destination || !date) {
-    return Response.json({ error: "Missing origin, destination, or date" }, { status: 400 })
+    return Response.json({ error: "Missing origin, destination, or date. Use IATA airport codes (e.g., LAX, JFK)" }, { status: 400 })
   }
 
   try {
