@@ -35,15 +35,35 @@ export async function GET(request) {
       console.log("Search information:", data.search_information)
     }
 
-    // Get google_flights_url from SerpAPI response
+    // Get google_flights_url from SerpAPI response and fetch it to extract prices
     const googleFlightsUrl = data.google_flights_url
     const siteResults = []
 
     if (googleFlightsUrl) {
-      siteResults.push({
-        source: "Google Flights",
-        url: googleFlightsUrl,
-      })
+      try {
+        console.log("Fetching Google Flights URL to extract prices:", googleFlightsUrl)
+        const googleFlightsResponse = await fetch(googleFlightsUrl)
+        if (googleFlightsResponse.ok) {
+          const googleFlightsHtml = await googleFlightsResponse.text()
+
+          // Extract prices from HTML - look for price patterns
+          const priceMatches = googleFlightsHtml.match(/[\$₩][\d,]+|[\d,]+\s*(?:USD|KRW|元)/g) || []
+
+          siteResults.push({
+            source: "Google Flights",
+            url: googleFlightsUrl,
+            prices: priceMatches,
+          })
+
+          console.log("Prices found in Google Flights:", priceMatches)
+        }
+      } catch (err) {
+        console.log("Error fetching Google Flights URL:", err.message)
+        siteResults.push({
+          source: "Google Flights",
+          url: googleFlightsUrl,
+        })
+      }
     }
 
     let minPrice = null
@@ -119,9 +139,9 @@ export async function GET(request) {
       })
     }
 
-    // Fallback to Chromium extracted prices
+    // Fallback to prices extracted from Google Flights URL
     if (!minPrice && siteResults.length > 0 && siteResults[0].prices) {
-      console.log("Falling back to Chromium extracted prices")
+      console.log("Extracting prices from Google Flights page")
       siteResults[0].prices.forEach((priceMatch) => {
         const cleanPrice = priceMatch.replace(/[^\d]/g, '')
         const priceNum = parseInt(cleanPrice)
@@ -129,7 +149,8 @@ export async function GET(request) {
           priceInfo.push({
             price: priceMatch,
             priceNum,
-            source: "Chromium extraction",
+            source: "Google Flights page",
+            url: siteResults[0].url,
           })
           if (!minPrice || priceNum < minPrice) {
             minPrice = priceNum
