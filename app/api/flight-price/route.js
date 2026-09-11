@@ -16,7 +16,7 @@ export async function GET(request) {
 
     // Format date from YYYYMMDD to YYYY-MM-DD
     const formattedDate = `${date.substring(0, 4)}-${date.substring(4, 6)}-${date.substring(6, 8)}`
-    const url = `https://serpapi.com/search?engine=google_flights&departure_id=${origin}&arrival_id=${destination}&outbound_date=${formattedDate}&type=2&api_key=${apiKey}`
+    const url = `https://serpapi.com/search?engine=google_flights&departure_id=${origin}&arrival_id=${destination}&outbound_date=${formattedDate}&type=2&gl=us&hl=en&api_key=${apiKey}`
 
     const response = await fetch(url)
 
@@ -35,35 +35,13 @@ export async function GET(request) {
       console.log("Search information:", data.search_information)
     }
 
-    // Get google_flights_url from SerpAPI response and fetch it to extract prices
-    const googleFlightsUrl = data.google_flights_url
+    // SerpAPI returns flights directly in best_flights/other_flights
     const siteResults = []
-
-    if (googleFlightsUrl) {
-      try {
-        console.log("Fetching Google Flights URL to extract prices:", googleFlightsUrl)
-        const googleFlightsResponse = await fetch(googleFlightsUrl)
-        if (googleFlightsResponse.ok) {
-          const googleFlightsHtml = await googleFlightsResponse.text()
-
-          // Extract prices from HTML - look for price patterns
-          const priceMatches = googleFlightsHtml.match(/[\$₩][\d,]+|[\d,]+\s*(?:USD|KRW|元)/g) || []
-
-          siteResults.push({
-            source: "Google Flights",
-            url: googleFlightsUrl,
-            prices: priceMatches,
-          })
-
-          console.log("Prices found in Google Flights:", priceMatches)
-        }
-      } catch (err) {
-        console.log("Error fetching Google Flights URL:", err.message)
-        siteResults.push({
-          source: "Google Flights",
-          url: googleFlightsUrl,
-        })
-      }
+    if (data.google_flights_url) {
+      siteResults.push({
+        source: "Google Flights",
+        url: data.google_flights_url,
+      })
     }
 
     let minPrice = null
