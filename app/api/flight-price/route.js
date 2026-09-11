@@ -16,7 +16,7 @@ export async function GET(request) {
 
     // Format date from YYYYMMDD to YYYY-MM-DD
     const formattedDate = `${date.substring(0, 4)}-${date.substring(4, 6)}-${date.substring(6, 8)}`
-    const url = `https://serpapi.com/search?engine=google_flights&departure_id=${origin}&arrival_id=${destination}&outbound_date=${formattedDate}&type=2&gl=us&hl=en&api_key=${apiKey}`
+    const url = `https://serpapi.com/search?engine=google_flights&departure_id=${origin}&arrival_id=${destination}&outbound_date=${formattedDate}&type=2&currency=USD&hl=en&gl=us&api_key=${apiKey}`
 
     const response = await fetch(url)
 
