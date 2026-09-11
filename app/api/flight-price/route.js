@@ -19,7 +19,11 @@ export async function GET(request) {
       "X-Subscription-Token": searchKey,
     }
 
-    console.log(`Fetching from Brave Search API: ${url}`)
+    console.log("=".repeat(80))
+    console.log("BRAVE SEARCH API REQUEST")
+    console.log("=".repeat(80))
+    console.log("Full URL:", url)
+    console.log("=".repeat(80))
     const response = await fetch(url, { headers })
 
     if (!response.ok) {
