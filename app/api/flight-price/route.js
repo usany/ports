@@ -1,5 +1,3 @@
-import { chromium } from "playwright"
-
 export async function GET(request) {
   const { searchParams } = new URL(request.url)
   const origin = searchParams.get("origin")
@@ -37,75 +35,15 @@ export async function GET(request) {
       console.log("Search information:", data.search_information)
     }
 
-    let browser = null
+    // Get google_flights_url from SerpAPI response
+    const googleFlightsUrl = data.google_flights_url
     const siteResults = []
 
-    try {
-      browser = await chromium.launch({
-        headless: true,
-        args: ["--disable-dev-shm-usage", "--no-sandbox"],
+    if (googleFlightsUrl) {
+      siteResults.push({
+        source: "Google Flights",
+        url: googleFlightsUrl,
       })
-
-      // Visit Google search results
-      const searchQuery = `flight prices ${origin} to ${destination} ${date}`
-      const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}`
-
-      try {
-        const context = await browser.newContext({
-          userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        })
-        const page = await context.newPage()
-        await page.goto(googleSearchUrl, { waitUntil: "networkidle", timeout: 15000 })
-
-        // Extract content from Google flights
-        const flightsContent = await page.evaluate(() => {
-          // Try multiple selectors for Google flights
-          let element = document.querySelector(".flights-results")
-          if (!element) element = document.querySelector("[data-view-type='flights']")
-          if (!element) element = document.querySelector(".yg3J7d") // Google flights container
-          if (!element) element = document.querySelector("div[role='listitem']")
-
-          // If still not found, get the page text and look for prices
-          if (!element) {
-            const bodyText = document.body.textContent
-            return {
-              text: bodyText,
-              html: null,
-              className: null,
-            }
-          }
-
-          return {
-            html: element.innerHTML,
-            text: element.textContent,
-            className: element.className,
-          }
-        })
-
-        if (flightsContent) {
-          // Extract prices from content - look for currency patterns
-          const priceMatches = flightsContent.text?.match(/\$[\d,]+|₩[\d,]+|[\d,]+원/g) || []
-
-          if (priceMatches.length > 0) {
-            siteResults.push({
-              source: "Google Search",
-              url: googleSearchUrl,
-              prices: priceMatches,
-              content: flightsContent.text?.substring(0, 1000),
-            })
-          }
-        }
-
-        await context.close()
-      } catch (err) {
-        // Silently handle error
-      }
-    } catch (err) {
-      // Silently handle Chromium errors
-    } finally {
-      if (browser) {
-        await browser.close().catch(() => {})
-      }
     }
 
     let minPrice = null
