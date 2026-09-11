@@ -26,33 +26,50 @@ export async function GET(request) {
   }
 
   try {
-    const apiKey = process.env.SERPAPI_KEY
+    const apiKey = process.env.BRIGHTDATA_KEY
     if (!apiKey) {
-      return Response.json({ error: "SERPAPI_KEY environment variable is not set" }, { status: 400 })
+      return Response.json({ error: "BRIGHTDATA_KEY environment variable is not set" }, { status: 400 })
     }
 
     // Format date from YYYYMMDD to YYYY-MM-DD
     const formattedDate = `${date.substring(0, 4)}-${date.substring(4, 6)}-${date.substring(6, 8)}`
-    const url = `https://serpapi.com/search?engine=google_flights&departure_id=${origin}&arrival_id=${destination}&outbound_date=${formattedDate}&type=2&currency=USD&hl=en&gl=us&api_key=${apiKey}`
+    const url = `https://api.brightdata.com/datasets?token=${apiKey}`
 
-    const response = await fetch(url)
+    const payload = {
+      dataset: 'google_flights',
+      params: {
+        departure_id: origin,
+        arrival_id: destination,
+        outbound_date: formattedDate,
+        type: 2,
+        currency: 'USD',
+        hl: 'en',
+        gl: 'us'
+      }
+    }
+
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    })
 
     if (!response.ok) {
-      throw new Error(`Brave Search API error: ${response.status} ${response.statusText}`)
+      throw new Error(`Bright Data API error: ${response.status} ${response.statusText}`)
     }
 
     const data = await response.json()
-    console.log("SerpAPI Response:", JSON.stringify(data, null, 2))
+    console.log("Bright Data Response:", JSON.stringify(data, null, 2))
     console.log("Available keys:", Object.keys(data))
 
     if (data.error) {
-      console.log("SerpAPI Error:", data.error)
+      console.log("Bright Data Error:", data.error)
     }
     if (data.search_information) {
       console.log("Search information:", data.search_information)
     }
 
-    // SerpAPI returns flights directly in best_flights/other_flights
+    // Bright Data returns flights directly in best_flights/other_flights
     const siteResults = []
     if (data.google_flights_url) {
       siteResults.push({
@@ -122,7 +139,7 @@ export async function GET(request) {
             priceInfo.push({
               price: priceMatch,
               priceNum,
-              source: "SerpAPI organic results",
+              source: "Bright Data organic results",
               title: result.title,
               url: result.link,
             })
@@ -177,7 +194,7 @@ export async function GET(request) {
       {
         success: false,
         error: error.message,
-        message: "Failed to fetch flight data from Brave Search API.",
+        message: "Failed to fetch flight data from Bright Data API.",
       },
       { status: 500 }
     )
